@@ -22,8 +22,11 @@ const OverviewMap = lazy(() => import('./components/OverviewMap.tsx'));
 /** "Prova con un esempio": un giro classico già compilato, per chi apre l'app senza sapere cos'è. */
 const EXAMPLE_TRAIL = '7328079'; // San Giuseppe → Rifugio Longoni, sentiero 331
 
+/** I valori di partenza di questa visita: servono a leggere il link e a non riscriverli nell'indirizzo. */
+const BASE = defaults(new Date(), navigator.language);
+
 function initialParams(): Params {
-  return readParams(window.location.search, defaults(new Date(), navigator.language), knownTrails);
+  return readParams(window.location.search, BASE, knownTrails);
 }
 
 export default function App() {
@@ -34,7 +37,7 @@ export default function App() {
 
   // lo stato va nell'indirizzo: il link copiato riapre lo stesso piano
   useEffect(() => {
-    window.history.replaceState(null, '', writeParams(params));
+    window.history.replaceState(null, '', writeParams(params, BASE) || window.location.pathname);
     document.documentElement.lang = params.lang;
     document.title = trail ? `${trail.from} → ${trail.to} · ${t.appName}` : t.appName;
   }, [params, trail, t]);

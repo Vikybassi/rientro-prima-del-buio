@@ -20,7 +20,22 @@ describe('link del piano', () => {
   const plan: Params = { trail: '7328079', date: '2026-10-03', start: '07:30', pace: 'slow', stop: 60, lang: 'en' };
 
   it('scrivere e rileggere il link dà lo stesso piano', () => {
-    expect(readParams(writeParams(plan), fallback, known)).toEqual(plan);
+    expect(readParams(writeParams(plan, fallback), fallback, known)).toEqual(plan);
+  });
+
+  it('senza un giro scelto l\'indirizzo resta pulito', () => {
+    expect(writeParams({ ...fallback, date: '2026-10-05', start: '07:00' }, fallback)).toBe('');
+  });
+
+  it('con un giro: giorno e ora sempre, passo, sosta e lingua solo se cambiati', () => {
+    const usual = { ...fallback, trail: '7328079', date: '2026-10-03', start: '08:00' };
+    expect(writeParams(usual, fallback)).toBe('?t=7328079&d=2026-10-03&h=08:00');
+    expect(writeParams(plan, fallback)).toBe('?t=7328079&d=2026-10-03&h=07:30&p=slow&s=60&lang=en');
+  });
+
+  it('un link corto si rilegge con i valori di chi lo apre', () => {
+    const read = readParams('?t=7328079&d=2026-10-03&h=08:00', fallback, known);
+    expect(read).toEqual({ ...fallback, trail: '7328079', date: '2026-10-03', start: '08:00' });
   });
 
   it('i valori non validi tornano ai default, uno per uno', () => {

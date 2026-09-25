@@ -54,14 +54,23 @@ export function readParams(search: string, fallback: Params, knownTrails: Readon
   };
 }
 
-export function writeParams(p: Params): string {
+/**
+ * L'indirizzo contiene solo quello che serve a chi riceve il link: niente se non c'è un giro scelto; con un giro,
+ * giorno e ora (un piano vale per quel giorno), passo e sosta solo se diversi dal solito. La lingua solo se è
+ * stata cambiata: chi apre il link la ritrova da sola dal suo browser.
+ * Restituisce "" quando non serve nessun parametro.
+ */
+export function writeParams(p: Params, base: Params): string {
   const q = new URLSearchParams();
-  if (p.trail !== null) q.set('t', p.trail);
-  q.set('d', p.date);
-  q.set('h', p.start);
-  q.set('p', p.pace);
-  q.set('s', String(p.stop));
-  q.set('lang', p.lang);
+  if (p.trail !== null) {
+    q.set('t', p.trail);
+    q.set('d', p.date);
+    q.set('h', p.start);
+    if (p.pace !== base.pace) q.set('p', p.pace);
+    if (p.stop !== base.stop) q.set('s', String(p.stop));
+  }
+  if (p.lang !== base.lang) q.set('lang', p.lang);
+  const search = q.toString();
   // i due punti dell'orario sono ammessi negli indirizzi: "h=08:00" si legge meglio di "h=08%3A00"
-  return `?${q}`.replaceAll('%3A', ':');
+  return search ? `?${search}`.replaceAll('%3A', ':') : '';
 }
