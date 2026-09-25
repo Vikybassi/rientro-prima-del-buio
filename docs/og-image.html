@@ -1,0 +1,79 @@
+<!doctype html>
+<!--
+  Copertina per le anteprime dei link (WhatsApp, Telegram, LinkedIn…): 1200×630, lo stesso stile dell'app.
+  Si trasforma in public/og-image.jpg con un browser senza finestra, per esempio:
+  "Google Chrome" --headless --screenshot=og.png --window-size=1200,630 docs/og-image.html
+-->
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>Copertina · Rientro prima del buio</title>
+<style>
+  :root {
+    --paper: #f5f2ea; --ink: #1f2a24; --ink-2: #4a5249; --contour: #8c5f3f; --forest: #2f4a3c;
+    --night: #2b3040; --twilight: #e2a088; --day: #f2d58a; --hike-prudent: #8fae9c; --sun: #d98e3a;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    width: 1200px; height: 630px; overflow: hidden; position: relative;
+    background: var(--paper); color: var(--ink);
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+  .contours { position: absolute; inset: 0; }
+  .text { position: absolute; left: 72px; top: 64px; width: 640px; }
+  .kicker { margin: 0 0 22px; font-size: 22px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--contour); }
+  h1 { margin: 0; font-size: 96px; line-height: 0.98; font-weight: 800; letter-spacing: -0.035em; }
+  .tagline { margin: 26px 0 0; font-size: 30px; line-height: 1.35; color: var(--ink-2); }
+  /* il disegno (56×40 unità) a 400 px di larghezza: 7,14 px per unità; la base delle montagne (36 unità sotto
+     il bordo alto) poggia sul bordo della barra, a 472 px */
+  .scene { position: absolute; right: 80px; top: 216px; width: 400px; height: 286px; }
+  .bar { position: absolute; left: 72px; right: 72px; bottom: 58px; }
+  .bar-track { position: relative; height: 56px; border-radius: 8px; overflow: hidden; background: var(--night); }
+  .bar-track div { position: absolute; top: 0; bottom: 0; }
+  .bar-hike { top: 18px !important; bottom: 18px !important; border-radius: 5px; }
+  .bar-labels { position: relative; height: 34px; margin-top: 10px; font-size: 22px; color: var(--ink-2); }
+  .bar-labels span { position: absolute; white-space: nowrap; }
+</style>
+</head>
+<body>
+  <!-- curve di livello leggere, come su una carta -->
+  <svg class="contours" viewBox="0 0 1200 630" fill="none" stroke="#8c5f3f" stroke-opacity="0.13" stroke-width="2" aria-hidden="true">
+    <path d="M620 -20 C760 60 820 40 900 120 S1060 180 1230 150"/>
+    <path d="M600 30 C740 110 800 100 880 180 S1050 240 1230 215"/>
+    <path d="M590 90 C720 160 790 160 860 240 S1040 300 1230 280"/>
+    <path d="M600 150 C700 210 780 220 850 300 S1030 360 1230 345"/>
+    <path d="M630 210 C700 260 770 280 840 350 S1020 410 1230 405"/>
+    <path d="M-20 520 C120 470 260 500 420 450 S700 470 800 430"/>
+    <path d="M-20 470 C140 420 250 450 400 400 S640 410 720 380"/>
+  </svg>
+
+  <div class="text">
+    <p class="kicker">Valtellina · 362 giri</p>
+    <h1>Rientro prima del buio</h1>
+    <p class="tagline">Dimmi quando parti, ti dico se torni alla macchina con la luce.</p>
+  </div>
+
+  <!-- il disegno dell'icona: il sole che tramonta dietro la montagna -->
+  <svg class="scene" viewBox="4 10 56 40" aria-hidden="true">
+    <circle cx="48" cy="28" r="7" fill="#d98e3a"/>
+    <path d="M4 46 L22 20 L31 32 L40 23 L60 46 Z" fill="#2f4a3c"/>
+    <path d="M22 20 L26.6 26.6 L22 25 L18.3 27.4 Z" fill="#f5f2ea"/>
+  </svg>
+
+  <!-- la barra della giornata, come nell'app: notte, crepuscolo, giorno, e il giro dentro la luce -->
+  <div class="bar">
+    <div class="bar-track">
+      <div style="left: 8%; right: 8%; background: var(--twilight)"></div>
+      <div style="left: 11%; right: 11%; background: var(--day)"></div>
+      <div class="bar-hike" style="left: 17%; right: 38%; background: var(--forest)"></div>
+      <div class="bar-hike" style="left: 62%; right: 31%; background: var(--hike-prudent); border-radius: 0 5px 5px 0"></div>
+    </div>
+    <div class="bar-labels">
+      <span style="left: 17%; transform: translateX(-50%)">parti 08:00</span>
+      <span style="left: 62%; transform: translateX(-50%)">rientro 17:30</span>
+      <span style="right: 0">buio 19:38</span>
+    </div>
+  </div>
+</body>
+</html>
