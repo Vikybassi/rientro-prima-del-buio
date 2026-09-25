@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { lazy, Suspense, useState } from 'react';
 import type { TrailPoint, TrailSummary } from '../data/types.ts';
 import { localTime } from '../engine/clock.ts';
 import { answer, verdict, type Plan } from '../engine/plan.ts';
@@ -10,6 +10,9 @@ import type { ForecastState } from '../useForecast.ts';
 import { DayBar } from './DayBar.tsx';
 import { Profile } from './Profile.tsx';
 import { WeatherNotes } from './WeatherNotes.tsx';
+
+// la mappa (e Leaflet con lei) si scarica solo quando serve: chi guarda solo l'elenco non la paga
+const TrailMap = lazy(() => import('./TrailMap.tsx'));
 
 type Props = {
   trail: TrailSummary;
@@ -100,8 +103,32 @@ export function PlanView({ trail, plan, track, weather, hazards, params, onChang
         <>
           <Answer plan={plan} hazards={hazards} t={t} />
           <DayBar plan={plan} date={params.date} t={t} />
-          {track && <Profile plan={plan} track={track} trail={trail} t={t} />}
           <WeatherNotes state={weather} plan={plan} hazards={hazards} trail={trail} date={params.date} t={t} lang={lang} />
+          {track && <Profile plan={plan} track={track} trail={trail} t={t} />}
+          {track && (
+            <section className="section">
+              <h3 className="section-title">{t.map.title}</h3>
+              <Suspense fallback={<div className="trail-map trail-map-loading">{t.map.loading}</div>}>
+                <TrailMap trail={trail} track={track} t={t} />
+              </Suspense>
+              <p className="map-links">
+                <a href={`https://www.google.com/maps/dir/?api=1&destination=${trail.start[0]},${trail.start[1]}`} target="_blank" rel="noopener">
+                  {t.map.directions}
+                </a>
+                <a
+                  href={
+                    trail.osm !== null
+                      ? `https://www.openstreetmap.org/relation/${trail.osm}`
+                      : `https://www.openstreetmap.org/?mlat=${trail.end[0]}&mlon=${trail.end[1]}#map=14/${trail.end[0]}/${trail.end[1]}`
+                  }
+                  target="_blank"
+                  rel="noopener"
+                >
+                  {t.map.osm}
+                </a>
+              </p>
+            </section>
+          )}
 
           <section className="section">
             <h3 className="section-title">{t.hike}</h3>

@@ -180,3 +180,8 @@ button, input, select { font: inherit; color: inherit; }
 .weather-list { margin: 0 0 8px; padding-left: 20px; color: var(--caution); }
 .weather-list.weather-danger { color: var(--nogo); }
 .weather-list li + li { margin-top: 4px; }
+
+/* mappa */
+.trail-map { height: 320px; border: 1px solid var(--line); border-radius: var(--radius); background: #e8e1cf; }
+.trail-map-loading { display: flex; align-items: center; justify-content: center; color: var(--ink-3); font-size: 14px; }
+.map-links { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 10px 0 0; font-size: 14.5px; }

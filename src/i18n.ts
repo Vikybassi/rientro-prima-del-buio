@@ -87,7 +87,7 @@ const it = {
     formula: 'Questo sentiero non ha un tempo CAI: tempi stimati con la formula dei club alpini, tarata sui cartelli della Valtellina.',
   },
   itinerary: (refs: string[]) =>
-    `Itinerario costruito collegando ${refs.length === 0 ? 'più sentieri' : refs.length === 1 ? `il sentiero ${refs[0]} ad altri tratti` : `i sentieri ${refs.join(', ')}`} della rete CAI. Prima di partire controlla il percorso sulla carta e segui i cartelli sul posto.`,
+    `Itinerario costruito collegando ${refs.length === 0 ? 'sentieri presenti su OpenStreetMap' : refs.length === 1 ? `il sentiero CAI ${refs[0]} ad altri tratti` : `i sentieri CAI ${refs.join(', ')}`}. Prima di partire controlla il percorso sulla carta e segui i cartelli sul posto.`,
   unmarked: 'Una parte del percorso segue sentieri non numerati: difficoltà e segnaletica non sono garantite.',
   checkRoad: 'Su OpenStreetMap la strada per la partenza non risulta aperta al traffico: verifica l\'accesso in auto prima di andare.',
   tollRoad: 'La strada per arrivare alla partenza è a pedaggio.',
@@ -99,6 +99,15 @@ const it = {
     title: 'Dove sarai, ora per ora',
     label: (from: string, fromEle: number, to: string, toEle: number, at: string) =>
       `Profilo della salita da ${from} (${fromEle} m) a ${to} (${toEle} m): in cima verso le ${at}.`,
+  },
+  map: {
+    title: 'Il percorso',
+    start: 'Partenza',
+    end: 'Meta',
+    label: (from: string, to: string) => `Mappa del percorso da ${from} a ${to}`,
+    loading: 'Carico la mappa…',
+    directions: 'Indicazioni stradali per la partenza',
+    osm: 'Apri su OpenStreetMap',
   },
   weather: {
     title: 'Meteo nelle ore del giro',
@@ -188,7 +197,7 @@ const en: Strings = {
     formula: 'This trail has no CAI time: estimated with the alpine clubs\' formula, calibrated on Valtellina signposts.',
   },
   itinerary: (refs) =>
-    `Route built by linking ${refs.length === 0 ? 'several trails' : refs.length === 1 ? `trail ${refs[0]} with other sections` : `trails ${refs.join(', ')}`} of the CAI network. Before you go, check it on a map and follow the signposts on the ground.`,
+    `Route built by linking ${refs.length === 0 ? 'trails mapped on OpenStreetMap' : refs.length === 1 ? `CAI trail ${refs[0]} with other sections` : `CAI trails ${refs.join(', ')}`}. Before you go, check it on a map and follow the signposts on the ground.`,
   unmarked: 'Part of the route follows unnumbered trails: difficulty and signposting are not guaranteed.',
   checkRoad: 'On OpenStreetMap the road to the start is not marked as open to traffic: check car access before you go.',
   tollRoad: 'The road to the start is a toll road.',
@@ -199,6 +208,15 @@ const en: Strings = {
   profile: {
     title: 'Where you\'ll be, hour by hour',
     label: (from, fromEle, to, toEle, at) => `Ascent profile from ${from} (${fromEle} m) to ${to} (${toEle} m): at the top around ${at}.`,
+  },
+  map: {
+    title: 'The route',
+    start: 'Start',
+    end: 'Destination',
+    label: (from, to) => `Map of the route from ${from} to ${to}`,
+    loading: 'Loading the map…',
+    directions: 'Driving directions to the start',
+    osm: 'Open in OpenStreetMap',
   },
   weather: {
     title: 'Weather during your hike',
