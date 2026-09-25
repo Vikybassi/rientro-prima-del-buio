@@ -72,6 +72,20 @@ describe('makePlan: il 331 a inizio ottobre', () => {
     expect(plan.downMin.estimate).toBeLessThan(plan.upMin.estimate);
   });
 
+  it('"al limite" se col proprio passo si rientra con la luce ma andando più piano no', () => {
+    const plan = makePlan({ ...base, start: localTime(addMinutes(makePlan(base).latestStart, 30)) });
+    expect(plan.backAt.estimate <= plan.light.dusk).toBe(true);
+    expect(plan.lightStatus).toBe('tight');
+    expect(verdict(plan, [])).toBe('caution');
+  });
+
+  it('"no" solo quando anche la stima rientra col buio', () => {
+    for (const start of ['12:00', '13:00', '14:00', '15:00', '16:00']) {
+      const plan = makePlan({ ...base, start });
+      expect(plan.lightStatus === 'dark').toBe(plan.backAt.estimate > plan.light.dusk);
+    }
+  });
+
   it('partire prima dell\'alba civile è un avviso anche se si rientra in tempo', () => {
     const plan = makePlan({ ...base, start: '05:00' });
     expect(plan.startsInDark).toBe(true);

@@ -13,7 +13,7 @@ Scegli un giro in Valtellina, il giorno e l'ora in cui parti: l'app ti dice se t
 ## Cosa fa
 
 - **362 giri** in Valtellina e Valchiavenna, verso rifugi, bivacchi, laghi, passi e alpeggi, ognuno con partenza da un posto dove si arriva in macchina.
-- **La risposta in una frase**: sì, rientri con la luce; al limite; no, rientri col buio. Con l'ultima ora a cui puoi ancora partire.
+- **La risposta in una frase**: sì, rientri con la luce; al limite; no, rientri col buio. Con l'ultima ora a cui puoi ancora partire con margine.
 - **La giornata su una barra**: partenza, rientro, tramonto, fine del crepuscolo.
 - **Il meteo nelle ore del giro**, alla quota della partenza e a quella della meta: temporali, pioggia, raffiche di vento, zero termico sotto la quota.
 - **Il profilo del percorso** con l'ora a cui passi, e la mappa del tracciato.
@@ -34,9 +34,9 @@ Una partenza vale solo se a pochi passi c'è una strada aperta al traffico: nien
 
 **Le quote** vengono dal modello del terreno Copernicus GLO-30 (un punto ogni 30 m). Il dislivello si calcola ignorando le oscillazioni sotto i 5 m, una soglia tarata sui dislivelli ufficiali CAI: l'errore mediano è del 3%.
 
-**I tempi.** Dove il sentiero ha il tempo del cartello CAI, si parte da quello. Altrimenti si usa la formula DIN 33466, corretta confrontandola con i tempi CAI di tutta la provincia: in mediana i cartelli sono il 10% più veloci della formula. Ogni tempo ha anche una versione prudente, più lunga del 26%: tanto quanto è più lento un cartello su dieci. La risposta si basa su quella.
+**I tempi.** Dove il sentiero ha il tempo del cartello CAI, si parte da quello. Altrimenti si usa la formula DIN 33466, corretta confrontandola con i tempi CAI di tutta la provincia: in mediana i cartelli sono il 10% più veloci della formula. Poi si applica il tuo passo. Ogni tempo ha anche una versione per "se ci metti di più" (stanchezza, imprevisti): il 15% in più, al massimo un'ora sull'intero giro.
 
-**La luce.** Tramonto e fine del crepuscolo si calcolano per il punto di partenza e il giorno scelto, nel fuso di Roma. Se con il tempo prudente sei alla macchina almeno 30 minuti prima del tramonto, la risposta è sì; se arrivi più tardi ma prima del buio, è al limite; dopo, è no.
+**La luce.** Tramonto e fine del crepuscolo si calcolano per il punto di partenza e il giorno scelto, nel fuso di Roma. La risposta è sì se sei alla macchina almeno 30 minuti prima del tramonto anche mettendoci di più; al limite se col tuo passo rientri con la luce ma senza margine; no se già col tuo passo rientri col buio. Se per avere margine dovresti partire prima che faccia giorno, l'app lo dice.
 
 **Il meteo** arriva da Open-Meteo, ora per ora, per la partenza e per la meta alla loro quota. Un temporale previsto o raffiche oltre gli 80 km/h nelle ore del giro cambiano la risposta in "meglio di no", anche con tutta la luce del mondo; pioggia probabile, vento forte e zero termico basso sono avvisi. Le previsioni coprono i prossimi 16 giorni; per le date più lontane l'app lo dice.
 
@@ -46,7 +46,7 @@ Una partenza vale solo se a pochi passi c'è una strada aperta al traffico: nien
 - **Mappe**: Leaflet con le carte di OpenTopoMap, caricate solo quando servono.
 - **Sole**: [suncalc](https://github.com/mourner/suncalc).
 - **Offline**: service worker generato da Workbox (vite-plugin-pwa). L'app e la mappa d'insieme si salvano alla prima visita, le tracce quando si aprono, e della mappa solo i riquadri già visti: le regole d'uso di OpenTopoMap vietano di scaricarli in blocco.
-- **Test**: 85 test (Vitest) sul motore dei tempi, della luce e del meteo, sui filtri e sui formati.
+- **Test**: 90 test (Vitest) sul motore dei tempi, della luce e del meteo, sui filtri e sui formati.
 
 ```
 src/engine/      tempi, sole, meteo e risposta (logica pura, testata)

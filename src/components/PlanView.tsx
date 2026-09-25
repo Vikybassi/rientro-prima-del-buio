@@ -33,13 +33,14 @@ type Props = {
  */
 function Answer({ plan, hazards, t }: { plan: Plan; hazards: Hazard[]; t: Strings }) {
   const latest = clock(plan.latestStart, 'down');
-  const tooLong = plan.latestStart < plan.light.dawn;
+  // se per avere margine bisognerebbe partire prima che faccia giorno, dirlo invece di proporre un orario al buio
+  const tooLong = plan.lightStatus !== 'ok' && plan.latestStart < plan.light.dawn;
   return (
     <section className="verdict" data-verdict={verdict(plan, hazards)} aria-live="polite">
       <h3>{t.answer[answer(plan, hazards)]}</h3>
       <p>{t.backLine(clock(plan.backAt.estimate), clock(plan.backAt.prudent, 'up'), localTime(plan.light.sunset))}</p>
       <p className="verdict-secondary">
-        {tooLong ? t.latest.tooLong : plan.lightStatus === 'ok' ? t.latest.ok(latest) : t.latest.late(latest)}
+        {tooLong ? t.latest.tooLong(latest, localTime(plan.light.dawn)) : t.latest[plan.lightStatus](latest)}
       </p>
       {plan.startsInDark && <p className="verdict-secondary">{t.startsInDark}</p>}
     </section>

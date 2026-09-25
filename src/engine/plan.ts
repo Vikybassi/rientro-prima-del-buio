@@ -1,14 +1,15 @@
 import type { TrailPoint, TrailSummary } from '../data/types.ts';
 import { addMinutes, localToInstant } from './clock.ts';
 import { daylight, type Daylight } from './sun.ts';
-import { arrivalMinutes, CAI_OVER_DIN, dinHours, legRange, officialRatio, reverseTrack, type Pace, type Range } from './time.ts';
+import { arrivalMinutes, CAI_OVER_DIN, dinHours, legMinutes, officialRatio, reverseTrack, withMargin, type Pace, type Range } from './time.ts';
 import type { Hazard, Moment } from './weather.ts';
 
 /**
  * Il piano di un giro andata e ritorno e il verdetto: "si rientra prima del buio?".
  *
- * Tutto il ragionamento sulla sicurezza usa il caso prudente (vedi time.ts); la stima serve per mostrare
- * un orario "tipico" accanto a quello prudente.
+ * Ogni tempo ha una stima (col passo scelto) e un caso prudente (se ci si mette di più, vedi time.ts).
+ * Il "sì" e l'ultima ora di partenza usano il caso prudente; il "no" per la luce arriva solo quando anche la stima
+ * rientra col buio. In mezzo c'è "al limite".
  */
 
 /** Margine di luce che vogliamo avere al rientro: arrivare alla macchina proprio al tramonto non è un piano. */
@@ -60,10 +61,9 @@ export function trailTimes(trail: TrailSummary, pace: Pace): { upMin: Range; dow
     up: officialRatio(trail.caiUpMin, formulaUp),
     down: officialRatio(trail.caiDownMin, formulaDown),
   };
-  const fallback = cai.up ?? cai.down ?? CAI_OVER_DIN.estimate;
+  const fallback = cai.up ?? cai.down ?? CAI_OVER_DIN;
   return {
-    upMin: legRange(formulaUp, cai.up ?? fallback, pace),
-    downMin: legRange(formulaDown, cai.down ?? fallback, pace),
+    ...withMargin(legMinutes(formulaUp, cai.up ?? fallback, pace), legMinutes(formulaDown, cai.down ?? fallback, pace)),
     timeSource: cai.up !== null || cai.down !== null ? 'cai' : 'formula',
   };
 }
@@ -81,8 +81,10 @@ export function makePlan({ trail, track, date, start, pace, stopMin }: PlanInput
   const light = daylight(date, trail.start[0], trail.start[1]);
   const deadline = addMinutes(light.sunset, -LIGHT_MARGIN_MIN);
   const latestStart = addMinutes(deadline, -(upMin.prudent + stopMin + downMin.prudent));
+  // "sì" solo se c'è margine anche andando più piano; "no" solo se col passo dichiarato si rientra già col buio.
+  // Così il titolo non contraddice mai l'orario di rientro che la risposta mostra per primo.
   const lightStatus: LightStatus =
-    backAt.prudent <= deadline ? 'ok' : backAt.prudent <= light.dusk ? 'tight' : 'dark';
+    backAt.prudent <= deadline ? 'ok' : backAt.estimate <= light.dusk ? 'tight' : 'dark';
 
   const back = reverseTrack(track);
   const upTimes = arrivalMinutes(track, upMin.prudent);

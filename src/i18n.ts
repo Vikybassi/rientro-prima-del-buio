@@ -70,15 +70,17 @@ const it = {
     ok: 'Sì, rientri con la luce',
     'ok-weather': 'Sì, ma occhio al meteo',
     'weather-no': 'Meglio di no: brutto tempo in quota',
-    tight: 'Al limite: rientri al tramonto',
+    tight: 'Al limite: poco margine di luce',
     dark: 'No, rientri col buio',
   } satisfies Record<Answer, string>,
   backLine: (back: string, late: string, sunset: string) =>
     `Sei alla macchina verso le ${back} (alle ${late} se ci metti di più). Il sole tramonta alle ${sunset}.`,
   latest: {
     ok: (t: string) => `Potresti partire anche fino alle ${t}.`,
-    late: (t: string) => `Per rientrare con la luce parti entro le ${t}.`,
-    tooLong: 'Anche partendo all\'alba rientreresti col buio: in questo periodo il giro è troppo lungo per le ore di luce.',
+    tight: (t: string) => `Se ci metti di più non ti resta margine di luce. Per averlo parti entro le ${t}.`,
+    dark: (t: string) => `Per rientrare con la luce parti entro le ${t}.`,
+    tooLong: (t: string, dawn: string) =>
+      `Per avere margine anche se ci metti di più dovresti partire alle ${t}, ma fa giorno alle ${dawn}: in questo periodo il giro è lungo per le ore di luce.`,
   },
   startsInDark: 'Parti prima che faccia giorno: il primo tratto è al buio, porta la frontale.',
 
@@ -105,7 +107,7 @@ const it = {
   checkRoad: 'Su OpenStreetMap la strada per la partenza non risulta aperta al traffico: verifica l\'accesso in auto prima di andare.',
   tollRoad: 'La strada per arrivare alla partenza è a pedaggio.',
   slack: (extra: string) =>
-    `Se ci metti di più: fino a ${extra} in più in tutto (succede a un cartello su dieci). La risposta tiene conto di questo. Le soste lungo la strada non sono comprese.`,
+    `Se ci metti di più (stanchezza, imprevisti) contiamo fino a ${extra} in più in tutto: la risposta tiene conto anche di questo. Le soste lungo la strada non sono comprese.`,
   share: 'Copia il link del piano',
   shared: 'Link copiato',
   profile: {
@@ -196,14 +198,16 @@ const en: Strings = {
     ok: 'Yes, you\'re back in daylight',
     'ok-weather': 'Yes, but watch the weather',
     'weather-no': 'Better not: bad weather up high',
-    tight: 'Cutting it close: back at sunset',
+    tight: 'Cutting it close: little daylight to spare',
     dark: 'No, you\'d be back after dark',
   },
   backLine: (back, late, sunset) => `You're back at the car around ${back} (${late} if it takes longer). Sunset is at ${sunset}.`,
   latest: {
     ok: (t) => `You could start as late as ${t}.`,
-    late: (t) => `To be back in daylight, start by ${t}.`,
-    tooLong: 'Even starting at dawn you\'d be back after dark: at this time of year the hike is too long for the daylight.',
+    tight: (t) => `If it takes longer you'll have no daylight to spare. To keep a margin, start by ${t}.`,
+    dark: (t) => `To be back in daylight, start by ${t}.`,
+    tooLong: (t, dawn) =>
+      `To have a margin if it takes longer you'd need to start at ${t}, but it only gets light at ${dawn}: at this time of year the hike is long for the daylight.`,
   },
   startsInDark: 'You\'d start before daybreak: the first stretch is in the dark, bring a headlamp.',
 
@@ -230,7 +234,7 @@ const en: Strings = {
   checkRoad: 'On OpenStreetMap the road to the start is not marked as open to traffic: check car access before you go.',
   tollRoad: 'The road to the start is a toll road.',
   slack: (extra) =>
-    `If it takes longer: up to ${extra} more in total (one signpost in ten is that slow). The answer accounts for it. Breaks along the way are not included.`,
+    `If it takes longer (fatigue, the unexpected) we allow up to ${extra} more in total, and the answer accounts for it. Breaks along the way are not included.`,
   share: 'Copy link to this plan',
   shared: 'Link copied',
   profile: {

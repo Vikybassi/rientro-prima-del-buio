@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import type { TrailPoint } from '../data/types.ts';
-import { arrivalMinutes, dinHours, legRange, officialRatio, PRUDENT_OVER_ESTIMATE, reverseTrack } from './time.ts';
+import { arrivalMinutes, dinHours, legMinutes, officialRatio, PRUDENT_EXTRA, reverseTrack, withMargin } from './time.ts';
 
 describe('dinHours (formula DIN 33466)', () => {
   it('in piano conta solo la distanza, a 4 km/h', () => {
@@ -29,20 +29,35 @@ describe('officialRatio', () => {
   });
 });
 
-describe('legRange', () => {
+describe('legMinutes', () => {
   it('la stima è formula × rapporto × passo', () => {
-    expect(legRange(200, 0.9, 'average').estimate).toBeCloseTo(180);
-    expect(legRange(200, 0.9, 'slow').estimate).toBeCloseTo(225);
-  });
-  it('il caso prudente allunga la stima come il 90° percentile rispetto alla mediana dei cartelli', () => {
-    const r = legRange(200, 0.9, 'average');
-    expect(r.prudent / r.estimate).toBeCloseTo(PRUDENT_OVER_ESTIMATE);
-    expect(PRUDENT_OVER_ESTIMATE).toBeCloseTo(1.26, 2);
+    expect(legMinutes(200, 0.9, 'average')).toBeCloseTo(180);
+    expect(legMinutes(200, 0.9, 'slow')).toBeCloseTo(225);
   });
   it('chi è più lento dei cartelli ci mette di più', () => {
-    const t = (pace: 'slow' | 'average' | 'fast') => legRange(200, 0.9, pace).estimate;
+    const t = (pace: 'slow' | 'average' | 'fast') => legMinutes(200, 0.9, pace);
     expect(t('slow')).toBeGreaterThan(t('average'));
     expect(t('average')).toBeGreaterThan(t('fast'));
+  });
+});
+
+describe('withMargin: il caso "se ci metti di più"', () => {
+  const extra = (up: number, down: number) => {
+    const r = withMargin(up, down);
+    return r.upMin.prudent + r.downMin.prudent - up - down;
+  };
+  it('su un giro breve è il 15%', () => {
+    expect(extra(120, 60)).toBeCloseTo(180 * PRUDENT_EXTRA.share);
+  });
+  it('su un giro lungo si ferma a un\'ora in tutto', () => {
+    expect(extra(330, 225)).toBeCloseTo(PRUDENT_EXTRA.maxMin);
+  });
+  it('si divide tra salita e ritorno in proporzione', () => {
+    const r = withMargin(300, 150);
+    expect(r.upMin.prudent / r.upMin.estimate).toBeCloseTo(r.downMin.prudent / r.downMin.estimate);
+  });
+  it('la stima resta quella', () => {
+    expect(withMargin(100, 80).upMin.estimate).toBe(100);
   });
 });
 

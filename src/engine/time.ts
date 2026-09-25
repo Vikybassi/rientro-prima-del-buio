@@ -14,17 +14,20 @@ export function dinHours(km: number, upM: number, downM: number): number {
 }
 
 /**
- * Quanto i cartelli CAI sono più veloci della formula DIN, misurato su 37 tempi ufficiali della provincia di
- * Sondrio (scripts/calibrate-time.ts). I tempi ufficiali variano molto tra loro (rapporto da 0,56 a 1,19),
- * quindi usiamo due valori:
- * - la mediana per la stima ("quanto direbbe un cartello tipico");
- * - il 90° percentile per il caso prudente: solo un cartello su dieci è più lento. Il verdetto si basa su questo,
- *   perché la domanda dell'app è di sicurezza.
+ * Quanto i cartelli CAI sono più veloci della formula DIN: la mediana di 37 tempi ufficiali della provincia di
+ * Sondrio (scripts/calibrate-time.ts). Vale per i sentieri che non hanno un cartello loro.
  */
-export const CAI_OVER_DIN = { estimate: 0.9, prudent: 1.13 } as const;
+export const CAI_OVER_DIN = 0.9;
 
-/** Il caso prudente sta alla stima come il 90° percentile sta alla mediana dei cartelli: circa +26%. */
-export const PRUDENT_OVER_ESTIMATE = CAI_OVER_DIN.prudent / CAI_OVER_DIN.estimate;
+/**
+ * Il margine per "se ci metti di più" (stanchezza, un tratto rovinato, una pausa in più): il 15% del giro,
+ * ma al massimo un'ora in tutto.
+ *
+ * Prima era il +26% che separa il 90° percentile dei cartelli dalla mediana: su un giro di 9 ore diventava più di
+ * due ore, e si sommava al passo scelto (chi diceva "sono veloce" si vedeva togliere il 20% e riaggiungere il 26%).
+ * Il passo lo dichiara chi cammina; il margine copre solo gli imprevisti della giornata.
+ */
+export const PRUDENT_EXTRA = { share: 0.15, maxMin: 60 } as const;
 
 /**
  * Rapporti "tempo CAI / formula" accettati per un singolo sentiero. Nei dati vanno da 0,56 a 1,19: fuori da
@@ -49,10 +52,22 @@ export function officialRatio(officialMin: number | null, formulaMin: number): n
 
 export type Range = { estimate: number; prudent: number };
 
-/** Minuti per una tratta, dati i minuti della formula DIN, il rapporto del sentiero e il passo. */
-export function legRange(formulaMin: number, ratio: number, pace: Pace): Range {
-  const estimate = formulaMin * ratio * PACE_FACTOR[pace];
-  return { estimate, prudent: estimate * PRUDENT_OVER_ESTIMATE };
+/** Minuti stimati per una tratta, dati i minuti della formula DIN, il rapporto del sentiero e il passo. */
+export function legMinutes(formulaMin: number, ratio: number, pace: Pace): number {
+  return formulaMin * ratio * PACE_FACTOR[pace];
+}
+
+/**
+ * Salita e ritorno con il loro caso prudente. Il margine si calcola sul giro intero (così il tetto di un'ora vale
+ * per tutta la giornata) e si divide tra le due tratte in proporzione alla loro durata.
+ */
+export function withMargin(upMin: number, downMin: number): { upMin: Range; downMin: Range } {
+  const total = upMin + downMin;
+  const factor = total > 0 ? 1 + Math.min(PRUDENT_EXTRA.share, PRUDENT_EXTRA.maxMin / total) : 1;
+  return {
+    upMin: { estimate: upMin, prudent: upMin * factor },
+    downMin: { estimate: downMin, prudent: downMin * factor },
+  };
 }
 
 /**
