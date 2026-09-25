@@ -25,3 +25,6 @@ dist-ssr
 
 # Download di OSM / Open-Meteo / Nominatim (rigenerabili con gli script)
 data-cache
+
+# Collegamento locale al sito Netlify
+.netlify

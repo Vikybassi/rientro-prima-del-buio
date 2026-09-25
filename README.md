@@ -2,6 +2,8 @@
 
 Scegli un giro in Valtellina, il giorno e l'ora in cui parti: l'app ti dice se torni alla macchina con la luce, a che ora arrivi alla meta, quando tramonta il sole e che tempo fa alle quote in cui sarai.
 
+**Provala: [rientro-prima-del-buio.netlify.app](https://rientro-prima-del-buio.netlify.app)**
+
 > **In English** — *Back before dark* is a web app for day hikes in Valtellina (Italian Alps). Pick one of 362 hikes, a date and a start time: it tells you whether you'll be back at the car before dark, with arrival times, sunset and the hourly forecast at the altitudes you'll be walking. Hikes are built from OpenStreetMap trail data and a 30 m terrain model; walking times start from the official CAI signpost times where they exist, otherwise from the DIN 33466 formula calibrated on those signposts. React + TypeScript, no backend, installable and usable offline. The interface is in Italian and English.
 
 ![La pagina iniziale: elenco dei giri e mappa della provincia con tutti i tracciati](docs/screenshots/home-desktop.jpg)
