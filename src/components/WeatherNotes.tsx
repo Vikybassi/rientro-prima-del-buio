@@ -4,6 +4,7 @@ import { conditionsAt, type Hazard } from '../engine/weather.ts';
 import { clock, dayLabel } from '../format.ts';
 import type { Lang, Strings } from '../i18n.ts';
 import type { ForecastState } from '../useForecast.ts';
+import { useOnline } from '../useOnline.ts';
 
 type Props = { state: ForecastState; plan: Plan; hazards: Hazard[]; trail: TrailSummary; date: string; t: Strings; lang: Lang };
 
@@ -24,6 +25,7 @@ function describe(h: Hazard, t: Strings): string {
 
 /** Meteo nelle ore e alle quote del giro: gli avvisi, oppure com'è in cima quando ci arrivi. */
 export function WeatherNotes({ state, plan, hazards, trail, date, t, lang }: Props) {
+  const online = useOnline();
   let body;
   if (state.status === 'loading' || state.status === 'idle') body = <p className="note">{t.weather.loading}</p>;
   else if (state.status === 'too-far') body = <p>{t.weather.tooFar(dayLabel(date, lang))}</p>;
@@ -43,6 +45,8 @@ export function WeatherNotes({ state, plan, hazards, trail, date, t, lang }: Pro
         {Number.isFinite(top.temperature) && Number.isFinite(top.gusts) && (
           <p>{t.weather.summit(clock(plan.summitAt.estimate), Math.round(top.temperature), Math.round(top.gusts))}</p>
         )}
+        {/* senza rete le previsioni vengono dalla copia salvata (service worker): va detto, possono essere vecchie */}
+        {!online && <p className="offline-note">{t.weather.offline}</p>}
         <p className="note">{t.weather.source}</p>
       </>
     );

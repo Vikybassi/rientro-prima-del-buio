@@ -11,6 +11,7 @@ import { STRINGS } from './i18n.ts';
 import { defaults, readParams, writeParams, type Params } from './state.ts';
 import { useForecast } from './useForecast.ts';
 import { useMediaQuery } from './useMediaQuery.ts';
+import { useOnline } from './useOnline.ts';
 
 const trails = trailsJson as TrailSummary[];
 const knownTrails = new Set(trails.map((tr) => tr.id));
@@ -72,9 +73,11 @@ export default function App() {
   const showOverview = !trail && (wide || view === 'map');
   const [hovered, setHovered] = useState<string | null>(null);
   const [peek, setPeek] = useState<string | null>(null);
+  const online = useOnline();
 
   return (
     <div className="app">
+      {!online && <p className="offline-bar" role="status">{t.offline}</p>}
       <header className="masthead">
         <div className="masthead-text">
           <h1>{t.appName}</h1>
