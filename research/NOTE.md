@@ -35,6 +35,15 @@
 - **I tempi CAI stessi sono incoerenti**: il rapporto tempo CAI / DIN va da 0,56 a 1,19. Esempio: 12,9 km +991 m → 4h45; 15,5 km +925 m → 8h00.
 - Formato dei tempi misto (`02:30`, `2:30`, `2.50`): letto come ore:minuti.
 
+## Taratura dei tempi (Tappa 2, `scripts/calibrate-time.ts`)
+- Rapporto tempo CAI / DIN su 37 coppie: 10° percentile 0,57, 25° 0,64, **mediana 0,90**, 75° 1,04, **90° 1,13**.
+- Stima = formula × 0,90; caso prudente = stima × 1,26 (90° percentile / mediana). Il verdetto usa il caso prudente.
+- Scelta dell'utente: **se il sentiero ha il tempo CAI si parte da quello** (è il dato migliore per quel sentiero).
+  Il rapporto del cartello vale anche per il ritorno, che il CAI di solito non rileva. Rapporti fuori da 0,5–1,3
+  sono trattati come errori di battitura del tag e ignorati.
+- Sui 6 sentieri della v1 con tempo CAI il rapporto va da 0,61 a 0,89: in Valmalenco i cartelli sono
+  costantemente veloci (0,61–0,67). Sul 331 la stima passa da 3h48 (formula) a 2h50 (cartello).
+
 ## Conseguenze per il progetto
 1. Niente falsa precisione: l'app mostra una **forbice** di tempo e decide il verdetto sul caso **lento**, perché la domanda è di sicurezza.
 2. Formula base: DIN 33466 (standard dei club alpini, spiegabile), più un **fattore personale** ("rispetto ai cartelli sei più veloce, uguale o più lento?", in seguito tarabile su un giro fatto davvero).
