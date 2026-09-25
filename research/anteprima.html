@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anteprima sentieri (controllo dati)</title>
+    <title>Anteprima giri (controllo dati)</title>
     <!-- Pagina di controllo dei dati generati da scripts/build-trails.ts, non fa parte dell'app. -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <style>
@@ -20,7 +20,7 @@
     </style>
   </head>
   <body>
-    <aside><h1>20 sentieri: clicca per controllare</h1><div id="list"></div></aside>
+    <aside><h1 id="title">Giri: clicca per controllare</h1><p style="margin:0 14px 8px;font-size:13px"><span style="color:#7a1b2b">■</span> sentiero CAI intero · <span style="color:#1f5fa8">■</span> itinerario calcolato</p><div id="list"></div></aside>
     <main><div id="map"></div><div id="profile">Seleziona un sentiero.</div></main>
     <script type="module">
       import 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
@@ -32,12 +32,14 @@
         attribution: '© OpenStreetMap contributors, SRTM | stile © OpenTopoMap (CC-BY-SA)',
       }).addTo(map);
 
-      const tracks = await Promise.all(trails.map((t) => fetch(`/trails/${t.osm}.json`).then((r) => r.json())));
+      document.getElementById('title').textContent = `${trails.length} giri: clicca per controllare`;
+      const color = (t) => (t.osm === null ? '#1f5fa8' : '#7a1b2b');
+      const tracks = await Promise.all(trails.map((t) => fetch(`/trails/${t.id}.json`).then((r) => r.json())));
       const lines = new Map();
       const all = L.featureGroup().addTo(map);
       trails.forEach((t, i) => {
         const pts = tracks[i].points.map(([lat, lon]) => [lat, lon]);
-        const line = L.polyline(pts, { color: '#7a1b2b', weight: 3 }).addTo(all);
+        const line = L.polyline(pts, { color: color(t), weight: 3 }).addTo(all);
         L.circleMarker(pts[0], { radius: 5, color: '#1d6b4f', fillOpacity: 1 }).bindTooltip(`Partenza: ${t.from}`).addTo(all);
         L.circleMarker(pts.at(-1), { radius: 5, color: '#b8860b', fillOpacity: 1 }).bindTooltip(`Meta: ${t.to}`).addTo(all);
         line.on('click', () => select(i));
@@ -49,7 +51,7 @@
       const list = document.getElementById('list');
       trails.forEach((t, i) => {
         const b = document.createElement('button');
-        b.innerHTML = `<strong>${t.from} → ${t.to}</strong><br><small>${t.ref || '–'} · ${t.difficulty} · ${(t.lengthM / 1000).toFixed(1)} km · +${t.upM} m · ${t.zone}</small>`;
+        b.innerHTML = `<strong style="color:${color(t)}">${t.from} → ${t.to}</strong><br><small>${t.refs.join(' · ') || '–'} · ${t.difficulty} · ${(t.lengthM / 1000).toFixed(1)} km · +${t.upM} m · ${t.zone}</small>`;
         b.onclick = () => select(i);
         list.append(b);
       });
@@ -57,7 +59,7 @@
       function select(i) {
         const t = trails[i];
         list.querySelectorAll('button').forEach((b, j) => b.setAttribute('aria-pressed', String(i === j)));
-        lines.forEach((l, j) => l.setStyle({ color: i === j ? '#e0452b' : '#7a1b2b', weight: i === j ? 5 : 3 }));
+        lines.forEach((l, j) => l.setStyle({ color: i === j ? '#e0452b' : color(trails[j]), weight: i === j ? 5 : 3 }));
         map.fitBounds(lines.get(i).getBounds(), { padding: [40, 40] });
         // profilo altimetrico in SVG: distanza in orizzontale, quota in verticale
         const p = tracks[i].points;

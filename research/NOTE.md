@@ -49,3 +49,27 @@
 2. Formula base: DIN 33466 (standard dei club alpini, spiegabile), più un **fattore personale** ("rispetto ai cartelli sei più veloce, uguale o più lento?", in seguito tarabile su un giro fatto davvero).
 3. Quando OSM ha il tempo CAI ufficiale, l'app lo mostra accanto alla stima.
 4. Dislivello: se c'è quello ufficiale si usa quello, altrimenti il valore calcolato con filtro.
+
+## Da 20 a 363 giri: itinerari sulla rete (Tappa 3)
+- Dei 727 sentieri OSM con nome e difficoltà, **561 iniziano o finiscono a un "innesto"**: la rete CAI su OSM è
+  salvata a tratti tra un incrocio e l'altro. Prendendo un sentiero alla volta si arriva al massimo a 47 giri.
+- Soluzione: tutta la rete come **grafo** (nodi OSM, archi con costo DIN in minuti, diverso in salita e in discesa)
+  e, per ogni meta (rifugio, bivacco, lago, passo), **Dijkstra all'indietro** fino alla partenza più vicina
+  (`scripts/build-itineraries.ts`, `scripts/lib/graph.ts`). ~220.000 nodi, tutto in circa 6 secondi.
+- **Partenze**: un parcheggio o un paese vicino alla rete *e* una strada aperta al traffico entro 200 m. Senza il
+  secondo controllo il Rifugio Longoni partiva dall'Alpe Fora (2063 m): su OSM ci sono "frazioni" e parcheggi anche
+  agli alpeggi. Le piste contano come strade solo se esplicitamente aperte alle auto (`motor_vehicle=yes`),
+  altrimenti sparivano Palazzina Falk e Campello; quelle "con permesso" no.
+- **Zone** dai confini ufficiali delle 5 Comunità Montane (+ i 5 comuni della Valmalenco): coincidono 20/20
+  con le zone assegnate a mano ai sentieri della prima versione.
+- **Sentieri fuori rete**: in Val Masino gli accessi ai rifugi (Omio, Gianetti…) su OSM non sono in nessun
+  percorso numerato e il Sentiero Roma non ha la difficoltà. Usiamo anche i sentieri fuori rete di difficoltà
+  escursionistica (SAC T1–T3; il 61% non ha la scala e vale come E), con un sovrapprezzo del 25% perché
+  l'itinerario preferisca la rete numerata. L'app avvisa se un itinerario percorre più di 500 m fuori rete.
+- Il raggio di ricerca era troppo stretto (360 min di costo): escludeva salite classiche come Bagni di Masino →
+  Gianetti. Portato a 540; i criteri veri di un giro di giornata (≤ 15 km, ≤ 1700 m) si applicano dopo.
+- **Robustezza**: Overpass, quando scade, risponde 200 con dati vuoti e un avviso. Una volta ci ha fatto salvare
+  0 strade, e a cascata 0 giri. Ora la risposta con avviso è un errore, e ogni script controlla il risultato prima
+  di sovrascrivere i dati.
+- Limiti noti: Rifugio Allievi assente (buco nei sentieri OSM); Rifugio Ponti proposto da partenze lontane perché
+  la strada per Predarossa non risulta aperta al traffico.

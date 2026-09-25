@@ -1,15 +1,15 @@
 /**
  * Screening dei sentieri candidati.
  *
- * Parte dall'elenco dei sentieri OSM della provincia di Sondrio (research/osm-hiking-routes-sondrio.json),
- * tiene quelli che sembrano un'escursione di giornata verso una meta riconoscibile, poi per ognuno:
- * scarica la traccia, la ricostruisce, calcola lunghezza e profilo altimetrico, e trova il comune di partenza.
+ * Parte da tutti i sentieri OSM della provincia di Sondrio (scaricati da scripts/prefetch-overpass.ts),
+ * scarta i tratti di raccordo, poi per ognuno: ricostruisce la traccia, calcola lunghezza e profilo altimetrico
+ * e, per quelli che possono essere un'escursione di giornata, trova comune e provincia di partenza.
  * Alla fine tara il filtro delle quote sui sentieri che hanno il dislivello ufficiale CAI e scrive
  * research/candidati.md, una tabella da cui scegliere i sentieri della v1.
  *
  * Uso: node scripts/screen-candidates.ts [--limit N]
  */
-import { readFile, writeFile } from 'node:fs/promises';
+import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { climb, sampleElevations } from './lib/elevation.ts';
 import { fetchJsonCached } from './lib/fetch-cached.ts';
 import { lineLength, resample, type LatLon } from './lib/geo.ts';
@@ -30,17 +30,26 @@ const REFERENCE_THRESHOLD = 25;
 
 type Tags = Record<string, string>;
 
-const DESTINATION = /rifugio|capanna|bivacco|lago|laghi|passo|bocchetta|pizzo|monte|cima|alpe/i;
-const JUNCTION = /innesto|incrocio|bivio/i;
+/**
+ * Tratti di raccordo, non escursioni a sé: partono o arrivano a un innesto, a un bivio o a un altro sentiero
+ * indicato solo col numero ("258", "167"), o a un punto senza nome.
+ */
+const JUNCTION = /innesto|incrocio|bivio|^\s*\d+[a-z]?\s*$|^\s*\?\s*$/i;
 
+/**
+ * Prima versione: servivano anche parole da "meta" nel nome (rifugio, lago, passo…) e passavano solo 108 sentieri
+ * su 958. Ora decide il profilo reale (lunghezza, dislivello, salita verso l'alto), calcolato più avanti.
+ */
 function isCandidate(t: Tags): boolean {
   if (!['T', 'E', 'EE'].includes(t.cai_scale ?? '')) return false; // niente EEA/ferrate: fuori perimetro
   if (t.roundtrip === 'yes') return false; // gli anelli arrivano nella seconda fase
-  const ends = `${t.from ?? ''} ${t.to ?? ''}`;
-  if (!DESTINATION.test(ends) || JUNCTION.test(ends)) return false;
+  if (!t.from || !t.to || JUNCTION.test(t.from) || JUNCTION.test(t.to)) return false;
   const km = num(t.distance);
   return km === undefined || (km >= 2.5 && km <= 14);
 }
+
+/** Filtro grossolano prima di chiedere comune e provincia: inutile interrogare Nominatim per sentieri che non useremo. */
+const DAY_HIKE = { minKm: 3, maxKm: 14, minUp: 300, maxUp: 1600 } as const;
 
 /** Comune e provincia del punto di partenza (la provincia come codice ISO, es. "IT-SO"). */
 async function placeOf([lat, lon]: LatLon): Promise<{ comune: string; province: string }> {
@@ -85,17 +94,22 @@ async function screen(id: number, tags: Tags): Promise<Screened> {
   }
   const climbs = Object.fromEntries(THRESHOLDS.map((t) => [t, climb(ele, t)]));
   const net = ele[ele.length - 1] - ele[0];
+  const kmTotal = lineLength(assembly.line) / 1000;
+  const kind = net >= MIN_NET_RATIO * climbs[REFERENCE_THRESHOLD].up ? 'salita' : 'traversata';
+  const up = climbs[5].up;
+  const worthLocating =
+    kind === 'salita' && kmTotal >= DAY_HIKE.minKm && kmTotal <= DAY_HIKE.maxKm && up >= DAY_HIKE.minUp && up <= DAY_HIKE.maxUp;
   return {
     id,
     tags,
     ok: true,
-    km: lineLength(assembly.line) / 1000,
+    km: kmTotal,
     startEle: ele[0],
     endEle: ele[ele.length - 1],
     maxEle: Math.max(...ele),
     climbs,
-    kind: net >= MIN_NET_RATIO * climbs[REFERENCE_THRESHOLD].up ? 'salita' : 'traversata',
-    ...(await placeOf(points[0])),
+    kind,
+    ...(worthLocating ? await placeOf(points[0]) : { comune: '?', province: '?' }),
     start: points[0],
   };
 }
@@ -103,10 +117,14 @@ async function screen(id: number, tags: Tags): Promise<Screened> {
 const limitArg = process.argv.indexOf('--limit');
 const limit = limitArg > 0 ? Number(process.argv[limitArg + 1]) : Infinity;
 
-const all = JSON.parse(await readFile('research/osm-hiking-routes-sondrio.json', 'utf8')).elements as {
-  id: number;
-  tags: Tags;
-}[];
+// tutti i sentieri scaricati da scripts/prefetch-overpass.ts
+const files = (await readdir('data-cache/osm')).filter((f) => f.startsWith('relation-'));
+const all: { id: number; tags: Tags }[] = [];
+for (const f of files) {
+  const { elements } = JSON.parse(await readFile(`data-cache/osm/${f}`, 'utf8')) as { elements: { type: string; id: number; tags?: Tags }[] };
+  const rel = elements.find((e) => e.type === 'relation' && `relation-${e.id}.json` === f);
+  if (rel?.tags) all.push({ id: rel.id, tags: rel.tags });
+}
 const candidates = all.filter((e) => isCandidate(e.tags)).slice(0, limit);
 console.log(`Candidati: ${candidates.length} su ${all.length} sentieri`);
 
