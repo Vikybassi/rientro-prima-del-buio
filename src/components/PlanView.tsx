@@ -1,15 +1,22 @@
 import { useState } from 'react';
-import type { TrailSummary } from '../data/types.ts';
+import type { TrailPoint, TrailSummary } from '../data/types.ts';
 import { localTime } from '../engine/clock.ts';
-import { verdict, type Plan } from '../engine/plan.ts';
+import { answer, verdict, type Plan } from '../engine/plan.ts';
+import type { Hazard } from '../engine/weather.ts';
 import { clock, dayLabel, duration, km } from '../format.ts';
 import type { Lang, Strings } from '../i18n.ts';
 import { PACES, STOPS, type Params } from '../state.ts';
+import type { ForecastState } from '../useForecast.ts';
 import { DayBar } from './DayBar.tsx';
+import { Profile } from './Profile.tsx';
+import { WeatherNotes } from './WeatherNotes.tsx';
 
 type Props = {
   trail: TrailSummary;
   plan: Plan | null;
+  track: TrailPoint[] | null;
+  weather: ForecastState;
+  hazards: Hazard[];
   params: Params;
   onChange: (patch: Partial<Params>) => void;
   onBack: () => void;
@@ -18,15 +25,15 @@ type Props = {
 };
 
 /**
- * La risposta alla domanda dell'app. Il titolo dice sì / al limite / no (la luce); il colore tiene conto
- * anche degli avvisi (per ora: partenza col buio; col meteo arriveranno gli altri).
+ * La risposta alla domanda dell'app: il titolo dice sì / al limite / no, prima per la luce e poi per il meteo
+ * (engine/plan.ts `answer`); il colore tiene conto di tutti gli avvisi (`verdict`).
  */
-function Answer({ plan, t }: { plan: Plan; t: Strings }) {
+function Answer({ plan, hazards, t }: { plan: Plan; hazards: Hazard[]; t: Strings }) {
   const latest = clock(plan.latestStart, 'down');
   const tooLong = plan.latestStart < plan.light.dawn;
   return (
-    <section className="verdict" data-verdict={verdict(plan, [])} aria-live="polite">
-      <h3>{t.answer[plan.lightStatus]}</h3>
+    <section className="verdict" data-verdict={verdict(plan, hazards)} aria-live="polite">
+      <h3>{t.answer[answer(plan, hazards)]}</h3>
       <p>{t.backLine(clock(plan.backAt.estimate), clock(plan.backAt.prudent, 'up'), localTime(plan.light.sunset))}</p>
       <p className="verdict-secondary">
         {tooLong ? t.latest.tooLong : plan.lightStatus === 'ok' ? t.latest.ok(latest) : t.latest.late(latest)}
@@ -36,7 +43,7 @@ function Answer({ plan, t }: { plan: Plan; t: Strings }) {
   );
 }
 
-export function PlanView({ trail, plan, params, onChange, onBack, t, lang }: Props) {
+export function PlanView({ trail, plan, track, weather, hazards, params, onChange, onBack, t, lang }: Props) {
   const [copied, setCopied] = useState(false);
 
   const share = async () => {
@@ -91,8 +98,10 @@ export function PlanView({ trail, plan, params, onChange, onBack, t, lang }: Pro
 
       {plan && (
         <>
-          <Answer plan={plan} t={t} />
+          <Answer plan={plan} hazards={hazards} t={t} />
           <DayBar plan={plan} date={params.date} t={t} />
+          {track && <Profile plan={plan} track={track} trail={trail} t={t} />}
+          <WeatherNotes state={weather} plan={plan} hazards={hazards} trail={trail} date={params.date} t={t} lang={lang} />
 
           <section className="section">
             <h3 className="section-title">{t.hike}</h3>

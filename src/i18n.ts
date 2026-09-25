@@ -1,5 +1,5 @@
 import type { Destination, Difficulty, Zone } from './data/types.ts';
-import type { HazardKind } from './engine/weather.ts';
+import type { Answer } from './engine/plan.ts';
 import type { Pace } from './engine/time.ts';
 
 /**
@@ -55,9 +55,11 @@ const it = {
 
   answer: {
     ok: 'Sì, rientri con la luce',
+    'ok-weather': 'Sì, ma occhio al meteo',
+    'weather-no': 'Meglio di no: brutto tempo in quota',
     tight: 'Al limite: rientri al tramonto',
     dark: 'No, rientri col buio',
-  },
+  } satisfies Record<Answer, string>,
   backLine: (back: string, late: string, sunset: string) =>
     `Sei alla macchina verso le ${back} (alle ${late} se ci metti di più). Il sole tramonta alle ${sunset}.`,
   latest: {
@@ -93,12 +95,26 @@ const it = {
     `Se ci metti di più: fino a ${extra} in più in tutto (succede a un cartello su dieci). La risposta tiene conto di questo. Le soste lungo la strada non sono comprese.`,
   share: 'Copia il link del piano',
   shared: 'Link copiato',
-  hazards: {
-    thunderstorm: 'temporale',
-    rain: 'pioggia probabile',
-    wind: 'raffiche forti',
-    freezing: 'zero termico sotto la quota',
-  } satisfies Record<HazardKind, string>,
+  profile: {
+    title: 'Dove sarai, ora per ora',
+    label: (from: string, fromEle: number, to: string, toEle: number, at: string) =>
+      `Profilo della salita da ${from} (${fromEle} m) a ${to} (${toEle} m): in cima verso le ${at}.`,
+  },
+  weather: {
+    title: 'Meteo nelle ore del giro',
+    loading: 'Carico le previsioni…',
+    none: 'Nessun avviso per le ore e le quote in cui sarai sul sentiero.',
+    summit: (at: string, temp: number, gusts: number) => `In cima verso le ${at}: ${temp} °C, raffiche fino a ${gusts} km/h.`,
+    tooFar: (day: string) => `Le previsioni arrivano 16 giorni prima: per ${day} ricontrolla più avanti.`,
+    past: 'È una data passata: niente previsioni.',
+    error: 'Previsioni non disponibili in questo momento: controlla il meteo prima di partire.',
+    source: 'Previsioni orarie Open-Meteo alla partenza e alla meta, ognuna alla sua quota.',
+    thunderstorm: (t: string) => `Temporale previsto verso le ${t}, mentre sei sul sentiero.`,
+    stormRisk: (t: string) => `Condizioni da temporale verso le ${t}: in quota non farti sorprendere.`,
+    rain: (t: string, p: number) => `Pioggia probabile (${p}%) verso le ${t}.`,
+    wind: (t: string, kmh: number) => `Raffiche fino a ${kmh} km/h verso le ${t}.`,
+    freezing: (t: string, m: number) => `Zero termico a ${m} m verso le ${t}: possibile ghiaccio o neve sul sentiero.`,
+  },
   disclaimer: 'Uno strumento per pianificare, non per decidere al posto tuo. In montagna conta quello che vedi: se il tempo cambia, torna indietro.',
   credits: 'Sentieri © OpenStreetMap contributors (ODbL) · quote Copernicus DEM · meteo Open-Meteo · un progetto di',
 };
@@ -141,6 +157,8 @@ const en: Strings = {
 
   answer: {
     ok: 'Yes, you\'re back in daylight',
+    'ok-weather': 'Yes, but watch the weather',
+    'weather-no': 'Better not: bad weather up high',
     tight: 'Cutting it close: back at sunset',
     dark: 'No, you\'d be back after dark',
   },
@@ -178,7 +196,25 @@ const en: Strings = {
     `If it takes longer: up to ${extra} more in total (one signpost in ten is that slow). The answer accounts for it. Breaks along the way are not included.`,
   share: 'Copy link to this plan',
   shared: 'Link copied',
-  hazards: { thunderstorm: 'thunderstorm', rain: 'rain likely', wind: 'strong gusts', freezing: 'freezing level below you' },
+  profile: {
+    title: 'Where you\'ll be, hour by hour',
+    label: (from, fromEle, to, toEle, at) => `Ascent profile from ${from} (${fromEle} m) to ${to} (${toEle} m): at the top around ${at}.`,
+  },
+  weather: {
+    title: 'Weather during your hike',
+    loading: 'Loading the forecast…',
+    none: 'No warnings for the hours and altitudes you\'ll be on the trail.',
+    summit: (at, temp, gusts) => `At the top around ${at}: ${temp} °C, gusts up to ${gusts} km/h.`,
+    tooFar: (day) => `Forecasts are available 16 days ahead: check back later for ${day}.`,
+    past: 'That date is in the past: no forecast.',
+    error: 'Forecast not available right now: check the weather before you go.',
+    source: 'Hourly Open-Meteo forecasts at the start and at the top, each at its own altitude.',
+    thunderstorm: (t) => `Thunderstorm expected around ${t}, while you're on the trail.`,
+    stormRisk: (t) => `Thunderstorm conditions around ${t}: don't get caught up high.`,
+    rain: (t, p) => `Rain likely (${p}%) around ${t}.`,
+    wind: (t, kmh) => `Gusts up to ${kmh} km/h around ${t}.`,
+    freezing: (t, m) => `Freezing level at ${m} m around ${t}: possible ice or snow on the trail.`,
+  },
   disclaimer: 'A planning tool, not a decision maker. In the mountains what you see counts: if the weather turns, turn back.',
   credits: 'Trails © OpenStreetMap contributors (ODbL) · elevation Copernicus DEM · weather Open-Meteo · a project by',
 };

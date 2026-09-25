@@ -161,3 +161,22 @@ button, input, select { font: inherit; color: inherit; }
 .footer p { margin: 4px 0; }
 .warnings { margin: 0 0 20px; padding: 10px 14px 10px 30px; border-left: 3px solid var(--caution); background: var(--caution-bg); color: var(--caution); font-size: 14.5px; }
 .warnings li + li { margin-top: 4px; }
+
+/* profilo "dove sarai, ora per ora" */
+.profile { position: relative; height: 150px; }
+.profile svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.profile-area { fill: #e8e1cf; }
+.profile-line { fill: none; stroke: var(--forest); stroke-width: 2; stroke-linejoin: round; }
+.profile-dot {
+  position: absolute; width: 10px; height: 10px; border-radius: 50%; transform: translate(-50%, -50%);
+  background: var(--forest); border: 2px solid var(--paper);
+}
+.profile-label { position: absolute; font-size: 12.5px; color: var(--ink-2); white-space: nowrap; }
+.profile-ends { display: flex; justify-content: space-between; gap: 12px; margin-top: 6px; font-size: 12.5px; color: var(--ink-2); }
+.profile-ends span:last-child { text-align: right; }
+
+/* meteo */
+.weather p { margin: 0 0 6px; }
+.weather-list { margin: 0 0 8px; padding-left: 20px; color: var(--caution); }
+.weather-list.weather-danger { color: var(--nogo); }
+.weather-list li + li { margin-top: 4px; }

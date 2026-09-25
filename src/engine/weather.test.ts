@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { localToInstant } from './clock.ts';
-import { assessWeather, type Forecast, type HourlySeries } from './weather.ts';
+import { assessWeather, conditionsAt, forecastAvailability, type Forecast, type HourlySeries } from './weather.ts';
 
 const DATE = '2026-08-01';
 
@@ -57,5 +57,27 @@ describe('assessWeather', () => {
   it('un valore mancante (NaN) non fa scattare falsi allarmi', () => {
     const f = forecast(day(), day({ 12: { freezingLevel: Number.NaN, precipProbability: Number.NaN } }));
     expect(assessWeather(f, [at('12:00', 2400)])).toEqual([]);
+  });
+});
+
+describe('forecastAvailability', () => {
+  it('oggi e i 15 giorni successivi hanno le previsioni', () => {
+    expect(forecastAvailability('2026-09-25', '2026-09-25')).toBe('ok');
+    expect(forecastAvailability('2026-10-10', '2026-09-25')).toBe('ok');
+  });
+  it('dal sedicesimo giorno in poi è troppo presto', () => {
+    // Open-Meteo, chiamato il 25/09, accettava date fino al 10/10 compreso
+    expect(forecastAvailability('2026-10-11', '2026-09-25')).toBe('too-far');
+  });
+  it('le date passate non hanno senso per pianificare', () => {
+    expect(forecastAvailability('2026-09-24', '2026-09-25')).toBe('past');
+  });
+});
+
+describe('conditionsAt', () => {
+  it('prende i valori del punto più vicino alla quota, all\'ora più vicina', () => {
+    const f = forecast(day({ 11: { temperature: 16 } }), day({ 11: { temperature: 7, gusts: 40 } }));
+    expect(conditionsAt(f, at('11:10', 2300))).toMatchObject({ temperature: 7, gusts: 40 });
+    expect(conditionsAt(f, at('10:55', 1500))).toMatchObject({ temperature: 16 });
   });
 });

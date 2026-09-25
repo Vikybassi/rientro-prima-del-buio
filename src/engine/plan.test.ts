@@ -4,7 +4,7 @@ import track331 from '../../public/trails/7328079.json';
 import trails from '../data/trails.json';
 import type { TrailSummary, TrailTrack } from '../data/types.ts';
 import { addMinutes, localTime, minutesBetween } from './clock.ts';
-import { LIGHT_MARGIN_MIN, makePlan, verdict, type PlanInput } from './plan.ts';
+import { answer, LIGHT_MARGIN_MIN, makePlan, verdict, type PlanInput } from './plan.ts';
 import type { Hazard } from './weather.ts';
 
 // 331: San Giuseppe → Rifugio Longoni, un sabato di inizio ottobre
@@ -105,5 +105,20 @@ describe('verdict: luce e meteo insieme', () => {
   });
   it('un pericolo meteo vuol dire "no" anche con tutta la luce del mondo', () => {
     expect(verdict(plan, [hazard('danger')])).toBe('no-go');
+  });
+});
+
+describe('answer: il titolo della risposta', () => {
+  const morning = makePlan(base);
+  const late = makePlan({ ...base, start: '15:00' });
+  const storm: Hazard = { kind: 'thunderstorm', level: 'danger', at: morning.startAt, value: 95 };
+  const windy: Hazard = { kind: 'wind', level: 'warning', at: morning.startAt, value: 65 };
+
+  it('tutto bene: sì', () => expect(answer(morning, [])).toBe('ok'));
+  it('un avviso meteo: sì, ma occhio', () => expect(answer(morning, [windy])).toBe('ok-weather'));
+  it('un temporale: meglio di no, anche con la luce', () => expect(answer(morning, [storm])).toBe('weather-no'));
+  it('col buio è no per la luce, qualunque sia il meteo', () => {
+    expect(answer(late, [])).toBe('dark');
+    expect(answer(late, [storm])).toBe('dark');
   });
 });

@@ -3,9 +3,12 @@ import { PlanView } from './components/PlanView.tsx';
 import { TrailPicker } from './components/TrailPicker.tsx';
 import trailsJson from './data/trails.json';
 import type { TrailSummary, TrailTrack } from './data/types.ts';
+import { localDate } from './engine/clock.ts';
 import { makePlan } from './engine/plan.ts';
+import { assessWeather } from './engine/weather.ts';
 import { STRINGS } from './i18n.ts';
 import { defaults, readParams, writeParams, type Params } from './state.ts';
+import { useForecast } from './useForecast.ts';
 
 const trails = trailsJson as TrailSummary[];
 const knownTrails = new Set(trails.map((tr) => tr.id));
@@ -43,6 +46,12 @@ export default function App() {
     return makePlan({ trail, track: track.points, date: params.date, start: params.start, pace: params.pace, stopMin: params.stop });
   }, [trail, track, params.date, params.start, params.pace, params.stop]);
 
+  const weather = useForecast(trail, params.date, localDate(new Date()));
+  // gli avvisi meteo contano solo nelle ore e alle quote in cui si è sul sentiero (i "momenti" del piano)
+  // dipende dalle previsioni, non dall'oggetto `weather` (nuovo a ogni ridisegno): si ricalcola solo se cambiano
+  const forecast = weather.status === 'ok' ? weather.forecast : null;
+  const hazards = useMemo(() => (plan && forecast ? assessWeather(forecast, plan.moments) : []), [plan, forecast]);
+
   const update = (patch: Partial<Params>) => setParams((p) => ({ ...p, ...patch }));
 
   return (
@@ -60,7 +69,7 @@ export default function App() {
       <main className="layout" data-view={trail ? 'plan' : 'list'}>
         <TrailPicker trails={trails} selected={params.trail} onSelect={(id) => update({ trail: id })} t={t} lang={params.lang} />
         {trail && (
-          <PlanView trail={trail} plan={plan} params={params} onChange={update} onBack={() => update({ trail: null })} t={t} lang={params.lang} />
+          <PlanView trail={trail} plan={plan} track={track && track.id === trail.id ? track.points : null} weather={weather} hazards={hazards} params={params} onChange={update} onBack={() => update({ trail: null })} t={t} lang={params.lang} />
         )}
       </main>
 

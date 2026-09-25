@@ -110,3 +110,16 @@ export function verdict(plan: Plan, hazards: Hazard[]): Verdict {
   if (plan.lightStatus === 'tight' || plan.startsInDark || hazards.length > 0) return 'caution';
   return 'go';
 }
+
+export type Answer = 'ok' | 'ok-weather' | 'weather-no' | 'tight' | 'dark';
+
+/**
+ * La risposta da mostrare come titolo. La luce viene prima (è la domanda dell'app): se si rientra col buio è "no"
+ * qualunque sia il meteo. Poi un pericolo meteo fa diventare "no" anche un giro con tutta la luce del mondo.
+ */
+export function answer(plan: Plan, hazards: Hazard[]): Answer {
+  if (plan.lightStatus === 'dark') return 'dark';
+  if (hazards.some((h) => h.level === 'danger')) return 'weather-no';
+  if (plan.lightStatus === 'tight') return 'tight';
+  return hazards.length > 0 ? 'ok-weather' : 'ok';
+}

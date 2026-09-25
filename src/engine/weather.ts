@@ -85,8 +85,23 @@ export function assessWeather(forecast: Forecast, moments: Moment[]): Hazard[] {
   return [...found.values()].sort((a, b) => a.at.getTime() - b.at.getTime());
 }
 
-/** Open-Meteo dà previsioni orarie fino a 16 giorni: oltre (o nel passato) non ha senso chiederle. */
+/** Open-Meteo dà previsioni orarie fino a 16 giorni, oggi compreso: oltre risponde con un errore. */
 export const FORECAST_DAYS = 16;
+
+export type ForecastAvailability = 'ok' | 'too-far' | 'past';
+
+/** Ci sono previsioni per quella data locale ("AAAA-MM-GG"), dato il giorno di oggi? */
+export function forecastAvailability(date: string, today: string): ForecastAvailability {
+  const days = Math.round((Date.parse(date) - Date.parse(today)) / 86_400_000);
+  return days < 0 ? 'past' : days >= FORECAST_DAYS ? 'too-far' : 'ok';
+}
+
+/** Condizioni previste in un momento e a una quota: per dire "in cima verso le 11: 8 °C, raffiche 25 km/h". */
+export function conditionsAt(forecast: Forecast, { at, ele }: Moment) {
+  const s = Math.abs(ele - forecast.highEle) < Math.abs(ele - forecast.lowEle) ? forecast.high : forecast.low;
+  const i = hourIndex(s, at);
+  return { temperature: s.temperature[i], gusts: s.gusts[i], precipProbability: s.precipProbability[i] };
+}
 
 type Values = (number | null)[];
 type OpenMeteoLocation = {
