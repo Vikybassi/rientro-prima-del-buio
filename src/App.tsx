@@ -46,7 +46,7 @@ export default function App() {
   useEffect(() => {
     if (params.trail === null) return;
     const controller = new AbortController();
-    fetch(`/trails/${params.trail}.json`, { signal: controller.signal })
+    fetch(`${import.meta.env.BASE_URL}trails/${params.trail}.json`, { signal: controller.signal })
       .then((r) => r.json() as Promise<TrailTrack>)
       .then(setTrack)
       .catch(() => {}); // interrotta perché si è scelto un altro sentiero

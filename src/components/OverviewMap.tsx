@@ -23,7 +23,7 @@ type Props = {
 
 /** Le tracce semplificate di tutti i giri (public/overview.json, ~40 KB compressi): scaricate una volta sola. */
 let shapesRequest: Promise<Shapes> | null = null;
-const loadShapes = () => (shapesRequest ??= fetch('/overview.json').then((r) => r.json() as Promise<Shapes>));
+const loadShapes = () => (shapesRequest ??= fetch(`${import.meta.env.BASE_URL}overview.json`).then((r) => r.json() as Promise<Shapes>));
 
 // ogni giro: un bordino chiaro sotto la linea (si stacca da qualunque fondo) e un punto sulla meta
 const CASING = { color: MAP_COLORS.halo, weight: 7, opacity: 0.9, interactive: false };

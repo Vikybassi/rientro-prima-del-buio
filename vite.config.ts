@@ -4,7 +4,11 @@ import { VitePWA } from 'vite-plugin-pwa';
 
 const DAY = 24 * 60 * 60;
 
+/** Su GitHub Pages l'app vive in una sottocartella con il nome del repository. */
+const BASE = '/rientro-prima-del-buio/';
+
 export default defineConfig({
+  base: BASE,
   plugins: [
     react(),
     /**
@@ -23,7 +27,8 @@ export default defineConfig({
         short_name: 'Rientro',
         description: 'Scegli un sentiero della Valtellina e l\'ora di partenza: ti dice se rientri prima del buio.',
         lang: 'it',
-        start_url: '/',
+        start_url: BASE,
+        scope: BASE,
         display: 'standalone',
         background_color: '#f5f2ea',
         theme_color: '#f5f2ea',
@@ -37,10 +42,10 @@ export default defineConfig({
       workbox: {
         // app e mappa d'insieme sempre disponibili; le tracce dei giri no, sono troppe: si salvano quando si aprono
         globPatterns: ['**/*.{js,css,html,svg,png,ico}', 'overview.json'],
-        navigateFallback: '/index.html',
+        navigateFallback: `${BASE}index.html`,
         runtimeCaching: [
           {
-            urlPattern: ({ url }) => url.pathname.startsWith('/trails/'),
+            urlPattern: ({ url }) => url.pathname.startsWith(`${BASE}trails/`),
             handler: 'CacheFirst',
             options: { cacheName: 'tracce', expiration: { maxEntries: 400 } },
           },

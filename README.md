@@ -2,7 +2,7 @@
 
 Scegli un giro in Valtellina, il giorno e l'ora in cui parti: l'app ti dice se torni alla macchina con la luce, a che ora arrivi alla meta, quando tramonta il sole e che tempo fa alle quote in cui sarai.
 
-**Provala: [rientro-prima-del-buio.netlify.app](https://rientro-prima-del-buio.netlify.app)**
+**Provala: [vikybassi.github.io/rientro-prima-del-buio](https://vikybassi.github.io/rientro-prima-del-buio/)**
 
 > **In English** — *Back before dark* is a web app for day hikes in Valtellina (Italian Alps). Pick one of 362 hikes, a date and a start time: it tells you whether you'll be back at the car before dark, with arrival times, sunset and the hourly forecast at the altitudes you'll be walking. Hikes are built from OpenStreetMap trail data and a 30 m terrain model; walking times start from the official CAI signpost times where they exist, otherwise from the DIN 33466 formula calibrated on those signposts. React + TypeScript, no backend, installable and usable offline. The interface is in Italian and English.
 
@@ -46,7 +46,8 @@ Una partenza vale solo se a pochi passi c'è una strada aperta al traffico: nien
 - **Mappe**: Leaflet con le carte di OpenTopoMap, caricate solo quando servono.
 - **Sole**: [suncalc](https://github.com/mourner/suncalc).
 - **Offline**: service worker generato da Workbox (vite-plugin-pwa). L'app e la mappa d'insieme si salvano alla prima visita, le tracce quando si aprono, e della mappa solo i riquadri già visti: le regole d'uso di OpenTopoMap vietano di scaricarli in blocco.
-- **Test**: 90 test (Vitest) sul motore dei tempi, della luce e del meteo, sui filtri e sui formati.
+- **Test**: 93 test (Vitest) sul motore dei tempi, della luce e del meteo, sui filtri, sui formati e sul link condivisibile.
+- **Pubblicazione**: a ogni push su `main` GitHub Actions esegue lint e test, costruisce l'app e la pubblica su GitHub Pages.
 
 ```
 src/engine/      tempi, sole, meteo e risposta (logica pura, testata)
@@ -62,7 +63,7 @@ npm install
 npm run dev
 ```
 
-Altri comandi: `npm test`, `npm run lint`, `npm run build`.
+L'app si apre su `http://localhost:5173/rientro-prima-del-buio/`, lo stesso percorso che ha su GitHub Pages. Altri comandi: `npm test`, `npm run lint`, `npm run build`.
 
 ### Rigenerare i giri
 
