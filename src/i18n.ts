@@ -88,6 +88,7 @@ const it = {
     `Itinerario costruito collegando ${refs.length === 0 ? 'più sentieri' : refs.length === 1 ? `il sentiero ${refs[0]} ad altri tratti` : `i sentieri ${refs.join(', ')}`} della rete CAI. Prima di partire controlla il percorso sulla carta e segui i cartelli sul posto.`,
   unmarked: 'Una parte del percorso segue sentieri non numerati: difficoltà e segnaletica non sono garantite.',
   checkRoad: 'Su OpenStreetMap la strada per la partenza non risulta aperta al traffico: verifica l\'accesso in auto prima di andare.',
+  tollRoad: 'La strada per arrivare alla partenza è a pedaggio.',
   slack: (extra: string) =>
     `Se ci metti di più: fino a ${extra} in più in tutto (succede a un cartello su dieci). La risposta tiene conto di questo. Le soste lungo la strada non sono comprese.`,
   share: 'Copia il link del piano',
@@ -172,6 +173,7 @@ const en: Strings = {
     `Route built by linking ${refs.length === 0 ? 'several trails' : refs.length === 1 ? `trail ${refs[0]} with other sections` : `trails ${refs.join(', ')}`} of the CAI network. Before you go, check it on a map and follow the signposts on the ground.`,
   unmarked: 'Part of the route follows unnumbered trails: difficulty and signposting are not guaranteed.',
   checkRoad: 'On OpenStreetMap the road to the start is not marked as open to traffic: check car access before you go.',
+  tollRoad: 'The road to the start is a toll road.',
   slack: (extra) =>
     `If it takes longer: up to ${extra} more in total (one signpost in ten is that slow). The answer accounts for it. Breaks along the way are not included.`,
   share: 'Copy link to this plan',

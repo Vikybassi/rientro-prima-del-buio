@@ -73,3 +73,11 @@
   di sovrascrivere i dati.
 - Limiti noti: Rifugio Allievi assente (buco nei sentieri OSM); Rifugio Ponti proposto da partenze lontane perché
   la strada per Predarossa non risulta aperta al traffico.
+- **Partenze a fine strada** (indicazione dell'utente sul Rifugio Ponti): alla Piana di Predarossa su OSM non c'è né
+  parcheggio né località, ma la "Strada per Predarossa" (aperta, `toll=yes`) finisce lì. Ora è una partenza anche la fine
+  di una strada vera vicino alla rete (non le piste: in Val Porcellizzo una pista faceva partire l'Omio a metà valle).
+  Nomi di partenza scelti a mano in `trails.config.ts` (`TRAILHEAD_NAMES`: "Preda Rossa" e "Strada per Predarossa" →
+  "Piana di Predarossa"). Risultato: Piana di Predarossa → Rifugio Ponti, 4,4 km, +618 m.
+- **Pedaggio**: 149 strade in provincia hanno `toll=yes` (Predarossa, Val Grosina…); l'app lo segnala.
+- **Doppioni**: quando due itinerari arrivano allo stesso punto vince la meta più significativa (rifugio prima di
+  bivacco): la Capanna Piacco (locale invernale) nascondeva il Rifugio Gianetti.

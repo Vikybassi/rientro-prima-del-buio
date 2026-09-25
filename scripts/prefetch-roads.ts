@@ -30,9 +30,16 @@ area["name"="Sondrio"]["admin_level"="6"]->.a;
 );
 out geom qt;`;
 
-const data = await overpass<{ elements: { geometry: { lat: number; lon: number }[] }[] }>(QUERY);
-// teniamo solo le coordinate: tipo e nome della strada non servono
-const roads = data.elements.map((w) => w.geometry.map((p) => [p.lat, p.lon]));
+type Way = { nodes: number[]; tags: Record<string, string>; geometry: { lat: number; lon: number }[] };
+const data = await overpass<{ elements: Way[] }>(QUERY);
+// teniamo i nodi (per trovare dove una strada finisce), le coordinate, il tipo, il nome e il pedaggio
+const roads = data.elements.map((w) => ({
+  nodes: w.nodes,
+  coords: w.geometry.map((p) => [p.lat, p.lon]),
+  highway: w.tags.highway,
+  ...(w.tags.name ? { name: w.tags.name } : {}),
+  ...(w.tags.toll === 'yes' ? { toll: true } : {}),
+}));
 // in provincia ce ne sono circa 16.000: molte meno vuol dire una risposta incompleta, meglio non sovrascrivere
 if (roads.length < 10_000) throw new Error(`Solo ${roads.length} strade: risposta incompleta, non salvo niente`);
 await mkdir('data-cache', { recursive: true });

@@ -108,10 +108,11 @@ export function PlanView({ trail, plan, params, onChange, onBack, t, lang }: Pro
             </p>
           </section>
 
-          {(trail.unmarked || trail.checkRoad) && (
+          {(trail.unmarked || trail.checkRoad || trail.tollRoad) && (
             <ul className="warnings">
               {trail.unmarked && <li>{t.unmarked}</li>}
               {trail.checkRoad && <li>{t.checkRoad}</li>}
+              {trail.tollRoad && <li>{t.tollRoad}</li>}
             </ul>
           )}
 

@@ -11,6 +11,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -41,6 +42,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -71,6 +73,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -103,6 +106,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -122,13 +126,13 @@
   ]
  },
  {
-  "id": "node-6443219817-7553563672",
+  "id": "node-6443219817-345339901",
   "osm": null,
   "refs": [
-   "290",
+   "293",
+   "291",
    "SI",
-   "148",
-   "292"
+   "291B"
   ],
   "from": "Alpe Forbesana",
   "to": "Bivacco Caldarini",
@@ -136,18 +140,19 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
-  "lengthM": 5220,
-  "upM": 454,
-  "downM": 45,
-  "startEle": 2077,
+  "lengthM": 4794,
+  "upM": 514,
+  "downM": 10,
+  "startEle": 1981,
   "endEle": 2486,
   "maxEle": 2486,
   "start": [
-   46.43894,
-   10.19938
+   46.43601,
+   10.20026
   ],
   "end": [
    46.40236,
@@ -166,6 +171,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -185,32 +191,32 @@
   ]
  },
  {
-  "id": "node-565086591-828125692",
+  "id": "node-565086591-3739009817",
   "osm": null,
   "refs": [
-   "522",
-   "549",
    "523",
+   "549",
    "518"
   ],
-  "from": "Santa Caterina Valfurva",
+  "from": "Plaghera",
   "to": "Bocca di Profa",
   "destination": "pass",
   "difficulty": "E",
-  "unmarked": false,
+  "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
-  "lengthM": 8967,
-  "upM": 1057,
-  "downM": 125,
-  "startEle": 1735,
+  "lengthM": 9482,
+  "upM": 884,
+  "downM": 233,
+  "startEle": 2016,
   "endEle": 2666,
   "maxEle": 2666,
   "start": [
-   46.41214,
-   10.49525
+   46.40573,
+   10.49043
   ],
   "end": [
    46.39431,
@@ -231,6 +237,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -264,6 +271,7 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -294,6 +302,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -324,6 +333,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -343,32 +353,32 @@
   ]
  },
  {
-  "id": "node-282157214-877902665",
+  "id": "node-282157214-827368425",
   "osm": null,
   "refs": [
-   "505",
-   "147",
    "145",
-   "146"
+   "146",
+   "146A"
   ],
-  "from": "Terza Cantoniera",
+  "from": "Quarta Cantoniera",
   "to": "Bocchetta di Pedenolo",
   "destination": "pass",
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
-  "lengthM": 6924,
-  "upM": 544,
-  "downM": 162,
-  "startEle": 2320,
+  "lengthM": 6401,
+  "upM": 347,
+  "downM": 142,
+  "startEle": 2497,
   "endEle": 2702,
-  "maxEle": 2770,
+  "maxEle": 2761,
   "start": [
-   46.5314,
-   10.40959
+   46.54112,
+   10.43254
   ],
   "end": [
    46.53334,
@@ -376,32 +386,33 @@
   ]
  },
  {
-  "id": "node-282157214-430209928",
+  "id": "node-282157214-10270029420",
   "osm": null,
   "refs": [
-   "145",
-   "SI",
-   "146A",
-   "146"
+   "505",
+   "505A",
+   "147",
+   "145"
   ],
-  "from": "Fornelle",
+  "from": "Seconda Cantoniera",
   "to": "Bocchetta di Pedenolo",
   "destination": "pass",
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
-  "lengthM": 8458,
-  "upM": 812,
-  "downM": 90,
-  "startEle": 1980,
+  "lengthM": 7535,
+  "upM": 629,
+  "downM": 139,
+  "startEle": 2212,
   "endEle": 2702,
-  "maxEle": 2757,
+  "maxEle": 2768,
   "start": [
-   46.51695,
-   10.33217
+   46.5197,
+   10.40866
   ],
   "end": [
    46.53334,
@@ -420,6 +431,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -450,6 +462,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -469,7 +482,7 @@
   ]
  },
  {
-  "id": "node-2018802711-7553563672",
+  "id": "node-2018802711-419320737",
   "osm": null,
   "refs": [
    "290",
@@ -483,18 +496,19 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
-  "lengthM": 5943,
-  "upM": 735,
-  "downM": 11,
-  "startEle": 2077,
+  "lengthM": 5934,
+  "upM": 730,
+  "downM": 8,
+  "startEle": 2078,
   "endEle": 2801,
-  "maxEle": 2801,
+  "maxEle": 2802,
   "start": [
-   46.43894,
-   10.19938
+   46.43888,
+   10.19931
   ],
   "end": [
    46.4504,
@@ -502,32 +516,33 @@
   ]
  },
  {
-  "id": "node-2018802711-418953214",
+  "id": "node-2018802711-592280272",
   "osm": null,
   "refs": [
-   "190",
    "100",
    "SI",
-   "116"
+   "116",
+   "118"
   ],
-  "from": "Tresenda",
+  "from": "Via dali Mina",
   "to": "Colle delle Mine",
   "destination": "pass",
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
-  "lengthM": 7423,
-  "upM": 917,
-  "downM": 7,
-  "startEle": 1891,
+  "lengthM": 6893,
+  "upM": 899,
+  "downM": 10,
+  "startEle": 1912,
   "endEle": 2801,
   "maxEle": 2802,
   "start": [
-   46.49422,
-   10.11406
+   46.49412,
+   10.11988
   ],
   "end": [
    46.4504,
@@ -547,6 +562,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -566,32 +582,33 @@
   ]
  },
  {
-  "id": "way-37412989-828125692",
+  "id": "way-37412989-3739009817",
   "osm": null,
   "refs": [
-   "522",
-   "549",
    "523",
-   "518"
+   "549",
+   "518",
+   "541"
   ],
-  "from": "Santa Caterina Valfurva",
+  "from": "Plaghera",
   "to": "I Bei Laghetti",
   "destination": "lake",
   "difficulty": "E",
-  "unmarked": false,
+  "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
-  "lengthM": 9989,
-  "upM": 1125,
-  "downM": 125,
-  "startEle": 1735,
+  "lengthM": 10504,
+  "upM": 952,
+  "downM": 233,
+  "startEle": 2016,
   "endEle": 2735,
   "maxEle": 2735,
   "start": [
-   46.41214,
-   10.49525
+   46.40573,
+   10.49043
   ],
   "end": [
    46.40179,
@@ -613,6 +630,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -632,64 +650,31 @@
   ]
  },
  {
-  "id": "way-1336065518-5471319171",
+  "id": "way-1336065518-2497383341",
   "osm": null,
   "refs": [
-   "269",
-   "269A",
-   "271"
+   "271",
+   "269A"
   ],
-  "from": "Roncale",
+  "from": "Dolin",
   "to": "Laghet di Valàar",
   "destination": "lake",
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
-  "lengthM": 7800,
-  "upM": 1177,
-  "downM": 23,
-  "startEle": 1209,
+  "lengthM": 5446,
+  "upM": 828,
+  "downM": 14,
+  "startEle": 1548,
   "endEle": 2362,
   "maxEle": 2362,
   "start": [
-   46.33764,
-   10.3226
-  ],
-  "end": [
-   46.35974,
-   10.31688
-  ]
- },
- {
-  "id": "way-1336065518-7342410017",
-  "osm": null,
-  "refs": [
-   "273",
-   "206",
-   "273A",
-   "259"
-  ],
-  "from": "Monte",
-  "to": "Laghet di Valàar",
-  "destination": "lake",
-  "difficulty": "E",
-  "unmarked": true,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "alta-valtellina",
-  "lengthM": 9578,
-  "upM": 1107,
-  "downM": 370,
-  "startEle": 1625,
-  "endEle": 2362,
-  "maxEle": 2364,
-  "start": [
-   46.40421,
-   10.33571
+   46.34436,
+   10.32285
   ],
   "end": [
    46.35974,
@@ -708,6 +693,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -740,6 +726,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -772,6 +759,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -804,6 +792,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -837,6 +826,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -867,6 +857,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -898,6 +889,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -931,6 +923,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -964,6 +957,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -983,7 +977,7 @@
   ]
  },
  {
-  "id": "way-304682962-7553563672",
+  "id": "way-304682962-419320737",
   "osm": null,
   "refs": [
    "290",
@@ -997,18 +991,19 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
-  "lengthM": 5022,
-  "upM": 368,
+  "lengthM": 5013,
+  "upM": 367,
   "downM": 25,
-  "startEle": 2077,
+  "startEle": 2078,
   "endEle": 2420,
   "maxEle": 2436,
   "start": [
-   46.43894,
-   10.19938
+   46.43888,
+   10.19931
   ],
   "end": [
    46.41416,
@@ -1016,13 +1011,12 @@
   ]
  },
  {
-  "id": "way-304682969-7553563672",
+  "id": "way-304682969-345339901",
   "osm": null,
   "refs": [
-   "290",
-   "SI",
-   "148",
-   "292"
+   "293",
+   "291",
+   "SI"
   ],
   "from": "Alpe Forbesana",
   "to": "Lago di Selva",
@@ -1030,18 +1024,19 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
-  "lengthM": 5022,
-  "upM": 510,
-  "downM": 61,
-  "startEle": 2077,
+  "lengthM": 4087,
+  "upM": 556,
+  "downM": 11,
+  "startEle": 1981,
   "endEle": 2526,
-  "maxEle": 2528,
+  "maxEle": 2529,
   "start": [
-   46.43894,
-   10.19938
+   46.43601,
+   10.20026
   ],
   "end": [
    46.43006,
@@ -1060,6 +1055,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -1079,36 +1075,36 @@
   ]
  },
  {
-  "id": "way-37412998-828125692",
+  "id": "way-37412998-3739009817",
   "osm": null,
   "refs": [
-   "522",
-   "549",
    "523",
+   "549",
    "518"
   ],
-  "from": "Santa Caterina Valfurva",
+  "from": "Plaghera",
   "to": "Lago Stelu'",
   "destination": "lake",
   "difficulty": "E",
-  "unmarked": false,
+  "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
-  "lengthM": 9750,
-  "upM": 1056,
-  "downM": 213,
-  "startEle": 1735,
-  "endEle": 2579,
-  "maxEle": 2666,
+  "lengthM": 10266,
+  "upM": 881,
+  "downM": 319,
+  "startEle": 2016,
+  "endEle": 2578,
+  "maxEle": 2664,
   "start": [
-   46.41214,
-   10.49525
+   46.40573,
+   10.49043
   ],
   "end": [
    46.3882,
-   10.4049
+   10.40489
   ]
  },
  {
@@ -1125,6 +1121,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -1157,6 +1154,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -1169,6 +1167,39 @@
   "start": [
    46.46894,
    10.0948
+  ],
+  "end": [
+   46.42372,
+   10.09242
+  ]
+ },
+ {
+  "id": "way-304682967-592280272",
+  "osm": null,
+  "refs": [
+   "100",
+   "SI",
+   "113A"
+  ],
+  "from": "Via dali Mina",
+  "to": "Lago Valletta",
+  "destination": "lake",
+  "difficulty": "E",
+  "unmarked": false,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "alta-valtellina",
+  "lengthM": 9974,
+  "upM": 808,
+  "downM": 65,
+  "startEle": 1912,
+  "endEle": 2656,
+  "maxEle": 2666,
+  "start": [
+   46.49412,
+   10.11988
   ],
   "end": [
    46.42372,
@@ -1190,6 +1221,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -1223,6 +1255,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -1253,6 +1286,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -1283,6 +1317,7 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -1316,6 +1351,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -1349,6 +1385,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -1368,7 +1405,7 @@
   ]
  },
  {
-  "id": "node-565086717-7553563672",
+  "id": "node-565086717-419320737",
   "osm": null,
   "refs": [
    "290",
@@ -1381,18 +1418,19 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
-  "lengthM": 5855,
-  "upM": 386,
-  "downM": 8,
-  "startEle": 2077,
+  "lengthM": 5846,
+  "upM": 384,
+  "downM": 7,
+  "startEle": 2078,
   "endEle": 2455,
-  "maxEle": 2463,
+  "maxEle": 2462,
   "start": [
-   46.43894,
-   10.19938
+   46.43888,
+   10.19931
   ],
   "end": [
    46.41763,
@@ -1414,6 +1452,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -1447,6 +1486,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -1479,6 +1519,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -1509,6 +1550,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -1542,6 +1584,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -1572,6 +1615,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -1591,7 +1635,7 @@
   ]
  },
  {
-  "id": "node-564938348-7553563672",
+  "id": "node-564938348-419320737",
   "osm": null,
   "refs": [
    "290",
@@ -1605,18 +1649,19 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
-  "lengthM": 4693,
-  "upM": 553,
-  "downM": 16,
-  "startEle": 2077,
+  "lengthM": 4684,
+  "upM": 549,
+  "downM": 13,
+  "startEle": 2078,
   "endEle": 2614,
   "maxEle": 2614,
   "start": [
-   46.43894,
-   10.19938
+   46.43888,
+   10.19931
   ],
   "end": [
    46.46285,
@@ -1635,6 +1680,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -1668,6 +1714,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -1680,6 +1727,40 @@
   "start": [
    46.5358,
    10.25342
+  ],
+  "end": [
+   46.5519,
+   10.20481
+  ]
+ },
+ {
+  "id": "node-278694854-1020757818",
+  "osm": null,
+  "refs": [
+   "136",
+   "137",
+   "138",
+   "SI"
+  ],
+  "from": "Case di Ross",
+  "to": "Passo di Alpisella",
+  "destination": "pass",
+  "difficulty": "E",
+  "unmarked": false,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "alta-valtellina",
+  "lengthM": 5625,
+  "upM": 473,
+  "downM": 84,
+  "startEle": 1902,
+  "endEle": 2291,
+  "maxEle": 2291,
+  "start": [
+   46.53952,
+   10.18311
   ],
   "end": [
    46.5519,
@@ -1701,6 +1782,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -1720,13 +1802,46 @@
   ]
  },
  {
-  "id": "node-565086437-7553563672",
+  "id": "node-430224934-345339901",
   "osm": null,
   "refs": [
-   "290",
+   "293",
+   "291",
+   "201"
+  ],
+  "from": "Alpe Forbesana",
+  "to": "Passo di Verva",
+  "destination": "pass",
+  "difficulty": "E",
+  "unmarked": false,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "alta-valtellina",
+  "lengthM": 7627,
+  "upM": 490,
+  "downM": 176,
+  "startEle": 1981,
+  "endEle": 2296,
+  "maxEle": 2296,
+  "start": [
+   46.43601,
+   10.20026
+  ],
+  "end": [
+   46.41111,
+   10.24743
+  ]
+ },
+ {
+  "id": "node-565086437-345339901",
+  "osm": null,
+  "refs": [
+   "293",
+   "291",
    "SI",
-   "148",
-   "292"
+   "291B"
   ],
   "from": "Alpe Forbesana",
   "to": "Passo Dosdè",
@@ -1734,18 +1849,19 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
-  "lengthM": 8527,
-  "upM": 794,
-  "downM": 45,
-  "startEle": 2077,
+  "lengthM": 8100,
+  "upM": 854,
+  "downM": 10,
+  "startEle": 1981,
   "endEle": 2825,
   "maxEle": 2825,
   "start": [
-   46.43894,
-   10.19938
+   46.43601,
+   10.20026
   ],
   "end": [
    46.38317,
@@ -1753,31 +1869,32 @@
   ]
  },
  {
-  "id": "node-80115982-292358718",
+  "id": "node-80115982-751513185",
   "osm": null,
   "refs": [
    "100",
    "SI",
    "132"
   ],
-  "from": "Teola",
+  "from": "Via dali Strozia",
   "to": "Passo Eira",
   "destination": "pass",
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
-  "lengthM": 2513,
-  "upM": 362,
-  "downM": 15,
-  "startEle": 1865,
+  "lengthM": 2305,
+  "upM": 358,
+  "downM": 0,
+  "startEle": 1855,
   "endEle": 2212,
   "maxEle": 2212,
   "start": [
-   46.53423,
-   10.1421
+   46.53597,
+   10.14283
   ],
   "end": [
    46.53832,
@@ -1796,6 +1913,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -1828,6 +1946,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -1847,64 +1966,31 @@
   ]
  },
  {
-  "id": "node-565086527-1205696563",
+  "id": "node-278703620-2414352258",
   "osm": null,
   "refs": [
-   "267B",
-   "268",
-   "267",
-   "264"
-  ],
-  "from": "Sommacologna",
-  "to": "Passo Quintena",
-  "destination": "pass",
-  "difficulty": "E",
-  "unmarked": true,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "alta-valtellina",
-  "lengthM": 6696,
-  "upM": 1455,
-  "downM": 204,
-  "startEle": 1041,
-  "endEle": 2293,
-  "maxEle": 2453,
-  "start": [
-   46.33068,
-   10.30652
-  ],
-  "end": [
-   46.35156,
-   10.28869
-  ]
- },
- {
-  "id": "node-278703620-12437969952",
-  "osm": null,
-  "refs": [
-   "189",
    "196",
    "195"
   ],
-  "from": "Semogo",
+  "from": "Via Sant'Antonio",
   "to": "Passo Torri di Fraele",
   "destination": "pass",
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
-  "lengthM": 5459,
-  "upM": 489,
-  "downM": 42,
-  "startEle": 1498,
+  "lengthM": 4664,
+  "upM": 318,
+  "downM": 33,
+  "startEle": 1659,
   "endEle": 1945,
   "maxEle": 1945,
   "start": [
-   46.4862,
-   10.27378
+   46.49405,
+   10.29231
   ],
   "end": [
    46.50219,
@@ -1912,60 +1998,30 @@
   ]
  },
  {
-  "id": "node-4937172670-4246850137",
+  "id": "node-4937172670-1022903579",
   "osm": null,
   "refs": [
-   "129",
    "136"
   ],
-  "from": "Campaccio",
+  "from": "Via de Pila",
   "to": "Passo Trela",
   "destination": "pass",
   "difficulty": "E",
-  "unmarked": true,
+  "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
-  "lengthM": 4398,
-  "upM": 283,
-  "downM": 54,
-  "startEle": 2074,
+  "lengthM": 2620,
+  "upM": 308,
+  "downM": 5,
+  "startEle": 2000,
   "endEle": 2303,
   "maxEle": 2303,
   "start": [
-   46.51836,
-   10.1872
-  ],
-  "end": [
-   46.52754,
-   10.21893
-  ]
- },
- {
-  "id": "node-4937172670-5421193327",
-  "osm": null,
-  "refs": [
-   "130"
-  ],
-  "from": "Le Stalle",
-  "to": "Passo Trela",
-  "destination": "pass",
-  "difficulty": "E",
-  "unmarked": true,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "alta-valtellina",
-  "lengthM": 3333,
-  "upM": 385,
-  "downM": 39,
-  "startEle": 1957,
-  "endEle": 2303,
-  "maxEle": 2342,
-  "start": [
-   46.5358,
-   10.25342
+   46.53458,
+   10.18851
   ],
   "end": [
    46.52754,
@@ -1984,6 +2040,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -2003,7 +2060,7 @@
   ]
  },
  {
-  "id": "node-565086530-7342410017",
+  "id": "node-565086530-1333529098",
   "osm": null,
   "refs": [
    "273",
@@ -2011,24 +2068,25 @@
    "273A",
    "259"
   ],
-  "from": "Monte",
+  "from": "Campello",
   "to": "Passo Zandila",
   "destination": "pass",
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
-  "lengthM": 6055,
-  "upM": 1167,
-  "downM": 39,
-  "startEle": 1625,
+  "lengthM": 6304,
+  "upM": 1017,
+  "downM": 87,
+  "startEle": 1824,
   "endEle": 2753,
   "maxEle": 2753,
   "start": [
-   46.40421,
-   10.33571
+   46.40768,
+   10.3287
   ],
   "end": [
    46.38333,
@@ -2050,6 +2108,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -2082,6 +2141,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -2114,6 +2174,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -2146,6 +2207,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -2179,6 +2241,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -2211,6 +2274,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -2244,6 +2308,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -2277,6 +2342,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -2310,6 +2376,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -2341,6 +2408,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -2372,6 +2440,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -2405,6 +2474,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -2438,6 +2508,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -2471,6 +2542,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -2501,6 +2573,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -2532,6 +2605,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -2563,6 +2637,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -2595,6 +2670,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "alta-valtellina",
@@ -2623,6 +2699,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -2653,6 +2730,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -2672,36 +2750,6 @@
   ]
  },
  {
-  "id": "way-174672668-7053215299",
-  "osm": null,
-  "refs": [
-   "603"
-  ],
-  "from": "Rogolo",
-  "to": "Baita del Lago",
-  "destination": "bivouac",
-  "difficulty": "EE",
-  "unmarked": true,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "bassa-valtellina",
-  "lengthM": 10747,
-  "upM": 1573,
-  "downM": 126,
-  "startEle": 249,
-  "endEle": 1696,
-  "maxEle": 1696,
-  "start": [
-   46.13383,
-   9.48841
-  ],
-  "end": [
-   46.10732,
-   9.41611
-  ]
- },
- {
   "id": "way-541502717-5777492059",
   "osm": null,
   "refs": [
@@ -2713,6 +2761,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -2743,6 +2792,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -2762,7 +2812,7 @@
   ]
  },
  {
-  "id": "way-445283650-8199095033",
+  "id": "way-445283650-2723441623",
   "osm": null,
   "refs": [],
   "from": "Our di Cima",
@@ -2771,18 +2821,19 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
-  "lengthM": 2863,
-  "upM": 313,
-  "downM": 33,
-  "startEle": 1387,
+  "lengthM": 2936,
+  "upM": 323,
+  "downM": 34,
+  "startEle": 1378,
   "endEle": 1667,
-  "maxEle": 1700,
+  "maxEle": 1701,
   "start": [
-   46.19584,
-   9.67272
+   46.19859,
+   9.66976
   ],
   "end": [
    46.19958,
@@ -2801,6 +2852,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": 233,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -2820,55 +2872,28 @@
   ]
  },
  {
-  "id": "node-13759151960-4878461036",
+  "id": "node-13759151960-3014487625",
   "osm": null,
   "refs": [],
-  "from": "Garzade",
+  "from": "Sasso Rosso",
   "to": "bivacco Carla",
   "destination": "bivouac",
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
-  "lengthM": 6503,
-  "upM": 1119,
-  "downM": 98,
-  "startEle": 776,
-  "endEle": 1798,
-  "maxEle": 1799,
-  "start": [
-   46.12111,
-   9.5231
-  ],
-  "end": [
-   46.10457,
-   9.4956
-  ]
- },
- {
-  "id": "node-13759151960-3236194505",
-  "osm": null,
-  "refs": [],
-  "from": "San Rocco",
-  "to": "bivacco Carla",
-  "destination": "bivouac",
-  "difficulty": "EE",
-  "unmarked": true,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "bassa-valtellina",
-  "lengthM": 7590,
-  "upM": 1016,
-  "downM": 148,
-  "startEle": 930,
+  "lengthM": 4886,
+  "upM": 772,
+  "downM": 0,
+  "startEle": 1026,
   "endEle": 1798,
   "maxEle": 1798,
   "start": [
-   46.09761,
-   9.55035
+   46.11919,
+   9.51554
   ],
   "end": [
    46.10457,
@@ -2885,6 +2910,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -2904,37 +2930,6 @@
   ]
  },
  {
-  "id": "way-178829755-8199095033",
-  "osm": null,
-  "refs": [
-   "SI",
-   "401"
-  ],
-  "from": "Our di Cima",
-  "to": "Bivacco Scermendone",
-  "destination": "bivouac",
-  "difficulty": "EE",
-  "unmarked": true,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "bassa-valtellina",
-  "lengthM": 4926,
-  "upM": 776,
-  "downM": 22,
-  "startEle": 1387,
-  "endEle": 2141,
-  "maxEle": 2142,
-  "start": [
-   46.19584,
-   9.67272
-  ],
-  "end": [
-   46.21726,
-   9.70144
-  ]
- },
- {
   "id": "9962368",
   "osm": 9962368,
   "refs": [
@@ -2946,6 +2941,7 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -2976,6 +2972,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -3008,6 +3005,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -3036,6 +3034,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -3064,6 +3063,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -3096,6 +3096,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -3115,55 +3116,57 @@
   ]
  },
  {
-  "id": "way-304597251-3093239106",
+  "id": "node-1945813628-3093179658",
   "osm": null,
   "refs": [],
-  "from": "Bagni di Masino",
-  "to": "Capanna Attilio Piacco",
-  "destination": "bivouac",
+  "from": "Piana di Predarossa",
+  "to": "Bocchetta Roma",
+  "destination": "pass",
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
-  "lengthM": 6386,
-  "upM": 1367,
-  "downM": 10,
-  "startEle": 1184,
-  "endEle": 2541,
-  "maxEle": 2541,
+  "lengthM": 5779,
+  "upM": 936,
+  "downM": 16,
+  "startEle": 1951,
+  "endEle": 2871,
+  "maxEle": 2882,
   "start": [
-   46.24533,
-   9.59603
+   46.22661,
+   9.69691
   ],
   "end": [
-   46.28075,
-   9.58441
+   46.26118,
+   9.72871
   ]
  },
  {
-  "id": "way-554577805-5737164108",
+  "id": "way-554577805-8260164772",
   "osm": null,
   "refs": [],
-  "from": "Torrazza",
+  "from": "Fistolera",
   "to": "Cascina Stavello",
   "destination": "bivouac",
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
-  "lengthM": 7113,
-  "upM": 1358,
-  "downM": 76,
-  "startEle": 263,
+  "lengthM": 6707,
+  "upM": 1060,
+  "downM": 138,
+  "startEle": 623,
   "endEle": 1545,
   "maxEle": 1545,
   "start": [
-   46.13083,
-   9.46555
+   46.1259,
+   9.48371
   ],
   "end": [
    46.09698,
@@ -3171,27 +3174,28 @@
   ]
  },
  {
-  "id": "way-554577801-5737164108",
+  "id": "way-554577801-8260164772",
   "osm": null,
   "refs": [],
-  "from": "Torrazza",
+  "from": "Fistolera",
   "to": "Casera del Dosso",
   "destination": "bivouac",
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
-  "lengthM": 7708,
-  "upM": 1388,
-  "downM": 140,
-  "startEle": 263,
+  "lengthM": 7302,
+  "upM": 1091,
+  "downM": 203,
+  "startEle": 623,
   "endEle": 1511,
   "maxEle": 1511,
   "start": [
-   46.13083,
-   9.46555
+   46.1259,
+   9.48371
   ],
   "end": [
    46.10042,
@@ -3208,6 +3212,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -3236,6 +3241,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": 120,
   "caiDownMin": 105,
   "zone": "bassa-valtellina",
@@ -3267,6 +3273,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -3299,6 +3306,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -3327,6 +3335,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -3357,6 +3366,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -3376,27 +3386,28 @@
   ]
  },
  {
-  "id": "node-564896708-4383888237",
+  "id": "node-564896708-2267425686",
   "osm": null,
   "refs": [],
-  "from": "Biorca",
+  "from": "Via Biorca",
   "to": "Passo del Pisello",
   "destination": "pass",
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
-  "lengthM": 4409,
-  "upM": 872,
-  "downM": 81,
-  "startEle": 1188,
+  "lengthM": 4342,
+  "upM": 855,
+  "downM": 153,
+  "startEle": 1277,
   "endEle": 1978,
-  "maxEle": 2013,
+  "maxEle": 2101,
   "start": [
-   46.10415,
-   9.67622
+   46.09166,
+   9.66928
   ],
   "end": [
    46.10339,
@@ -3413,6 +3424,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -3444,6 +3456,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -3474,6 +3487,7 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -3502,6 +3516,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -3534,6 +3549,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -3553,6 +3569,37 @@
   ]
  },
  {
+  "id": "node-7755990899-3093179658",
+  "osm": null,
+  "refs": [
+   "SI"
+  ],
+  "from": "Piana di Predarossa",
+  "to": "Passo di Scermendone",
+  "destination": "pass",
+  "difficulty": "EE",
+  "unmarked": true,
+  "checkRoad": false,
+  "tollRoad": true,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "bassa-valtellina",
+  "lengthM": 5521,
+  "upM": 685,
+  "downM": 38,
+  "startEle": 1951,
+  "endEle": 2598,
+  "maxEle": 2598,
+  "start": [
+   46.22661,
+   9.69691
+  ],
+  "end": [
+   46.22619,
+   9.74096
+  ]
+ },
+ {
   "id": "node-564896898-12459264838",
   "osm": null,
   "refs": [
@@ -3567,6 +3614,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -3600,6 +3648,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -3633,6 +3682,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -3661,6 +3711,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -3680,34 +3731,6 @@
   ]
  },
  {
-  "id": "way-72613671-2352517701",
-  "osm": null,
-  "refs": [],
-  "from": "Albaredo per San Marco",
-  "to": "Rifugio Alpe Lago",
-  "destination": "hut",
-  "difficulty": "EE",
-  "unmarked": true,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "bassa-valtellina",
-  "lengthM": 9479,
-  "upM": 1082,
-  "downM": 481,
-  "startEle": 965,
-  "endEle": 1566,
-  "maxEle": 1943,
-  "start": [
-   46.10012,
-   9.59365
-  ],
-  "end": [
-   46.08104,
-   9.63097
-  ]
- },
- {
   "id": "way-72615290-1649644334",
   "osm": null,
   "refs": [],
@@ -3717,6 +3740,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -3745,6 +3769,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -3773,6 +3798,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -3801,6 +3827,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -3820,6 +3847,38 @@
   ]
  },
  {
+  "id": "way-306096270-5777492059",
+  "osm": null,
+  "refs": [
+   "127",
+   "222"
+  ],
+  "from": "Cosaggio",
+  "to": "rifugio Bernasca",
+  "destination": "hut",
+  "difficulty": "E",
+  "unmarked": false,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "bassa-valtellina",
+  "lengthM": 6307,
+  "upM": 966,
+  "downM": 151,
+  "startEle": 1280,
+  "endEle": 2095,
+  "maxEle": 2226,
+  "start": [
+   46.12305,
+   9.68211
+  ],
+  "end": [
+   46.10675,
+   9.73191
+  ]
+ },
+ {
   "id": "way-83801467-12459264838",
   "osm": null,
   "refs": [
@@ -3832,6 +3891,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -3851,29 +3911,28 @@
   ]
  },
  {
-  "id": "way-304597534-8199095033",
+  "id": "way-304597534-3093179658",
   "osm": null,
-  "refs": [
-   "SI"
-  ],
-  "from": "Our di Cima",
+  "refs": [],
+  "from": "Piana di Predarossa",
   "to": "Rifugio Cesare Ponti",
   "destination": "hut",
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
-  "lengthM": 11179,
-  "upM": 1411,
-  "downM": 234,
-  "startEle": 1387,
+  "lengthM": 4383,
+  "upM": 618,
+  "downM": 5,
+  "startEle": 1951,
   "endEle": 2564,
   "maxEle": 2564,
   "start": [
-   46.19584,
-   9.67272
+   46.22661,
+   9.69691
   ],
   "end": [
    46.25123,
@@ -3890,6 +3949,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -3918,6 +3978,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -3946,6 +4007,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -3965,6 +4027,35 @@
   ]
  },
  {
+  "id": "way-304597257-3093239106",
+  "osm": null,
+  "refs": [],
+  "from": "Bagni di Masino",
+  "to": "Rifugio Luigi Gianetti",
+  "destination": "hut",
+  "difficulty": "EE",
+  "unmarked": true,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "bassa-valtellina",
+  "lengthM": 6370,
+  "upM": 1364,
+  "downM": 10,
+  "startEle": 1184,
+  "endEle": 2538,
+  "maxEle": 2538,
+  "start": [
+   46.24533,
+   9.59603
+  ],
+  "end": [
+   46.28049,
+   9.58421
+  ]
+ },
+ {
   "id": "way-72502779-861243005",
   "osm": null,
   "refs": [
@@ -3976,6 +4067,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -4006,6 +4098,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -4025,6 +4118,37 @@
   ]
  },
  {
+  "id": "way-151520528-7053215290",
+  "osm": null,
+  "refs": [
+   "603"
+  ],
+  "from": "Strada Agro-silvo-pastorale Rogolo-Fistolera",
+  "to": "Rifugio Scoggione",
+  "destination": "hut",
+  "difficulty": "EE",
+  "unmarked": true,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "bassa-valtellina",
+  "lengthM": 10162,
+  "upM": 1427,
+  "downM": 129,
+  "startEle": 298,
+  "endEle": 1597,
+  "maxEle": 1597,
+  "start": [
+   46.13263,
+   9.48721
+  ],
+  "end": [
+   46.11033,
+   9.41617
+  ]
+ },
+ {
   "id": "way-123180212-1374496641",
   "osm": null,
   "refs": [],
@@ -4034,6 +4158,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "bassa-valtellina",
@@ -4053,67 +4178,69 @@
   ]
  },
  {
-  "id": "node-564896917-5777492059",
+  "id": "way-255914940-2209948411",
   "osm": null,
   "refs": [
-   "127",
-   "222"
+   "301",
+   "381",
+   "SI"
   ],
-  "from": "Cosaggio",
-  "to": "Sella del Pizzolo",
-  "destination": "pass",
+  "from": "Campiöl",
+  "to": "Alpe Campiascio",
+  "destination": "hut",
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "bassa-valtellina",
-  "lengthM": 6272,
-  "upM": 966,
-  "downM": 143,
-  "startEle": 1280,
-  "endEle": 2103,
-  "maxEle": 2226,
-  "start": [
-   46.12305,
-   9.68211
-  ],
-  "end": [
-   46.10635,
-   9.73223
-  ]
- },
- {
-  "id": "way-255914940-4244856507",
-  "osm": null,
-  "refs": [
-   "AVVF",
-   "302",
-   "381",
-   "301"
-  ],
-  "from": "Sant'Antonio",
-  "to": "Alpe Campiascio",
-  "destination": "hut",
-  "difficulty": "EE",
-  "unmarked": false,
-  "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 6332,
-  "upM": 509,
-  "downM": 21,
-  "startEle": 1203,
+  "lengthM": 4406,
+  "upM": 289,
+  "downM": 11,
+  "startEle": 1412,
   "endEle": 1690,
-  "maxEle": 1690,
+  "maxEle": 1691,
   "start": [
-   46.21437,
-   10.01194
+   46.22625,
+   10.01605
   ],
   "end": [
    46.2608,
    10.02361
+  ]
+ },
+ {
+  "id": "way-153424869-1915638592",
+  "osm": null,
+  "refs": [
+   "201",
+   "SI",
+   "249"
+  ],
+  "from": "Supiani",
+  "to": "Alpe di Piana",
+  "destination": "hut",
+  "difficulty": "E",
+  "unmarked": false,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "media-valtellina",
+  "lengthM": 4616,
+  "upM": 394,
+  "downM": 23,
+  "startEle": 1518,
+  "endEle": 1889,
+  "maxEle": 1889,
+  "start": [
+   46.31363,
+   10.23414
+  ],
+  "end": [
+   46.31052,
+   10.18963
   ]
  },
  {
@@ -4131,6 +4258,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -4164,6 +4292,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -4195,6 +4324,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -4227,6 +4357,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -4246,72 +4377,7 @@
   ]
  },
  {
-  "id": "way-181114114-9699989989",
-  "osm": null,
-  "refs": [
-   "230",
-   "201",
-   "SI",
-   "230C"
-  ],
-  "from": "Susen",
-  "to": "Alpe Salina",
-  "destination": "bivouac",
-  "difficulty": "E",
-  "unmarked": false,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "media-valtellina",
-  "lengthM": 5465,
-  "upM": 808,
-  "downM": 153,
-  "startEle": 1523,
-  "endEle": 2178,
-  "maxEle": 2258,
-  "start": [
-   46.25686,
-   10.22003
-  ],
-  "end": [
-   46.27724,
-   10.20719
-  ]
- },
- {
-  "id": "way-181114114-9849630572",
-  "osm": null,
-  "refs": [
-   "201",
-   "SI",
-   "230C"
-  ],
-  "from": "Pra Baruzzo",
-  "to": "Alpe Salina",
-  "destination": "bivouac",
-  "difficulty": "E",
-  "unmarked": false,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "media-valtellina",
-  "lengthM": 7667,
-  "upM": 892,
-  "downM": 164,
-  "startEle": 1450,
-  "endEle": 2178,
-  "maxEle": 2257,
-  "start": [
-   46.2395,
-   10.17921
-  ],
-  "end": [
-   46.27724,
-   10.20719
-  ]
- },
- {
-  "id": "way-481353733-3115324556",
+  "id": "way-481353733-3115311722",
   "osm": null,
   "refs": [
    "316",
@@ -4324,18 +4390,19 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 3911,
-  "upM": 861,
+  "lengthM": 3863,
+  "upM": 857,
   "downM": 1,
-  "startEle": 1209,
+  "startEle": 1213,
   "endEle": 2068,
-  "maxEle": 2069,
+  "maxEle": 2070,
   "start": [
-   46.13322,
-   10.06821
+   46.13302,
+   10.06774
   ],
   "end": [
    46.10777,
@@ -4356,6 +4423,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -4389,6 +4457,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -4408,30 +4477,31 @@
   ]
  },
  {
-  "id": "way-174361024-8204060965",
+  "id": "way-174361024-2490997897",
   "osm": null,
   "refs": [
    "401",
    "420C"
   ],
-  "from": "Prati Gaggio",
+  "from": "Via Gaggio di Polaggia",
   "to": "Bivacco Ai Fop",
   "destination": "bivouac",
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 3359,
-  "upM": 595,
-  "downM": 24,
-  "startEle": 1660,
+  "lengthM": 3288,
+  "upM": 573,
+  "downM": 15,
+  "startEle": 1673,
   "endEle": 2231,
   "maxEle": 2231,
   "start": [
-   46.19622,
-   9.76017
+   46.19686,
+   9.76014
   ],
   "end": [
    46.21215,
@@ -4439,7 +4509,7 @@
   ]
  },
  {
-  "id": "way-1093758947-8196745695",
+  "id": "way-1093758947-7664925385",
   "osm": null,
   "refs": [
    "416"
@@ -4450,18 +4520,19 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 4480,
-  "upM": 638,
+  "lengthM": 2468,
+  "upM": 327,
   "downM": 0,
-  "startEle": 1440,
+  "startEle": 1751,
   "endEle": 2078,
   "maxEle": 2078,
   "start": [
-   46.19189,
-   9.78497
+   46.19968,
+   9.78446
   ],
   "end": [
    46.21312,
@@ -4469,7 +4540,7 @@
   ]
  },
  {
-  "id": "way-311027229-902765076",
+  "id": "way-311027229-902765499",
   "osm": null,
   "refs": [
    "301",
@@ -4482,18 +4553,19 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 6390,
-  "upM": 1028,
-  "downM": 22,
-  "startEle": 1219,
+  "lengthM": 6356,
+  "upM": 1021,
+  "downM": 21,
+  "startEle": 1226,
   "endEle": 2225,
   "maxEle": 2227,
   "start": [
-   46.14844,
-   10.14658
+   46.14821,
+   10.14683
   ],
   "end": [
    46.11632,
@@ -4515,6 +4587,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -4547,6 +4620,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -4580,6 +4654,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -4613,6 +4688,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -4644,6 +4720,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -4663,36 +4740,6 @@
   ]
  },
  {
-  "id": "way-178829755-7599698800",
-  "osm": null,
-  "refs": [
-   "401"
-  ],
-  "from": "Prato Maslino",
-  "to": "Bivacco Scermendone",
-  "destination": "bivouac",
-  "difficulty": "E",
-  "unmarked": false,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "media-valtellina",
-  "lengthM": 5463,
-  "upM": 625,
-  "downM": 113,
-  "startEle": 1629,
-  "endEle": 2141,
-  "maxEle": 2161,
-  "start": [
-   46.19256,
-   9.73332
-  ],
-  "end": [
-   46.21726,
-   9.70144
-  ]
- },
- {
   "id": "node-5062479636-2209948501",
   "osm": null,
   "refs": [
@@ -4707,6 +4754,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -4726,31 +4774,33 @@
   ]
  },
  {
-  "id": "node-564378656-8243973220",
+  "id": "node-564378656-10151859776",
   "osm": null,
   "refs": [
+   "371",
+   "374A",
    "374",
-   "377",
-   "AVVF"
+   "377"
   ],
-  "from": "La Piana",
+  "from": "Alpe Mara",
   "to": "Bocchetta de Vicima",
   "destination": "pass",
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 7435,
-  "upM": 1200,
-  "downM": 121,
-  "startEle": 1553,
+  "lengthM": 7454,
+  "upM": 1026,
+  "downM": 182,
+  "startEle": 1789,
   "endEle": 2632,
-  "maxEle": 2632,
+  "maxEle": 2633,
   "start": [
-   46.19426,
-   9.94908
+   46.20402,
+   9.92303
   ],
   "end": [
    46.2317,
@@ -4758,29 +4808,66 @@
   ]
  },
  {
-  "id": "node-1836583270-8243973220",
+  "id": "node-564378656-2715286880",
   "osm": null,
   "refs": [
+   "302",
+   "377",
+   "AVVF",
+   "376"
+  ],
+  "from": "Strèfodes",
+  "to": "Bocchetta de Vicima",
+  "destination": "pass",
+  "difficulty": "EE",
+  "unmarked": false,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "media-valtellina",
+  "lengthM": 6601,
+  "upM": 1376,
+  "downM": 19,
+  "startEle": 1275,
+  "endEle": 2632,
+  "maxEle": 2632,
+  "start": [
+   46.19247,
+   9.9796
+  ],
+  "end": [
+   46.2317,
+   9.9766
+  ]
+ },
+ {
+  "id": "node-1836583270-10151859776",
+  "osm": null,
+  "refs": [
+   "371",
+   "370",
    "374"
   ],
-  "from": "La Piana",
+  "from": "Alpe Mara",
   "to": "Bocchetta del Torresello",
   "destination": "pass",
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 5556,
-  "upM": 1051,
-  "downM": 0,
-  "startEle": 1553,
+  "lengthM": 4804,
+  "upM": 905,
+  "downM": 89,
+  "startEle": 1789,
   "endEle": 2604,
   "maxEle": 2604,
   "start": [
-   46.19426,
-   9.94908
+   46.20402,
+   9.92303
   ],
   "end": [
    46.22835,
@@ -4788,31 +4875,32 @@
   ]
  },
  {
-  "id": "node-565219052-1567114219",
+  "id": "node-565219052-1566987942",
   "osm": null,
   "refs": [
    "301",
    "SI",
    "394B"
   ],
-  "from": "Prato Valentino",
+  "from": "Strada Teglio - Prato Valentino",
   "to": "Bocchetta della Combolina",
   "destination": "pass",
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 6481,
+  "lengthM": 6332,
   "upM": 899,
-  "downM": 41,
-  "startEle": 1713,
+  "downM": 25,
+  "startEle": 1696,
   "endEle": 2570,
   "maxEle": 2570,
   "start": [
-   46.18919,
-   10.0522
+   46.18983,
+   10.05389
   ],
   "end": [
    46.22254,
@@ -4820,29 +4908,31 @@
   ]
  },
  {
-  "id": "node-564897390-8243973220",
+  "id": "node-564897390-10151859776",
   "osm": null,
   "refs": [
-   "374"
+   "371",
+   "370"
   ],
-  "from": "La Piana",
+  "from": "Alpe Mara",
   "to": "Bocchetta di Mara",
   "destination": "pass",
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 5096,
-  "upM": 789,
+  "lengthM": 2636,
+  "upM": 554,
   "downM": 0,
-  "startEle": 1553,
+  "startEle": 1789,
   "endEle": 2343,
   "maxEle": 2343,
   "start": [
-   46.19426,
-   9.94908
+   46.20402,
+   9.92303
   ],
   "end": [
    46.219,
@@ -4850,10 +4940,9 @@
   ]
  },
  {
-  "id": "node-564897280-2813041644",
+  "id": "node-564897280-4908132601",
   "osm": null,
   "refs": [
-   "267",
    "265"
   ],
   "from": "Briotti",
@@ -4862,18 +4951,19 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 6652,
-  "upM": 1321,
-  "downM": 0,
-  "startEle": 1049,
+  "lengthM": 6628,
+  "upM": 1328,
+  "downM": 8,
+  "startEle": 1050,
   "endEle": 2370,
   "maxEle": 2370,
   "start": [
-   46.14459,
-   9.97437
+   46.14447,
+   9.97458
   ],
   "end": [
    46.10675,
@@ -4881,7 +4971,7 @@
   ]
  },
  {
-  "id": "node-564897280-1567074453",
+  "id": "node-564897280-1764471283",
   "osm": null,
   "refs": [
    "204",
@@ -4894,18 +4984,19 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 6972,
-  "upM": 1381,
-  "downM": 47,
-  "startEle": 1035,
+  "lengthM": 6893,
+  "upM": 1387,
+  "downM": 60,
+  "startEle": 1043,
   "endEle": 2370,
   "maxEle": 2370,
   "start": [
-   46.14451,
-   9.92434
+   46.14434,
+   9.92334
   ],
   "end": [
    46.10675,
@@ -4913,30 +5004,33 @@
   ]
  },
  {
-  "id": "node-564378377-8243973220",
+  "id": "node-564378377-10151859776",
   "osm": null,
   "refs": [
+   "371",
+   "374A",
    "374",
    "377"
   ],
-  "from": "La Piana",
+  "from": "Alpe Mara",
   "to": "Bocchetta Nord di Rogneda",
   "destination": "pass",
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 6286,
-  "upM": 1106,
-  "downM": 6,
-  "startEle": 1553,
+  "lengthM": 6305,
+  "upM": 929,
+  "downM": 64,
+  "startEle": 1789,
   "endEle": 2653,
   "maxEle": 2653,
   "start": [
-   46.19426,
-   9.94908
+   46.20402,
+   9.92303
   ],
   "end": [
    46.23171,
@@ -4944,7 +5038,7 @@
   ]
  },
  {
-  "id": "node-564897050-8196745695",
+  "id": "node-564897050-7664925385",
   "osm": null,
   "refs": [
    "416",
@@ -4956,18 +5050,19 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 7017,
-  "upM": 819,
-  "downM": 81,
-  "startEle": 1440,
+  "lengthM": 5004,
+  "upM": 507,
+  "downM": 80,
+  "startEle": 1751,
   "endEle": 2178,
   "maxEle": 2178,
   "start": [
-   46.19189,
-   9.78497
+   46.19968,
+   9.78446
   ],
   "end": [
    46.20263,
@@ -4989,6 +5084,7 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -5008,30 +5104,33 @@
   ]
  },
  {
-  "id": "node-8243973146-8243973220",
+  "id": "node-8243973146-10151859776",
   "osm": null,
   "refs": [
+   "371",
+   "374A",
    "374",
    "377"
   ],
-  "from": "La Piana",
+  "from": "Alpe Mara",
   "to": "Bucheta de Rugneda",
   "destination": "pass",
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 5111,
-  "upM": 814,
-  "downM": 6,
-  "startEle": 1553,
+  "lengthM": 5130,
+  "upM": 636,
+  "downM": 64,
+  "startEle": 1789,
   "endEle": 2361,
   "maxEle": 2361,
   "start": [
-   46.19426,
-   9.94908
+   46.20402,
+   9.92303
   ],
   "end": [
    46.21934,
@@ -5053,6 +5152,7 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -5072,6 +5172,38 @@
   ]
  },
  {
+  "id": "node-13173654673-1566987942",
+  "osm": null,
+  "refs": [
+   "301",
+   "SI"
+  ],
+  "from": "Strada Teglio - Prato Valentino",
+  "to": "Capanna Meden",
+  "destination": "hut",
+  "difficulty": "E",
+  "unmarked": false,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "media-valtellina",
+  "lengthM": 6376,
+  "upM": 767,
+  "downM": 51,
+  "startEle": 1696,
+  "endEle": 2412,
+  "maxEle": 2438,
+  "start": [
+   46.18983,
+   10.05389
+  ],
+  "end": [
+   46.2231,
+   10.05921
+  ]
+ },
+ {
   "id": "14468701",
   "osm": 14468701,
   "refs": [
@@ -5083,6 +5215,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -5102,30 +5235,31 @@
   ]
  },
  {
-  "id": "node-565218990-2701883290",
+  "id": "node-565218990-1365540910",
   "osm": null,
   "refs": [
-   "302",
+   "395",
    "397"
   ],
-  "from": "Stavèl",
+  "from": "Campei",
   "to": "Col d'Anzana",
   "destination": "pass",
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 5989,
-  "upM": 1195,
-  "downM": 0,
-  "startEle": 1026,
+  "lengthM": 4724,
+  "upM": 970,
+  "downM": 19,
+  "startEle": 1270,
   "endEle": 2221,
-  "maxEle": 2221,
+  "maxEle": 2222,
   "start": [
-   46.18985,
-   10.08872
+   46.20725,
+   10.11266
   ],
   "end": [
    46.22308,
@@ -5133,7 +5267,41 @@
   ]
  },
  {
-  "id": "node-5854833012-8196745695",
+  "id": "node-565218990-1566987942",
+  "osm": null,
+  "refs": [
+   "301",
+   "SI",
+   "393",
+   "397"
+  ],
+  "from": "Strada Teglio - Prato Valentino",
+  "to": "Col d'Anzana",
+  "destination": "pass",
+  "difficulty": "E",
+  "unmarked": true,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "media-valtellina",
+  "lengthM": 7905,
+  "upM": 786,
+  "downM": 261,
+  "startEle": 1696,
+  "endEle": 2221,
+  "maxEle": 2221,
+  "start": [
+   46.18983,
+   10.05389
+  ],
+  "end": [
+   46.22308,
+   10.07835
+  ]
+ },
+ {
+  "id": "node-5854833012-7664925385",
   "osm": null,
   "refs": [
    "416"
@@ -5144,18 +5312,19 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 6795,
-  "upM": 972,
+  "lengthM": 4782,
+  "upM": 662,
   "downM": 0,
-  "startEle": 1440,
+  "startEle": 1751,
   "endEle": 2413,
   "maxEle": 2413,
   "start": [
-   46.19189,
-   9.78497
+   46.19968,
+   9.78446
   ],
   "end": [
    46.22108,
@@ -5177,6 +5346,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -5196,6 +5366,40 @@
   ]
  },
  {
+  "id": "way-1089096757-1915638592",
+  "osm": null,
+  "refs": [
+   "201",
+   "SI",
+   "249",
+   "245"
+  ],
+  "from": "Supiani",
+  "to": "I Laghetti",
+  "destination": "lake",
+  "difficulty": "E",
+  "unmarked": false,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "media-valtellina",
+  "lengthM": 7835,
+  "upM": 716,
+  "downM": 62,
+  "startEle": 1518,
+  "endEle": 2172,
+  "maxEle": 2201,
+  "start": [
+   46.31363,
+   10.23414
+  ],
+  "end": [
+   46.28565,
+   10.17849
+  ]
+ },
+ {
   "id": "way-1089096757-1915296009",
   "osm": null,
   "refs": [
@@ -5210,6 +5414,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -5229,65 +5434,31 @@
   ]
  },
  {
-  "id": "way-1089096757-9699989989",
+  "id": "way-1190133189-1365540910",
   "osm": null,
   "refs": [
-   "230",
-   "201",
-   "SI",
-   "245"
-  ],
-  "from": "Susen",
-  "to": "I Laghetti",
-  "destination": "lake",
-  "difficulty": "E",
-  "unmarked": true,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "media-valtellina",
-  "lengthM": 6414,
-  "upM": 1023,
-  "downM": 374,
-  "startEle": 1523,
-  "endEle": 2172,
-  "maxEle": 2546,
-  "start": [
-   46.25686,
-   10.22003
-  ],
-  "end": [
-   46.28565,
-   10.17849
-  ]
- },
- {
-  "id": "way-1190133189-10239319368",
-  "osm": null,
-  "refs": [
-   "302A",
-   "302",
    "395",
    "395A"
   ],
-  "from": "La Volta",
+  "from": "Campei",
   "to": "I Laghetti",
   "destination": "lake",
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 5197,
-  "upM": 1069,
+  "lengthM": 3928,
+  "upM": 800,
   "downM": 0,
-  "startEle": 1001,
+  "startEle": 1270,
   "endEle": 2070,
   "maxEle": 2070,
   "start": [
-   46.19923,
-   10.10774
+   46.20725,
+   10.11266
   ],
   "end": [
    46.22169,
@@ -5295,10 +5466,9 @@
   ]
  },
  {
-  "id": "way-851894564-2706291665",
+  "id": "way-851894564-2706291646",
   "osm": null,
   "refs": [
-   "274",
    "310"
   ],
   "from": "Ferrari",
@@ -5307,18 +5477,19 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 5161,
-  "upM": 847,
-  "downM": 61,
-  "startEle": 670,
+  "lengthM": 4939,
+  "upM": 829,
+  "downM": 68,
+  "startEle": 695,
   "endEle": 1456,
-  "maxEle": 1477,
+  "maxEle": 1482,
   "start": [
-   46.1425,
-   10.02564
+   46.14148,
+   10.02811
   ],
   "end": [
    46.10426,
@@ -5326,62 +5497,31 @@
   ]
  },
  {
-  "id": "way-253725162-9699989989",
+  "id": "way-253725162-298139435",
   "osm": null,
   "refs": [
-   "230",
    "201",
    "SI"
   ],
-  "from": "Susen",
+  "from": "La Forcoletta",
   "to": "Lac Brodech",
   "destination": "lake",
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 5020,
-  "upM": 837,
+  "lengthM": 2909,
+  "upM": 337,
   "downM": 0,
-  "startEle": 1523,
+  "startEle": 2023,
   "endEle": 2360,
   "maxEle": 2360,
   "start": [
-   46.25686,
-   10.22003
-  ],
-  "end": [
-   46.26599,
-   10.18038
-  ]
- },
- {
-  "id": "way-253725162-9849630572",
-  "osm": null,
-  "refs": [
-   "201",
-   "SI"
-  ],
-  "from": "Pra Baruzzo",
-  "to": "Lac Brodech",
-  "destination": "lake",
-  "difficulty": "EE",
-  "unmarked": true,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "media-valtellina",
-  "lengthM": 7222,
-  "upM": 923,
-  "downM": 13,
-  "startEle": 1450,
-  "endEle": 2360,
-  "maxEle": 2360,
-  "start": [
-   46.2395,
-   10.17921
+   46.26295,
+   10.20239
   ],
   "end": [
    46.26599,
@@ -5403,6 +5543,7 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -5436,6 +5577,7 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -5455,31 +5597,67 @@
   ]
  },
  {
-  "id": "way-472803447-8243973220",
+  "id": "way-472803447-10151859776",
   "osm": null,
   "refs": [
+   "371",
+   "374A",
    "374",
-   "377",
-   "AVVF"
+   "377"
   ],
-  "from": "La Piana",
+  "from": "Alpe Mara",
   "to": "Lagazzö",
   "destination": "lake",
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 6243,
-  "upM": 860,
-  "downM": 125,
-  "startEle": 1553,
+  "lengthM": 6263,
+  "upM": 681,
+  "downM": 182,
+  "startEle": 1789,
   "endEle": 2288,
-  "maxEle": 2360,
+  "maxEle": 2361,
   "start": [
-   46.19426,
-   9.94908
+   46.20402,
+   9.92303
+  ],
+  "end": [
+   46.22377,
+   9.96967
+  ]
+ },
+ {
+  "id": "way-472803447-2715286880",
+  "osm": null,
+  "refs": [
+   "302",
+   "377",
+   "AVVF",
+   "376"
+  ],
+  "from": "Strèfodes",
+  "to": "Lagazzö",
+  "destination": "lake",
+  "difficulty": "EE",
+  "unmarked": false,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "media-valtellina",
+  "lengthM": 5410,
+  "upM": 1032,
+  "downM": 19,
+  "startEle": 1275,
+  "endEle": 2288,
+  "maxEle": 2298,
+  "start": [
+   46.19247,
+   9.9796
   ],
   "end": [
    46.22377,
@@ -5499,6 +5677,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -5518,62 +5697,31 @@
   ]
  },
  {
-  "id": "way-143977848-9699989989",
+  "id": "way-143977848-298139435",
   "osm": null,
   "refs": [
-   "230",
    "201",
    "SI"
   ],
-  "from": "Susen",
+  "from": "La Forcoletta",
   "to": "Laghetto di Pian Fusino",
   "destination": "lake",
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 4154,
-  "upM": 755,
+  "lengthM": 2044,
+  "upM": 255,
   "downM": 0,
-  "startEle": 1523,
+  "startEle": 2023,
   "endEle": 2278,
   "maxEle": 2278,
   "start": [
-   46.25686,
-   10.22003
-  ],
-  "end": [
-   46.26914,
-   10.18777
-  ]
- },
- {
-  "id": "way-143977848-9849630572",
-  "osm": null,
-  "refs": [
-   "201",
-   "SI"
-  ],
-  "from": "Pra Baruzzo",
-  "to": "Laghetto di Pian Fusino",
-  "destination": "lake",
-  "difficulty": "E",
-  "unmarked": false,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "media-valtellina",
-  "lengthM": 6356,
-  "upM": 841,
-  "downM": 13,
-  "startEle": 1450,
-  "endEle": 2278,
-  "maxEle": 2278,
-  "start": [
-   46.2395,
-   10.17921
+   46.26295,
+   10.20239
   ],
   "end": [
    46.26914,
@@ -5592,6 +5740,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": true,
+  "tollRoad": false,
   "caiUpMin": 120,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -5623,6 +5772,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -5642,7 +5792,7 @@
   ]
  },
  {
-  "id": "way-90421829-3115324556",
+  "id": "way-90421829-3115311722",
   "osm": null,
   "refs": [
    "316",
@@ -5655,18 +5805,19 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 5016,
-  "upM": 1055,
+  "lengthM": 4968,
+  "upM": 1050,
   "downM": 2,
-  "startEle": 1209,
+  "startEle": 1213,
   "endEle": 2261,
   "maxEle": 2263,
   "start": [
-   46.13322,
-   10.06821
+   46.13302,
+   10.06774
   ],
   "end": [
    46.10403,
@@ -5674,10 +5825,106 @@
   ]
  },
  {
-  "id": "way-143378312-2813041644",
+  "id": "way-143380268-4908132601",
   "osm": null,
   "refs": [
-   "267",
+   "265",
+   "201"
+  ],
+  "from": "Briotti",
+  "to": "Lago del Reguzzo",
+  "destination": "lake",
+  "difficulty": "E",
+  "unmarked": false,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "media-valtellina",
+  "lengthM": 8180,
+  "upM": 1582,
+  "downM": 136,
+  "startEle": 1050,
+  "endEle": 2496,
+  "maxEle": 2504,
+  "start": [
+   46.14447,
+   9.97458
+  ],
+  "end": [
+   46.09445,
+   9.96657
+  ]
+ },
+ {
+  "id": "way-143380268-1568989247",
+  "osm": null,
+  "refs": [
+   "266",
+   "201",
+   "265"
+  ],
+  "from": "Ca' Pizzini",
+  "to": "Lago del Reguzzo",
+  "destination": "lake",
+  "difficulty": "E",
+  "unmarked": false,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "media-valtellina",
+  "lengthM": 9226,
+  "upM": 1627,
+  "downM": 182,
+  "startEle": 1051,
+  "endEle": 2496,
+  "maxEle": 2503,
+  "start": [
+   46.12082,
+   9.99512
+  ],
+  "end": [
+   46.09445,
+   9.96657
+  ]
+ },
+ {
+  "id": "way-142972673-1639683176",
+  "osm": null,
+  "refs": [
+   "220",
+   "221"
+  ],
+  "from": "San Salvatore",
+  "to": "Lago della Casera",
+  "destination": "lake",
+  "difficulty": "E",
+  "unmarked": false,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "media-valtellina",
+  "lengthM": 2709,
+  "upM": 599,
+  "downM": 0,
+  "startEle": 1326,
+  "endEle": 1924,
+  "maxEle": 1924,
+  "start": [
+   46.11935,
+   9.83827
+  ],
+  "end": [
+   46.10517,
+   9.85172
+  ]
+ },
+ {
+  "id": "way-143378312-4908132601",
+  "osm": null,
+  "refs": [
    "265"
   ],
   "from": "Briotti",
@@ -5686,18 +5933,19 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 5697,
-  "upM": 1084,
-  "downM": 0,
-  "startEle": 1049,
+  "lengthM": 5672,
+  "upM": 1092,
+  "downM": 8,
+  "startEle": 1050,
   "endEle": 2134,
   "maxEle": 2134,
   "start": [
-   46.14459,
-   9.97437
+   46.14447,
+   9.97458
   ],
   "end": [
    46.11105,
@@ -5705,7 +5953,7 @@
   ]
  },
  {
-  "id": "way-173031062-8196745695",
+  "id": "way-173031062-7664925385",
   "osm": null,
   "refs": [
    "416"
@@ -5716,18 +5964,19 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 7844,
-  "upM": 987,
-  "downM": 141,
-  "startEle": 1440,
+  "lengthM": 5832,
+  "upM": 674,
+  "downM": 138,
+  "startEle": 1751,
   "endEle": 2287,
   "maxEle": 2413,
   "start": [
-   46.19189,
-   9.78497
+   46.19968,
+   9.78446
   ],
   "end": [
    46.22848,
@@ -5749,6 +5998,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -5782,6 +6032,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -5814,6 +6065,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -5844,6 +6096,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -5876,6 +6129,7 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -5907,6 +6161,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -5937,6 +6192,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -5967,6 +6223,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -5997,6 +6254,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -6016,31 +6274,32 @@
   ]
  },
  {
-  "id": "node-669935649-8204060965",
+  "id": "node-669935649-2490997897",
   "osm": null,
   "refs": [
    "401",
    "420C",
    "SI"
   ],
-  "from": "Prati Gaggio",
+  "from": "Via Gaggio di Polaggia",
   "to": "Passo Caldenno",
   "destination": "pass",
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 5529,
-  "upM": 888,
-  "downM": 30,
-  "startEle": 1660,
+  "lengthM": 5457,
+  "upM": 865,
+  "downM": 20,
+  "startEle": 1673,
   "endEle": 2518,
-  "maxEle": 2529,
+  "maxEle": 2528,
   "start": [
-   46.19622,
-   9.76017
+   46.19686,
+   9.76014
   ],
   "end": [
    46.23169,
@@ -6059,6 +6318,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -6078,7 +6338,7 @@
   ]
  },
  {
-  "id": "node-671549498-3115324556",
+  "id": "node-671549498-3115311722",
   "osm": null,
   "refs": [
    "316",
@@ -6091,18 +6351,19 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 7502,
-  "upM": 1511,
-  "downM": 5,
-  "startEle": 1209,
+  "lengthM": 7455,
+  "upM": 1513,
+  "downM": 11,
+  "startEle": 1213,
   "endEle": 2715,
   "maxEle": 2715,
   "start": [
-   46.13322,
-   10.06821
+   46.13302,
+   10.06774
   ],
   "end": [
    46.08887,
@@ -6123,6 +6384,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -6142,34 +6404,35 @@
   ]
  },
  {
-  "id": "node-565219206-9945767340",
+  "id": "node-564896977-8221253533",
   "osm": null,
   "refs": [
-   "411",
-   "430"
+   "214",
+   "201"
   ],
-  "from": "Trivigno",
-  "to": "Passo del Picco",
+  "from": "Le Fontane",
+  "to": "Passo del Tonale",
   "destination": "pass",
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 4661,
-  "upM": 313,
-  "downM": 109,
-  "startEle": 1708,
-  "endEle": 1912,
-  "maxEle": 1982,
+  "lengthM": 10820,
+  "upM": 1249,
+  "downM": 232,
+  "startEle": 1328,
+  "endEle": 2346,
+  "maxEle": 2346,
   "start": [
-   46.18863,
-   10.19196
+   46.13446,
+   9.78314
   ],
   "end": [
-   46.19965,
-   10.22957
+   46.06407,
+   9.81063
   ]
  },
  {
@@ -6186,6 +6449,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -6205,38 +6469,6 @@
   ]
  },
  {
-  "id": "node-564896977-10096093465",
-  "osm": null,
-  "refs": [
-   "254",
-   "201",
-   "219"
-  ],
-  "from": "Ambria",
-  "to": "Passo del Tonale",
-  "destination": "pass",
-  "difficulty": "EE",
-  "unmarked": false,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "media-valtellina",
-  "lengthM": 13603,
-  "upM": 1511,
-  "downM": 487,
-  "startEle": 1322,
-  "endEle": 2346,
-  "maxEle": 2448,
-  "start": [
-   46.09976,
-   9.88691
-  ],
-  "end": [
-   46.06407,
-   9.81063
-  ]
- },
- {
   "id": "node-565219065-4621056569",
   "osm": null,
   "refs": [
@@ -6249,6 +6481,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -6279,6 +6512,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -6298,12 +6532,9 @@
   ]
  },
  {
-  "id": "node-565086542-1917471083",
+  "id": "node-565086542-1333693668",
   "osm": null,
   "refs": [
-   "201",
-   "259B",
-   "259",
    "264"
   ],
   "from": "Eita",
@@ -6312,18 +6543,19 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 9734,
-  "upM": 836,
-  "downM": 326,
-  "startEle": 1699,
+  "lengthM": 5199,
+  "upM": 528,
+  "downM": 29,
+  "startEle": 1710,
   "endEle": 2208,
-  "maxEle": 2213,
+  "maxEle": 2214,
   "start": [
-   46.37444,
-   10.2496
+   46.37321,
+   10.25496
   ],
   "end": [
    46.34111,
@@ -6343,6 +6575,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -6374,6 +6607,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -6406,6 +6640,7 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -6439,6 +6674,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -6472,6 +6708,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -6491,6 +6728,40 @@
   ]
  },
  {
+  "id": "node-2222553788-982159529",
+  "osm": null,
+  "refs": [
+   "211",
+   "201",
+   "SI",
+   "201A"
+  ],
+  "from": "Sovalzo",
+  "to": "Passo di Dordonella",
+  "destination": "pass",
+  "difficulty": "EE",
+  "unmarked": true,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "media-valtellina",
+  "lengthM": 11225,
+  "upM": 1448,
+  "downM": 230,
+  "startEle": 1098,
+  "endEle": 2315,
+  "maxEle": 2319,
+  "start": [
+   46.13231,
+   9.75231
+  ],
+  "end": [
+   46.07249,
+   9.74619
+  ]
+ },
+ {
   "id": "14472488",
   "osm": 14472488,
   "refs": [
@@ -6502,6 +6773,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -6535,6 +6807,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -6554,37 +6827,6 @@
   ]
  },
  {
-  "id": "node-565219096-1567114219",
-  "osm": null,
-  "refs": [
-   "301",
-   "SI"
-  ],
-  "from": "Prato Valentino",
-  "to": "Passo di Meden",
-  "destination": "pass",
-  "difficulty": "E",
-  "unmarked": true,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "media-valtellina",
-  "lengthM": 6607,
-  "upM": 778,
-  "downM": 53,
-  "startEle": 1713,
-  "endEle": 2439,
-  "maxEle": 2439,
-  "start": [
-   46.18919,
-   10.0522
-  ],
-  "end": [
-   46.22365,
-   10.06011
-  ]
- },
- {
   "id": "14472120",
   "osm": 14472120,
   "refs": [
@@ -6596,6 +6838,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -6629,6 +6872,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -6662,6 +6906,7 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -6681,31 +6926,31 @@
   ]
  },
  {
-  "id": "node-5100029744-10121518055",
+  "id": "node-5100029744-5444544039",
   "osm": null,
   "refs": [
-   "410",
    "321",
    "320"
   ],
-  "from": "Stazzona",
+  "from": "Ziglia",
   "to": "Passo di Santa Cristina",
   "destination": "pass",
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 6320,
-  "upM": 1058,
-  "downM": 33,
-  "startEle": 434,
+  "lengthM": 3441,
+  "upM": 565,
+  "downM": 31,
+  "startEle": 926,
   "endEle": 1459,
   "maxEle": 1459,
   "start": [
-   46.18569,
-   10.13412
+   46.17035,
+   10.13771
   ],
   "end": [
    46.17015,
@@ -6713,31 +6958,32 @@
   ]
  },
  {
-  "id": "node-7755990899-8204060965",
+  "id": "node-7755990899-2490997897",
   "osm": null,
   "refs": [
    "401",
    "420C",
    "SI"
   ],
-  "from": "Prati Gaggio",
+  "from": "Via Gaggio di Polaggia",
   "to": "Passo di Scermendone",
   "destination": "pass",
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 5666,
-  "upM": 963,
-  "downM": 25,
-  "startEle": 1660,
+  "lengthM": 5595,
+  "upM": 940,
+  "downM": 15,
+  "startEle": 1673,
   "endEle": 2598,
-  "maxEle": 2600,
+  "maxEle": 2598,
   "start": [
-   46.19622,
-   9.76017
+   46.19686,
+   9.76014
   ],
   "end": [
    46.22619,
@@ -6745,31 +6991,31 @@
   ]
  },
  {
-  "id": "node-564896898-7683770818",
+  "id": "node-564896898-8221253533",
   "osm": null,
   "refs": [
-   "215A",
    "214",
    "201"
   ],
-  "from": "Foppa",
+  "from": "Le Fontane",
   "to": "Passo di Valbona",
   "destination": "pass",
-  "difficulty": "EE",
-  "unmarked": true,
+  "difficulty": "E",
+  "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 12147,
-  "upM": 1464,
-  "downM": 316,
-  "startEle": 1161,
+  "lengthM": 11287,
+  "upM": 1224,
+  "downM": 243,
+  "startEle": 1328,
   "endEle": 2310,
-  "maxEle": 2322,
+  "maxEle": 2324,
   "start": [
-   46.13421,
-   9.80519
+   46.13446,
+   9.78314
   ],
   "end": [
    46.06597,
@@ -6777,31 +7023,31 @@
   ]
  },
  {
-  "id": "node-564896247-7683770818",
+  "id": "node-564896247-8221253533",
   "osm": null,
   "refs": [
-   "215A",
    "214",
    "201"
   ],
-  "from": "Foppa",
+  "from": "Le Fontane",
   "to": "Passo di Valcervia",
   "destination": "pass",
-  "difficulty": "EE",
-  "unmarked": true,
+  "difficulty": "E",
+  "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 11656,
-  "upM": 1452,
-  "downM": 300,
-  "startEle": 1161,
+  "lengthM": 10796,
+  "upM": 1208,
+  "downM": 222,
+  "startEle": 1328,
   "endEle": 2314,
   "maxEle": 2314,
   "start": [
-   46.13421,
-   9.80519
+   46.13446,
+   9.78314
   ],
   "end": [
    46.05384,
@@ -6821,6 +7067,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -6854,6 +7101,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -6886,6 +7134,7 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -6916,6 +7165,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -6935,35 +7185,68 @@
   ]
  },
  {
-  "id": "node-564896878-7683770818",
+  "id": "node-564896878-8221253533",
   "osm": null,
   "refs": [
-   "215A",
    "214",
    "212"
   ],
-  "from": "Foppa",
+  "from": "Le Fontane",
   "to": "Passo di Vitalengo",
   "destination": "pass",
-  "difficulty": "EE",
-  "unmarked": true,
+  "difficulty": "E",
+  "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 7909,
-  "upM": 1250,
-  "downM": 303,
-  "startEle": 1161,
+  "lengthM": 7049,
+  "upM": 1002,
+  "downM": 222,
+  "startEle": 1328,
   "endEle": 2108,
-  "maxEle": 2112,
+  "maxEle": 2108,
   "start": [
-   46.13421,
-   9.80519
+   46.13446,
+   9.78314
   ],
   "end": [
    46.09087,
    9.78225
+  ]
+ },
+ {
+  "id": "node-564897001-982159529",
+  "osm": null,
+  "refs": [
+   "211",
+   "201",
+   "SI"
+  ],
+  "from": "Sovalzo",
+  "to": "Passo Dordona",
+  "destination": "pass",
+  "difficulty": "EE",
+  "unmarked": true,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "media-valtellina",
+  "lengthM": 9893,
+  "upM": 1175,
+  "downM": 213,
+  "startEle": 1098,
+  "endEle": 2059,
+  "maxEle": 2059,
+  "start": [
+   46.13231,
+   9.75231
+  ],
+  "end": [
+   46.06291,
+   9.76396
   ]
  },
  {
@@ -6981,6 +7264,7 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -7014,6 +7298,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -7047,6 +7332,7 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -7066,7 +7352,7 @@
   ]
  },
  {
-  "id": "node-4633609435-1567114219",
+  "id": "node-4633609435-1566987942",
   "osm": null,
   "refs": [
    "301",
@@ -7074,24 +7360,25 @@
    "394B",
    "AVVF"
   ],
-  "from": "Prato Valentino",
+  "from": "Strada Teglio - Prato Valentino",
   "to": "Passo Malgina",
   "destination": "pass",
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 8712,
-  "upM": 1238,
-  "downM": 336,
-  "startEle": 1713,
+  "lengthM": 8563,
+  "upM": 1237,
+  "downM": 319,
+  "startEle": 1696,
   "endEle": 2614,
   "maxEle": 2882,
   "start": [
-   46.18919,
-   10.0522
+   46.18983,
+   10.05389
   ],
   "end": [
    46.23586,
@@ -7112,6 +7399,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -7131,11 +7419,40 @@
   ]
  },
  {
-  "id": "node-565086530-1917471083",
+  "id": "node-565086527-1333693668",
   "osm": null,
   "refs": [
-   "201",
-   "259B",
+   "264"
+  ],
+  "from": "Eita",
+  "to": "Passo Quintena",
+  "destination": "pass",
+  "difficulty": "E",
+  "unmarked": true,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "media-valtellina",
+  "lengthM": 7166,
+  "upM": 812,
+  "downM": 229,
+  "startEle": 1710,
+  "endEle": 2293,
+  "maxEle": 2452,
+  "start": [
+   46.37321,
+   10.25496
+  ],
+  "end": [
+   46.35156,
+   10.28869
+  ]
+ },
+ {
+  "id": "node-565086530-1333693668",
+  "osm": null,
+  "refs": [
    "259"
   ],
   "from": "Eita",
@@ -7144,18 +7461,19 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 8057,
-  "upM": 1185,
-  "downM": 130,
-  "startEle": 1699,
+  "lengthM": 6118,
+  "upM": 1085,
+  "downM": 41,
+  "startEle": 1710,
   "endEle": 2753,
-  "maxEle": 2756,
+  "maxEle": 2758,
   "start": [
-   46.37444,
-   10.2496
+   46.37321,
+   10.25496
   ],
   "end": [
    46.38333,
@@ -7177,6 +7495,7 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -7196,7 +7515,7 @@
   ]
  },
  {
-  "id": "way-163359093-1567074453",
+  "id": "way-163359093-1764471283",
   "osm": null,
   "refs": [
    "204",
@@ -7208,18 +7527,19 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 2400,
-  "upM": 504,
-  "downM": 7,
-  "startEle": 1035,
+  "lengthM": 2321,
+  "upM": 495,
+  "downM": 6,
+  "startEle": 1043,
   "endEle": 1532,
   "maxEle": 1532,
   "start": [
-   46.14451,
-   9.92434
+   46.14434,
+   9.92334
   ],
   "end": [
    46.13176,
@@ -7239,6 +7559,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -7258,7 +7579,7 @@
   ]
  },
  {
-  "id": "way-163357726-1567074453",
+  "id": "way-163357726-1764471283",
   "osm": null,
   "refs": [
    "204",
@@ -7270,18 +7591,19 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 4230,
-  "upM": 639,
-  "downM": 47,
-  "startEle": 1035,
+  "lengthM": 4151,
+  "upM": 644,
+  "downM": 60,
+  "startEle": 1043,
   "endEle": 1628,
-  "maxEle": 1664,
+  "maxEle": 1671,
   "start": [
-   46.14451,
-   9.92434
+   46.14434,
+   9.92334
   ],
   "end": [
    46.12188,
@@ -7289,32 +7611,31 @@
   ]
  },
  {
-  "id": "way-163357726-2813041644",
+  "id": "way-163357726-1568967846",
   "osm": null,
   "refs": [
-   "267",
-   "265",
-   "264B",
+   "204",
    "264"
   ],
   "from": "Briotti",
   "to": "Rifugio Amici d'Armisola m.1624 (SO)",
   "destination": "hut",
   "difficulty": "E",
-  "unmarked": false,
+  "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 5787,
-  "upM": 632,
-  "downM": 53,
-  "startEle": 1049,
+  "lengthM": 5391,
+  "upM": 602,
+  "downM": 7,
+  "startEle": 1032,
   "endEle": 1628,
-  "maxEle": 1656,
+  "maxEle": 1629,
   "start": [
-   46.14459,
-   9.97437
+   46.1461,
+   9.96736
   ],
   "end": [
    46.12188,
@@ -7322,32 +7643,33 @@
   ]
  },
  {
-  "id": "way-236673395-336391512",
+  "id": "way-236673395-6297857169",
   "osm": null,
   "refs": [
-   "445A",
+   "448",
    "445",
-   "443",
+   "445B",
    "444"
   ],
-  "from": "Valle di Sotto",
+  "from": "Cuf",
   "to": "Rifugio Antonioli",
   "destination": "hut",
   "difficulty": "E",
-  "unmarked": false,
+  "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 5497,
-  "upM": 1233,
-  "downM": 0,
-  "startEle": 563,
+  "lengthM": 5327,
+  "upM": 436,
+  "downM": 203,
+  "startEle": 1562,
   "endEle": 1796,
-  "maxEle": 1796,
+  "maxEle": 1912,
   "start": [
-   46.25436,
-   10.25639
+   46.27799,
+   10.29147
   ],
   "end": [
    46.24783,
@@ -7366,6 +7688,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -7396,6 +7719,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -7429,6 +7753,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -7448,6 +7773,40 @@
   ]
  },
  {
+  "id": "way-178842971-10151859776",
+  "osm": null,
+  "refs": [
+   "371",
+   "374A",
+   "374",
+   "377"
+  ],
+  "from": "Alpe Mara",
+  "to": "Rifugio Capanna Vetta di Ron",
+  "destination": "bivouac",
+  "difficulty": "EE",
+  "unmarked": false,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "media-valtellina",
+  "lengthM": 6212,
+  "upM": 637,
+  "downM": 248,
+  "startEle": 1789,
+  "endEle": 2178,
+  "maxEle": 2361,
+  "start": [
+   46.20402,
+   9.92303
+  ],
+  "end": [
+   46.219,
+   9.9701
+  ]
+ },
+ {
   "id": "way-178842971-2715286880",
   "osm": null,
   "refs": [
@@ -7462,6 +7821,7 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -7481,92 +7841,64 @@
   ]
  },
  {
-  "id": "way-304597534-7599698800",
+  "id": "way-83801467-982159529",
   "osm": null,
   "refs": [
-   "401",
+   "211",
    "SI"
   ],
-  "from": "Prato Maslino",
-  "to": "Rifugio Cesare Ponti",
+  "from": "Sovalzo",
+  "to": "Rifugio Casera Dordona",
   "destination": "hut",
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 11844,
-  "upM": 1264,
-  "downM": 329,
-  "startEle": 1629,
-  "endEle": 2564,
-  "maxEle": 2564,
+  "lengthM": 9596,
+  "upM": 1071,
+  "downM": 213,
+  "startEle": 1098,
+  "endEle": 1955,
+  "maxEle": 1955,
   "start": [
-   46.19256,
-   9.73332
+   46.13231,
+   9.75231
   ],
   "end": [
-   46.25123,
-   9.72291
+   46.07056,
+   9.75545
   ]
  },
  {
-  "id": "way-238947675-4934940386",
+  "id": "way-238947675-9277357723",
   "osm": null,
   "refs": [
    "322",
    "322A",
    "323"
   ],
-  "from": "Luscio",
+  "from": "Vespi",
   "to": "Rifugio Cristina",
   "destination": "hut",
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 8517,
-  "upM": 507,
-  "downM": 159,
-  "startEle": 929,
+  "lengthM": 7346,
+  "upM": 478,
+  "downM": 237,
+  "startEle": 1036,
   "endEle": 1277,
   "maxEle": 1277,
   "start": [
-   46.14228,
-   10.07297
-  ],
-  "end": [
-   46.11156,
-   10.13857
-  ]
- },
- {
-  "id": "way-238947675-2701923339",
-  "osm": null,
-  "refs": [
-   "323"
-  ],
-  "from": "Palazzetta",
-  "to": "Rifugio Cristina",
-  "destination": "hut",
-  "difficulty": "E",
-  "unmarked": false,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "media-valtellina",
-  "lengthM": 11064,
-  "upM": 962,
-  "downM": 71,
-  "startEle": 386,
-  "endEle": 1277,
-  "maxEle": 1277,
-  "start": [
-   46.17422,
-   10.10408
+   46.14388,
+   10.09346
   ],
   "end": [
    46.11156,
@@ -7588,6 +7920,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -7618,6 +7951,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -7637,10 +7971,9 @@
   ]
  },
  {
-  "id": "node-13183920434-6467051246",
+  "id": "node-13183920434-1564344448",
   "osm": null,
   "refs": [
-   "216",
    "217",
    "221"
   ],
@@ -7650,18 +7983,19 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 5476,
-  "upM": 840,
-  "downM": 158,
-  "startEle": 1320,
+  "lengthM": 5409,
+  "upM": 791,
+  "downM": 154,
+  "startEle": 1364,
   "endEle": 2001,
   "maxEle": 2120,
   "start": [
-   46.13607,
-   9.87023
+   46.1348,
+   9.87142
   ],
   "end": [
    46.10963,
@@ -7669,11 +8003,11 @@
   ]
  },
  {
-  "id": "way-177535653-2813041644",
+  "id": "way-177535653-4908132601",
   "osm": null,
   "refs": [
-   "267",
    "265",
+   "267",
    "264B",
    "264"
   ],
@@ -7683,18 +8017,19 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 5706,
-  "upM": 826,
-  "downM": 14,
-  "startEle": 1049,
+  "lengthM": 5682,
+  "upM": 818,
+  "downM": 7,
+  "startEle": 1050,
   "endEle": 1862,
   "maxEle": 1862,
   "start": [
-   46.14459,
-   9.97437
+   46.14447,
+   9.97458
   ],
   "end": [
    46.12104,
@@ -7702,7 +8037,7 @@
   ]
  },
  {
-  "id": "way-177535653-1567074453",
+  "id": "way-177535653-1764471283",
   "osm": null,
   "refs": [
    "204",
@@ -7716,18 +8051,19 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 5613,
-  "upM": 874,
-  "downM": 47,
-  "startEle": 1035,
+  "lengthM": 5534,
+  "upM": 884,
+  "downM": 65,
+  "startEle": 1043,
   "endEle": 1862,
   "maxEle": 1862,
   "start": [
-   46.14451,
-   9.92434
+   46.14434,
+   9.92334
   ],
   "end": [
    46.12104,
@@ -7735,62 +8071,31 @@
   ]
  },
  {
-  "id": "way-143047507-1219199729",
+  "id": "way-143047507-10151859776",
   "osm": null,
   "refs": [
-   "370"
-  ],
-  "from": "Carnale",
-  "to": "Rifugio Gugiatti-Sertorelli",
-  "destination": "bivouac",
-  "difficulty": "E",
-  "unmarked": false,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "media-valtellina",
-  "lengthM": 4442,
-  "upM": 905,
-  "downM": 7,
-  "startEle": 1242,
-  "endEle": 2139,
-  "maxEle": 2141,
-  "start": [
-   46.18894,
-   9.88596
-  ],
-  "end": [
-   46.21333,
-   9.92073
-  ]
- },
- {
-  "id": "way-143047507-8243973220",
-  "osm": null,
-  "refs": [
-   "374",
-   "374A",
    "371",
    "370"
   ],
-  "from": "La Piana",
+  "from": "Alpe Mara",
   "to": "Rifugio Gugiatti-Sertorelli",
   "destination": "bivouac",
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 6033,
-  "upM": 727,
-  "downM": 141,
-  "startEle": 1553,
+  "lengthM": 2307,
+  "upM": 367,
+  "downM": 17,
+  "startEle": 1789,
   "endEle": 2139,
-  "maxEle": 2177,
+  "maxEle": 2156,
   "start": [
-   46.19426,
-   9.94908
+   46.20402,
+   9.92303
   ],
   "end": [
    46.21333,
@@ -7798,60 +8103,30 @@
   ]
  },
  {
-  "id": "way-150554091-1639683176",
+  "id": "way-150554091-1564344448",
   "osm": null,
   "refs": [
-   "220"
-  ],
-  "from": "San Salvatore",
-  "to": "Rifugio Lago della Casera",
-  "destination": "bivouac",
-  "difficulty": "E",
-  "unmarked": false,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "media-valtellina",
-  "lengthM": 4283,
-  "upM": 649,
-  "downM": 18,
-  "startEle": 1326,
-  "endEle": 1958,
-  "maxEle": 1979,
-  "start": [
-   46.11935,
-   9.83827
-  ],
-  "end": [
-   46.10444,
-   9.85325
-  ]
- },
- {
-  "id": "way-150554091-6467051246",
-  "osm": null,
-  "refs": [
-   "216",
    "217"
   ],
   "from": "Campelli",
   "to": "Rifugio Lago della Casera",
   "destination": "bivouac",
   "difficulty": "E",
-  "unmarked": false,
+  "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 5877,
-  "upM": 751,
-  "downM": 113,
-  "startEle": 1320,
+  "lengthM": 5811,
+  "upM": 712,
+  "downM": 119,
+  "startEle": 1364,
   "endEle": 1958,
   "maxEle": 1980,
   "start": [
-   46.13607,
-   9.87023
+   46.1348,
+   9.87142
   ],
   "end": [
    46.10444,
@@ -7871,6 +8146,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -7903,6 +8179,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -7922,70 +8199,6 @@
   ]
  },
  {
-  "id": "way-151622401-2813041644",
-  "osm": null,
-  "refs": [
-   "267",
-   "265",
-   "201"
-  ],
-  "from": "Briotti",
-  "to": "Rifugio Ottorino Donati",
-  "destination": "bivouac",
-  "difficulty": "E",
-  "unmarked": false,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "media-valtellina",
-  "lengthM": 8054,
-  "upM": 1557,
-  "downM": 101,
-  "startEle": 1049,
-  "endEle": 2505,
-  "maxEle": 2505,
-  "start": [
-   46.14459,
-   9.97437
-  ],
-  "end": [
-   46.09573,
-   9.96702
-  ]
- },
- {
-  "id": "way-151622401-1568989247",
-  "osm": null,
-  "refs": [
-   "266",
-   "201",
-   "265"
-  ],
-  "from": "Ca' Pizzini",
-  "to": "Rifugio Ottorino Donati",
-  "destination": "bivouac",
-  "difficulty": "E",
-  "unmarked": false,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "media-valtellina",
-  "lengthM": 9075,
-  "upM": 1634,
-  "downM": 179,
-  "startEle": 1051,
-  "endEle": 2505,
-  "maxEle": 2505,
-  "start": [
-   46.12082,
-   9.99512
-  ],
-  "end": [
-   46.09573,
-   9.96702
-  ]
- },
- {
   "id": "way-306575934-1568989247",
   "osm": null,
   "refs": [
@@ -7998,6 +8211,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -8029,6 +8243,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -8059,6 +8274,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -8089,6 +8305,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -8108,7 +8325,7 @@
   ]
  },
  {
-  "id": "way-76605576-902765076",
+  "id": "way-76605576-902765499",
   "osm": null,
   "refs": [
    "301",
@@ -8122,18 +8339,19 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 3413,
-  "upM": 713,
-  "downM": 14,
-  "startEle": 1219,
+  "lengthM": 3378,
+  "upM": 708,
+  "downM": 16,
+  "startEle": 1226,
   "endEle": 1918,
   "maxEle": 1918,
   "start": [
-   46.14844,
-   10.14658
+   46.14821,
+   10.14683
   ],
   "end": [
    46.13221,
@@ -8141,7 +8359,7 @@
   ]
  },
  {
-  "id": "node-1639990357-902765076",
+  "id": "node-1639990357-902765499",
   "osm": null,
   "refs": [
    "301",
@@ -8153,18 +8371,19 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
-  "lengthM": 3984,
-  "upM": 721,
+  "lengthM": 3950,
+  "upM": 715,
   "downM": 0,
-  "startEle": 1219,
+  "startEle": 1226,
   "endEle": 1941,
   "maxEle": 1941,
   "start": [
-   46.14844,
-   10.14658
+   46.14821,
+   10.14683
   ],
   "end": [
    46.12973,
@@ -8186,6 +8405,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -8216,6 +8436,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -8248,6 +8469,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -8278,6 +8500,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -8309,6 +8532,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -8340,6 +8564,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "media-valtellina",
@@ -8370,6 +8595,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -8400,6 +8626,7 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -8431,6 +8658,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -8461,6 +8689,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -8491,6 +8720,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -8519,6 +8749,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -8547,6 +8778,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -8575,6 +8807,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -8603,6 +8836,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -8633,6 +8867,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -8661,6 +8896,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -8689,6 +8925,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -8717,6 +8954,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -8747,6 +8985,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -8777,6 +9016,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -8796,7 +9036,7 @@
   ]
  },
  {
-  "id": "way-104182320-1386104133",
+  "id": "way-104182236-1386104133",
   "osm": null,
   "refs": [
    "N579"
@@ -8807,54 +9047,87 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
-  "lengthM": 4854,
-  "upM": 967,
-  "downM": 17,
+  "lengthM": 5251,
+  "upM": 980,
+  "downM": 15,
   "startEle": 1413,
-  "endEle": 2364,
-  "maxEle": 2378,
+  "endEle": 2378,
+  "maxEle": 2380,
   "start": [
    46.4039,
    9.37278
   ],
   "end": [
-   46.40789,
-   9.41169
+   46.40702,
+   9.41628
   ]
  },
  {
-  "id": "way-104182320-1630309514",
+  "id": "way-104182236-1630309458",
   "osm": null,
   "refs": [
    "N561",
    "N585",
    "N579"
   ],
-  "from": "Alpe del Crot",
+  "from": "Via Bibo del Curto",
   "to": "Laghi del Passo di Angeloga",
   "destination": "lake",
-  "difficulty": "EE",
+  "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
-  "lengthM": 11364,
-  "upM": 573,
-  "downM": 176,
-  "startEle": 1967,
-  "endEle": 2364,
-  "maxEle": 2388,
+  "lengthM": 10177,
+  "upM": 521,
+  "downM": 99,
+  "startEle": 1956,
+  "endEle": 2378,
+  "maxEle": 2387,
   "start": [
-   46.48805,
-   9.44935
+   46.483,
+   9.44924
   ],
   "end": [
-   46.40789,
-   9.41169
+   46.40702,
+   9.41628
+  ]
+ },
+ {
+  "id": "way-104182326-1630309458",
+  "osm": null,
+  "refs": [
+   "N561"
+  ],
+  "from": "Via Bibo del Curto",
+  "to": "Laghi del Passo di Lei",
+  "destination": "lake",
+  "difficulty": "E",
+  "unmarked": false,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "valchiavenna",
+  "lengthM": 14910,
+  "upM": 823,
+  "downM": 121,
+  "startEle": 1956,
+  "endEle": 2657,
+  "maxEle": 2657,
+  "start": [
+   46.483,
+   9.44924
+  ],
+  "end": [
+   46.36934,
+   9.43236
   ]
  },
  {
@@ -8869,6 +9142,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -8897,6 +9171,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -8925,6 +9200,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -8953,6 +9229,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -8981,6 +9258,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -9009,6 +9287,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -9028,6 +9307,37 @@
   ]
  },
  {
+  "id": "way-91143820-431911666",
+  "osm": null,
+  "refs": [
+   "N593"
+  ],
+  "from": "Suretta",
+  "to": "Lago del Passo di Suretta",
+  "destination": "lake",
+  "difficulty": "EE",
+  "unmarked": true,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "valchiavenna",
+  "lengthM": 2724,
+  "upM": 625,
+  "downM": 6,
+  "startEle": 1901,
+  "endEle": 2520,
+  "maxEle": 2520,
+  "start": [
+   46.48238,
+   9.3556
+  ],
+  "end": [
+   46.49618,
+   9.36507
+  ]
+ },
+ {
   "id": "way-104043629-300057086",
   "osm": null,
   "refs": [
@@ -9039,6 +9349,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -9067,6 +9378,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -9086,6 +9398,98 @@
   ]
  },
  {
+  "id": "way-103917184-5206203138",
+  "osm": null,
+  "refs": [],
+  "from": "Scanabecco",
+  "to": "Lago Nero",
+  "destination": "lake",
+  "difficulty": "EE",
+  "unmarked": true,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "valchiavenna",
+  "lengthM": 7233,
+  "upM": 1050,
+  "downM": 151,
+  "startEle": 1248,
+  "endEle": 2147,
+  "maxEle": 2160,
+  "start": [
+   46.34943,
+   9.35095
+  ],
+  "end": [
+   46.36337,
+   9.30716
+  ]
+ },
+ {
+  "id": "way-104182341-1386104133",
+  "osm": null,
+  "refs": [
+   "N579"
+  ],
+  "from": "Soste",
+  "to": "Lago Nero di Angeloga",
+  "destination": "lake",
+  "difficulty": "EE",
+  "unmarked": true,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "valchiavenna",
+  "lengthM": 4727,
+  "upM": 947,
+  "downM": 6,
+  "startEle": 1413,
+  "endEle": 2354,
+  "maxEle": 2360,
+  "start": [
+   46.4039,
+   9.37278
+  ],
+  "end": [
+   46.40627,
+   9.41027
+  ]
+ },
+ {
+  "id": "way-104182341-1386087195",
+  "osm": null,
+  "refs": [
+   "N582",
+   "N579"
+  ],
+  "from": "Groppera",
+  "to": "Lago Nero di Angeloga",
+  "destination": "lake",
+  "difficulty": "EE",
+  "unmarked": true,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "valchiavenna",
+  "lengthM": 7945,
+  "upM": 737,
+  "downM": 291,
+  "startEle": 1909,
+  "endEle": 2354,
+  "maxEle": 2357,
+  "start": [
+   46.4306,
+   9.3797
+  ],
+  "end": [
+   46.40627,
+   9.41027
+  ]
+ },
+ {
   "id": "way-91144999-431911666",
   "osm": null,
   "refs": [
@@ -9097,6 +9501,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -9116,36 +9521,6 @@
   ]
  },
  {
-  "id": "node-561579897-431911666",
-  "osm": null,
-  "refs": [
-   "N593"
-  ],
-  "from": "Suretta",
-  "to": "Pass da Suretta",
-  "destination": "pass",
-  "difficulty": "EE",
-  "unmarked": true,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "valchiavenna",
-  "lengthM": 3074,
-  "upM": 685,
-  "downM": 6,
-  "startEle": 1901,
-  "endEle": 2581,
-  "maxEle": 2581,
-  "start": [
-   46.48238,
-   9.3556
-  ],
-  "end": [
-   46.49695,
-   9.36925
-  ]
- },
- {
   "id": "node-561579877-5062244888",
   "osm": null,
   "refs": [
@@ -9157,6 +9532,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -9185,6 +9561,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -9204,93 +9581,32 @@
   ]
  },
  {
-  "id": "node-561579892-1386104133",
-  "osm": null,
-  "refs": [
-   "N579"
-  ],
-  "from": "Soste",
-  "to": "Passo di Angeloga",
-  "destination": "pass",
-  "difficulty": "EE",
-  "unmarked": true,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "valchiavenna",
-  "lengthM": 5397,
-  "upM": 989,
-  "downM": 16,
-  "startEle": 1413,
-  "endEle": 2387,
-  "maxEle": 2387,
-  "start": [
-   46.4039,
-   9.37278
-  ],
-  "end": [
-   46.40803,
-   9.41725
-  ]
- },
- {
-  "id": "node-561579892-1630309514",
-  "osm": null,
-  "refs": [
-   "N561",
-   "N585",
-   "N579"
-  ],
-  "from": "Alpe del Crot",
-  "to": "Passo di Angeloga",
-  "destination": "pass",
-  "difficulty": "E",
-  "unmarked": false,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "valchiavenna",
-  "lengthM": 10821,
-  "upM": 574,
-  "downM": 154,
-  "startEle": 1967,
-  "endEle": 2387,
-  "maxEle": 2387,
-  "start": [
-   46.48805,
-   9.44935
-  ],
-  "end": [
-   46.40803,
-   9.41725
-  ]
- },
- {
-  "id": "node-561579893-1630309514",
+  "id": "node-561579893-1630309458",
   "osm": null,
   "refs": [
    "N561",
    "N594",
    "N595"
   ],
-  "from": "Alpe del Crot",
+  "from": "Via Bibo del Curto",
   "to": "Passo Settentrionale di Sterla",
   "destination": "pass",
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
-  "lengthM": 8229,
-  "upM": 1053,
-  "downM": 208,
-  "startEle": 1967,
+  "lengthM": 7440,
+  "upM": 1007,
+  "downM": 151,
+  "startEle": 1956,
   "endEle": 2812,
-  "maxEle": 2820,
+  "maxEle": 2823,
   "start": [
-   46.48805,
-   9.44935
+   46.483,
+   9.44924
   ],
   "end": [
    46.45891,
@@ -9309,6 +9625,7 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -9337,6 +9654,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -9367,6 +9685,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -9397,6 +9716,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -9416,62 +9736,6 @@
   ]
  },
  {
-  "id": "way-151748411-5206203138",
-  "osm": null,
-  "refs": [],
-  "from": "Scanabecco",
-  "to": "Rifugio Carlo Emilio",
-  "destination": "bivouac",
-  "difficulty": "EE",
-  "unmarked": true,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "valchiavenna",
-  "lengthM": 7259,
-  "upM": 1049,
-  "downM": 152,
-  "startEle": 1248,
-  "endEle": 2144,
-  "maxEle": 2160,
-  "start": [
-   46.34943,
-   9.35095
-  ],
-  "end": [
-   46.36353,
-   9.3069
-  ]
- },
- {
-  "id": "way-176076150-3725129232",
-  "osm": null,
-  "refs": [],
-  "from": "Sceglio",
-  "to": "Rifugio Chianova",
-  "destination": "hut",
-  "difficulty": "E",
-  "unmarked": true,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "valchiavenna",
-  "lengthM": 2570,
-  "upM": 755,
-  "downM": 0,
-  "startEle": 310,
-  "endEle": 1065,
-  "maxEle": 1065,
-  "start": [
-   46.19638,
-   9.45854
-  ],
-  "end": [
-   46.18773,
-   9.46993
-  ]
- },
- {
   "id": "way-73133270-1386104133",
   "osm": null,
   "refs": [
@@ -9483,6 +9747,7 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -9502,27 +9767,28 @@
   ]
  },
  {
-  "id": "way-380531428-3725129232",
+  "id": "way-380531428-1361941712",
   "osm": null,
   "refs": [],
-  "from": "Sceglio",
+  "from": "Strada vicinale di Pradello",
   "to": "Rifugio Consorzio Prati di Brusada m.1555",
   "destination": "hut",
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
-  "lengthM": 8157,
-  "upM": 1528,
-  "downM": 283,
-  "startEle": 310,
+  "lengthM": 7554,
+  "upM": 1421,
+  "downM": 282,
+  "startEle": 416,
   "endEle": 1555,
-  "maxEle": 1817,
+  "maxEle": 1816,
   "start": [
-   46.19638,
-   9.45854
+   46.1959,
+   9.46239
   ],
   "end": [
    46.17405,
@@ -9541,6 +9807,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -9573,6 +9840,7 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -9601,6 +9869,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -9631,6 +9900,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -9662,6 +9932,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -9690,6 +9961,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -9721,6 +9993,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valchiavenna",
@@ -9751,6 +10024,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": 184,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -9781,6 +10055,7 @@
   "difficulty": "T",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -9800,70 +10075,6 @@
   ]
  },
  {
-  "id": "way-177538238-9008622010",
-  "osm": null,
-  "refs": [
-   "331",
-   "304",
-   "321",
-   "318"
-  ],
-  "from": "Prati del Cabello",
-  "to": "Bivacco Alpini",
-  "destination": "bivouac",
-  "difficulty": "E",
-  "unmarked": false,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "valmalenco",
-  "lengthM": 2357,
-  "upM": 561,
-  "downM": 40,
-  "startEle": 1447,
-  "endEle": 1968,
-  "maxEle": 1970,
-  "start": [
-   46.30133,
-   9.83515
-  ],
-  "end": [
-   46.29606,
-   9.82106
-  ]
- },
- {
-  "id": "way-177538238-2907669109",
-  "osm": null,
-  "refs": [
-   "SI",
-   "318"
-  ],
-  "from": "Chiareggio",
-  "to": "Bivacco Alpini",
-  "destination": "bivouac",
-  "difficulty": "EE",
-  "unmarked": true,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "valmalenco",
-  "lengthM": 4026,
-  "upM": 491,
-  "downM": 134,
-  "startEle": 1611,
-  "endEle": 1968,
-  "maxEle": 1971,
-  "start": [
-   46.31597,
-   9.78791
-  ],
-  "end": [
-   46.29606,
-   9.82106
-  ]
- },
- {
   "id": "way-367991313-12013143248",
   "osm": null,
   "refs": [
@@ -9877,6 +10088,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -9910,6 +10122,7 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -9943,6 +10156,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -9962,98 +10176,34 @@
   ]
  },
  {
-  "id": "node-2472080925-1836611514",
+  "id": "node-2472080398-6681484834",
   "osm": null,
   "refs": [
-   "342",
-   "343A",
-   "343-1",
    "301"
   ],
-  "from": "Campo Moro",
-  "to": "Bocchetta delle Forbici",
-  "destination": "pass",
-  "difficulty": "E",
-  "unmarked": true,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "valmalenco",
-  "lengthM": 5132,
-  "upM": 796,
-  "downM": 20,
-  "startEle": 1886,
-  "endEle": 2662,
-  "maxEle": 2662,
-  "start": [
-   46.30376,
-   9.91838
-  ],
-  "end": [
-   46.33039,
-   9.90124
-  ]
- },
- {
-  "id": "node-2472080398-2524799376",
-  "osm": null,
-  "refs": [
-   "342",
-   "301"
-  ],
-  "from": "Campo Moro",
+  "from": "Giro lago - rif. Bignami",
   "to": "Bocchetta di Caspoggio",
   "destination": "pass",
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
-  "lengthM": 6278,
-  "upM": 1076,
-  "downM": 103,
-  "startEle": 1999,
+  "lengthM": 4913,
+  "upM": 869,
+  "downM": 46,
+  "startEle": 2150,
   "endEle": 2973,
   "maxEle": 2973,
   "start": [
-   46.31046,
-   9.9432
+   46.31545,
+   9.94175
   ],
   "end": [
    46.33618,
    9.92092
-  ]
- },
- {
-  "id": "node-564897050-12092498883",
-  "osm": null,
-  "refs": [
-   "314",
-   "412"
-  ],
-  "from": "Corti",
-  "to": "Bocchetta Valdone",
-  "destination": "pass",
-  "difficulty": "EE",
-  "unmarked": true,
-  "checkRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "valmalenco",
-  "lengthM": 7621,
-  "upM": 763,
-  "downM": 332,
-  "startEle": 1747,
-  "endEle": 2178,
-  "maxEle": 2320,
-  "start": [
-   46.22673,
-   9.83131
-  ],
-  "end": [
-   46.20263,
-   9.81752
   ]
  },
  {
@@ -10068,6 +10218,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -10098,6 +10249,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -10117,11 +10269,11 @@
   ]
  },
  {
-  "id": "node-564380089-1836611514",
+  "id": "node-564380089-2431987830",
   "osm": null,
   "refs": [
-   "342",
    "343A",
+   "342",
    "343-1",
    "305C"
   ],
@@ -10131,18 +10283,19 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
-  "lengthM": 9188,
-  "upM": 1032,
-  "downM": 91,
+  "lengthM": 9094,
+  "upM": 1029,
+  "downM": 87,
   "startEle": 1886,
   "endEle": 2827,
-  "maxEle": 2829,
+  "maxEle": 2827,
   "start": [
-   46.30376,
-   9.91838
+   46.30342,
+   9.9173
   ],
   "end": [
    46.33436,
@@ -10164,6 +10317,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -10196,6 +10350,7 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -10229,6 +10384,7 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -10262,6 +10418,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -10281,30 +10438,31 @@
   ]
  },
  {
-  "id": "way-338074839-2524799376",
+  "id": "way-338074839-13844967541",
   "osm": null,
   "refs": [
-   "342",
-   "301"
+   "301",
+   "342"
   ],
-  "from": "Campo Moro",
+  "from": "Giro lago - rif. Bignami",
   "to": "Lago del Lupo",
   "destination": "lake",
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
-  "lengthM": 6920,
-  "upM": 974,
-  "downM": 132,
-  "startEle": 1999,
+  "lengthM": 6062,
+  "upM": 871,
+  "downM": 139,
+  "startEle": 2109,
   "endEle": 2841,
   "maxEle": 2841,
   "start": [
-   46.31046,
-   9.9432
+   46.31336,
+   9.94763
   ],
   "end": [
    46.33655,
@@ -10326,6 +10484,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -10345,11 +10504,11 @@
   ]
  },
  {
-  "id": "way-247066705-1836611514",
+  "id": "way-247066705-2431987830",
   "osm": null,
   "refs": [
-   "342",
    "343A",
+   "342",
    "343-1",
    "301"
   ],
@@ -10359,18 +10518,19 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
-  "lengthM": 6727,
-  "upM": 812,
-  "downM": 98,
+  "lengthM": 6633,
+  "upM": 821,
+  "downM": 106,
   "startEle": 1886,
   "endEle": 2600,
-  "maxEle": 2661,
+  "maxEle": 2662,
   "start": [
-   46.30376,
-   9.91838
+   46.30342,
+   9.9173
   ],
   "end": [
    46.34041,
@@ -10392,6 +10552,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -10424,6 +10585,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -10457,6 +10619,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -10476,7 +10639,7 @@
   ]
  },
  {
-  "id": "way-173031062-1411972948",
+  "id": "way-173031062-1411972944",
   "osm": null,
   "refs": [
    "313",
@@ -10489,18 +10652,19 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
-  "lengthM": 6838,
-  "upM": 687,
-  "downM": 67,
-  "startEle": 1666,
+  "lengthM": 6817,
+  "upM": 670,
+  "downM": 52,
+  "startEle": 1669,
   "endEle": 2287,
   "maxEle": 2292,
   "start": [
-   46.22776,
-   9.82656
+   46.2277,
+   9.82631
   ],
   "end": [
    46.22848,
@@ -10508,31 +10672,31 @@
   ]
  },
  {
-  "id": "way-435601763-2524799376",
+  "id": "way-435601763-6681484834",
   "osm": null,
   "refs": [
-   "342",
    "301",
    "305E"
   ],
-  "from": "Campo Moro",
+  "from": "Giro lago - rif. Bignami",
   "to": "Lago Fasso",
   "destination": "lake",
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
-  "lengthM": 5503,
-  "upM": 775,
-  "downM": 129,
-  "startEle": 1999,
+  "lengthM": 4139,
+  "upM": 562,
+  "downM": 66,
+  "startEle": 2150,
   "endEle": 2645,
   "maxEle": 2648,
   "start": [
-   46.31046,
-   9.9432
+   46.31545,
+   9.94175
   ],
   "end": [
    46.34168,
@@ -10540,31 +10704,31 @@
   ]
  },
  {
-  "id": "way-978529972-2524799376",
+  "id": "way-978529972-6681484834",
   "osm": null,
   "refs": [
-   "342",
    "301",
    "305E"
   ],
-  "from": "Campo Moro",
+  "from": "Giro lago - rif. Bignami",
   "to": "Lago glaciale di Fellaria",
   "destination": "lake",
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
-  "lengthM": 6194,
-  "upM": 724,
-  "downM": 171,
-  "startEle": 1999,
+  "lengthM": 4830,
+  "upM": 501,
+  "downM": 98,
+  "startEle": 2150,
   "endEle": 2552,
   "maxEle": 2590,
   "start": [
-   46.31046,
-   9.9432
+   46.31545,
+   9.94175
   ],
   "end": [
    46.34476,
@@ -10572,7 +10736,74 @@
   ]
  },
  {
-  "id": "node-669935649-1411972948",
+  "id": "way-146491419-9008622010",
+  "osm": null,
+  "refs": [
+   "331",
+   "304",
+   "321",
+   "318"
+  ],
+  "from": "Prati del Cabello",
+  "to": "Lago Lagazzuolo",
+  "destination": "lake",
+  "difficulty": "E",
+  "unmarked": false,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "valmalenco",
+  "lengthM": 2765,
+  "upM": 591,
+  "downM": 40,
+  "startEle": 1447,
+  "endEle": 1998,
+  "maxEle": 1998,
+  "start": [
+   46.30133,
+   9.83515
+  ],
+  "end": [
+   46.2952,
+   9.81696
+  ]
+ },
+ {
+  "id": "way-146491419-2907669109",
+  "osm": null,
+  "refs": [
+   "SI",
+   "318",
+   "321"
+  ],
+  "from": "Chiareggio",
+  "to": "Lago Lagazzuolo",
+  "destination": "lake",
+  "difficulty": "EE",
+  "unmarked": true,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "valmalenco",
+  "lengthM": 4472,
+  "upM": 518,
+  "downM": 132,
+  "startEle": 1611,
+  "endEle": 1998,
+  "maxEle": 1998,
+  "start": [
+   46.31597,
+   9.78791
+  ],
+  "end": [
+   46.2952,
+   9.81696
+  ]
+ },
+ {
+  "id": "node-669935649-1411972944",
   "osm": null,
   "refs": [
    "313",
@@ -10585,18 +10816,19 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
-  "lengthM": 7387,
-  "upM": 899,
-  "downM": 47,
-  "startEle": 1666,
+  "lengthM": 7367,
+  "upM": 898,
+  "downM": 49,
+  "startEle": 1669,
   "endEle": 2518,
   "maxEle": 2518,
   "start": [
-   46.22776,
-   9.82656
+   46.2277,
+   9.82631
   ],
   "end": [
    46.23169,
@@ -10617,6 +10849,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -10647,6 +10880,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -10666,30 +10900,31 @@
   ]
  },
  {
-  "id": "node-564379352-2524799376",
+  "id": "node-564379352-13844967541",
   "osm": null,
   "refs": [
-   "342",
-   "301"
+   "301",
+   "342"
   ],
-  "from": "Campo Moro",
+  "from": "Giro lago - rif. Bignami",
   "to": "Passo Confinale",
   "destination": "pass",
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
-  "lengthM": 5613,
-  "upM": 750,
-  "downM": 126,
-  "startEle": 1999,
+  "lengthM": 4756,
+  "upM": 646,
+  "downM": 132,
+  "startEle": 2109,
   "endEle": 2624,
   "maxEle": 2624,
   "start": [
-   46.31046,
-   9.9432
+   46.31336,
+   9.94763
   ],
   "end": [
    46.32827,
@@ -10711,6 +10946,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -10741,6 +10977,7 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": 164,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -10760,7 +10997,7 @@
   ]
  },
  {
-  "id": "node-564376451-1411972948",
+  "id": "node-564376451-1411972944",
   "osm": null,
   "refs": [
    "313",
@@ -10774,18 +11011,19 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": true,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
-  "lengthM": 8612,
-  "upM": 1223,
-  "downM": 66,
-  "startEle": 1666,
+  "lengthM": 8592,
+  "upM": 1228,
+  "downM": 74,
+  "startEle": 1669,
   "endEle": 2823,
-  "maxEle": 2833,
+  "maxEle": 2834,
   "start": [
-   46.22776,
-   9.82656
+   46.2277,
+   9.82631
   ],
   "end": [
    46.25016,
@@ -10806,6 +11044,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -10825,31 +11064,31 @@
   ]
  },
  {
-  "id": "node-564379616-2524799376",
+  "id": "node-564379616-6681484834",
   "osm": null,
   "refs": [
-   "342",
    "301",
    "305E"
   ],
-  "from": "Campo Moro",
+  "from": "Giro lago - rif. Bignami",
   "to": "Passo Marinelli Orientale",
   "destination": "pass",
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
-  "lengthM": 7771,
-  "upM": 1213,
-  "downM": 126,
-  "startEle": 1999,
+  "lengthM": 6407,
+  "upM": 1002,
+  "downM": 66,
+  "startEle": 2150,
   "endEle": 3086,
   "maxEle": 3086,
   "start": [
-   46.31046,
-   9.9432
+   46.31545,
+   9.94175
   ],
   "end": [
    46.34774,
@@ -10870,6 +11109,7 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -10903,6 +11143,7 @@
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -10936,6 +11177,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -10969,6 +11211,7 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -10999,6 +11242,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -11018,6 +11262,40 @@
   ]
  },
  {
+  "id": "way-146493394-2431987830",
+  "osm": null,
+  "refs": [
+   "343A",
+   "342",
+   "343-1",
+   "301"
+  ],
+  "from": "Campo Moro",
+  "to": "Rifugio Carate Brianza",
+  "destination": "hut",
+  "difficulty": "E",
+  "unmarked": true,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "valmalenco",
+  "lengthM": 4972,
+  "upM": 790,
+  "downM": 28,
+  "startEle": 1886,
+  "endEle": 2647,
+  "maxEle": 2647,
+  "start": [
+   46.30342,
+   9.9173
+  ],
+  "end": [
+   46.33015,
+   9.9017
+  ]
+ },
+ {
   "id": "way-98613216-1228055450",
   "osm": null,
   "refs": [
@@ -11029,6 +11307,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -11061,6 +11340,7 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -11091,6 +11371,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": 170,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -11110,32 +11391,64 @@
   ]
  },
  {
-  "id": "way-146493449-1836611514",
+  "id": "way-146493449-6681484834",
   "osm": null,
   "refs": [
-   "342",
-   "343A",
-   "343-1",
    "301"
   ],
-  "from": "Campo Moro",
+  "from": "Giro lago - rif. Bignami",
+  "to": "Rifugio Marinelli Bombardieri",
+  "destination": "hut",
+  "difficulty": "EE",
+  "unmarked": false,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "valmalenco",
+  "lengthM": 6824,
+  "upM": 941,
+  "downM": 292,
+  "startEle": 2150,
+  "endEle": 2799,
+  "maxEle": 2967,
+  "start": [
+   46.31545,
+   9.94175
+  ],
+  "end": [
+   46.34447,
+   9.9054
+  ]
+ },
+ {
+  "id": "way-146493449-8265285459",
+  "osm": null,
+  "refs": [
+   "340",
+   "339",
+   "301",
+   "SI"
+  ],
+  "from": "Cima Franscia",
   "to": "Rifugio Marinelli Bombardieri",
   "destination": "hut",
   "difficulty": "EE",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
-  "lengthM": 7971,
-  "upM": 1016,
-  "downM": 103,
-  "startEle": 1886,
+  "lengthM": 9800,
+  "upM": 1333,
+  "downM": 135,
+  "startEle": 1601,
   "endEle": 2799,
-  "maxEle": 2802,
+  "maxEle": 2799,
   "start": [
-   46.30376,
-   9.91838
+   46.28948,
+   9.90354
   ],
   "end": [
    46.34447,
@@ -11155,6 +11468,7 @@
   "difficulty": "EE",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -11187,6 +11501,7 @@
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -11217,6 +11532,7 @@
   "difficulty": "T",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": 70,
   "caiDownMin": null,
   "zone": "valmalenco",
@@ -11236,30 +11552,30 @@
   ]
  },
  {
-  "id": "way-146494920-2524799376",
+  "id": "way-146494920-6681484834",
   "osm": null,
   "refs": [
-   "342",
    "301"
   ],
-  "from": "Campo Moro",
+  "from": "Giro lago - rif. Bignami",
   "to": "Rifugio Roberto Bignami",
   "destination": "hut",
   "difficulty": "E",
   "unmarked": false,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",
-  "lengthM": 3498,
-  "upM": 489,
-  "downM": 103,
-  "startEle": 1999,
+  "lengthM": 2133,
+  "upM": 282,
+  "downM": 46,
+  "startEle": 2150,
   "endEle": 2385,
   "maxEle": 2385,
   "start": [
-   46.31046,
-   9.9432
+   46.31545,
+   9.94175
   ],
   "end": [
    46.32935,
@@ -11281,6 +11597,7 @@
   "difficulty": "E",
   "unmarked": true,
   "checkRoad": false,
+  "tollRoad": false,
   "caiUpMin": null,
   "caiDownMin": null,
   "zone": "valmalenco",

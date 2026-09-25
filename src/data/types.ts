@@ -41,6 +41,8 @@ export type TrailSummary = {
    * l'app chiede di verificare l'accesso in auto
    */
   checkRoad: boolean;
+  /** true se la strada per la partenza è a pedaggio (tag OSM toll=yes) */
+  tollRoad: boolean;
   /** tempi rilevati dal CAI, in minuti, quando ci sono (salita e ritorno) */
   caiUpMin: number | null;
   caiDownMin: number | null;

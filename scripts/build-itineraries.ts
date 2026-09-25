@@ -19,7 +19,8 @@ import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { climb, sampleElevations } from './lib/elevation.ts';
 import { haversine, lineLength, resample, type LatLon } from './lib/geo.ts';
 import { buildGraph, minutesToTarget, PointIndex } from './lib/graph.ts';
-import { loadPlaces, SETTLEMENT, where } from './lib/places.ts';
+import { loadPlaces, placeFromRoadName, SETTLEMENT, where } from './lib/places.ts';
+import { TRAILHEAD_NAMES } from './trails.config.ts';
 
 /** Diagnosi: DEBUG_TARGET="Gianetti|Allievi" racconta cosa succede alle mete il cui nome corrisponde. */
 const DEBUG = process.env.DEBUG_TARGET ? new RegExp(process.env.DEBUG_TARGET, 'i') : null;
@@ -111,20 +112,33 @@ console.log(`Rete: ${networkWays} tratti numerati + ${ways.size - networkWays} f
 
 // --- 2. e 3. partenze e mete --------------------------------------------------------------------------------
 
-const { places, nameNear, drivable } = await loadPlaces();
+const { places, nameNear, drivable, toll, roadEnds } = await loadPlaces();
 const settlements = places.filter((p) => SETTLEMENT.has(p.tags.place ?? ''));
 
 // Si arriva in macchina: un parcheggio o un paese a meno di 150 m dalla rete, e quel punto della rete
 // vicino a una strada aperta al traffico (scripts/lib/places.ts).
-const trailheads = new Map<number, string>();
+const trailheads = new Map<number, { name: string; toll: boolean }>();
 for (const p of [...places.filter((x) => x.tags.amenity === 'parking'), ...settlements]) {
   const q = where(p);
   const hit = q && index.nearest(q, 150);
   if (!hit || trailheads.has(hit.node) || !drivable(graph.pos[hit.node])) continue;
   const name = SETTLEMENT.has(p.tags.place ?? '') ? p.tags.name : nameNear(graph.pos[hit.node]);
-  if (name) trailheads.set(hit.node, name);
+  if (name) trailheads.set(hit.node, { name: TRAILHEAD_NAMES[name] ?? name, toll: toll(graph.pos[hit.node]) });
 }
-console.log(`Partenze possibili: ${trailheads.size}`);
+// Anche la fine di una strada vicino alla rete è una partenza: in montagna la strada finisce spesso proprio dove
+// comincia il sentiero, senza un parcheggio segnato (Piana di Predarossa). Il nome viene dalla strada
+// ("Strada per Predarossa" → "Predarossa"); in entrambi i casi vale la tabella scelta a mano in trails.config.ts.
+let fromRoadEnds = 0;
+for (const end of roadEnds()) {
+  const hit = index.nearest(end.at, 100);
+  if (!hit || trailheads.has(hit.node)) continue;
+  const raw = (end.name && placeFromRoadName(end.name)) || nameNear(end.at);
+  const name = (end.name && TRAILHEAD_NAMES[end.name]) || (raw && (TRAILHEAD_NAMES[raw] ?? raw));
+  if (!name) continue;
+  trailheads.set(hit.node, { name, toll: end.toll });
+  fromRoadEnds++;
+}
+console.log(`Partenze possibili: ${trailheads.size} (di cui ${fromRoadEnds} a fine strada)`);
 
 type Kind = 'hut' | 'bivouac' | 'pass' | 'lake';
 type Target = { kind: Kind; name: string; osm: string; node: number };
@@ -171,6 +185,8 @@ export type Itinerary = {
   refs: string[];
   /** true se una parte del percorso segue sentieri o piste fuori dalla rete CAI numerata */
   unmarked: boolean;
+  /** true se la strada per la partenza è a pedaggio */
+  toll: boolean;
   line: LatLon[];
   km: number;
   up: number;
@@ -186,7 +202,7 @@ for (const target of targets) {
   const { cost, next } = minutesToTarget(graph, target.node, MAX_MINUTES);
   const reached = [...trailheads]
     .filter(([node]) => cost.has(node) && graph.ele[node] < graph.ele[target.node] - 150)
-    .map(([node, name]) => ({ node, name, minutes: cost.get(node)! }))
+    .map(([node, th]) => ({ node, name: th.name, toll: th.toll, minutes: cost.get(node)! }))
     .sort((a, b) => a.minutes - b.minutes);
   debug(target.name, `${cost.size} nodi raggiungibili in ${MAX_MINUTES} min; partenze più in basso raggiunte: ${reached.slice(0, 3).map((r) => `${r.name} (${Math.round(r.minutes)} min)`).join(', ') || 'nessuna'}`);
   if (reached.length === 0) {
@@ -238,6 +254,7 @@ for (const target of targets) {
       scale,
       refs,
       unmarked: unmarkedM > UNMARKED_WARN_M,
+      toll: start.toll,
       line,
       km,
       up,

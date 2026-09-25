@@ -1,4 +1,15 @@
 /**
+ * Nomi delle partenze scelti a mano, quando quello trovato su OSM (il nome della località vicina, o quello della
+ * strada che finisce lì) non è quello che usano gli escursionisti, o lo stesso posto compare con più grafie.
+ * Chiave: nome su OSM. Valore: nome della partenza nell'app.
+ */
+export const TRAILHEAD_NAMES: Record<string, string> = {
+  // indicazione di chi conosce la valle: la partenza per il Rifugio Ponti è il parcheggio della Piana di Predarossa
+  'Strada per Predarossa': 'Piana di Predarossa',
+  'Preda Rossa': 'Piana di Predarossa',
+};
+
+/**
  * Nomi scelti a mano per alcuni sentieri CAI, al posto di quelli ripuliti in automatico dai tag OSM.
  *
  * Sono i 20 sentieri della prima versione: per questi avevamo già scelto partenza e meta come le direbbe

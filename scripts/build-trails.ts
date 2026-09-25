@@ -49,7 +49,7 @@ async function profile(line: LatLon[]) {
 }
 
 function summarize(
-  base: Pick<TrailSummary, 'id' | 'osm' | 'refs' | 'from' | 'to' | 'destination' | 'difficulty' | 'unmarked' | 'checkRoad' | 'caiUpMin' | 'caiDownMin'>,
+  base: Pick<TrailSummary, 'id' | 'osm' | 'refs' | 'from' | 'to' | 'destination' | 'difficulty' | 'unmarked' | 'checkRoad' | 'tollRoad' | 'caiUpMin' | 'caiDownMin'>,
   p: Awaited<ReturnType<typeof profile>>,
 ): Built | null {
   const start: LatLon = p.track[0];
@@ -83,7 +83,7 @@ const dayHikes = results.filter(
     r.climbs!['5'].up >= DAY.minUp && r.climbs!['5'].up <= DAY.maxUp,
 );
 
-const { nameNear, drivable } = await loadPlaces();
+const { nameNear, drivable, toll } = await loadPlaces();
 const built: Built[] = [];
 let skippedNoRoad = 0;
 for (const { id: osm } of dayHikes) {
@@ -136,6 +136,7 @@ for (const { id: osm } of dayHikes) {
       difficulty: tags.cai_scale as Difficulty,
       unmarked: false,
       checkRoad: !roadOk,
+      tollRoad: toll(p.track[0]),
       caiUpMin: up,
       caiDownMin: down,
     },
@@ -147,8 +148,15 @@ const fromRoutes = built.length;
 
 // --- B. itinerari calcolati sulla rete ------------------------------------------------------------------------
 
-type Itinerary = { id: string; from: string; to: string; kind: Destination; scale: Difficulty; refs: string[]; unmarked: boolean; line: LatLon[] };
-const itineraries = JSON.parse(await readFile('data-cache/itineraries.json', 'utf8')) as Itinerary[];
+type Itinerary = { id: string; from: string; to: string; kind: Destination; scale: Difficulty; refs: string[]; unmarked: boolean; toll: boolean; line: LatLon[] };
+/**
+ * Quando due itinerari portano allo stesso punto, vince la meta più significativa: accanto a un rifugio c'è spesso
+ * il suo locale invernale o un bivacco (Capanna Piacco accanto al Rifugio Gianetti), e chi cerca vuole il rifugio.
+ */
+const PRIORITY: Destination[] = ['hut', 'lake', 'pass', 'bivouac', 'peak', 'alp', 'other'];
+const itineraries = (JSON.parse(await readFile('data-cache/itineraries.json', 'utf8')) as Itinerary[]).sort(
+  (a, b) => PRIORITY.indexOf(a.kind) - PRIORITY.indexOf(b.kind),
+);
 let duplicates = 0;
 for (const it of itineraries) {
   const p = await profile(it.line);
@@ -172,6 +180,7 @@ for (const it of itineraries) {
       difficulty: it.scale,
       unmarked: it.unmarked,
       checkRoad: false, // le partenze degli itinerari sono già scelte vicino a una strada aperta
+      tollRoad: it.toll,
       caiUpMin: null,
       caiDownMin: null,
     },
