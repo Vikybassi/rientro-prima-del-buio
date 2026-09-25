@@ -6,14 +6,15 @@
  *    da build-itineraries.ts), tenuti solo se portano a una meta che A non copre già dalla stessa zona.
  *
  * Per ogni giro: traccia ricampionata ogni 50 m, quote dal modello del terreno, orientata dalla partenza alla meta.
- * Scrive src/data/trails.json (riepiloghi, nel bundle) e public/trails/<id>.json (tracce, caricate quando servono).
+ * Scrive src/data/trails.json (riepiloghi, nel bundle), public/trails/<id>.json (tracce, caricate quando servono)
+ * e public/overview.json (tutte le tracce semplificate, per la mappa d'insieme).
  *
  * Uso: node scripts/build-trails.ts
  */
 import { mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import type { Destination, Difficulty, TrailPoint, TrailSummary, TrailTrack } from '../src/data/types.ts';
 import { climb, sampleElevations } from './lib/elevation.ts';
-import { haversine, resample, type LatLon } from './lib/geo.ts';
+import { haversine, resample, simplify, type LatLon } from './lib/geo.ts';
 import { cleanName, destinationOf, looksLikeAddress } from './lib/names.ts';
 import { assemble, fetchRelation } from './lib/osm.ts';
 import { loadPlaces } from './lib/places.ts';
@@ -205,6 +206,13 @@ for (const b of built) {
   await writeFile(`public/trails/${b.summary.id}.json`, JSON.stringify(track));
 }
 await writeFile('src/data/trails.json', JSON.stringify(built.map((b) => b.summary), null, 1) + '\n');
+
+// mappa d'insieme: tracce semplificate (tolleranza 25 m) a 4 decimali (~10 m), un file solo per tutti i giri
+const round4 = (x: number) => Math.round(x * 1e4) / 1e4;
+const overview = Object.fromEntries(
+  built.map((b) => [b.summary.id, simplify(b.points.map(([lat, lon]): LatLon => [lat, lon]), 25).map(([lat, lon]) => [round4(lat), round4(lon)])]),
+);
+await writeFile('public/overview.json', JSON.stringify(overview));
 
 const count = (d: Destination) => built.filter((b) => b.summary.destination === d).length;
 console.log(

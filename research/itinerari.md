@@ -1,7 +1,7 @@
 # Itinerari verso le mete
 
-Generato da `scripts/build-itineraries.ts`: 418 itinerari di giornata da 2465 partenze possibili
-verso 406 mete agganciate alla rete.
+Generato da `scripts/build-itineraries.ts`: 417 itinerari di giornata da 2465 partenze possibili
+verso 405 mete agganciate alla rete.
 
 | Partenza | Meta | Tipo | Diff. | Sentieri | km | Salita m | Quota m |
 |---|---|---|---|---|---|---|---|
@@ -390,7 +390,6 @@ verso 406 mete agganciate alla rete.
 | Torrazza | Alpe e Rifugio Legnone | hut | EE |  | 5.3 | +1446 | 254 → 1700 |
 | Tresenda | Lach dal Mónt | lake | E | 190, 191, 151 | 6.3 | +734 | 1903 → 2614 |
 | Tresenda | Passo La Stretta | pass | EE | 190, 191, 151 | 8.3 | +1131 | 1903 → 3006 |
-| Tresenda | Rifugio | hut | E | 190, 191, 151 | 6.4 | +734 | 1903 → 2612 |
 | Valpozzo | Alpe e Rifugio Legnone | hut | EE | 603 | 9.7 | +1627 | 212 → 1700 |
 | Vespi | Rifugio Cristina | hut | E | 322, 322A, 323 | 7.3 | +478 | 1036 → 1277 |
 | Via Bibo del Curto | Bivacco Chiara e Walter | bivouac | E | N561 | 14.9 | +823 | 1956 → 2658 |

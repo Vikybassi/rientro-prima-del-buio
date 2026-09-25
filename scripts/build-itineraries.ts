@@ -141,6 +141,7 @@ for (const end of roadEnds()) {
 console.log(`Partenze possibili: ${trailheads.size} (di cui ${fromRoadEnds} a fine strada)`);
 
 type Kind = 'hut' | 'bivouac' | 'pass' | 'lake';
+const GENERIC_NAME = /^(rifugio|bivacco|capanna|lago|laghetto|passo|bocchetta|baita|malga|alpe)$/i;
 type Target = { kind: Kind; name: string; osm: string; node: number };
 const targets: Target[] = [];
 for (const p of places) {
@@ -148,6 +149,11 @@ for (const p of places) {
   const kind: Kind | null =
     t.tourism === 'alpine_hut' ? 'hut' : t.tourism === 'wilderness_hut' ? 'bivouac' : t.mountain_pass === 'yes' ? 'pass' : t.water === 'lake' ? 'lake' : null;
   if (!kind || !t.name) continue;
+  // un nome che dice solo il tipo ("Rifugio", "Lago") non aiuta nessuno a capire dove si va: meglio saltarlo
+  if (GENERIC_NAME.test(t.name.trim())) {
+    debug(t.name, 'nome troppo generico, saltata');
+    continue;
+  }
   let hit: { node: number; m: number } | null = null;
   if (kind === 'lake') {
     // un lago è una forma: vale il punto di rete più vicino alla riva

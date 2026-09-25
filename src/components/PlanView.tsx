@@ -101,6 +101,7 @@ export function PlanView({ trail, plan, track, weather, hazards, params, onChang
 
       {plan && (
         <>
+          <p className="step-label">{t.answerStep}</p>
           <Answer plan={plan} hazards={hazards} t={t} />
           <DayBar plan={plan} date={params.date} t={t} />
           <WeatherNotes state={weather} plan={plan} hazards={hazards} trail={trail} date={params.date} t={t} lang={lang} />

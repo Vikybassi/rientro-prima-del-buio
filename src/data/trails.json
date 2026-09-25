@@ -650,6 +650,39 @@
   ]
  },
  {
+  "id": "way-33183195-418953226",
+  "osm": null,
+  "refs": [
+   "190",
+   "191",
+   "151"
+  ],
+  "from": "Tresenda",
+  "to": "Lach dal Mónt",
+  "destination": "lake",
+  "difficulty": "E",
+  "unmarked": false,
+  "checkRoad": false,
+  "tollRoad": false,
+  "caiUpMin": null,
+  "caiDownMin": null,
+  "zone": "alta-valtellina",
+  "lengthM": 6338,
+  "upM": 734,
+  "downM": 22,
+  "startEle": 1903,
+  "endEle": 2614,
+  "maxEle": 2617,
+  "start": [
+   46.4884,
+   10.10956
+  ],
+  "end": [
+   46.47683,
+   10.06109
+  ]
+ },
+ {
   "id": "way-1336065518-2497383341",
   "osm": null,
   "refs": [
@@ -2125,39 +2158,6 @@
   "end": [
    46.45697,
    10.56112
-  ]
- },
- {
-  "id": "way-177541213-418953226",
-  "osm": null,
-  "refs": [
-   "190",
-   "191",
-   "151"
-  ],
-  "from": "Tresenda",
-  "to": "Rifugio",
-  "destination": "hut",
-  "difficulty": "E",
-  "unmarked": false,
-  "checkRoad": false,
-  "tollRoad": false,
-  "caiUpMin": null,
-  "caiDownMin": null,
-  "zone": "alta-valtellina",
-  "lengthM": 6390,
-  "upM": 734,
-  "downM": 24,
-  "startEle": 1903,
-  "endEle": 2612,
-  "maxEle": 2617,
-  "start": [
-   46.4884,
-   10.10956
-  ],
-  "end": [
-   46.47658,
-   10.06055
   ]
  },
  {

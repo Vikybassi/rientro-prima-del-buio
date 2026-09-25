@@ -10,7 +10,8 @@
   --ink-2: #48534c;
   --ink-3: #5c655f;
   --line: #d9d3c4;
-  --line-strong: #b9b09c;
+  /* bordi di campi e pulsanti: almeno 3:1 sullo sfondo (WCAG 1.4.11); il vecchio #b9b09c arrivava a 1,92 */
+  --line-strong: #877d66;
   --contour: #8c5f3f;
   --forest: #2f4a3c;
 
@@ -60,8 +61,11 @@ button, input, select { font: inherit; color: inherit; }
   display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;
   padding-bottom: 12px; border-bottom: 2px solid var(--forest); margin-bottom: 16px;
 }
-.masthead h1 { margin: 0; font-size: 22px; line-height: 1.2; letter-spacing: -0.01em; }
-.masthead p { margin: 4px 0 0; color: var(--ink-2); font-size: 15px; }
+.masthead { padding-bottom: 16px; margin-bottom: 20px; }
+.masthead h1 { margin: 0; font-size: 34px; line-height: 1.05; font-weight: 800; letter-spacing: -0.025em; }
+.masthead p { margin: 8px 0 0; color: var(--ink-2); font-size: 16px; max-width: 34em; }
+.masthead .example { margin-top: 8px; font-weight: 600; }
+@media (min-width: 900px) { .masthead h1 { font-size: 46px; } .masthead p { font-size: 17px; } }
 
 .link-button {
   background: none; border: 0; padding: 4px 0; color: var(--forest);
@@ -70,14 +74,15 @@ button, input, select { font: inherit; color: inherit; }
 
 .layout { display: grid; gap: 24px; }
 @media (min-width: 900px) {
-  .layout { grid-template-columns: 360px minmax(0, 1fr); align-items: start; }
-  .picker { position: sticky; top: 16px; max-height: calc(100vh - 32px); overflow: auto; }
-  .back-to-list { display: none; }
+  .layout { grid-template-columns: 380px minmax(0, 1fr); align-items: start; }
+  .picker { position: sticky; top: 16px; max-height: calc(100vh - 32px); overflow: auto; padding-right: 4px; }
+  .overview-column { position: sticky; top: 16px; height: calc(100vh - 32px); min-height: 480px; }
 }
-/* sul telefono si vede una cosa alla volta: l'elenco, oppure il piano */
+/* sul telefono si vede una cosa alla volta: l'elenco, la mappa d'insieme, oppure il piano */
 @media (max-width: 899px) {
   .layout[data-view='plan'] .picker { display: none; }
-  .layout[data-view='list'] .plan-column { display: none; }
+  .layout[data-view='map'] .trail-lists { display: none; }
+  .overview-column { height: 70vh; min-height: 380px; }
 }
 
 /* --- scelta del sentiero ----------------------------------------------------------------------------- */
@@ -89,12 +94,13 @@ button, input, select { font: inherit; color: inherit; }
   width: 100%; height: 44px; padding: 0 12px;
   border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--panel);
 }
-.zones { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 4px; padding: 0; list-style: none; }
-.chip {
-  border: 1px solid var(--line-strong); background: var(--panel); border-radius: 999px;
-  padding: 4px 10px; font-size: 13px; cursor: pointer;
-}
-.chip[aria-pressed='true'] { background: var(--forest); border-color: var(--forest); color: var(--paper); }
+.view-toggle { display: flex; margin-bottom: 10px; border: 1px solid var(--forest); border-radius: var(--radius); overflow: hidden; }
+.view-toggle button { flex: 1; min-height: 44px; border: 0; background: var(--panel); font-weight: 600; cursor: pointer; }
+.view-toggle button[aria-pressed='true'] { background: var(--forest); color: var(--paper); }
+/* sul computer elenco e mappa stanno affiancati: l'interruttore serve solo sul telefono (dopo la regola sopra, che lo mostra) */
+@media (min-width: 900px) { .view-toggle { display: none; } }
+.filters { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin: 8px 0 4px; }
+.filters .field select { height: 44px; font-size: 15px; }
 
 .trail-list { margin: 8px 0 0; }
 .trail-list ul { list-style: none; margin: 0; padding: 0; }
@@ -103,9 +109,13 @@ button, input, select { font: inherit; color: inherit; }
   color: var(--contour);
 }
 .trail-item button {
-  display: block; width: 100%; text-align: left; background: none; border: 0;
-  border-bottom: 1px solid var(--line); padding: 10px 8px; cursor: pointer; border-radius: 0;
+  display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: center; gap: 10px;
+  width: 100%; min-height: 56px; text-align: left; background: none; border: 0;
+  border-bottom: 1px solid var(--line); padding: 10px 6px 10px 8px; cursor: pointer; border-radius: 0;
 }
+.trail-time { font-weight: 700; font-size: 16px; text-align: right; line-height: 1.1; }
+.trail-time small { display: block; font-size: 11.5px; font-weight: 400; color: var(--ink-3); }
+.trail-chevron { font-size: 24px; line-height: 1; color: var(--ink-3); }
 .trail-item button:hover { background: var(--panel); }
 .trail-item button[aria-current='true'] { background: var(--panel); box-shadow: inset 3px 0 0 var(--forest); }
 .trail-name { display: block; font-weight: 600; }
@@ -185,3 +195,26 @@ button, input, select { font: inherit; color: inherit; }
 .trail-map { height: 320px; border: 1px solid var(--line); border-radius: var(--radius); background: #e8e1cf; }
 .trail-map-loading { display: flex; align-items: center; justify-content: center; color: var(--ink-3); font-size: 14px; }
 .map-links { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 10px 0 0; font-size: 14.5px; }
+
+/* passo 3 sopra la risposta */
+.step-label { margin: 0 0 6px; font-size: 18px; font-weight: 700; }
+
+/* mappa d'insieme */
+.overview { position: relative; height: 100%; }
+.overview-map { height: 100%; border: 1px solid var(--line-strong); border-radius: var(--radius); background: #e8e1cf; }
+.overview-loading { display: flex; align-items: center; justify-content: center; color: var(--ink-3); }
+.overview-status {
+  position: absolute; left: 10px; bottom: 26px; z-index: 500; margin: 0; padding: 6px 10px;
+  background: var(--panel); border: 1px solid var(--line-strong); border-radius: var(--radius); font-size: 13.5px;
+}
+.peek {
+  position: absolute; left: 10px; right: 10px; top: 10px; z-index: 600; max-width: 420px; margin-left: auto;
+  padding: 12px 40px 12px 14px; background: var(--panel); border: 1px solid var(--line-strong); border-radius: var(--radius);
+  box-shadow: 0 6px 18px rgba(31, 42, 36, 0.18);
+}
+.peek-title { margin: 0; font-weight: 700; font-size: 16px; }
+.peek-meta { margin: 2px 0 10px; font-size: 13.5px; color: var(--ink-3); }
+.peek-open { min-height: 40px; padding: 0 14px; border: 0; border-radius: var(--radius); background: var(--forest); color: var(--paper); font-weight: 600; cursor: pointer; }
+.peek-close { position: absolute; top: 4px; right: 4px; width: 36px; height: 36px; border: 0; background: none; font-size: 24px; color: var(--ink-3); cursor: pointer; }
+/* mappa d'insieme vista da lontano: rilievo sbiadito, così i sentieri e le mete si leggono */
+.map-far .leaflet-tile-pane { filter: grayscale(0.75) brightness(1.2) contrast(0.8); opacity: 0.7; }

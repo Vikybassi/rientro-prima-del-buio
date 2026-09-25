@@ -4,7 +4,7 @@ import track331 from '../../public/trails/7328079.json';
 import trails from '../data/trails.json';
 import type { TrailSummary, TrailTrack } from '../data/types.ts';
 import { addMinutes, localTime, minutesBetween } from './clock.ts';
-import { answer, LIGHT_MARGIN_MIN, makePlan, verdict, type PlanInput } from './plan.ts';
+import { answer, LIGHT_MARGIN_MIN, makePlan, trailTimes, verdict, type PlanInput } from './plan.ts';
 import type { Hazard } from './weather.ts';
 
 // 331: San Giuseppe → Rifugio Longoni, un sabato di inizio ottobre
@@ -120,5 +120,14 @@ describe('answer: il titolo della risposta', () => {
   it('col buio è no per la luce, qualunque sia il meteo', () => {
     expect(answer(late, [])).toBe('dark');
     expect(answer(late, [storm])).toBe('dark');
+  });
+});
+
+describe('trailTimes', () => {
+  it("dà gli stessi tempi del piano (l'elenco e il piano non possono dire cose diverse)", () => {
+    const plan = makePlan(base);
+    const times = trailTimes(trail, 'average');
+    expect(times.upMin).toEqual(plan.upMin);
+    expect(times.downMin).toEqual(plan.downMin);
   });
 });

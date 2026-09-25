@@ -13,13 +13,24 @@ export type Lang = 'it' | 'en';
 
 const it = {
   appName: 'Rientro prima del buio',
-  tagline: 'Scegli un sentiero e l\'ora di partenza: ti dico se rientri con la luce.',
+  tagline: 'Sentieri della Valtellina: dimmi quando parti, ti dico se torni alla macchina con la luce.',
+  tryExample: 'Prova con un esempio',
   langSwitch: 'English',
-  pickTitle: 'Scegli il sentiero',
+  pickTitle: '1 · Scegli il giro',
   count: (n: number) => `${n} giri in Valtellina e Valchiavenna`,
   search: 'Cerca un rifugio, un lago, un paese',
-  allZones: 'Tutte le zone',
-  allDestinations: 'Tutte le mete',
+  view: { label: 'Come vedere i giri', list: 'Elenco', map: 'Mappa' },
+  filterDestination: 'Meta',
+  filterZone: 'Zona',
+  all: 'tutte',
+  ascent: 'salita',
+  overview: {
+    label: 'Mappa di tutti i giri. Per sceglierne uno con la tastiera usa l\'elenco.',
+    loading: 'Carico la mappa…',
+    hint: 'Le linee sono i sentieri, i punti le mete: clicca per vedere che giro è.',
+    open: 'Apri il piano',
+    close: 'Chiudi',
+  },
   destinations: {
     hut: 'Rifugi',
     bivouac: 'Bivacchi',
@@ -29,6 +40,7 @@ const it = {
     alp: 'Alpeggi',
     other: 'Paesi e altro',
   } satisfies Record<Destination, string>,
+  destinationOne: { hut: 'Rifugio', bivouac: 'Bivacco', lake: 'Lago', pass: 'Passo', peak: 'Cima', alp: 'Alpeggio', other: '' } satisfies Record<Destination, string>,
   trailRefs: (refs: string[]) => (refs.length === 1 ? `sentiero ${refs[0]}` : `sentieri ${refs.join(', ')}`),
   noResults: 'Nessun sentiero corrisponde alla ricerca.',
   zones: {
@@ -40,9 +52,10 @@ const it = {
   } satisfies Record<Zone, string>,
   difficulty: { T: 'turistico', E: 'escursionistico', EE: 'per esperti' } satisfies Record<Difficulty, string>,
   caiSign: 'cartello CAI',
-  back: 'Tutti i sentieri',
+  back: 'Tutti i giri',
 
-  when: 'Quando parti?',
+  when: '2 · Quando parti?',
+  answerStep: '3 · Rientri prima del buio?',
   date: 'Giorno',
   start: 'Ora',
   settings: (pace: Pace, stop: number) =>
@@ -125,21 +138,33 @@ const it = {
     freezing: (t: string, m: number) => `Zero termico a ${m} m verso le ${t}: possibile ghiaccio o neve sul sentiero.`,
   },
   disclaimer: 'Uno strumento per pianificare, non per decidere al posto tuo. In montagna conta quello che vedi: se il tempo cambia, torna indietro.',
-  credits: 'Sentieri © OpenStreetMap contributors (ODbL) · quote Copernicus DEM · meteo Open-Meteo · un progetto di',
+  credits: 'Sentieri © OpenStreetMap contributors (ODbL) · mappe OpenTopoMap · quote Copernicus DEM · meteo Open-Meteo · un progetto di',
 };
 
 export type Strings = typeof it;
 
 const en: Strings = {
   appName: 'Back before dark',
-  tagline: 'Pick a trail and a start time: I\'ll tell you if you\'re back while it\'s still light.',
+  tagline: 'Trails in Valtellina: tell me when you start, I\'ll tell you if you\'re back at the car in daylight.',
+  tryExample: 'Try an example',
   langSwitch: 'Italiano',
-  pickTitle: 'Pick a trail',
+  pickTitle: '1 · Pick a hike',
   count: (n) => `${n} hikes in Valtellina and Valchiavenna`,
   search: 'Search a hut, a lake, a village',
-  allZones: 'All areas',
-  allDestinations: 'All destinations',
+  view: { label: 'How to browse the hikes', list: 'List', map: 'Map' },
+  filterDestination: 'Destination',
+  filterZone: 'Area',
+  all: 'all',
+  ascent: 'up',
+  overview: {
+    label: 'Map of all hikes. To pick one with the keyboard, use the list.',
+    loading: 'Loading the map…',
+    hint: 'Lines are trails, dots are destinations: click one to see which hike it is.',
+    open: 'Open the plan',
+    close: 'Close',
+  },
   destinations: { hut: 'Huts', bivouac: 'Bivouacs', lake: 'Lakes', pass: 'Passes', peak: 'Peaks', alp: 'Alpine pastures', other: 'Villages and more' },
+  destinationOne: { hut: 'Hut', bivouac: 'Bivouac', lake: 'Lake', pass: 'Pass', peak: 'Peak', alp: 'Alpine pasture', other: '' },
   trailRefs: (refs) => (refs.length === 1 ? `trail ${refs[0]}` : `trails ${refs.join(', ')}`),
   noResults: 'No trail matches your search.',
   zones: {
@@ -151,9 +176,10 @@ const en: Strings = {
   },
   difficulty: { T: 'easy', E: 'hiking', EE: 'experienced hikers' },
   caiSign: 'CAI signpost',
-  back: 'All trails',
+  back: 'All hikes',
 
-  when: 'When do you start?',
+  when: '2 · When do you start?',
+  answerStep: '3 · Back before dark?',
   date: 'Day',
   start: 'Time',
   settings: (pace, stop) =>
@@ -234,7 +260,7 @@ const en: Strings = {
     freezing: (t, m) => `Freezing level at ${m} m around ${t}: possible ice or snow on the trail.`,
   },
   disclaimer: 'A planning tool, not a decision maker. In the mountains what you see counts: if the weather turns, turn back.',
-  credits: 'Trails © OpenStreetMap contributors (ODbL) · elevation Copernicus DEM · weather Open-Meteo · a project by',
+  credits: 'Trails © OpenStreetMap contributors (ODbL) · maps OpenTopoMap · elevation Copernicus DEM · weather Open-Meteo · a project by',
 };
 
 export const STRINGS: Record<Lang, Strings> = { it, en };

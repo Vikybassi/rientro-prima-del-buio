@@ -3,6 +3,7 @@ import 'leaflet/dist/leaflet.css';
 import { useEffect, useRef } from 'react';
 import type { TrailPoint, TrailSummary } from '../data/types.ts';
 import type { Strings } from '../i18n.ts';
+import { addTopoLayer, MAP_COLORS } from './topo.ts';
 
 type Props = { trail: TrailSummary; track: TrailPoint[]; t: Strings };
 
@@ -20,21 +21,17 @@ export default function TrailMap({ trail, track, t }: Props) {
     if (!box.current) return;
     const touch = window.matchMedia('(pointer: coarse)').matches;
     const map = L.map(box.current, { scrollWheelZoom: false, dragging: !touch, zoomSnap: 0.5 });
-    L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
-      maxZoom: 17,
-      attribution:
-        '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · SRTM · stile © <a href="https://opentopomap.org">OpenTopoMap</a> (CC-BY-SA)',
-    }).addTo(map);
+    addTopoLayer(map);
 
     const line = L.polyline(
       track.map(([lat, lon]) => [lat, lon] as [number, number]),
-      { color: '#2f4a3c', weight: 4, opacity: 0.9 },
+      { color: MAP_COLORS.trail, weight: 4, opacity: 0.9 },
     ).addTo(map);
     // cerchi invece dei segnaposto con immagine: niente file extra da caricare (e niente icone rotte col bundler)
-    L.circleMarker(trail.start, { radius: 7, color: '#fbfaf6', weight: 2, fillColor: '#2f4a3c', fillOpacity: 1 })
+    L.circleMarker(trail.start, { radius: 7, color: MAP_COLORS.halo, weight: 2, fillColor: MAP_COLORS.start, fillOpacity: 1 })
       .bindTooltip(`${t.map.start}: ${trail.from}`)
       .addTo(map);
-    L.circleMarker(trail.end, { radius: 7, color: '#fbfaf6', weight: 2, fillColor: '#8c5f3f', fillOpacity: 1 })
+    L.circleMarker(trail.end, { radius: 7, color: MAP_COLORS.halo, weight: 2, fillColor: MAP_COLORS.end, fillOpacity: 1 })
       .bindTooltip(`${t.map.end}: ${trail.to}`)
       .addTo(map);
     map.fitBounds(line.getBounds(), { padding: [24, 24] });

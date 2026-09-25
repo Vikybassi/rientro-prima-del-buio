@@ -46,7 +46,11 @@ export type Plan = {
   moments: (Moment & { leg: 'up' | 'down'; d: number })[];
 };
 
-export function makePlan({ trail, track, date, start, pace, stopMin }: PlanInput): Plan {
+/**
+ * Tempi di salita e ritorno di un sentiero, per un passo. Li usano il piano e l'elenco (il tempo di salita accanto
+ * a ogni giro): un calcolo solo, così non possono dare numeri diversi.
+ */
+export function trailTimes(trail: TrailSummary, pace: Pace): { upMin: Range; downMin: Range; timeSource: 'cai' | 'formula' } {
   const km = trail.lengthM / 1000;
   // al ritorno la salita dell'andata diventa discesa e viceversa
   const formulaUp = dinHours(km, trail.upM, trail.downM) * 60;
@@ -57,8 +61,15 @@ export function makePlan({ trail, track, date, start, pace, stopMin }: PlanInput
     down: officialRatio(trail.caiDownMin, formulaDown),
   };
   const fallback = cai.up ?? cai.down ?? CAI_OVER_DIN.estimate;
-  const upMin = legRange(formulaUp, cai.up ?? fallback, pace);
-  const downMin = legRange(formulaDown, cai.down ?? fallback, pace);
+  return {
+    upMin: legRange(formulaUp, cai.up ?? fallback, pace),
+    downMin: legRange(formulaDown, cai.down ?? fallback, pace),
+    timeSource: cai.up !== null || cai.down !== null ? 'cai' : 'formula',
+  };
+}
+
+export function makePlan({ trail, track, date, start, pace, stopMin }: PlanInput): Plan {
+  const { upMin, downMin, timeSource } = trailTimes(trail, pace);
 
   const startAt = localToInstant(date, start);
   const summitAt = { estimate: addMinutes(startAt, upMin.estimate), prudent: addMinutes(startAt, upMin.prudent) };
@@ -83,7 +94,7 @@ export function makePlan({ trail, track, date, start, pace, stopMin }: PlanInput
 
   return {
     startAt,
-    timeSource: cai.up !== null || cai.down !== null ? 'cai' : 'formula',
+    timeSource,
     upMin,
     downMin,
     stopMin,
