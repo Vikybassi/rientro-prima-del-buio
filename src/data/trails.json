@@ -1,0 +1,482 @@
+[
+  {
+    "osm": 19532067,
+    "ref": "N581",
+    "from": "Fraciscio",
+    "to": "Alpe Motta",
+    "zone": "valchiavenna",
+    "difficulty": "E",
+    "lengthM": 3780,
+    "upM": 396,
+    "downM": 36,
+    "startEle": 1367,
+    "endEle": 1727,
+    "maxEle": 1764,
+    "caiUpMin": null,
+    "caiDownMin": null,
+    "start": [
+      46.40517,
+      9.36754
+    ],
+    "end": [
+      46.41909,
+      9.35551
+    ]
+  },
+  {
+    "osm": 11363923,
+    "ref": "N595",
+    "from": "Macolino",
+    "to": "Passo Sterla Nord",
+    "zone": "valchiavenna",
+    "difficulty": "EE",
+    "lengthM": 6227,
+    "upM": 1248,
+    "downM": 89,
+    "startEle": 1659,
+    "endEle": 2818,
+    "maxEle": 2877,
+    "caiUpMin": null,
+    "caiDownMin": null,
+    "start": [
+      46.45505,
+      9.3675
+    ],
+    "end": [
+      46.4587,
+      9.40226
+    ]
+  },
+  {
+    "osm": 7659201,
+    "ref": "23",
+    "from": "Poira di Mello",
+    "to": "Bivacco Bottani-Cornaggia",
+    "zone": "bassa-valtellina",
+    "difficulty": "E",
+    "lengthM": 6094,
+    "upM": 1298,
+    "downM": 53,
+    "startEle": 1063,
+    "endEle": 2309,
+    "maxEle": 2309,
+    "caiUpMin": 233,
+    "caiDownMin": null,
+    "start": [
+      46.1636,
+      9.55473
+    ],
+    "end": [
+      46.18751,
+      9.54993
+    ]
+  },
+  {
+    "osm": 9962368,
+    "ref": "SI",
+    "from": "Filorera",
+    "to": "Bivacco Scermenone",
+    "zone": "bassa-valtellina",
+    "difficulty": "EE",
+    "lengthM": 9458,
+    "upM": 1327,
+    "downM": 45,
+    "startEle": 857,
+    "endEle": 2140,
+    "maxEle": 2140,
+    "caiUpMin": null,
+    "caiDownMin": null,
+    "start": [
+      46.21879,
+      9.63975
+    ],
+    "end": [
+      46.21761,
+      9.7008
+    ]
+  },
+  {
+    "osm": 14542056,
+    "ref": "315",
+    "from": "Chiesa in Valmalenco",
+    "to": "Alpe Lago",
+    "zone": "valmalenco",
+    "difficulty": "T",
+    "lengthM": 5621,
+    "upM": 605,
+    "downM": 11,
+    "startEle": 1004,
+    "endEle": 1598,
+    "maxEle": 1603,
+    "caiUpMin": null,
+    "caiDownMin": null,
+    "start": [
+      46.26244,
+      9.84486
+    ],
+    "end": [
+      46.24833,
+      9.82487
+    ]
+  },
+  {
+    "osm": 7609741,
+    "ref": "334",
+    "from": "San Giuseppe",
+    "to": "Rifugio Palù",
+    "zone": "valmalenco",
+    "difficulty": "T",
+    "lengthM": 3585,
+    "upM": 432,
+    "downM": 0,
+    "startEle": 1522,
+    "endEle": 1954,
+    "maxEle": 1954,
+    "caiUpMin": 70,
+    "caiDownMin": null,
+    "start": [
+      46.30108,
+      9.83985
+    ],
+    "end": [
+      46.30382,
+      9.86852
+    ]
+  },
+  {
+    "osm": 7328079,
+    "ref": "331",
+    "from": "San Giuseppe",
+    "to": "Rifugio Longoni",
+    "zone": "valmalenco",
+    "difficulty": "E",
+    "lengthM": 6418,
+    "upM": 1013,
+    "downM": 18,
+    "startEle": 1443,
+    "endEle": 2438,
+    "maxEle": 2440,
+    "caiUpMin": 170,
+    "caiDownMin": null,
+    "start": [
+      46.30166,
+      9.83439
+    ],
+    "end": [
+      46.33035,
+      9.81967
+    ]
+  },
+  {
+    "osm": 7568446,
+    "ref": "328",
+    "from": "Chiareggio",
+    "to": "Alpe Fora",
+    "zone": "valmalenco",
+    "difficulty": "E",
+    "lengthM": 8310,
+    "upM": 622,
+    "downM": 166,
+    "startEle": 1598,
+    "endEle": 2054,
+    "maxEle": 2132,
+    "caiUpMin": 184,
+    "caiDownMin": null,
+    "start": [
+      46.3171,
+      9.79121
+    ],
+    "end": [
+      46.32902,
+      9.80295
+    ]
+  },
+  {
+    "osm": 7568285,
+    "ref": "304",
+    "from": "Chiareggio",
+    "to": "Passo del Muretto",
+    "zone": "valmalenco",
+    "difficulty": "EE",
+    "lengthM": 8218,
+    "upM": 1001,
+    "downM": 41,
+    "startEle": 1598,
+    "endEle": 2557,
+    "maxEle": 2560,
+    "caiUpMin": 164,
+    "caiDownMin": null,
+    "start": [
+      46.3171,
+      9.79121
+    ],
+    "end": [
+      46.34895,
+      9.73357
+    ]
+  },
+  {
+    "osm": 6496287,
+    "ref": "342",
+    "from": "Campo Franscia",
+    "to": "Passo Confinale",
+    "zone": "valmalenco",
+    "difficulty": "E",
+    "lengthM": 12107,
+    "upM": 1589,
+    "downM": 249,
+    "startEle": 1501,
+    "endEle": 2841,
+    "maxEle": 2841,
+    "caiUpMin": null,
+    "caiDownMin": null,
+    "start": [
+      46.29395,
+      9.91063
+    ],
+    "end": [
+      46.33655,
+      9.98742
+    ]
+  },
+  {
+    "osm": 6967144,
+    "ref": "317",
+    "from": "Palazzina Falk",
+    "to": "Laghi Torena",
+    "zone": "media-valtellina",
+    "difficulty": "E",
+    "lengthM": 4528,
+    "upM": 715,
+    "downM": 17,
+    "startEle": 1393,
+    "endEle": 2091,
+    "maxEle": 2091,
+    "caiUpMin": 120,
+    "caiDownMin": null,
+    "start": [
+      46.10728,
+      10.14018
+    ],
+    "end": [
+      46.09936,
+      10.11164
+    ]
+  },
+  {
+    "osm": 12900464,
+    "ref": "379",
+    "from": "Campello",
+    "to": "Passo dell'Arasé",
+    "zone": "media-valtellina",
+    "difficulty": "E",
+    "lengthM": 4620,
+    "upM": 963,
+    "downM": 12,
+    "startEle": 1634,
+    "endEle": 2585,
+    "maxEle": 2585,
+    "caiUpMin": null,
+    "caiDownMin": null,
+    "start": [
+      46.25492,
+      10.02784
+    ],
+    "end": [
+      46.25368,
+      10.05863
+    ]
+  },
+  {
+    "osm": 14469858,
+    "ref": "228",
+    "from": "Quattro Rui",
+    "to": "Rifugio Schiazzera",
+    "zone": "media-valtellina",
+    "difficulty": "E",
+    "lengthM": 5878,
+    "upM": 863,
+    "downM": 13,
+    "startEle": 1057,
+    "endEle": 1907,
+    "maxEle": 1908,
+    "caiUpMin": null,
+    "caiDownMin": null,
+    "start": [
+      46.25272,
+      10.22858
+    ],
+    "end": [
+      46.2594,
+      10.20791
+    ]
+  },
+  {
+    "osm": 14472077,
+    "ref": "251",
+    "from": "Ravoledo",
+    "to": "Monte Storile",
+    "zone": "media-valtellina",
+    "difficulty": "E",
+    "lengthM": 6612,
+    "upM": 1436,
+    "downM": 39,
+    "startEle": 1057,
+    "endEle": 2454,
+    "maxEle": 2457,
+    "caiUpMin": null,
+    "caiDownMin": null,
+    "start": [
+      46.30289,
+      10.25455
+    ],
+    "end": [
+      46.32873,
+      10.27382
+    ]
+  },
+  {
+    "osm": 14481202,
+    "ref": "268",
+    "from": "Sondalo",
+    "to": "Passo della Forcola",
+    "zone": "alta-valtellina",
+    "difficulty": "E",
+    "lengthM": 7278,
+    "upM": 1343,
+    "downM": 22,
+    "startEle": 886,
+    "endEle": 2207,
+    "maxEle": 2207,
+    "caiUpMin": null,
+    "caiDownMin": null,
+    "start": [
+      46.33009,
+      10.32655
+    ],
+    "end": [
+      46.34105,
+      10.27621
+    ]
+  },
+  {
+    "osm": 14481363,
+    "ref": "273",
+    "from": "Cepina",
+    "to": "Lago Campaccio",
+    "zone": "alta-valtellina",
+    "difficulty": "E",
+    "lengthM": 9278,
+    "upM": 1226,
+    "downM": 63,
+    "startEle": 1145,
+    "endEle": 2308,
+    "maxEle": 2308,
+    "caiUpMin": null,
+    "caiDownMin": null,
+    "start": [
+      46.42841,
+      10.35596
+    ],
+    "end": [
+      46.40702,
+      10.3068
+    ]
+  },
+  {
+    "osm": 14452620,
+    "ref": "196",
+    "from": "Isolaccia",
+    "to": "Bocchetta di Trela",
+    "zone": "alta-valtellina",
+    "difficulty": "E",
+    "lengthM": 9516,
+    "upM": 1072,
+    "downM": 80,
+    "startEle": 1349,
+    "endEle": 2341,
+    "maxEle": 2341,
+    "caiUpMin": null,
+    "caiDownMin": null,
+    "start": [
+      46.48907,
+      10.29566
+    ],
+    "end": [
+      46.51234,
+      10.25779
+    ]
+  },
+  {
+    "osm": 14522887,
+    "ref": "290",
+    "from": "Arnoga",
+    "to": "Passo della Val Viola",
+    "zone": "alta-valtellina",
+    "difficulty": "E",
+    "lengthM": 9813,
+    "upM": 612,
+    "downM": 35,
+    "startEle": 1900,
+    "endEle": 2477,
+    "maxEle": 2477,
+    "caiUpMin": null,
+    "caiDownMin": null,
+    "start": [
+      46.45798,
+      10.24005
+    ],
+    "end": [
+      46.41387,
+      10.1481
+    ]
+  },
+  {
+    "osm": 14452197,
+    "ref": "175",
+    "from": "Ponte Calcheira",
+    "to": "Passo Tropione",
+    "zone": "alta-valtellina",
+    "difficulty": "E",
+    "lengthM": 5273,
+    "upM": 959,
+    "downM": 0,
+    "startEle": 1866,
+    "endEle": 2825,
+    "maxEle": 2825,
+    "caiUpMin": null,
+    "caiDownMin": null,
+    "start": [
+      46.55416,
+      10.12433
+    ],
+    "end": [
+      46.58228,
+      10.09942
+    ]
+  },
+  {
+    "osm": 15003431,
+    "ref": "158B",
+    "from": "Passo di Gavia",
+    "to": "Monte Gavia",
+    "zone": "alta-valtellina",
+    "difficulty": "EE",
+    "lengthM": 3506,
+    "upM": 560,
+    "downM": 20,
+    "startEle": 2617,
+    "endEle": 3158,
+    "maxEle": 3158,
+    "caiUpMin": null,
+    "caiDownMin": null,
+    "start": [
+      46.34324,
+      10.48783
+    ],
+    "end": [
+      46.354,
+      10.47247
+    ]
+  }
+]

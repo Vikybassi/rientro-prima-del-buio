@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anteprima sentieri (controllo dati)</title>
+    <!-- Pagina di controllo dei dati generati da scripts/build-trails.ts, non fa parte dell'app. -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+      body { margin: 0; font: 14px/1.4 system-ui, sans-serif; color: #222; background: #fff; color-scheme: light; display: grid; grid-template-columns: 320px 1fr; height: 100vh; }
+      aside { overflow: auto; border-right: 1px solid #ddd; }
+      aside h1 { font-size: 15px; margin: 12px 14px; }
+      aside button { display: block; width: 100%; text-align: left; border: 0; border-top: 1px solid #eee; background: none; padding: 8px 14px; cursor: pointer; font: inherit; }
+      aside button:hover, aside button[aria-pressed='true'] { background: #f3efe6; }
+      aside small { color: #666; }
+      main { display: grid; grid-template-rows: 1fr 170px; }
+      #map { min-height: 0; }
+      #profile { border-top: 1px solid #ddd; padding: 8px 14px; }
+      #profile svg { width: 100%; height: 120px; }
+    </style>
+  </head>
+  <body>
+    <aside><h1>20 sentieri: clicca per controllare</h1><div id="list"></div></aside>
+    <main><div id="map"></div><div id="profile">Seleziona un sentiero.</div></main>
+    <script type="module">
+      import 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+      import trails from '/src/data/trails.json';
+
+      const map = L.map('map');
+      L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+        maxZoom: 17,
+        attribution: '© OpenStreetMap contributors, SRTM | stile © OpenTopoMap (CC-BY-SA)',
+      }).addTo(map);
+
+      const tracks = await Promise.all(trails.map((t) => fetch(`/trails/${t.osm}.json`).then((r) => r.json())));
+      const lines = new Map();
+      const all = L.featureGroup().addTo(map);
+      trails.forEach((t, i) => {
+        const pts = tracks[i].points.map(([lat, lon]) => [lat, lon]);
+        const line = L.polyline(pts, { color: '#7a1b2b', weight: 3 }).addTo(all);
+        L.circleMarker(pts[0], { radius: 5, color: '#1d6b4f', fillOpacity: 1 }).bindTooltip(`Partenza: ${t.from}`).addTo(all);
+        L.circleMarker(pts.at(-1), { radius: 5, color: '#b8860b', fillOpacity: 1 }).bindTooltip(`Meta: ${t.to}`).addTo(all);
+        line.on('click', () => select(i));
+        lines.set(i, line);
+      });
+      map.invalidateSize(); // le dimensioni del contenitore possono non essere pronte quando la mappa nasce
+      map.fitBounds(all.getBounds(), { padding: [20, 20] });
+
+      const list = document.getElementById('list');
+      trails.forEach((t, i) => {
+        const b = document.createElement('button');
+        b.innerHTML = `<strong>${t.from} → ${t.to}</strong><br><small>${t.ref || '–'} · ${t.difficulty} · ${(t.lengthM / 1000).toFixed(1)} km · +${t.upM} m · ${t.zone}</small>`;
+        b.onclick = () => select(i);
+        list.append(b);
+      });
+
+      function select(i) {
+        const t = trails[i];
+        list.querySelectorAll('button').forEach((b, j) => b.setAttribute('aria-pressed', String(i === j)));
+        lines.forEach((l, j) => l.setStyle({ color: i === j ? '#e0452b' : '#7a1b2b', weight: i === j ? 5 : 3 }));
+        map.fitBounds(lines.get(i).getBounds(), { padding: [40, 40] });
+        // profilo altimetrico in SVG: distanza in orizzontale, quota in verticale
+        const p = tracks[i].points;
+        const W = 1000, H = 120, maxD = p.at(-1)[2];
+        const minE = Math.min(...p.map((q) => q[3])), maxE = Math.max(...p.map((q) => q[3]));
+        const xy = p.map(([, , d, e]) => `${(d / maxD) * W},${H - ((e - minE) / (maxE - minE)) * (H - 10) - 5}`).join(' ');
+        const cai = t.caiUpMin ? ` · tempo CAI ${Math.floor(t.caiUpMin / 60)}h${String(t.caiUpMin % 60).padStart(2, '0')}` : '';
+        document.getElementById('profile').innerHTML =
+          `<strong>${t.from} (${t.startEle} m) → ${t.to} (${t.endEle} m)</strong> · ${(t.lengthM / 1000).toFixed(1)} km · +${t.upM} / −${t.downM} m${cai}
+           <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none"><polyline points="${xy}" fill="none" stroke="#7a1b2b" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>`;
+      }
+    </script>
+  </body>
+</html>

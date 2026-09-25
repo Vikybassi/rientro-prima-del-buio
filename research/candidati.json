@@ -1,0 +1,6408 @@
+{
+ "threshold": 5,
+ "results": [
+  {
+   "id": 1713242,
+   "tags": {
+    "cai_scale": "EE",
+    "duration:backward": "04:00",
+    "duration:forward": "05:00",
+    "from": "Passo del Vivione",
+    "lwn:name": "Bergamo - Val di Scalve",
+    "network": "lwn",
+    "note:project_page": "https://wiki.openstreetmap.org/wiki/Lombardia/Sentieri",
+    "operator": "Club Alpino Italiano - Bergamo",
+    "osmc:symbol": "red:red:white_stripe:416:black",
+    "ref": "416",
+    "ref:REI": "DBGA4160",
+    "route": "hiking",
+    "rwn:name": "Rete Escursionistica Lombarda (REL)",
+    "source": "survey:CAI",
+    "source:ref": "9216002",
+    "survey:date": "2023-08-01",
+    "symbol:it": "segnavia bianco e rosso",
+    "to": "Rifugio Tagliaferri",
+    "type": "route",
+    "via": "Laghi del Venerocolo",
+    "website": "https://www.caibergamo.it/geoportale/sentieri/416"
+   },
+   "ok": true,
+   "km": 13.975240803841404,
+   "startEle": 1826.694177187892,
+   "endEle": 2329.8284848663925,
+   "maxEle": 2539.2542382763318,
+   "climbs": {
+    "0": {
+     "up": 1153.9015031948188,
+     "down": 650.7671955163182
+    },
+    "5": {
+     "up": 1045.4507053993989,
+     "down": 542.3163977208983
+    },
+    "10": {
+     "up": 967.1891727416773,
+     "down": 464.05486506317675
+    },
+    "15": {
+     "up": 935.2997541874411,
+     "down": 432.1654465089405
+    },
+    "20": {
+     "up": 900.2743446973091,
+     "down": 397.14003701880847
+    },
+    "25": {
+     "up": 836.2886521776682,
+     "down": 333.15434449916756
+    },
+    "30": {
+     "up": 814.8138254477317,
+     "down": 311.6795177692311
+    },
+    "40": {
+     "up": 831.557695615862,
+     "down": 328.42338793736144
+    }
+   },
+   "kind": "salita",
+   "comune": "Schilpario",
+   "province": "IT-BG",
+   "start": [
+    46.0365862,
+    10.1992691
+   ]
+  },
+  {
+   "id": 2362934,
+   "tags": {
+    "cai_scale": "E",
+    "duration:backward": "03:00",
+    "duration:forward": "03:00",
+    "from": "Rifugio Benigni",
+    "lwn:name": "Bergamo - Alta Val Brembana",
+    "name": "101 - Tappa 5",
+    "network": "lwn",
+    "note": "La 101VARIANTE della mappa CAI è mappata come connection tra tappa 4 e tappa 5",
+    "note:project_page": "https://wiki.openstreetmap.org/wiki/Lombardia/Sentieri",
+    "operator": "Club Alpino Italiano (sezione Alta Valle Brembana)",
+    "osmc:symbol": "red:red:white_stripe:101:black",
+    "ref": "101",
+    "ref:REI": "DBGA1010",
+    "route": "hiking",
+    "rwn:name": "Rete Escursionistica Lombarda (REL)",
+    "source": "survey:CAI",
+    "symbol:it": "segnavia bianco e rosso",
+    "to": "Ca' San Marco",
+    "type": "route",
+    "website": "https://www.caibergamo.it/geoportale/sentieri/101_5"
+   },
+   "ok": true,
+   "km": 8.78911544387661,
+   "startEle": 1831.528947577294,
+   "endEle": 2214.3013121514014,
+   "maxEle": 2214.3013121514014,
+   "climbs": {
+    "0": {
+     "up": 785.4373043213891,
+     "down": 402.6649397472818
+    },
+    "5": {
+     "up": 733.8844350801844,
+     "down": 351.1120705060771
+    },
+    "10": {
+     "up": 682.0332330913266,
+     "down": 299.26086851721925
+    },
+    "15": {
+     "up": 635.5663328306134,
+     "down": 252.7939682565061
+    },
+    "20": {
+     "up": 639.1984755947017,
+     "down": 256.42611102059436
+    },
+    "25": {
+     "up": 631.9733067033187,
+     "down": 249.2009421292114
+    },
+    "30": {
+     "up": 577.9843094615585,
+     "down": 195.21194488745118
+    },
+    "40": {
+     "up": 525.3780418672065,
+     "down": 142.60567729309923
+    }
+   },
+   "kind": "salita",
+   "comune": "Averara",
+   "province": "IT-BG",
+   "start": [
+    46.0425329,
+    9.6269358
+   ]
+  },
+  {
+   "id": 2362936,
+   "tags": {
+    "cai_scale": "E",
+    "duration:backward": "03:00",
+    "duration:forward": "03:30",
+    "from": "Rifugio Grassi (Camisolo)",
+    "lwn:name": "Bergamo - Alta Val Brembana",
+    "name": "101 - Tappa 4",
+    "network": "lwn",
+    "note": "La 101VARIANTE della mappa CAI è mappata come connection tra tappa 4 e tappa 5",
+    "note:project_page": "https://wiki.openstreetmap.org/wiki/Lombardia/Sentieri",
+    "operator": "Club Alpino Italiano (sezione Alta Valle Brembana)",
+    "osmc:symbol": "red:red:white_stripe:101:black",
+    "ref": "101",
+    "ref:REI": "DBGA1010",
+    "route": "hiking",
+    "rwn:name": "Rete Escursionistica Lombarda (REL)",
+    "source": "survey:CAI",
+    "symbol:it": "segnavia bianco e rosso",
+    "to": "Rifugio Benigni",
+    "type": "route",
+    "website": "https://www.caibergamo.it/geoportale/sentieri/101_4"
+   },
+   "ok": true,
+   "km": 7.550086823309884,
+   "startEle": 1987.8073357509038,
+   "endEle": 2214.314202573057,
+   "maxEle": 2292.443747380442,
+   "climbs": {
+    "0": {
+     "up": 782.2051619636429,
+     "down": 555.6982951414896
+    },
+    "5": {
+     "up": 732.7524456222498,
+     "down": 506.2455788000964
+    },
+    "10": {
+     "up": 703.0687409022066,
+     "down": 476.56187408005326
+    },
+    "15": {
+     "up": 638.7390113105553,
+     "down": 412.2321444884019
+    },
+    "20": {
+     "up": 598.2552435018401,
+     "down": 371.74837667968677
+    },
+    "25": {
+     "up": 535.7048782471466,
+     "down": 309.1980114249932
+    },
+    "30": {
+     "up": 581.3148976551802,
+     "down": 354.8080308330268
+    },
+    "40": {
+     "up": 496.63767233700764,
+     "down": 270.1308055148543
+    }
+   },
+   "kind": "traversata",
+   "comune": "Valtorta",
+   "province": "IT-BG",
+   "start": [
+    46.009319,
+    9.4917698
+   ]
+  },
+  {
+   "id": 2380193,
+   "tags": {
+    "ascent": "1500",
+    "cai_scale": "E",
+    "descent": "0",
+    "distance": "6.7",
+    "duration:backward": "04:00",
+    "duration:forward": "05:15",
+    "from": "Ornica",
+    "lwn:name": "Bergamo - Alta Val Brembana",
+    "network": "lwn",
+    "note:project_page": "https://wiki.openstreetmap.org/wiki/Lombardia/Sentieri",
+    "osmc:symbol": "red:red:white_stripe:106:black",
+    "ref": "106",
+    "ref:REI": "DBGA1060",
+    "roundtrip": "no",
+    "route": "hiking",
+    "rwn:name": "Rete Escursionistica Lombarda (REL)",
+    "source": "survey:CAI",
+    "source:ref": "9216135",
+    "symbol:it": "segnavia bianco e rosso",
+    "to": "Pizzo dei Tre Signori",
+    "type": "route",
+    "website": "https://www.caibergamo.it/geoportale/sentieri/106"
+   },
+   "ok": true,
+   "km": 6.594311330711865,
+   "startEle": 983.5514234312657,
+   "endEle": 2514.0469851683215,
+   "maxEle": 2515.6419524895296,
+   "climbs": {
+    "0": {
+     "up": 1553.1993520155297,
+     "down": 22.70379027847389
+    },
+    "5": {
+     "up": 1549.3956189136732,
+     "down": 18.900057176617338
+    },
+    "10": {
+     "up": 1544.2651593034414,
+     "down": 13.769597566385528
+    },
+    "15": {
+     "up": 1532.0905290582639,
+     "down": 1.5949673212080597
+    },
+    "20": {
+     "up": 1532.0905290582639,
+     "down": 1.5949673212080597
+    },
+    "25": {
+     "up": 1530.4955617370558,
+     "down": 0
+    },
+    "30": {
+     "up": 1530.4955617370558,
+     "down": 0
+    },
+    "40": {
+     "up": 1530.4955617370558,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Ornica",
+   "province": "IT-BG",
+   "start": [
+    45.9908182,
+    9.5747352
+   ]
+  },
+  {
+   "id": 2588920,
+   "tags": {
+    "cai_scale": "EE",
+    "duration:backward": "03:30",
+    "duration:forward": "04:30",
+    "from": "Rifugio Curò",
+    "lwn:name": "Bergamo - Alta Val Seriana",
+    "network": "lwn",
+    "note": "La 321VAR della mappa CAI, 321V della REL, è mappata come alternative. La 321VARIANTE della mappa CAI, 321A della REL, è mappata come alternative.",
+    "note:project_page": "https://wiki.openstreetmap.org/wiki/Lombardia/Sentieri",
+    "operator": "Club Alpino Italiano - Bergamo",
+    "osmc:symbol": "red:red:white_stripe:321:black",
+    "ref": "321",
+    "ref:REI": "DBGA3210",
+    "route": "hiking",
+    "rwn:name": "Rete Escursionistica Lombarda (REL)",
+    "source": "survey:CAI",
+    "source:ref": "9216002",
+    "survey:date": "2023-08-01",
+    "symbol:it": "segnavia bianco e rosso",
+    "to": "Rifugio Tagliaferri",
+    "type": "route",
+    "website": "https://www.caibergamo.it/geoportale/sentieri/321"
+   },
+   "ok": true,
+   "km": 8.006938578784418,
+   "startEle": 1899.895768853009,
+   "endEle": 2329.8284848663925,
+   "maxEle": 2651.3023950096285,
+   "climbs": {
+    "0": {
+     "up": 1077.8654465732286,
+     "down": 647.9327305598451
+    },
+    "5": {
+     "up": 1054.164629580054,
+     "down": 624.2319135666705
+    },
+    "10": {
+     "up": 1022.7514312813814,
+     "down": 592.818715267998
+    },
+    "15": {
+     "up": 967.1827458228013,
+     "down": 537.2500298094178
+    },
+    "20": {
+     "up": 955.7581648004557,
+     "down": 525.8254487870722
+    },
+    "25": {
+     "up": 958.5686791240705,
+     "down": 528.635963110687
+    },
+    "30": {
+     "up": 971.894458788593,
+     "down": 541.9617427752096
+    },
+    "40": {
+     "up": 921.9837912697949,
+     "down": 492.0510752564114
+    }
+   },
+   "kind": "traversata",
+   "comune": "Valbondione",
+   "province": "IT-BG",
+   "start": [
+    46.0616578,
+    10.0479133
+   ]
+  },
+  {
+   "id": 2613023,
+   "tags": {
+    "cai_scale": "E",
+    "duration:backward": "04:30",
+    "duration:forward": "04:30",
+    "from": "Rifugio Curò",
+    "lwn:name": "Bergamo - Alta Val Seriana",
+    "network": "lwn",
+    "note:project_page": "https://wiki.openstreetmap.org/wiki/Lombardia/Sentieri",
+    "operator": "Club Alpino Italiano - Bergamo",
+    "osmc:symbol": "red:red:white_stripe:324:black",
+    "ref": "324",
+    "ref:REI": "DBGA3240",
+    "route": "hiking",
+    "rwn:name": "Rete Escursionistica Lombarda (REL)",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "source:ref": "9216002",
+    "survey:date": "2023-08-01",
+    "symbol:it": "segnavia bianco e rosso",
+    "to": "Rifugio Tagliaferri",
+    "type": "route",
+    "via": "Passo Grasso di Pila",
+    "website": "https://www.caibergamo.it/geoportale/sentieri/324"
+   },
+   "ok": true,
+   "km": 11.348339867051846,
+   "startEle": 1899.895768853009,
+   "endEle": 2329.8284848663925,
+   "maxEle": 2508.3154537271016,
+   "climbs": {
+    "0": {
+     "up": 1060.2615465325764,
+     "down": 630.3288305191929
+    },
+    "5": {
+     "up": 1010.0830005019229,
+     "down": 580.1502844885395
+    },
+    "10": {
+     "up": 973.9822068736794,
+     "down": 544.0494908602959
+    },
+    "15": {
+     "up": 940.0414532864013,
+     "down": 510.1087372730178
+    },
+    "20": {
+     "up": 923.0091300307004,
+     "down": 493.0764140173169
+    },
+    "25": {
+     "up": 960.461399705455,
+     "down": 530.5286836920716
+    },
+    "30": {
+     "up": 934.0988401892664,
+     "down": 504.16612417588294
+    },
+    "40": {
+     "up": 893.4708496868152,
+     "down": 463.53813367343173
+    }
+   },
+   "kind": "traversata",
+   "comune": "Valbondione",
+   "province": "IT-BG",
+   "start": [
+    46.0616578,
+    10.0479133
+   ]
+  },
+  {
+   "id": 6496287,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Campo Franscia",
+    "network": "lwn",
+    "operator": "Club Alpino Italiano",
+    "ref": "342",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Passo Confinale",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 12.106617958489531,
+   "startEle": 1500.5580708651676,
+   "endEle": 2841.421058123101,
+   "maxEle": 2841.421058123101,
+   "climbs": {
+    "0": {
+     "up": 1659.4024306744711,
+     "down": 318.5394434165378
+    },
+    "5": {
+     "up": 1589.4109029180934,
+     "down": 248.54791566016002
+    },
+    "10": {
+     "up": 1539.7114783035356,
+     "down": 198.84849104560226
+    },
+    "15": {
+     "up": 1495.27001396159,
+     "down": 154.40702670365658
+    },
+    "20": {
+     "up": 1477.7608517338585,
+     "down": 136.8978644759252
+    },
+    "25": {
+     "up": 1485.281804412442,
+     "down": 144.4188171545086
+    },
+    "30": {
+     "up": 1477.7608517338585,
+     "down": 136.8978644759252
+    },
+    "40": {
+     "up": 1477.7608517338585,
+     "down": 136.8978644759252
+    }
+   },
+   "kind": "salita",
+   "comune": "Lanzada",
+   "province": "IT-SO",
+   "start": [
+    46.2939464,
+    9.9106302
+   ]
+  },
+  {
+   "id": 6946447,
+   "tags": {
+    "cai_scale": "EE",
+    "description": "Sentiero Italia - Tappa D23S",
+    "from": "Rifugio Nani Tagliaferri al Passo di Venano",
+    "network": "nwn",
+    "note": "Sentiero Italia CAI 2019",
+    "note:it": "Sentiero Italia CAI 2019",
+    "osmc:symbol": "red:red:white_stripe:SI:black",
+    "ref": "SI",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "stage": "D23S",
+    "to": "Passo del Vivione",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 13.975240803841384,
+   "startEle": 1826.694177187892,
+   "endEle": 2329.8284848663925,
+   "maxEle": 2533.0285551572565,
+   "climbs": {
+    "0": {
+     "up": 1112.9841758434322,
+     "down": 609.8498681649316
+    },
+    "5": {
+     "up": 1026.7478583939255,
+     "down": 523.6135507154249
+    },
+    "10": {
+     "up": 921.7523574604311,
+     "down": 418.6180497819305
+    },
+    "15": {
+     "up": 877.1987314587268,
+     "down": 374.0644237802262
+    },
+    "20": {
+     "up": 811.5078376148299,
+     "down": 308.3735299363293
+    },
+    "25": {
+     "up": 830.9914868033366,
+     "down": 327.85717912483597
+    },
+    "30": {
+     "up": 834.5681960176926,
+     "down": 331.433888339192
+    },
+    "40": {
+     "up": 839.5758545538101,
+     "down": 336.44154687530954
+    }
+   },
+   "kind": "salita",
+   "comune": "Schilpario",
+   "province": "IT-BG",
+   "start": [
+    46.0365862,
+    10.1992691
+   ]
+  },
+  {
+   "id": 6946448,
+   "tags": {
+    "cai_scale": "EE",
+    "description": "Sentiero Italia - Tappa D22S",
+    "from": "Rifugio Antonio Curò",
+    "network": "nwn",
+    "note": "Sentiero Italia CAI 2019",
+    "note:it": "Sentiero Italia CAI 2019",
+    "osmc:symbol": "red:red:white_stripe:SI:black",
+    "ref": "SI",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "stage": "D22S",
+    "to": "Rifugio Nani Tagliaferri al Passo di Venano",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 8.006938578784418,
+   "startEle": 1899.895768853009,
+   "endEle": 2329.8284848663925,
+   "maxEle": 2651.3023950096285,
+   "climbs": {
+    "0": {
+     "up": 1077.8654465732286,
+     "down": 647.9327305598451
+    },
+    "5": {
+     "up": 1054.164629580054,
+     "down": 624.2319135666705
+    },
+    "10": {
+     "up": 1022.7514312813814,
+     "down": 592.818715267998
+    },
+    "15": {
+     "up": 967.1827458228013,
+     "down": 537.2500298094178
+    },
+    "20": {
+     "up": 955.7581648004557,
+     "down": 525.8254487870722
+    },
+    "25": {
+     "up": 958.5686791240705,
+     "down": 528.635963110687
+    },
+    "30": {
+     "up": 971.894458788593,
+     "down": 541.9617427752096
+    },
+    "40": {
+     "up": 921.9837912697949,
+     "down": 492.0510752564114
+    }
+   },
+   "kind": "traversata",
+   "comune": "Valbondione",
+   "province": "IT-BG",
+   "start": [
+    46.0616578,
+    10.0479133
+   ]
+  },
+  {
+   "id": 6946452,
+   "tags": {
+    "cai_scale": "EE",
+    "description": "Sentiero Italia - Tappa D18S",
+    "from": "Rifugio Dordona",
+    "network": "nwn",
+    "note": "Sentiero Italia CAI 2019",
+    "note:it": "Sentiero Italia CAI 2019",
+    "osmc:symbol": "red:red:white_stripe:SI:black",
+    "ref": "SI",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "stage": "D18S",
+    "to": "Rifugio Fratelli Calvi",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 17.931661344646212,
+   "startEle": 1955.1861119694513,
+   "endEle": 2003.609971508437,
+   "maxEle": 2150.612549938766,
+   "climbs": {
+    "0": {
+     "up": 1070.3729972610477,
+     "down": 1021.949137722062
+    },
+    "5": {
+     "up": 971.0629575221512,
+     "down": 922.6390979831656
+    },
+    "10": {
+     "up": 886.9359463620185,
+     "down": 838.5120868230329
+    },
+    "15": {
+     "up": 779.6122704925219,
+     "down": 731.1884109535363
+    },
+    "20": {
+     "up": 761.3426347037787,
+     "down": 712.918775164793
+    },
+    "25": {
+     "up": 746.0867213398087,
+     "down": 697.6628618008231
+    },
+    "30": {
+     "up": 678.0287689007725,
+     "down": 629.6049093617869
+    },
+    "40": {
+     "up": 699.9571068772148,
+     "down": 651.5332473382291
+    }
+   },
+   "kind": "traversata",
+   "comune": "Fusine",
+   "province": "IT-SO",
+   "start": [
+    46.0705552,
+    9.7554523
+   ]
+  },
+  {
+   "id": 6946453,
+   "tags": {
+    "cai_scale": "EE",
+    "description": "Sentiero Italia - Tappa D17S",
+    "from": "Rifugio Balicco",
+    "network": "nwn",
+    "note": "Sentiero Italia CAI 2019",
+    "note:it": "Sentiero Italia CAI 2019",
+    "osmc:symbol": "red:red:white_stripe:SI:black",
+    "ref": "SI",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "stage": "D17S",
+    "to": "Rifugio Dordona",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 10.8731288986893,
+   "startEle": 1955.1861119694513,
+   "endEle": 1971.3563873289268,
+   "maxEle": 2337.733267972642,
+   "climbs": {
+    "0": {
+     "up": 1030.2280246769053,
+     "down": 1014.0577493174299
+    },
+    "5": {
+     "up": 992.5622870686141,
+     "down": 976.3920117091386
+    },
+    "10": {
+     "up": 960.8854713302328,
+     "down": 944.7151959707573
+    },
+    "15": {
+     "up": 920.357635244944,
+     "down": 904.1873598854686
+    },
+    "20": {
+     "up": 869.387181886957,
+     "down": 853.2169065274816
+    },
+    "25": {
+     "up": 864.3106580683054,
+     "down": 848.14038270883
+    },
+    "30": {
+     "up": 895.2682231930437,
+     "down": 879.0979478335682
+    },
+    "40": {
+     "up": 878.9688944727159,
+     "down": 862.7986191132404
+    }
+   },
+   "kind": "traversata",
+   "comune": "Fusine",
+   "province": "IT-SO",
+   "start": [
+    46.0705552,
+    9.7554523
+   ]
+  },
+  {
+   "id": 6946454,
+   "tags": {
+    "cai_scale": "EE",
+    "description": "Sentiero Italia - Tappa D16S",
+    "from": "Rifugio Cesare Benigni",
+    "network": "nwn",
+    "note": "Sentiero Italia CAI 2019",
+    "note:it": "Sentiero Italia CAI 2019",
+    "osmc:symbol": "red:red:white_stripe:SI:black",
+    "ref": "SI",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "stage": "D16S",
+    "to": "Rifugio Balicco",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 14.29897007361615,
+   "startEle": 1971.3563873289268,
+   "endEle": 2214.3013121514014,
+   "maxEle": 2214.3013121514014,
+   "climbs": {
+    "0": {
+     "up": 1044.1691667450418,
+     "down": 801.2242419225672
+    },
+    "5": {
+     "up": 973.1540590237914,
+     "down": 730.2091342013168
+    },
+    "10": {
+     "up": 889.8969982054712,
+     "down": 646.9520733829966
+    },
+    "15": {
+     "up": 829.5081892438322,
+     "down": 586.5632644213576
+    },
+    "20": {
+     "up": 821.3268776994321,
+     "down": 578.3819528769575
+    },
+    "25": {
+     "up": 794.7944414145227,
+     "down": 551.8495165920481
+    },
+    "30": {
+     "up": 716.0374964239029,
+     "down": 473.0925716014283
+    },
+    "40": {
+     "up": 665.9764853191655,
+     "down": 423.0315604966909
+    }
+   },
+   "kind": "traversata",
+   "comune": "Mezzoldo",
+   "province": "IT-BG",
+   "start": [
+    46.054839,
+    9.6635396
+   ]
+  },
+  {
+   "id": 6946455,
+   "tags": {
+    "cai_scale": "EE",
+    "description": "Sentiero Italia - Tappa D15S",
+    "from": "Rifugio Buzzoni",
+    "network": "nwn",
+    "note": "Sentiero Italia CAI 2019",
+    "note:it": "Sentiero Italia CAI 2019",
+    "osmc:symbol": "red:red:white_stripe:SI:black",
+    "ref": "SI",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "stage": "D15S",
+    "to": "Rifugio Cesare Benigni",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 11.976167649810183,
+   "startEle": 1566.2197824914524,
+   "endEle": 2214.3013121514014,
+   "maxEle": 2291.5437002709714,
+   "climbs": {
+    "0": {
+     "up": 1309.822745467183,
+     "down": 661.7412158072341
+    },
+    "5": {
+     "up": 1250.595575883758,
+     "down": 602.5140462238091
+    },
+    "10": {
+     "up": 1174.0197236950717,
+     "down": 525.9381940351227
+    },
+    "15": {
+     "up": 1115.04553125883,
+     "down": 466.96400159888094
+    },
+    "20": {
+     "up": 1069.0335599681694,
+     "down": 420.9520303082204
+    },
+    "25": {
+     "up": 1037.4353777774631,
+     "down": 389.3538481175142
+    },
+    "30": {
+     "up": 1073.6601226124537,
+     "down": 425.5785929525048
+    },
+    "40": {
+     "up": 1010.5939998176295,
+     "down": 362.5124701576806
+    }
+   },
+   "kind": "salita",
+   "comune": "Introbio",
+   "province": "IT-LC",
+   "start": [
+    45.9812496,
+    9.4931595
+   ]
+  },
+  {
+   "id": 6967144,
+   "tags": {
+    "ascent": "650",
+    "cai_scale": "E",
+    "distance": "4",
+    "duration:forward": "02:00",
+    "from": "Palazzina Falk",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:317:black",
+    "ref": "317",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "to": "Laghi Torena",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 4.52831665531047,
+   "startEle": 1393.1132565297357,
+   "endEle": 2091.393176359332,
+   "maxEle": 2091.393176359332,
+   "climbs": {
+    "0": {
+     "up": 722.1702945576237,
+     "down": 23.89037472802761
+    },
+    "5": {
+     "up": 714.9247503364757,
+     "down": 16.644830506879543
+    },
+    "10": {
+     "up": 698.2799198295961,
+     "down": 0
+    },
+    "15": {
+     "up": 698.2799198295961,
+     "down": 0
+    },
+    "20": {
+     "up": 698.2799198295961,
+     "down": 0
+    },
+    "25": {
+     "up": 698.2799198295961,
+     "down": 0
+    },
+    "30": {
+     "up": 698.2799198295961,
+     "down": 0
+    },
+    "40": {
+     "up": 698.2799198295961,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Teglio",
+   "province": "IT-SO",
+   "start": [
+    46.1072785,
+    10.1401774
+   ]
+  },
+  {
+   "id": 7328079,
+   "tags": {
+    "ascent": "1021",
+    "cai_scale": "E",
+    "descent": "24",
+    "distance": "6.28",
+    "duration:forward": "2.50",
+    "from": "San Giuseppe",
+    "name": "Sentiero accesso Rifugio Antonio ed Elia Longoni",
+    "network": "lwn",
+    "note": "relation mantained by AngeloMB (CAI Seregno)",
+    "note:it": "relazione mantenuta da AngeloMB (CAI Seregno)",
+    "operator": "Comune di Chiesa Valmalenco",
+    "osmc:name": "Sentiero accesso Rifugio Antonio ed Elia Longoni",
+    "osmc:symbol": "red:red:white_stripe:331:black",
+    "ref": "331",
+    "roundtrip": "no",
+    "route": "hiking",
+    "rwn:name": "Rete Escursionistica Lombarda (REL)",
+    "source": "survey:CAI",
+    "survey:date": "2017-06-07",
+    "symbol": "331 on white red flag",
+    "symbol:it": "331 su bandierina bianco e rossa",
+    "to": "Rifugio Antonio ed Elia Longoni",
+    "type": "route",
+    "website": "https://www.caiseregno.it/"
+   },
+   "ok": true,
+   "km": 6.418275882556176,
+   "startEle": 1443.0211052038858,
+   "endEle": 2437.9606682147387,
+   "maxEle": 2440.4489354505185,
+   "climbs": {
+    "0": {
+     "up": 1024.9987327922336,
+     "down": 30.05916978138066
+    },
+    "5": {
+     "up": 1012.5882191827336,
+     "down": 17.648656171880702
+    },
+    "10": {
+     "up": 996.2690502365467,
+     "down": 1.3294872256938106
+    },
+    "15": {
+     "up": 996.2690502365467,
+     "down": 1.3294872256938106
+    },
+    "20": {
+     "up": 996.2690502365467,
+     "down": 1.3294872256938106
+    },
+    "25": {
+     "up": 997.4278302466328,
+     "down": 2.4882672357798583
+    },
+    "30": {
+     "up": 994.9395630108529,
+     "down": 0
+    },
+    "40": {
+     "up": 996.2690502365467,
+     "down": 1.3294872256938106
+    }
+   },
+   "kind": "salita",
+   "comune": "Chiesa in Valmalenco",
+   "province": "IT-SO",
+   "start": [
+    46.30166,
+    9.834388
+   ]
+  },
+  {
+   "id": 7477612,
+   "tags": {
+    "cai_scale": "E",
+    "name": "Sentiero Passo del Venerocolo",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:332:black",
+    "ref": "332",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Passo del Venerocolo",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 5.445437479210035,
+   "startEle": 1595.2314791262,
+   "endEle": 2321.1658413475216,
+   "maxEle": 2321.1658413475216,
+   "climbs": {
+    "0": {
+     "up": 749.2914852958675,
+     "down": 23.357123074545825
+    },
+    "5": {
+     "up": 739.6619483897659,
+     "down": 13.727586168444304
+    },
+    "10": {
+     "up": 725.9343622213216,
+     "down": 0
+    },
+    "15": {
+     "up": 725.9343622213216,
+     "down": 0
+    },
+    "20": {
+     "up": 725.9343622213216,
+     "down": 0
+    },
+    "25": {
+     "up": 725.9343622213216,
+     "down": 0
+    },
+    "30": {
+     "up": 725.9343622213216,
+     "down": 0
+    },
+    "40": {
+     "up": 725.9343622213216,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Teglio",
+   "province": "IT-SO",
+   "start": [
+    46.080712,
+    10.1374053
+   ]
+  },
+  {
+   "id": 7568285,
+   "tags": {
+    "ascent": "971",
+    "cai_scale": "EE",
+    "descent": "19",
+    "distance": "8.1",
+    "duration:forward": "2:44",
+    "from": "Chiareggio",
+    "network": "lwn",
+    "note": "relation mantained by AngeloMB (CAI Seregno)",
+    "note:it": "relazione mantenuta da AngeloMB (CAI Seregno)",
+    "operator": "Comune Chiesa Valmalenco",
+    "osmc:name": "Chiareggio-Passo del Muretto-Sentiero Rusca",
+    "osmc:symbol": "red:red:white_stripe:304:black",
+    "ref": "304",
+    "roundtrip": "no",
+    "route": "hiking",
+    "rwn:name": "Rete Escursionistica Lombarda (REL)",
+    "source": "survey:CAI",
+    "survey:date": "2017-09-07",
+    "symbol": "304 on white red flag",
+    "symbol:it": "304 su bandierina bianca e rossa",
+    "to": "Passo del Muretto",
+    "type": "route",
+    "via": "Passo del Muretto",
+    "website": "https://www.caiseregno.it/"
+   },
+   "ok": true,
+   "km": 8.21785446656584,
+   "startEle": 1597.75153430428,
+   "endEle": 2557.156166316952,
+   "maxEle": 2560.212687019371,
+   "climbs": {
+    "0": {
+     "up": 1040.404183384532,
+     "down": 80.9995513718602
+    },
+    "5": {
+     "up": 1000.6099513752592,
+     "down": 41.20531936258749
+    },
+    "10": {
+     "up": 976.0181812754333,
+     "down": 16.61354926276158
+    },
+    "15": {
+     "up": 959.4046320126718,
+     "down": 0
+    },
+    "20": {
+     "up": 959.4046320126718,
+     "down": 0
+    },
+    "25": {
+     "up": 959.4046320126718,
+     "down": 0
+    },
+    "30": {
+     "up": 962.461152715091,
+     "down": 3.0565207024192205
+    },
+    "40": {
+     "up": 959.4046320126718,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Chiesa in Valmalenco",
+   "province": "IT-SO",
+   "start": [
+    46.3171043,
+    9.7912134
+   ]
+  },
+  {
+   "id": 7568446,
+   "tags": {
+    "ascent": "603",
+    "cai_scale": "E",
+    "descent": "166",
+    "distance": "8",
+    "duration:forward": "3.04",
+    "from": "Chiareggio",
+    "network": "lwn",
+    "note": "relation mantained by AngeloMB (CAI Seregno)",
+    "note:it": "relazione mantenuta da AngeloMB (CAI Seregno)",
+    "operator": "Comune di Chiesa Valmalenco",
+    "osmc:symbol": "red:red:white_stripe:328:black",
+    "ref": "328",
+    "roundtrip": "no",
+    "route": "hiking",
+    "rwn:name": "Rete Escursionistica Lombarda (REL)",
+    "source": "survey:CAI",
+    "survey:date": "2017-09-07",
+    "symbol": "328 on white red flag",
+    "symbol:it": "328 su bandierina bianca e rossa",
+    "to": "Alpe Fora",
+    "type": "route",
+    "website": "https://www.caiseregno.it/"
+   },
+   "ok": true,
+   "km": 8.309586894846898,
+   "startEle": 1597.75153430428,
+   "endEle": 2053.5432148166,
+   "maxEle": 2132.3657759988137,
+   "climbs": {
+    "0": {
+     "up": 682.9168136912269,
+     "down": 227.12513317890694
+    },
+    "5": {
+     "up": 621.6976052465573,
+     "down": 165.90592473423726
+    },
+    "10": {
+     "up": 574.6961242851712,
+     "down": 118.90444377285121
+    },
+    "15": {
+     "up": 523.4702843632945,
+     "down": 67.67860385097447
+    },
+    "20": {
+     "up": 547.17167515292,
+     "down": 91.37999464059999
+    },
+    "25": {
+     "up": 557.7560972434787,
+     "down": 101.96441673115874
+    },
+    "30": {
+     "up": 549.4345830478417,
+     "down": 93.64290253552167
+    },
+    "40": {
+     "up": 503.14812757199616,
+     "down": 47.35644705967616
+    }
+   },
+   "kind": "salita",
+   "comune": "Chiesa in Valmalenco",
+   "province": "IT-SO",
+   "start": [
+    46.3171043,
+    9.7912134
+   ]
+  },
+  {
+   "id": 7607193,
+   "tags": {
+    "ascent": "1127",
+    "cai_scale": "EE",
+    "descent": "459",
+    "description:it": "Chiareggio-Rifugio Longoni-Alpe Sasso Nero-Rifugio Palù- Alta Via 4° tappa",
+    "distance": "11.82",
+    "duration:forward": "5.32",
+    "from": "Chiareggio",
+    "network": "lwn",
+    "note": "relation mantained by AngeloMB (CAI Seregno)",
+    "note:it": "relazione mantenuta da AngeloMB (CAI Seregno)",
+    "operator": "Comune Chiesa Valmalenco",
+    "osmc:name": "Chiareggio-Rifugio Longoni-Alpe Sasso Nero-Rifugio Palù- Alta Via 4° tappa",
+    "osmc:symbol": "red:red:white_stripe:305:black",
+    "ref": "305",
+    "roundtrip": "no",
+    "route": "hiking",
+    "rwn:name": "Rete Escursionistica Lombarda (REL)",
+    "source": "survey:CAI",
+    "survey:date": "2017-09-23",
+    "symbol": "305 on white red flag",
+    "symbol:it": "305 su bandiera bianca e rossa",
+    "to": "Rifugio Palù",
+    "type": "route",
+    "website": "https://www.caiseregno.it/"
+   },
+   "ok": true,
+   "km": 12.104097363835526,
+   "startEle": 1597.75153430428,
+   "endEle": 1953.8872796488026,
+   "maxEle": 2441.8603529252205,
+   "climbs": {
+    "0": {
+     "up": 1153.822652810332,
+     "down": 797.6869074658096
+    },
+    "5": {
+     "up": 1114.0657852342642,
+     "down": 757.9300398897417
+    },
+    "10": {
+     "up": 1047.76458403583,
+     "down": 691.6288386913075
+    },
+    "15": {
+     "up": 1044.2665179699293,
+     "down": 688.1307726254067
+    },
+    "20": {
+     "up": 991.2776423394821,
+     "down": 635.1418969949596
+    },
+    "25": {
+     "up": 986.1852038089701,
+     "down": 630.0494584644475
+    },
+    "30": {
+     "up": 983.4326598944799,
+     "down": 627.2969145499574
+    },
+    "40": {
+     "up": 871.9274773415177,
+     "down": 515.7917319969952
+    }
+   },
+   "kind": "traversata",
+   "comune": "Chiesa in Valmalenco",
+   "province": "IT-SO",
+   "start": [
+    46.3171043,
+    9.7912134
+   ]
+  },
+  {
+   "id": 7609741,
+   "tags": {
+    "ascent": "457",
+    "cai_scale": "T",
+    "descent": "28",
+    "distance": "3.6",
+    "duration:forward": "1.10",
+    "from": "San Giuseppe",
+    "network": "lwn",
+    "note": "relation mantained by AngeloMB (CAI Seregno)",
+    "note:it": "relazione mantenuta da AngeloMB (CAI Seregno)",
+    "operator": "Comune Chiesa Valmalenco",
+    "osmc:symbol": "red:red:white_stripe:334:black",
+    "ref": "334",
+    "roundtrip": "no",
+    "route": "hiking",
+    "rwn:name": "Rete Escursionistica Lombarda (REL)",
+    "source": "survey:CAI",
+    "survey:date": "2017-09-23",
+    "symbol": "334 on white red flag",
+    "symbol:it": "334 su bandierina bianca e rossa",
+    "to": "Rifugio Palù",
+    "type": "route",
+    "website": "https://www.caiseregno.it/"
+   },
+   "ok": true,
+   "km": 3.5848438445930015,
+   "startEle": 1521.9229322877318,
+   "endEle": 1953.8872796488026,
+   "maxEle": 1953.8872796488026,
+   "climbs": {
+    "0": {
+     "up": 438.59509017392315,
+     "down": 6.630742812852304
+    },
+    "5": {
+     "up": 431.96434736107085,
+     "down": 0
+    },
+    "10": {
+     "up": 431.96434736107085,
+     "down": 0
+    },
+    "15": {
+     "up": 431.96434736107085,
+     "down": 0
+    },
+    "20": {
+     "up": 431.96434736107085,
+     "down": 0
+    },
+    "25": {
+     "up": 431.96434736107085,
+     "down": 0
+    },
+    "30": {
+     "up": 431.96434736107085,
+     "down": 0
+    },
+    "40": {
+     "up": 431.96434736107085,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Chiesa in Valmalenco",
+   "province": "IT-SO",
+   "start": [
+    46.3010757,
+    9.8398498
+   ]
+  },
+  {
+   "id": 7659201,
+   "tags": {
+    "ascent": "1342",
+    "cai_scale": "E",
+    "descent": "94",
+    "distance": "6.8",
+    "duration:forward": "3.53",
+    "from": "Poira di Mello",
+    "network": "lwn",
+    "note": "relation mantained by AngeloMB (CAI Seregno)",
+    "note:it": "relazione mantenuta da AngeloMB (CAI Seregno)",
+    "operator": "Comunità Montana Valtellina di Morbegno",
+    "osmc:symbol": "red:red:white_stripe:23:black",
+    "ref": "23",
+    "roundtrip": "no",
+    "route": "hiking",
+    "rwn:name": "Rete Escursionistica Lombardia (REL)",
+    "source": "survey:CAI",
+    "survey:date": "2017-10-10",
+    "symbol": "23 on white red flag",
+    "symbol:it": "23 su bandierina bianca e rossa",
+    "to": "Bivacco Nino Bottani - Siro Cornaggia",
+    "type": "route",
+    "website": "https://www.caiseregno.it/"
+   },
+   "ok": true,
+   "km": 6.094167822966763,
+   "startEle": 1063.2929717420288,
+   "endEle": 2308.6893525862165,
+   "maxEle": 2308.6893525862165,
+   "climbs": {
+    "0": {
+     "up": 1307.9203988260779,
+     "down": 62.52401798189021
+    },
+    "5": {
+     "up": 1297.928717126597,
+     "down": 52.53233628240923
+    },
+    "10": {
+     "up": 1282.374778790849,
+     "down": 36.97839794666129
+    },
+    "15": {
+     "up": 1265.0521568959873,
+     "down": 19.65577605179965
+    },
+    "20": {
+     "up": 1267.3647990308975,
+     "down": 21.96841818670987
+    },
+    "25": {
+     "up": 1271.7996362880358,
+     "down": 26.40325544384814
+    },
+    "30": {
+     "up": 1278.2786473145416,
+     "down": 32.8822664703539
+    },
+    "40": {
+     "up": 1245.3963808441877,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Mello",
+   "province": "IT-SO",
+   "start": [
+    46.1636013,
+    9.5547277
+   ]
+  },
+  {
+   "id": 7700941,
+   "tags": {
+    "cai_scale": "E",
+    "description": "Sentiero Italia - Tappa D25N",
+    "from": "Rifugio Palù",
+    "network": "nwn",
+    "note": "Sentiero Italia CAI 2019",
+    "note:it": "Sentiero Italia CAI 2019",
+    "osmc:symbol": "red:red:white_stripe:SI:black",
+    "ref": "SI",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "stage": "D25N",
+    "state": "alternate",
+    "to": "Rifugio Marinelli Bombardieri",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 10.071446018421867,
+   "startEle": 2202.0801109593167,
+   "endEle": 2735.2345433117302,
+   "maxEle": 2735.2345433117302,
+   "climbs": {
+    "0": {
+     "up": 1036.111247399407,
+     "down": 502.95681504699337
+    },
+    "5": {
+     "up": 1005.2887807705179,
+     "down": 472.1343484181043
+    },
+    "10": {
+     "up": 990.1420605464559,
+     "down": 456.9876281940424
+    },
+    "15": {
+     "up": 995.7840698141104,
+     "down": 462.6296374616968
+    },
+    "20": {
+     "up": 954.1624984079347,
+     "down": 421.0080660555211
+    },
+    "25": {
+     "up": 940.7216833993966,
+     "down": 407.5672510469831
+    },
+    "30": {
+     "up": 936.437090695476,
+     "down": 403.2826583430624
+    },
+    "40": {
+     "up": 940.6221161702751,
+     "down": 407.4676838178616
+    }
+   },
+   "kind": "traversata",
+   "comune": "Chiesa in Valmalenco",
+   "province": "IT-SO",
+   "start": [
+    46.3052016,
+    9.8827395
+   ]
+  },
+  {
+   "id": 7700942,
+   "tags": {
+    "cai_scale": "E",
+    "description": "Sentiero Italia - Tappa D24N",
+    "from": "Rifugio Longoni",
+    "network": "nwn",
+    "note": "Sentiero Italia CAI 2019",
+    "note:it": "Sentiero Italia CAI 2019",
+    "osmc:symbol": "red:red:white_stripe:SI:black",
+    "ref": "SI",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "stage": "D24N",
+    "state": "alternate",
+    "to": "Rifugio Palù",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 7.602090982315213,
+   "startEle": 2000.4110950953054,
+   "endEle": 2423.1739943455796,
+   "maxEle": 2423.1739943455796,
+   "climbs": {
+    "0": {
+     "up": 808.9068553167137,
+     "down": 386.1439560664396
+    },
+    "5": {
+     "up": 764.094571084092,
+     "down": 341.33167183381784
+    },
+    "10": {
+     "up": 743.8981271695802,
+     "down": 321.1352279193061
+    },
+    "15": {
+     "up": 705.1007962151698,
+     "down": 282.33789696489566
+    },
+    "20": {
+     "up": 663.2529079031369,
+     "down": 240.4900086528628
+    },
+    "25": {
+     "up": 682.1776317406661,
+     "down": 259.414732490392
+    },
+    "30": {
+     "up": 654.3625728756142,
+     "down": 231.59967362534007
+    },
+    "40": {
+     "up": 636.9653196576296,
+     "down": 214.20242040735548
+    }
+   },
+   "kind": "salita",
+   "comune": "Chiesa in Valmalenco",
+   "province": "IT-SO",
+   "start": [
+    46.3040425,
+    9.8721559
+   ]
+  },
+  {
+   "id": 7700943,
+   "tags": {
+    "cai_scale": "EE",
+    "description": "Sentiero Italia - Tappa D23N",
+    "from": "Rifugio Gerli Porro all'Alpe Ventina",
+    "network": "nwn",
+    "note": "Sentiero Italia CAI 2019",
+    "note:it": "Sentiero Italia CAI 2019",
+    "osmc:symbol": "red:red:white_stripe:SI:black",
+    "ref": "SI",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "stage": "D23N",
+    "state": "alternate",
+    "to": "Rifugio Longoni",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 17.880256733253876,
+   "startEle": 1953.7074907859535,
+   "endEle": 2423.1739943455796,
+   "maxEle": 2560.446398409394,
+   "climbs": {
+    "0": {
+     "up": 1841.9107599072765,
+     "down": 1372.4442563476505
+    },
+    "5": {
+     "up": 1773.5206367310673,
+     "down": 1304.0541331714412
+    },
+    "10": {
+     "up": 1753.7106484653768,
+     "down": 1284.2441449057508
+    },
+    "15": {
+     "up": 1738.9768965827086,
+     "down": 1269.5103930230825
+    },
+    "20": {
+     "up": 1690.0948984709657,
+     "down": 1220.6283949113397
+    },
+    "25": {
+     "up": 1706.895448033855,
+     "down": 1237.428944474229
+    },
+    "30": {
+     "up": 1701.6136299892246,
+     "down": 1232.1471264295985
+    },
+    "40": {
+     "up": 1657.4774541106458,
+     "down": 1188.0109505510197
+    }
+   },
+   "kind": "traversata",
+   "comune": "Chiesa in Valmalenco",
+   "province": "IT-SO",
+   "start": [
+    46.298417,
+    9.7770367
+   ]
+  },
+  {
+   "id": 7700944,
+   "tags": {
+    "cai_scale": "EE",
+    "description": "Sentiero Italia - Tappa D22N",
+    "from": "Rifugio Bosio (Galli all'Alpe Airale)",
+    "network": "nwn",
+    "osmc:symbol": "red:red:white_stripe:SI:black",
+    "ref": "SI",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "stage": "D22N",
+    "state": "alternate",
+    "to": "Rifugio Gerli Porro all'Alpe Ventina",
+    "type": "route"
+   },
+   "ok": false,
+   "reason": "interrotto"
+  },
+  {
+   "id": 7700985,
+   "tags": {
+    "cai_scale": "E",
+    "description": "Sentiero Italia - Tappa D27N",
+    "from": "Rifugio Cristina all'Alpe Prabello",
+    "network": "nwn",
+    "note": "Sentiero Italia CAI 2019",
+    "note:it": "Sentiero Italia CAI 2019",
+    "osmc:symbol": "red:red:white_stripe:SI:black",
+    "ref": "SI",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "stage": "D27N",
+    "state": "alternate",
+    "to": "Rifugio Cederna Maffina",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 5.56724457841742,
+   "startEle": 2240.731124104974,
+   "endEle": 2585.2185848665627,
+   "maxEle": 2828.2023771808213,
+   "climbs": {
+    "0": {
+     "up": 727.1372438764815,
+     "down": 382.64978311489267
+    },
+    "5": {
+     "up": 703.9380617335091,
+     "down": 359.45060097192027
+    },
+    "10": {
+     "up": 689.3354522714067,
+     "down": 344.8479915098178
+    },
+    "15": {
+     "up": 673.6493561223183,
+     "down": 329.16189536072943
+    },
+    "20": {
+     "up": 653.2133802964968,
+     "down": 308.7259195349079
+    },
+    "25": {
+     "up": 632.505540123821,
+     "down": 288.01807936223213
+    },
+    "30": {
+     "up": 650.3374325680193,
+     "down": 305.8499718064304
+    },
+    "40": {
+     "up": 598.9320781221113,
+     "down": 254.44461736052244
+    }
+   },
+   "kind": "traversata",
+   "comune": "Lanzada",
+   "province": "IT-SO",
+   "start": [
+    46.2847648,
+    9.9485024
+   ]
+  },
+  {
+   "id": 7703946,
+   "tags": {
+    "cai_scale": "E",
+    "description": "Sentiero Italia - Tappa D28N",
+    "from": "Rifugio Cederna Maffina",
+    "network": "nwn",
+    "note": "Sentiero Italia CAI 2019",
+    "note:it": "Sentiero Italia CAI 2019",
+    "osmc:symbol": "red:red:white_stripe:SI:black",
+    "ref": "SI",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "stage": "D28N",
+    "state": "alternate",
+    "to": "Prato Valentino",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 19.556952466933055,
+   "startEle": 1688.7779447250673,
+   "endEle": 2585.2185848665627,
+   "maxEle": 2585.2185848665627,
+   "climbs": {
+    "0": {
+     "up": 1768.4461545348108,
+     "down": 872.0055143933155
+    },
+    "5": {
+     "up": 1680.143046460131,
+     "down": 783.7024063186357
+    },
+    "10": {
+     "up": 1596.094614344937,
+     "down": 699.6539742034417
+    },
+    "15": {
+     "up": 1505.1883942361715,
+     "down": 608.7477540946761
+    },
+    "20": {
+     "up": 1442.8207884926364,
+     "down": 546.3801483511411
+    },
+    "25": {
+     "up": 1454.2844186826085,
+     "down": 557.8437785411131
+    },
+    "30": {
+     "up": 1473.9020331405939,
+     "down": 577.4613929990985
+    },
+    "40": {
+     "up": 1388.0942883875316,
+     "down": 491.65364824603625
+    }
+   },
+   "kind": "salita",
+   "comune": "Teglio",
+   "province": "IT-SO",
+   "start": [
+    46.1897744,
+    10.0546173
+   ]
+  },
+  {
+   "id": 7704540,
+   "tags": {
+    "cai_scale": "E",
+    "description": "Sentiero Italia - Tappa D30N",
+    "from": "Tirano Stazione",
+    "network": "nwn",
+    "note": "Sentiero Italia CAI 2019",
+    "note:it": "Sentiero Italia CAI 2019",
+    "osmc:symbol": "red:red:white_stripe:SI:black",
+    "ref": "SI",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "stage": "D30N",
+    "state": "alternate",
+    "to": "Rifugio Schiazzera",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 12.580524007206389,
+   "startEle": 431.11085493185305,
+   "endEle": 2077.890058500381,
+   "maxEle": 2077.963076390002,
+   "climbs": {
+    "0": {
+     "up": 1881.3802319082124,
+     "down": 234.60102833968426
+    },
+    "5": {
+     "up": 1801.4168341706304,
+     "down": 154.63763060210238
+    },
+    "10": {
+     "up": 1767.9295611892396,
+     "down": 121.15035762071147
+    },
+    "15": {
+     "up": 1714.6359661827582,
+     "down": 67.85676261423009
+    },
+    "20": {
+     "up": 1721.3116828295801,
+     "down": 74.532479261052
+    },
+    "25": {
+     "up": 1714.6359661827582,
+     "down": 67.85676261423009
+    },
+    "30": {
+     "up": 1714.6359661827582,
+     "down": 67.85676261423009
+    },
+    "40": {
+     "up": 1691.6739097127777,
+     "down": 44.89470614424954
+    }
+   },
+   "kind": "salita",
+   "comune": "Tirano",
+   "province": "IT-SO",
+   "start": [
+    46.2155699,
+    10.1670112
+   ]
+  },
+  {
+   "id": 7705140,
+   "tags": {
+    "cai_scale": "E",
+    "description": "Sentiero Italia - Tappa D34N",
+    "from": "Livigno (Loc. Teola)",
+    "network": "nwn",
+    "note": "Sentiero Italia CAI 2019",
+    "note:it": "Sentiero Italia CAI 2019",
+    "osmc:symbol": "red:red:white_stripe:SI:black",
+    "ref": "SI",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "stage": "D34N",
+    "state": "alternate",
+    "to": "Rifugio Monte alle Scale (Cancano)",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 21.842159358389903,
+   "startEle": 1864.5026738286952,
+   "endEle": 1944.440391386002,
+   "maxEle": 2289.713409792377,
+   "climbs": {
+    "0": {
+     "up": 908.2099222158631,
+     "down": 828.2722046585563
+    },
+    "5": {
+     "up": 781.1290326539729,
+     "down": 701.1913150966661
+    },
+    "10": {
+     "up": 682.8699201336019,
+     "down": 602.9322025762951
+    },
+    "15": {
+     "up": 590.1560105641004,
+     "down": 510.2182930067936
+    },
+    "20": {
+     "up": 592.949427389616,
+     "down": 513.0117098323092
+    },
+    "25": {
+     "up": 562.496907222471,
+     "down": 482.55918966516424
+    },
+    "30": {
+     "up": 542.1492342041613,
+     "down": 462.21151664685453
+    },
+    "40": {
+     "up": 483.10746275062866,
+     "down": 403.1697451933219
+    }
+   },
+   "kind": "traversata",
+   "comune": "Livigno",
+   "province": "IT-SO",
+   "start": [
+    46.534232,
+    10.1420975
+   ]
+  },
+  {
+   "id": 7705141,
+   "tags": {
+    "cai_scale": "E",
+    "description": "Sentiero Italia - Tappa D33N",
+    "from": "Rifugio Federico",
+    "network": "nwn",
+    "note": "Sentiero Italia CAI 2019",
+    "note:it": "Sentiero Italia CAI 2019",
+    "osmc:symbol": "red:red:white_stripe:SI:black",
+    "ref": "SI",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "stage": "D33N",
+    "state": "alternate",
+    "to": "Livigno",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 25.05901383699224,
+   "startEle": 1864.5026738286952,
+   "endEle": 2129.9952528812373,
+   "maxEle": 2802.6671695486975,
+   "climbs": {
+    "0": {
+     "up": 1459.9027294211378,
+     "down": 1194.4101503685956
+    },
+    "5": {
+     "up": 1378.185909821351,
+     "down": 1112.693330768809
+    },
+    "10": {
+     "up": 1296.6308196241766,
+     "down": 1031.1382405716345
+    },
+    "15": {
+     "up": 1264.189396263793,
+     "down": 998.6968172112508
+    },
+    "20": {
+     "up": 1213.7699647119175,
+     "down": 948.2773856593753
+    },
+    "25": {
+     "up": 1208.4185614694832,
+     "down": 942.925982416941
+    },
+    "30": {
+     "up": 1232.8090889145835,
+     "down": 967.3165098620414
+    },
+    "40": {
+     "up": 1173.2961917902312,
+     "down": 907.803612737689
+    }
+   },
+   "kind": "traversata",
+   "comune": "Livigno",
+   "province": "IT-SO",
+   "start": [
+    46.534232,
+    10.1420975
+   ]
+  },
+  {
+   "id": 7705142,
+   "tags": {
+    "cai_scale": "E",
+    "description": "Sentiero Italia - Tappa D32N",
+    "from": "Malghera",
+    "network": "nwn",
+    "note": "Sentiero Italia CAI 2019",
+    "note:it": "Sentiero Italia CAI 2019",
+    "osmc:symbol": "red:red:white_stripe:SI:black",
+    "ref": "SI",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "stage": "D32N",
+    "state": "alternate",
+    "to": "Rifugio Valgoi",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 19.615764265044053,
+   "startEle": 1962.5181654722724,
+   "endEle": 2129.9952528812373,
+   "maxEle": 2822.0589681260435,
+   "climbs": {
+    "0": {
+     "up": 1495.6019620671245,
+     "down": 1328.1248746581596
+    },
+    "5": {
+     "up": 1454.2288163645717,
+     "down": 1286.7517289556067
+    },
+    "10": {
+     "up": 1417.2578893279879,
+     "down": 1249.780801919023
+    },
+    "15": {
+     "up": 1409.3276061821475,
+     "down": 1241.8505187731826
+    },
+    "20": {
+     "up": 1404.9431030698088,
+     "down": 1237.4660156608438
+    },
+    "25": {
+     "up": 1369.2008454600823,
+     "down": 1201.7237580511173
+    },
+    "30": {
+     "up": 1368.503682263252,
+     "down": 1201.026594854287
+    },
+    "40": {
+     "up": 1364.8084047240036,
+     "down": 1197.3313173150386
+    }
+   },
+   "kind": "traversata",
+   "comune": "Grosio",
+   "province": "IT-SO",
+   "start": [
+    46.3438337,
+    10.1390382
+   ]
+  },
+  {
+   "id": 7705143,
+   "tags": {
+    "cai_scale": "E",
+    "description": "Sentiero Italia - Tappa D31N",
+    "from": "Rifugio Schiazzera",
+    "network": "nwn",
+    "note": "Sentiero Italia CAI 2019",
+    "note:it": "Sentiero Italia CAI 2019",
+    "osmc:symbol": "red:red:white_stripe:SI:black",
+    "ref": "SI",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "stage": "D31N",
+    "state": "alternate",
+    "to": "Malghera",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 24.979316882406007,
+   "startEle": 1962.5181654722724,
+   "endEle": 2077.890058500381,
+   "maxEle": 2425.2373576722216,
+   "climbs": {
+    "0": {
+     "up": 1274.2017834272658,
+     "down": 1158.829890399157
+    },
+    "5": {
+     "up": 1113.443914376368,
+     "down": 998.0720213482591
+    },
+    "10": {
+     "up": 948.0779130139013,
+     "down": 832.7060199857924
+    },
+    "15": {
+     "up": 910.6531512795846,
+     "down": 795.2812582514757
+    },
+    "20": {
+     "up": 820.7078083914271,
+     "down": 705.3359153633182
+    },
+    "25": {
+     "up": 766.0514083044206,
+     "down": 650.6795152763118
+    },
+    "30": {
+     "up": 823.1344030619873,
+     "down": 707.7625100338785
+    },
+    "40": {
+     "up": 740.6017164083407,
+     "down": 625.2298233802319
+    }
+   },
+   "kind": "traversata",
+   "comune": "Grosio",
+   "province": "IT-SO",
+   "start": [
+    46.3438337,
+    10.1390382
+   ]
+  },
+  {
+   "id": 7705268,
+   "tags": {
+    "cai_scale": "E",
+    "description": "Sentiero Italia - Tappa D37N",
+    "from": "Rifugio Branca",
+    "network": "nwn",
+    "note": "Sentiero Italia CAI 2019",
+    "note:it": "Sentiero Italia CAI 2019",
+    "osmc:symbol": "red:red:white_stripe:SI:black",
+    "ref": "SI",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "stage": "D37N",
+    "state": "alternate",
+    "to": "Passo di Gavia",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 17.566098805117274,
+   "startEle": 2488.7091634565313,
+   "endEle": 2620.9117943438655,
+   "maxEle": 2620.9117943438655,
+   "climbs": {
+    "0": {
+     "up": 1050.0690153825758,
+     "down": 917.8663844952416
+    },
+    "5": {
+     "up": 981.2368976955836,
+     "down": 849.0342668082494
+    },
+    "10": {
+     "up": 890.604731592091,
+     "down": 758.4021007047568
+    },
+    "15": {
+     "up": 853.6821166424629,
+     "down": 721.4794857551287
+    },
+    "20": {
+     "up": 835.5189471440103,
+     "down": 703.3163162566761
+    },
+    "25": {
+     "up": 772.5687600715632,
+     "down": 640.3661291842291
+    },
+    "30": {
+     "up": 735.3151200581501,
+     "down": 603.1124891708159
+    },
+    "40": {
+     "up": 708.2269586520033,
+     "down": 576.0243277646691
+    }
+   },
+   "kind": "traversata",
+   "comune": "Valfurva",
+   "province": "IT-SO",
+   "start": [
+    46.4148906,
+    10.5837108
+   ]
+  },
+  {
+   "id": 7705269,
+   "tags": {
+    "cai_scale": "E",
+    "description": "Sentiero Italia - Tappa D36N",
+    "from": "Rifugio Campo",
+    "network": "nwn",
+    "note": "Sentiero Italia CAI 2019",
+    "note:it": "Sentiero Italia CAI 2019",
+    "osmc:symbol": "red:red:white_stripe:SI:black",
+    "ref": "SI",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "stage": "D36N",
+    "state": "alternate",
+    "to": "Rifugio Branca",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 15.869345982548909,
+   "startEle": 1994.3545201798183,
+   "endEle": 2488.7091634565313,
+   "maxEle": 3000.1318069173753,
+   "climbs": {
+    "0": {
+     "up": 1432.1522955533549,
+     "down": 937.7976522766419
+    },
+    "5": {
+     "up": 1377.6968081010546,
+     "down": 883.3421648243416
+    },
+    "10": {
+     "up": 1320.9670365589564,
+     "down": 826.6123932822434
+    },
+    "15": {
+     "up": 1294.601489800968,
+     "down": 800.246846524255
+    },
+    "20": {
+     "up": 1237.1331022960399,
+     "down": 742.7784590193269
+    },
+    "25": {
+     "up": 1233.0304386543403,
+     "down": 738.6757953776273
+    },
+    "30": {
+     "up": 1202.208812347863,
+     "down": 707.85416907115
+    },
+    "40": {
+     "up": 1184.502345833589,
+     "down": 690.1477025568761
+    }
+   },
+   "kind": "traversata",
+   "comune": "Valfurva",
+   "province": "IT-SO",
+   "start": [
+    46.4740833,
+    10.4978895
+   ]
+  },
+  {
+   "id": 7705270,
+   "tags": {
+    "cai_scale": "E",
+    "description": "Sentiero Italia - Tappa D35N",
+    "from": "Rifugio Monte alle Scale (Cancano)",
+    "network": "nwn",
+    "note": "Sentiero Italia CAI 2019",
+    "note:it": "Sentiero Italia CAI 2019",
+    "osmc:symbol": "red:red:white_stripe:SI:black",
+    "ref": "SI",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "stage": "D35N",
+    "state": "alternate",
+    "to": "Rifugio Campo",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 24.817184583603773,
+   "startEle": 1944.440391386002,
+   "endEle": 1994.3545201798183,
+   "maxEle": 1998.1887959855185,
+   "climbs": {
+    "0": {
+     "up": 1388.9676720595585,
+     "down": 1339.053543265742
+    },
+    "5": {
+     "up": 1225.5824578067597,
+     "down": 1175.6683290129433
+    },
+    "10": {
+     "up": 1126.2291954726488,
+     "down": 1076.3150666788324
+    },
+    "15": {
+     "up": 1031.073275420179,
+     "down": 981.1591466263626
+    },
+    "20": {
+     "up": 917.9190468613731,
+     "down": 868.0049180675567
+    },
+    "25": {
+     "up": 928.3249300840016,
+     "down": 878.4108012901852
+    },
+    "30": {
+     "up": 902.2877748186104,
+     "down": 852.373646024794
+    },
+    "40": {
+     "up": 823.3096097516745,
+     "down": 773.3954809578581
+    }
+   },
+   "kind": "traversata",
+   "comune": "Valdidentro",
+   "province": "IT-SO",
+   "start": [
+    46.5152168,
+    10.3149384
+   ]
+  },
+  {
+   "id": 8550389,
+   "tags": {
+    "cai_scale": "E",
+    "duration:backward": "02:40",
+    "duration:forward": "02:10",
+    "from": "Passo di Tartano",
+    "lwn:name": "Bergamo - Alta Val Brembana",
+    "network": "lwn",
+    "note:project_page": "https://wiki.openstreetmap.org/wiki/Lombardia/Sentieri",
+    "osmc:symbol": "red:red:white_stripe:201:black",
+    "ref": "201",
+    "ref:REI": "DBGA2010",
+    "route": "hiking",
+    "rwn:name": "Rete Escursionistica Lombarda (REL)",
+    "source": "survey:CAI",
+    "survey:date": "2022-08-08",
+    "symbol:it": "segnavia bianco e rosso",
+    "to": "Foppolo",
+    "type": "route",
+    "website": "https://www.caibergamo.it/geoportale/sentieri/201"
+   },
+   "ok": true,
+   "km": 6.174242697332189,
+   "startEle": 1649.277378297687,
+   "endEle": 2094.6814644129377,
+   "maxEle": 2292.0474209248764,
+   "climbs": {
+    "0": {
+     "up": 792.1122544570289,
+     "down": 346.7081683417782
+    },
+    "5": {
+     "up": 758.121811678401,
+     "down": 312.7177255631502
+    },
+    "10": {
+     "up": 733.3097128947516,
+     "down": 287.90562677950084
+    },
+    "15": {
+     "up": 723.3971855623288,
+     "down": 277.99309944707807
+    },
+    "20": {
+     "up": 702.3906921571379,
+     "down": 256.98660604188717
+    },
+    "25": {
+     "up": 679.7415855045001,
+     "down": 234.3374993892494
+    },
+    "30": {
+     "up": 658.447803817678,
+     "down": 213.04371770242733
+    },
+    "40": {
+     "up": 643.5167184908232,
+     "down": 198.1126323755725
+    }
+   },
+   "kind": "salita",
+   "comune": "Foppolo",
+   "province": "IT-BG",
+   "start": [
+    46.0411913,
+    9.7589713
+   ]
+  },
+  {
+   "id": 8550390,
+   "tags": {
+    "cai_scale": "E",
+    "duration:backward": "01:20",
+    "duration:forward": "01:40",
+    "from": "Passo Dordona",
+    "lwn:name": "Bergamo - Alta Val Brembana",
+    "network": "lwn",
+    "note:project_page": "https://wiki.openstreetmap.org/wiki/Lombardia/Sentieri",
+    "osmc:symbol": "red:red:white_stripe:201A:black",
+    "ref": "201A",
+    "ref:REI": "DBGA201A",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "symbol:it": "segnavia bianco e rosso",
+    "to": "Laghi di Porcile",
+    "type": "route",
+    "website": "https://www.caibergamo.it/geoportale/sentieri/201A"
+   },
+   "ok": true,
+   "km": 3.8063352104628185,
+   "startEle": 2063.569501765461,
+   "endEle": 2168.264060258924,
+   "maxEle": 2330.800333388748,
+   "climbs": {
+    "0": {
+     "up": 419.19874367887655,
+     "down": 314.5041851854137
+    },
+    "5": {
+     "up": 404.6822131862202,
+     "down": 299.98765469275736
+    },
+    "10": {
+     "up": 382.2756904420662,
+     "down": 277.58113194860334
+    },
+    "15": {
+     "up": 390.07386260512817,
+     "down": 285.3793041116653
+    },
+    "20": {
+     "up": 372.3453702171173,
+     "down": 267.65081172365444
+    },
+    "25": {
+     "up": 353.60995043549747,
+     "down": 248.9153919420346
+    },
+    "30": {
+     "up": 362.240650094408,
+     "down": 257.54609160094515
+    },
+    "40": {
+     "up": 294.45511372755277,
+     "down": 189.7605552340899
+    }
+   },
+   "kind": "traversata",
+   "comune": "Foppolo",
+   "province": "IT-BG",
+   "start": [
+    46.0627289,
+    9.7635133
+   ]
+  },
+  {
+   "id": 8550414,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Passo della Croce",
+    "lwn:name": "Bergamo - Alta Val Brembana",
+    "network": "lwn",
+    "note:project_page": "https://wiki.openstreetmap.org/wiki/Lombardia/Sentieri",
+    "osmc:symbol": "red:red:white_stripe:203:black",
+    "ref": "203",
+    "ref:REI": "DBGA2030",
+    "route": "hiking",
+    "rwn:name": "Rete Escursionistica Lombarda (REL)",
+    "source": "survey:CAI",
+    "survey:date": "2022-08-02",
+    "symbol:it": "segnavia bianco e rosso",
+    "to": "Passo di Dordona",
+    "type": "route",
+    "website": "https://www.caibergamo.it/geoportale/sentieri/203"
+   },
+   "ok": true,
+   "km": 3.7122644501835476,
+   "startEle": 1939.5583062041985,
+   "endEle": 2059.126958736929,
+   "maxEle": 2110.7974118969314,
+   "climbs": {
+    "0": {
+     "up": 248.82630038993534,
+     "down": 129.25764785720503
+    },
+    "5": {
+     "up": 224.65262156259269,
+     "down": 105.08396902986237
+    },
+    "10": {
+     "up": 185.69339637331518,
+     "down": 66.12474384058487
+    },
+    "15": {
+     "up": 175.67907486885974,
+     "down": 56.11042233612943
+    },
+    "20": {
+     "up": 175.7351656983983,
+     "down": 56.16651316566799
+    },
+    "25": {
+     "up": 154.86523384804536,
+     "down": 35.29658131531505
+    },
+    "30": {
+     "up": 170.55486536181502,
+     "down": 50.98621282908471
+    },
+    "40": {
+     "up": 145.85013850427663,
+     "down": 26.281485971546317
+    }
+   },
+   "kind": "salita",
+   "comune": "Foppolo",
+   "province": "IT-BG",
+   "start": [
+    46.0417888,
+    9.7786572
+   ]
+  },
+  {
+   "id": 8550418,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Lago Moro",
+    "lwn:name": "Bergamo - Alta Val Brembana",
+    "network": "lwn",
+    "note:project_page": "https://wiki.openstreetmap.org/wiki/Lombardia/Sentieri",
+    "osmc:symbol": "red:red:white_stripe:204A:black",
+    "ref": "204A",
+    "ref:REI": "DBGA204A",
+    "route": "hiking",
+    "rwn:name": "Rete Escursionistica Lombarda (REL)",
+    "source": "survey:CAI",
+    "symbol:it": "segnavia bianco e rosso",
+    "to": "Montebello",
+    "type": "route",
+    "website": "https://www.caibergamo.it/geoportale/sentieri/204A"
+   },
+   "ok": true,
+   "km": 2.2355355028316413,
+   "startEle": 2108.7801828963534,
+   "endEle": 2234.4761692112297,
+   "maxEle": 2353.228050060963,
+   "climbs": {
+    "0": {
+     "up": 246.0899836902131,
+     "down": 120.39399737533677
+    },
+    "5": {
+     "up": 244.44786716460976,
+     "down": 118.75188084973342
+    },
+    "10": {
+     "up": 244.44786716460976,
+     "down": 118.75188084973342
+    },
+    "15": {
+     "up": 231.8228799960002,
+     "down": 106.12689368112387
+    },
+    "20": {
+     "up": 244.44786716460976,
+     "down": 118.75188084973342
+    },
+    "25": {
+     "up": 244.44786716460976,
+     "down": 118.75188084973342
+    },
+    "30": {
+     "up": 231.8228799960002,
+     "down": 106.12689368112387
+    },
+    "40": {
+     "up": 244.44786716460976,
+     "down": 118.75188084973342
+    }
+   },
+   "kind": "traversata",
+   "comune": "Foppolo",
+   "province": "IT-BG",
+   "start": [
+    46.0517102,
+    9.7774327
+   ]
+  },
+  {
+   "id": 8550518,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Carona",
+    "lwn:name": "Bergamo - Alta Val Brembana",
+    "network": "lwn",
+    "note:project_page": "https://wiki.openstreetmap.org/wiki/Lombardia/Sentieri",
+    "osmc:symbol": "red:red:white_stripe:209:black",
+    "ref": "209",
+    "ref:REI": "DBGA2090",
+    "route": "hiking",
+    "rwn:name": "Rete Escursionistica Lombarda (REL)",
+    "source": "survey:CAI",
+    "source:ref": "9216002",
+    "survey:date": "2023-08-01",
+    "symbol:it": "segnavia bianco e rosso",
+    "to": "Passo di Publino",
+    "type": "route",
+    "website": "https://www.caibergamo.it/geoportale/sentieri/209"
+   },
+   "ok": true,
+   "km": 5.0647869334651405,
+   "startEle": 1490.0347778444532,
+   "endEle": 2362.2194850591613,
+   "maxEle": 2364.8247750247533,
+   "climbs": {
+    "0": {
+     "up": 882.5360479133383,
+     "down": 10.35134069863011
+    },
+    "5": {
+     "up": 881.2384917008887,
+     "down": 9.053784486180575
+    },
+    "10": {
+     "up": 872.1847072147082,
+     "down": 0
+    },
+    "15": {
+     "up": 872.1847072147082,
+     "down": 0
+    },
+    "20": {
+     "up": 872.1847072147082,
+     "down": 0
+    },
+    "25": {
+     "up": 874.7899971803001,
+     "down": 2.6052899655919646
+    },
+    "30": {
+     "up": 874.453310034887,
+     "down": 2.268602820178785
+    },
+    "40": {
+     "up": 874.453310034887,
+     "down": 2.268602820178785
+    }
+   },
+   "kind": "salita",
+   "comune": "Carona",
+   "province": "IT-BG",
+   "start": [
+    46.0253438,
+    9.8162391
+   ]
+  },
+  {
+   "id": 8550559,
+   "tags": {
+    "cai_scale": "E",
+    "duration:backward": "01:20",
+    "duration:forward": "01:50",
+    "from": "Rifugio Longo",
+    "lwn:name": "Bergamo - Alta Val Brembana",
+    "network": "lwn",
+    "note:project_page": "https://wiki.openstreetmap.org/wiki/Lombardia/Sentieri",
+    "operator": "Club Alpino Italiano",
+    "osmc:symbol": "red:red:white_stripe:254:black",
+    "ref": "254",
+    "ref:REI": "DBGA2540",
+    "route": "hiking",
+    "rwn:name": "Rete Escursionistica Lombarda (REL)",
+    "source": "survey:CAI",
+    "source:ref": "9216002",
+    "survey:date": "2023-08-01",
+    "symbol:it": "segnavia bianco e rosso",
+    "to": "Passo di Venina",
+    "type": "route",
+    "website": "https://www.caibergamo.it/geoportale/sentieri/254"
+   },
+   "ok": true,
+   "km": 4.355314961927758,
+   "startEle": 2027.8125300660602,
+   "endEle": 2417.6827714976835,
+   "maxEle": 2473.4012743236212,
+   "climbs": {
+    "0": {
+     "up": 561.0981157615915,
+     "down": 171.22787432996824
+    },
+    "5": {
+     "up": 552.5186309762012,
+     "down": 162.64838954457787
+    },
+    "10": {
+     "up": 532.4036483011955,
+     "down": 142.53340686957222
+    },
+    "15": {
+     "up": 541.1856172716621,
+     "down": 151.31537584003877
+    },
+    "20": {
+     "up": 524.6301862826799,
+     "down": 134.75994485105662
+    },
+    "25": {
+     "up": 510.406468231045,
+     "down": 120.53622679942168
+    },
+    "30": {
+     "up": 508.8171043666425,
+     "down": 118.94686293501923
+    },
+    "40": {
+     "up": 520.4524939168919,
+     "down": 130.58225248526855
+    }
+   },
+   "kind": "salita",
+   "comune": "Carona",
+   "province": "IT-BG",
+   "start": [
+    46.0398557,
+    9.8621091
+   ]
+  },
+  {
+   "id": 8689249,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Carona",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:318:black",
+    "ref": "318",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "to": "Passo Caronella",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 8.404155045339149,
+   "startEle": 1171.3485947164215,
+   "endEle": 2612.0331000995957,
+   "maxEle": 2612.3977060287584,
+   "climbs": {
+    "0": {
+     "up": 1471.7207175918657,
+     "down": 31.036212208691495
+    },
+    "5": {
+     "up": 1458.7695099845196,
+     "down": 18.085004601345418
+    },
+    "10": {
+     "up": 1451.628263486259,
+     "down": 10.943758103084747
+    },
+    "15": {
+     "up": 1440.6845053831742,
+     "down": 0
+    },
+    "20": {
+     "up": 1440.6845053831742,
+     "down": 0
+    },
+    "25": {
+     "up": 1440.6845053831742,
+     "down": 0
+    },
+    "30": {
+     "up": 1440.6845053831742,
+     "down": 0
+    },
+    "40": {
+     "up": 1440.6845053831742,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Teglio",
+   "province": "IT-SO",
+   "start": [
+    46.1400481,
+    10.0909651
+   ]
+  },
+  {
+   "id": 8689507,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Bondone",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:316:black",
+    "ref": "316",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "to": "Passo Bondone",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 10.80994427373376,
+   "startEle": 1109.724177962415,
+   "endEle": 2715.1438335550038,
+   "maxEle": 2715.1438335550038,
+   "climbs": {
+    "0": {
+     "up": 1676.5389253961096,
+     "down": 71.11926980352087
+    },
+    "5": {
+     "up": 1642.6380202503656,
+     "down": 37.218364657776874
+    },
+    "10": {
+     "up": 1620.4474911745474,
+     "down": 15.027835581958698
+    },
+    "15": {
+     "up": 1605.4196555925887,
+     "down": 0
+    },
+    "20": {
+     "up": 1605.4196555925887,
+     "down": 0
+    },
+    "25": {
+     "up": 1605.4196555925887,
+     "down": 0
+    },
+    "30": {
+     "up": 1605.4196555925887,
+     "down": 0
+    },
+    "40": {
+     "up": 1605.4196555925887,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Teglio",
+   "province": "IT-SO",
+   "start": [
+    46.1408791,
+    10.084696
+   ]
+  },
+  {
+   "id": 9962368,
+   "tags": {
+    "cai_scale": "EE",
+    "description": "Sentiero Italia - Tappa D20N",
+    "from": "Filorera",
+    "network": "nwn",
+    "note": "Sentiero Italia CAI 2021",
+    "note:it": "Sentiero Italia CAI 2021",
+    "osmc:symbol": "red:red:white_stripe:SI:black",
+    "ref": "SI",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "stage": "D20N",
+    "to": "Bivacco Scermenone",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 9.457568548392775,
+   "startEle": 856.970094510197,
+   "endEle": 2139.5112624055646,
+   "maxEle": 2139.5112624055646,
+   "climbs": {
+    "0": {
+     "up": 1351.759580573489,
+     "down": 69.21841267812135
+    },
+    "5": {
+     "up": 1327.4037519824835,
+     "down": 44.86258408711592
+    },
+    "10": {
+     "up": 1306.5550373096569,
+     "down": 24.013869414289275
+    },
+    "15": {
+     "up": 1298.4876937302213,
+     "down": 15.946525834853674
+    },
+    "20": {
+     "up": 1304.6627566744344,
+     "down": 22.12158877906677
+    },
+    "25": {
+     "up": 1282.5411678953676,
+     "down": 0
+    },
+    "30": {
+     "up": 1282.5411678953676,
+     "down": 0
+    },
+    "40": {
+     "up": 1282.5411678953676,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Val Masino",
+   "province": "IT-SO",
+   "start": [
+    46.218791,
+    9.6397459
+   ]
+  },
+  {
+   "id": 9962608,
+   "tags": {
+    "cai_scale": "EE",
+    "description": "Sentiero Italia - Tappa D21N",
+    "from": "Bivacco Scermenone",
+    "network": "nwn",
+    "note": "Sentiero Italia CAI 2021",
+    "note:it": "Sentiero Italia CAI 2021",
+    "osmc:symbol": "red:red:white_stripe:SI:black",
+    "ref": "SI",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "stage": "D21N",
+    "to": "Rifugio Bosio Galli all'Alpe Airale",
+    "type": "route"
+   },
+   "ok": false,
+   "reason": "interrotto"
+  },
+  {
+   "id": 11300085,
+   "tags": {
+    "ascent": "600",
+    "cai_scale": "E",
+    "descent": "400",
+    "distance": "7.7",
+    "from": "Rifugio Ca' San Marco",
+    "lwn:name": "Bergamo - Alta Val Brembana",
+    "network": "lwn",
+    "note:project_page": "https://wiki.openstreetmap.org/wiki/Lombardia/Sentieri",
+    "operator": "Club Alpino Italiano",
+    "osmc:symbol": "red:red:white_stripe:161:black",
+    "ref": "161",
+    "ref:REI": "DBGA1610",
+    "roundtrip": "no",
+    "route": "hiking",
+    "rwn:name": "Rete Escursionistica Lombarda (REL)",
+    "source": "survey:CAI",
+    "symbol:it": "segnavia bianco e rosso",
+    "to": "Passo di Salmurano",
+    "type": "route",
+    "website": "https://www.caibergamo.it/geoportale/sentieri/161"
+   },
+   "ok": true,
+   "km": 7.4303163840386235,
+   "startEle": 1829.5813748681765,
+   "endEle": 2019.85134788657,
+   "maxEle": 2036.9224349072238,
+   "climbs": {
+    "0": {
+     "up": 660.18000136965,
+     "down": 469.9100283512564
+    },
+    "5": {
+     "up": 604.1891751803271,
+     "down": 413.9192021619335
+    },
+    "10": {
+     "up": 573.6012763126407,
+     "down": 383.33130329424716
+    },
+    "15": {
+     "up": 550.0219872719588,
+     "down": 359.7520142535652
+    },
+    "20": {
+     "up": 557.3961070982193,
+     "down": 367.12613407982576
+    },
+    "25": {
+     "up": 540.1490415523297,
+     "down": 349.8790685339361
+    },
+    "30": {
+     "up": 500.90464904053647,
+     "down": 310.6346760221429
+    },
+    "40": {
+     "up": 497.09237423098307,
+     "down": 306.8224012125895
+    }
+   },
+   "kind": "traversata",
+   "comune": "Averara",
+   "province": "IT-BG",
+   "start": [
+    46.0427221,
+    9.6264454
+   ]
+  },
+  {
+   "id": 11363923,
+   "tags": {
+    "cai_scale": "EE",
+    "from": "Macolino",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:N595:black",
+    "ref": "N595",
+    "roundtrip": "no",
+    "route": "hiking",
+    "to": "Passo Sterla Nord",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 6.226565720035634,
+   "startEle": 1658.5641414009629,
+   "endEle": 2817.6564837930005,
+   "maxEle": 2877.4184155223757,
+   "climbs": {
+    "0": {
+     "up": 1260.9559897863417,
+     "down": 101.86364739430405
+    },
+    "5": {
+     "up": 1248.4588605526942,
+     "down": 89.3665181606566
+    },
+    "10": {
+     "up": 1246.9414128018643,
+     "down": 87.84907040982671
+    },
+    "15": {
+     "up": 1235.9804351491125,
+     "down": 76.8880927570749
+    },
+    "20": {
+     "up": 1229.574885037528,
+     "down": 70.48254264549041
+    },
+    "25": {
+     "up": 1229.574885037528,
+     "down": 70.48254264549041
+    },
+    "30": {
+     "up": 1234.4629873982826,
+     "down": 75.37064500624501
+    },
+    "40": {
+     "up": 1206.375848717831,
+     "down": 47.283506325793496
+    }
+   },
+   "kind": "salita",
+   "comune": "Madesimo",
+   "province": "IT-SO",
+   "start": [
+    46.4550536,
+    9.3674962
+   ]
+  },
+  {
+   "id": 11573230,
+   "tags": {
+    "cai_scale": "E",
+    "duration:backward": "00:45",
+    "duration:forward": "01:00",
+    "from": "San Simone (Baita Camoscio)",
+    "lwn:name": "Bergamo - Alta Val Brembana",
+    "network": "lwn",
+    "note:project_page": "https://wiki.openstreetmap.org/wiki/Lombardia/Sentieri",
+    "osmc:symbol": "red:red:white_stripe:116:black",
+    "ref": "116",
+    "ref:REI": "DBGA1160",
+    "route": "hiking",
+    "rwn:name": "Rete Escursionistica Lombarda (REL)",
+    "source": "survey:CAI",
+    "symbol:it": "segnavia bianco e rosso",
+    "to": "Passo di Lemma",
+    "type": "route",
+    "website": "https://www.caibergamo.it/geoportale/sentieri/116"
+   },
+   "ok": true,
+   "km": 2.932837091296447,
+   "startEle": 1759.7302275786803,
+   "endEle": 2133.3890322305538,
+   "maxEle": 2139.8015598462116,
+   "climbs": {
+    "0": {
+     "up": 380.07133226753126,
+     "down": 6.412527615657837
+    },
+    "5": {
+     "up": 380.07133226753126,
+     "down": 6.412527615657837
+    },
+    "10": {
+     "up": 380.07133226753126,
+     "down": 6.412527615657837
+    },
+    "15": {
+     "up": 373.6588046518734,
+     "down": 0
+    },
+    "20": {
+     "up": 380.07133226753126,
+     "down": 6.412527615657837
+    },
+    "25": {
+     "up": 373.6588046518734,
+     "down": 0
+    },
+    "30": {
+     "up": 380.07133226753126,
+     "down": 6.412527615657837
+    },
+    "40": {
+     "up": 373.6588046518734,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Valleve",
+   "province": "IT-BG",
+   "start": [
+    46.0443283,
+    9.6987043
+   ]
+  },
+  {
+   "id": 11601047,
+   "tags": {
+    "ascent": "300",
+    "cai_scale": "E",
+    "descent": "690",
+    "description:it": "Breve tappa, lungo una fascia di verdeggianti pascoli, con arrivo all'antica casa cantoniera della Cà San Marco",
+    "distance": "9.5",
+    "duration:forward": "03:15",
+    "ele:from": "2220",
+    "ele:to": "1830",
+    "from": "Rifugio Benigni",
+    "lwn:name": "Bergamo - Alta Val Brembana",
+    "name": "Sentiero delle Orobie Occidentali - Tappa 3",
+    "network": "rwn",
+    "note:project_page": "https://wiki.openstreetmap.org/wiki/Lombardia/Sentieri",
+    "operator": "Club Alpino Italiano (sezioni di Bergamo)",
+    "osmc:symbol": "red:red:white_stripe:OOC:black",
+    "ref": "101",
+    "roundtrip": "no",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "stage": "3",
+    "symbol": "red-white bars, sometimes with black text \"101\"",
+    "symbol:it": "bandierine a strisce bianche e rosse, alcune volte con scritta nera \"101\"",
+    "to": "Rifugio Passo San Marco 2000",
+    "type": "route",
+    "website": "https://www.sentierodelleorobie.it/3tapparifbenignirifcasmarco.htm"
+   },
+   "ok": true,
+   "km": 9.425204592904107,
+   "startEle": 1828.3580192802292,
+   "endEle": 2207.9982323011855,
+   "maxEle": 2215.1486138310124,
+   "climbs": {
+    "0": {
+     "up": 776.6219145605814,
+     "down": 396.9817015396252
+    },
+    "5": {
+     "up": 740.8906701378708,
+     "down": 361.2504571169145
+    },
+    "10": {
+     "up": 672.3606183792756,
+     "down": 292.72040535831934
+    },
+    "15": {
+     "up": 678.4578080364147,
+     "down": 298.81759501545844
+    },
+    "20": {
+     "up": 610.6073308729451,
+     "down": 230.96711785198886
+    },
+    "25": {
+     "up": 574.3936448162287,
+     "down": 194.7534317952725
+    },
+    "30": {
+     "up": 587.6763405843064,
+     "down": 208.0361275633502
+    },
+    "40": {
+     "up": 519.1246030721886,
+     "down": 139.48439005123237
+    }
+   },
+   "kind": "salita",
+   "comune": "Averara",
+   "province": "IT-BG",
+   "start": [
+    46.0384956,
+    9.6288198
+   ]
+  },
+  {
+   "id": 11644422,
+   "tags": {
+    "ascent": "460",
+    "cai_scale": "EE",
+    "descent": "800",
+    "distance": "9",
+    "duration:forward": "04:45",
+    "ele:from": "2015",
+    "ele:to": "1675",
+    "from": "Barek",
+    "name": "Alta Via della Valsassina - Tappa 2",
+    "network": "lwn",
+    "oneway": "no",
+    "operator": "Gruppo guide alpine del Lario e delle Grigne",
+    "osmc:symbol": "red:red:white_stripe:AVV:black",
+    "ref": "ALTA VIA",
+    "roundtrip": "no",
+    "route": "hiking",
+    "symbol": "red-white bars, sometimes with black reference text",
+    "symbol:it": "bandierine a strisce bianche e rosse, alcune volte con scritta nera del riferimento",
+    "to": "Rifugio Casera Vecchia di Varrone",
+    "type": "route",
+    "website": "https://www.conlatestatralenuvole.org/_schede/AltaVia-Valsassina.pdf"
+   },
+   "ok": false,
+   "reason": "interrotto"
+  },
+  {
+   "id": 11644423,
+   "tags": {
+    "ascent": "1390",
+    "cai_scale": "EE",
+    "descent": "840",
+    "distance": "13",
+    "duration:forward": "08:15",
+    "ele:from": "1463",
+    "ele:to": "2015",
+    "from": "Rifugio Roccoli Lorla",
+    "name": "Alta Via della Valsassina - Tappa 1",
+    "network": "lwn",
+    "oneway": "no",
+    "operator": "Gruppo guide alpine del Lario e delle Grigne",
+    "osmc:symbol": "red:red:white_stripe:AVV:black",
+    "ref": "ALTA VIA",
+    "roundtrip": "no",
+    "route": "hiking",
+    "symbol": "red-white bars, sometimes with black reference text",
+    "symbol:it": "bandierine a strisce bianche e rosse, alcune volte con scritta nera del riferimento",
+    "to": "Barek",
+    "type": "route",
+    "website": "https://www.conlatestatralenuvole.org/_schede/AltaVia-Valsassina.pdf"
+   },
+   "ok": true,
+   "km": 12.888747137545877,
+   "startEle": 1474.0127169672212,
+   "endEle": 2005.2933318611822,
+   "maxEle": 2590.8009035843606,
+   "climbs": {
+    "0": {
+     "up": 1923.3748608248839,
+     "down": 1392.0942459309229
+    },
+    "5": {
+     "up": 1887.778343853191,
+     "down": 1356.49772895923
+    },
+    "10": {
+     "up": 1820.4172545475597,
+     "down": 1289.1366396535986
+    },
+    "15": {
+     "up": 1781.6917751217673,
+     "down": 1250.4111602278062
+    },
+    "20": {
+     "up": 1732.073336736579,
+     "down": 1200.792721842618
+    },
+    "25": {
+     "up": 1691.7206599734654,
+     "down": 1160.4400450795044
+    },
+    "30": {
+     "up": 1619.062890084218,
+     "down": 1087.782275190257
+    },
+    "40": {
+     "up": 1541.1744582391173,
+     "down": 1009.8938433451563
+    }
+   },
+   "kind": "traversata",
+   "comune": "Valvarrone",
+   "province": "IT-LC",
+   "start": [
+    46.0964316,
+    9.3667973
+   ]
+  },
+  {
+   "id": 12267564,
+   "tags": {
+    "cai_scale": "EE",
+    "from": "Ca' San Marco",
+    "lwn:name": "Bergamo - Alta Val Brembana",
+    "name": "101 - Tappa 6",
+    "network": "lwn",
+    "note:project_page": "https://wiki.openstreetmap.org/wiki/Lombardia/Sentieri",
+    "operator": "Club Alpino Italiano",
+    "osmc:symbol": "red:red:white_stripe:101:black",
+    "ref": "101",
+    "ref:REI": "DBGA1010",
+    "route": "hiking",
+    "rwn:name": "Rete Escursionistica Lombarda (REL)",
+    "source": "survey:CAI",
+    "symbol:it": "segnavia bianco e rosso",
+    "to": "Passo di Tartano",
+    "type": "route",
+    "website": "https://www.caibergamo.it/geoportale/sentieri/101_6"
+   },
+   "ok": true,
+   "km": 11.172666365637149,
+   "startEle": 1831.528947577294,
+   "endEle": 2094.6814644129377,
+   "maxEle": 2337.4476206335216,
+   "climbs": {
+    "0": {
+     "up": 994.7103909099646,
+     "down": 731.557874074321
+    },
+    "5": {
+     "up": 959.9819695375406,
+     "down": 696.829452701897
+    },
+    "10": {
+     "up": 908.7357760427976,
+     "down": 645.583259207154
+    },
+    "15": {
+     "up": 876.0487676684565,
+     "down": 612.8962508328129
+    },
+    "20": {
+     "up": 807.328086957885,
+     "down": 544.1755701222414
+    },
+    "25": {
+     "up": 764.6447604010964,
+     "down": 501.4922435654528
+    },
+    "30": {
+     "up": 826.7039739470961,
+     "down": 563.5514571114525
+    },
+    "40": {
+     "up": 738.5734530458226,
+     "down": 475.420936210179
+    }
+   },
+   "kind": "traversata",
+   "comune": "Averara",
+   "province": "IT-BG",
+   "start": [
+    46.0425329,
+    9.6269358
+   ]
+  },
+  {
+   "id": 12281223,
+   "tags": {
+    "cai_scale": "E",
+    "duration:backward": "02:00",
+    "duration:forward": "03:00",
+    "from": "Rifugio Curò",
+    "lwn:name": "Bergamo - Alta Val Seriana",
+    "network": "lwn",
+    "note:project_page": "https://wiki.openstreetmap.org/wiki/Lombardia/Sentieri",
+    "operator": "Club Alpino Italiano",
+    "osmc:symbol": "red:red:white_stripe:310:black",
+    "ref": "310",
+    "ref:REI": "DBGA3100",
+    "route": "hiking",
+    "rwn:name": "Rete Escursionistica Lombarda (REL)",
+    "source": "survey:CAI",
+    "source:ref": "9216002",
+    "survey:date": "2022-07-31",
+    "symbol:it": "segnavia bianco e rosso",
+    "to": "Passo di Caronella",
+    "type": "route",
+    "via": "Lago della Malgina",
+    "website": "https://www.caibergamo.it/geoportale/sentieri/310"
+   },
+   "ok": true,
+   "km": 6.768282953643306,
+   "startEle": 1899.895768853009,
+   "endEle": 2612.690651386594,
+   "maxEle": 2722.751257967456,
+   "climbs": {
+    "0": {
+     "up": 932.05255952687,
+     "down": 219.25767699328526
+    },
+    "5": {
+     "up": 900.2415799352689,
+     "down": 187.4466974016841
+    },
+    "10": {
+     "up": 879.414382164123,
+     "down": 166.61949963053826
+    },
+    "15": {
+     "up": 839.7179608287936,
+     "down": 126.92307829520882
+    },
+    "20": {
+     "up": 822.8554891144468,
+     "down": 110.06060658086199
+    },
+    "25": {
+     "up": 848.315577922695,
+     "down": 135.5206953891102
+    },
+    "30": {
+     "up": 831.8658902796487,
+     "down": 119.07100774606397
+    },
+    "40": {
+     "up": 786.6396394986486,
+     "down": 73.84475696506388
+    }
+   },
+   "kind": "salita",
+   "comune": "Valbondione",
+   "province": "IT-BG",
+   "start": [
+    46.0616578,
+    10.0479133
+   ]
+  },
+  {
+   "id": 12872547,
+   "tags": {
+    "cai_scale": "EE",
+    "from": "San Bartolomeo",
+    "name": "Alta Via del Lario - Tappa 1",
+    "network": "lwn",
+    "operator": "CAI Dongo",
+    "osmc:symbol": "red:red:white_stripe:AVL:black",
+    "ref": "AVL",
+    "roundtrip": "no",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "symbol": "red-white-red stripes",
+    "to": "Capanna Como",
+    "type": "route",
+    "website": "http://www.caidongo.it/escursionismo/alta-via-del-lario/"
+   },
+   "ok": true,
+   "km": 15.646952467624649,
+   "startEle": 1214.9187387966897,
+   "endEle": 1789.9845000686357,
+   "maxEle": 2399.9127865361547,
+   "climbs": {
+    "0": {
+     "up": 1852.2643992486455,
+     "down": 1277.1986379766995
+    },
+    "5": {
+     "up": 1788.2455051125833,
+     "down": 1213.1797438406372
+    },
+    "10": {
+     "up": 1750.4656636056802,
+     "down": 1175.3999023337342
+    },
+    "15": {
+     "up": 1618.8279287341657,
+     "down": 1043.7621674622196
+    },
+    "20": {
+     "up": 1593.7279461270718,
+     "down": 1018.6621848551258
+    },
+    "25": {
+     "up": 1613.5929867334557,
+     "down": 1038.5272254615097
+    },
+    "30": {
+     "up": 1532.572914063946,
+     "down": 957.5071527919999
+    },
+    "40": {
+     "up": 1517.651765504207,
+     "down": 942.5860042322611
+    }
+   },
+   "kind": "traversata",
+   "comune": "Sorico",
+   "province": "IT-CO",
+   "start": [
+    46.1934552,
+    9.3861049
+   ]
+  },
+  {
+   "id": 12900464,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Campello",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:379:black",
+    "ref": "379",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "to": "Passo dell'Arasé",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 4.620114355333153,
+   "startEle": 1633.5375914106517,
+   "endEle": 2584.779435790909,
+   "maxEle": 2584.779435790909,
+   "climbs": {
+    "0": {
+     "up": 967.7812277657072,
+     "down": 16.539383385450037
+    },
+    "5": {
+     "up": 963.4211432139916,
+     "down": 12.179298833734492
+    },
+    "10": {
+     "up": 951.2418443802571,
+     "down": 0
+    },
+    "15": {
+     "up": 951.2418443802571,
+     "down": 0
+    },
+    "20": {
+     "up": 951.2418443802571,
+     "down": 0
+    },
+    "25": {
+     "up": 951.2418443802571,
+     "down": 0
+    },
+    "30": {
+     "up": 951.2418443802571,
+     "down": 0
+    },
+    "40": {
+     "up": 951.2418443802571,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Chiuro",
+   "province": "IT-SO",
+   "start": [
+    46.2549178,
+    10.0278444
+   ]
+  },
+  {
+   "id": 13418751,
+   "tags": {
+    "ascent": "635",
+    "cai_scale": "EE",
+    "descent": "49",
+    "distance": "3",
+    "duration:forward": "01:30",
+    "from": "Rifugio Antonio ed Elia Longoni",
+    "name": "Rifugio Antonio ed Elia Longoni - Passo Tremogge",
+    "network": "lwn",
+    "note": "relation mantained by AngeloMB (CAI Seregno)",
+    "note:it": "relazione mantenuta da AngeloMB (CAI Seregno)",
+    "osmc:symbol": "red:red:white_stripe:331a:black",
+    "ref": "331a",
+    "roundtrip": "no",
+    "route": "hiking",
+    "rwn:name": "Rete Escursionistica Lombarda (REL)",
+    "source": "survey:CAI",
+    "survey:date": "2021-09-01",
+    "symbol": "331a on white red flag",
+    "symbol:it": "331a su bandiera bianca e rossa",
+    "to": "Passo Tremogge",
+    "type": "route",
+    "website": "https://www.caiseregno.it/rifugi/longoni"
+   },
+   "ok": true,
+   "km": 2.7296753140076984,
+   "startEle": 2437.9606682147387,
+   "endEle": 3007.891946966067,
+   "maxEle": 3018.396580728987,
+   "climbs": {
+    "0": {
+     "up": 612.319759778226,
+     "down": 42.38848102689781
+    },
+    "5": {
+     "up": 595.8086399830672,
+     "down": 25.877361231739087
+    },
+    "10": {
+     "up": 590.6548172236944,
+     "down": 20.723538472366272
+    },
+    "15": {
+     "up": 569.9312787513281,
+     "down": 0
+    },
+    "20": {
+     "up": 569.9312787513281,
+     "down": 0
+    },
+    "25": {
+     "up": 569.9312787513281,
+     "down": 0
+    },
+    "30": {
+     "up": 569.9312787513281,
+     "down": 0
+    },
+    "40": {
+     "up": 569.9312787513281,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Chiesa in Valmalenco",
+   "province": "IT-SO",
+   "start": [
+    46.330352,
+    9.8196659
+   ]
+  },
+  {
+   "id": 14452197,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Ponte Calcheira",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:175:black",
+    "ref": "175",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Passo Tropione",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 5.2725448209940575,
+   "startEle": 1866.4542713048322,
+   "endEle": 2825.4384311025487,
+   "maxEle": 2825.4384311025487,
+   "climbs": {
+    "0": {
+     "up": 979.6942688249735,
+     "down": 20.710109027256976
+    },
+    "5": {
+     "up": 958.9841597977165,
+     "down": 0
+    },
+    "10": {
+     "up": 958.9841597977165,
+     "down": 0
+    },
+    "15": {
+     "up": 958.9841597977165,
+     "down": 0
+    },
+    "20": {
+     "up": 958.9841597977165,
+     "down": 0
+    },
+    "25": {
+     "up": 958.9841597977165,
+     "down": 0
+    },
+    "30": {
+     "up": 958.9841597977165,
+     "down": 0
+    },
+    "40": {
+     "up": 958.9841597977165,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Livigno",
+   "province": "IT-SO",
+   "start": [
+    46.554162,
+    10.1243288
+   ]
+  },
+  {
+   "id": 14452370,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Ponte Calcheira",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:167:black",
+    "ref": "167",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Passo Federia",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 10.5491404448124,
+   "startEle": 1866.4542713048322,
+   "endEle": 2903.343399572825,
+   "maxEle": 2903.343399572825,
+   "climbs": {
+    "0": {
+     "up": 1084.857211447664,
+     "down": 47.96808317967111
+    },
+    "5": {
+     "up": 1065.3997702890529,
+     "down": 28.510642021059994
+    },
+    "10": {
+     "up": 1036.8891282679929,
+     "down": 0
+    },
+    "15": {
+     "up": 1036.8891282679929,
+     "down": 0
+    },
+    "20": {
+     "up": 1036.8891282679929,
+     "down": 0
+    },
+    "25": {
+     "up": 1036.8891282679929,
+     "down": 0
+    },
+    "30": {
+     "up": 1036.8891282679929,
+     "down": 0
+    },
+    "40": {
+     "up": 1036.8891282679929,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Livigno",
+   "province": "IT-SO",
+   "start": [
+    46.554162,
+    10.1243288
+   ]
+  },
+  {
+   "id": 14452453,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Via Clef (San Carlo)",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:186:black",
+    "ref": "186",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Passo Foscagno",
+    "type": "route"
+   },
+   "ok": false,
+   "reason": "interrotto"
+  },
+  {
+   "id": 14452620,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Piazza Quattro Novembre (Isolaccia)",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:196:black",
+    "ref": "196",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Bocchetta di Trela",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 9.516471346952136,
+   "startEle": 1349.2585192195083,
+   "endEle": 2341.298099638702,
+   "maxEle": 2341.45002216966,
+   "climbs": {
+    "0": {
+     "up": 1089.4266524213176,
+     "down": 97.38707200212411
+    },
+    "5": {
+     "up": 1071.6267111967338,
+     "down": 79.58713077754032
+    },
+    "10": {
+     "up": 1029.8371467271693,
+     "down": 37.797566307975785
+    },
+    "15": {
+     "up": 1029.6852241962113,
+     "down": 37.64564377701777
+    },
+    "20": {
+     "up": 992.1915029501515,
+     "down": 0.1519225309580179
+    },
+    "25": {
+     "up": 992.0395804191935,
+     "down": 0
+    },
+    "30": {
+     "up": 992.0395804191935,
+     "down": 0
+    },
+    "40": {
+     "up": 992.0395804191935,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Valdidentro",
+   "province": "IT-SO",
+   "start": [
+    46.4890707,
+    10.2956598
+   ]
+  },
+  {
+   "id": 14452650,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Lago delle Scale",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:197:black",
+    "ref": "197",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Croce delle Scale",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 2.529708553829553,
+   "startEle": 1940.3499539376865,
+   "endEle": 2472.129515718105,
+   "maxEle": 2477.550110205548,
+   "climbs": {
+    "0": {
+     "up": 548.0310157405447,
+     "down": 16.251453960126355
+    },
+    "5": {
+     "up": 545.793863835635,
+     "down": 14.014302055216604
+    },
+    "10": {
+     "up": 545.793863835635,
+     "down": 14.014302055216604
+    },
+    "15": {
+     "up": 537.2001562678618,
+     "down": 5.420594487443395
+    },
+    "20": {
+     "up": 535.085254226499,
+     "down": 3.305692446080684
+    },
+    "25": {
+     "up": 535.085254226499,
+     "down": 3.305692446080684
+    },
+    "30": {
+     "up": 535.085254226499,
+     "down": 3.305692446080684
+    },
+    "40": {
+     "up": 531.7795617804184,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Valdidentro",
+   "province": "IT-SO",
+   "start": [
+    46.5118452,
+    10.3170611
+   ]
+  },
+  {
+   "id": 14453058,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Ponte del Brum (Livigno)",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:100:black",
+    "ref": "100",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "to": "Rifugio Forcola",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 17.821932735757116,
+   "startEle": 1806.5735793270724,
+   "endEle": 2307.516343790722,
+   "maxEle": 2307.516343790722,
+   "climbs": {
+    "0": {
+     "up": 908.9587181534705,
+     "down": 408.01595368982066
+    },
+    "5": {
+     "up": 819.3878639639927,
+     "down": 318.44509950034285
+    },
+    "10": {
+     "up": 718.5843223422539,
+     "down": 217.6415578786041
+    },
+    "15": {
+     "up": 719.1953228451357,
+     "down": 218.25255838148587
+    },
+    "20": {
+     "up": 625.7379672778104,
+     "down": 124.79520281416058
+    },
+    "25": {
+     "up": 607.1570013306655,
+     "down": 106.21423686701564
+    },
+    "30": {
+     "up": 564.2584473879242,
+     "down": 63.31568292427437
+    },
+    "40": {
+     "up": 584.8212101890181,
+     "down": 83.87844572536824
+    }
+   },
+   "kind": "salita",
+   "comune": "Livigno",
+   "province": "IT-SO",
+   "start": [
+    46.5537452,
+    10.1468075
+   ]
+  },
+  {
+   "id": 14453097,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Via Marangona",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:106:black",
+    "ref": "106",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Monte Sponda",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 1.158485823109875,
+   "startEle": 1809.1530034660375,
+   "endEle": 1962.3639423200939,
+   "maxEle": 1962.3639423200939,
+   "climbs": {
+    "0": {
+     "up": 153.36405701664353,
+     "down": 0.15311816258713407
+    },
+    "5": {
+     "up": 153.2109388540564,
+     "down": 0
+    },
+    "10": {
+     "up": 153.2109388540564,
+     "down": 0
+    },
+    "15": {
+     "up": 153.2109388540564,
+     "down": 0
+    },
+    "20": {
+     "up": 153.2109388540564,
+     "down": 0
+    },
+    "25": {
+     "up": 153.2109388540564,
+     "down": 0
+    },
+    "30": {
+     "up": 153.2109388540564,
+     "down": 0
+    },
+    "40": {
+     "up": 153.2109388540564,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Livigno",
+   "province": "IT-SO",
+   "start": [
+    46.5457717,
+    10.1431871
+   ]
+  },
+  {
+   "id": 14453106,
+   "tags": {
+    "cai_scale": "E",
+    "from": "111",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:112:black",
+    "ref": "112",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Monte Vago",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 2.9227926094898398,
+   "startEle": 2461.827366121973,
+   "endEle": 3042.041130467181,
+   "maxEle": 3042.041130467181,
+   "climbs": {
+    "0": {
+     "up": 583.085666141812,
+     "down": 2.8719017966036517
+    },
+    "5": {
+     "up": 580.2137643452083,
+     "down": 0
+    },
+    "10": {
+     "up": 580.2137643452083,
+     "down": 0
+    },
+    "15": {
+     "up": 580.2137643452083,
+     "down": 0
+    },
+    "20": {
+     "up": 580.2137643452083,
+     "down": 0
+    },
+    "25": {
+     "up": 580.2137643452083,
+     "down": 0
+    },
+    "30": {
+     "up": 580.2137643452083,
+     "down": 0
+    },
+    "40": {
+     "up": 580.2137643452083,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Livigno",
+   "province": "IT-SO",
+   "start": [
+    46.434237,
+    10.0613007
+   ]
+  },
+  {
+   "id": 14453179,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Via Paré (Teola)",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:121:black",
+    "ref": "121",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Alpe Mine",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 6.3149157627762715,
+   "startEle": 2094.912845135435,
+   "endEle": 2142.0208251261056,
+   "maxEle": 2319.7838338104752,
+   "climbs": {
+    "0": {
+     "up": 343.8375795004281,
+     "down": 296.72959950975746
+    },
+    "5": {
+     "up": 315.1496049363982,
+     "down": 268.04162494572756
+    },
+    "10": {
+     "up": 286.69833548105316,
+     "down": 239.59035549038254
+    },
+    "15": {
+     "up": 278.2595987331083,
+     "down": 231.15161874243768
+    },
+    "20": {
+     "up": 258.35924432039747,
+     "down": 211.25126432972684
+    },
+    "25": {
+     "up": 246.5960194882282,
+     "down": 199.48803949755757
+    },
+    "30": {
+     "up": 233.32463708720843,
+     "down": 186.2166570965378
+    },
+    "40": {
+     "up": 252.12511992533837,
+     "down": 205.01713993466774
+    }
+   },
+   "kind": "traversata",
+   "comune": "Livigno",
+   "province": "IT-SO",
+   "start": [
+    46.5304847,
+    10.1511587
+   ]
+  },
+  {
+   "id": 14453205,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Via da li crosceta (Eira)",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:126:black",
+    "ref": "126",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Monte della Neve",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 4.8591750741982835,
+   "startEle": 2211.448075486735,
+   "endEle": 2779.1900995755323,
+   "maxEle": 2780.5756648909255,
+   "climbs": {
+    "0": {
+     "up": 571.3585581940815,
+     "down": 3.616534105284245
+    },
+    "5": {
+     "up": 569.1275894041905,
+     "down": 1.3855653153932508
+    },
+    "10": {
+     "up": 569.1275894041905,
+     "down": 1.3855653153932508
+    },
+    "15": {
+     "up": 567.7420240887973,
+     "down": 0
+    },
+    "20": {
+     "up": 567.7420240887973,
+     "down": 0
+    },
+    "25": {
+     "up": 569.1275894041905,
+     "down": 1.3855653153932508
+    },
+    "30": {
+     "up": 567.7420240887973,
+     "down": 0
+    },
+    "40": {
+     "up": 569.1275894041905,
+     "down": 1.3855653153932508
+    }
+   },
+   "kind": "salita",
+   "comune": "Livigno",
+   "province": "IT-SO",
+   "start": [
+    46.5379838,
+    10.1662425
+   ]
+  },
+  {
+   "id": 14453269,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Lago di San Giacomo",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:130:black",
+    "ref": "130",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Passo Foscagno",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 8.82134861591949,
+   "startEle": 1952.7565545111502,
+   "endEle": 2288.594516682521,
+   "maxEle": 2648.4737681840306,
+   "climbs": {
+    "0": {
+     "up": 763.5327020762747,
+     "down": 427.69473990490405
+    },
+    "5": {
+     "up": 734.5676684575114,
+     "down": 398.72970628614075
+    },
+    "10": {
+     "up": 711.2987157134817,
+     "down": 375.460753542111
+    },
+    "15": {
+     "up": 703.1022637074916,
+     "down": 367.2643015361209
+    },
+    "20": {
+     "up": 687.9536162991358,
+     "down": 352.1156541277651
+    },
+    "25": {
+     "up": 687.9536162991358,
+     "down": 352.1156541277651
+    },
+    "30": {
+     "up": 667.105449229929,
+     "down": 331.26748705855834
+    },
+    "40": {
+     "up": 674.1482443829786,
+     "down": 338.31028221160796
+    }
+   },
+   "kind": "traversata",
+   "comune": "Valdidentro",
+   "province": "IT-SO",
+   "start": [
+    46.536233,
+    10.2541744
+   ]
+  },
+  {
+   "id": 14454476,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Chiesa di San Erasmo (DIga di Cancano)",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:145:black",
+    "ref": "145",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Bocchetta di Forcola",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 12.360854511000017,
+   "startEle": 1955.367457873053,
+   "endEle": 2494.4247290389003,
+   "maxEle": 2762.3443750925494,
+   "climbs": {
+    "0": {
+     "up": 930.6160345569515,
+     "down": 391.5587633911041
+    },
+    "5": {
+     "up": 888.2084771806808,
+     "down": 349.1512060148334
+    },
+    "10": {
+     "up": 847.158083817315,
+     "down": 308.10081265146755
+    },
+    "15": {
+     "up": 821.2320177726724,
+     "down": 282.174746606825
+    },
+    "20": {
+     "up": 823.2840846535537,
+     "down": 284.2268134877063
+    },
+    "25": {
+     "up": 806.9769172194965,
+     "down": 267.9196460536491
+    },
+    "30": {
+     "up": 779.2871272870198,
+     "down": 240.22985612117236
+    },
+    "40": {
+     "up": 792.6761525265688,
+     "down": 253.6188813607214
+    }
+   },
+   "kind": "salita",
+   "comune": "Valdidentro",
+   "province": "IT-SO",
+   "start": [
+    46.5193522,
+    10.3218531
+   ]
+  },
+  {
+   "id": 14454514,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Strada Statale N.38 dello Stelvio",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:147:black",
+    "ref": "147",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Bocchetta di Forcola",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 3.9385830247994686,
+   "startEle": 2298.337053300731,
+   "endEle": 2762.3762995480843,
+   "maxEle": 2770.215706051243,
+   "climbs": {
+    "0": {
+     "up": 471.8786527505122,
+     "down": 7.839406503158898
+    },
+    "5": {
+     "up": 471.8786527505122,
+     "down": 7.839406503158898
+    },
+    "10": {
+     "up": 471.8786527505122,
+     "down": 7.839406503158898
+    },
+    "15": {
+     "up": 471.8786527505122,
+     "down": 7.839406503158898
+    },
+    "20": {
+     "up": 471.8786527505122,
+     "down": 7.839406503158898
+    },
+    "25": {
+     "up": 471.8786527505122,
+     "down": 7.839406503158898
+    },
+    "30": {
+     "up": 464.0392462473533,
+     "down": 0
+    },
+    "40": {
+     "up": 464.0392462473533,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Valdidentro",
+   "province": "IT-SO",
+   "start": [
+    46.5287367,
+    10.4095951
+   ]
+  },
+  {
+   "id": 14454540,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Ospizio Bernina",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:150:black",
+    "ref": "150",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Rifugio Tridentina",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 5.589721131582366,
+   "startEle": 2307.298457438351,
+   "endEle": 2307.895688503516,
+   "maxEle": 2490.0678401903606,
+   "climbs": {
+    "0": {
+     "up": 220.55059172998108,
+     "down": 219.95336066481605
+    },
+    "5": {
+     "up": 203.12579532849077,
+     "down": 202.52856426332573
+    },
+    "10": {
+     "up": 195.03596230806852,
+     "down": 194.4387312429035
+    },
+    "15": {
+     "up": 181.34979896699133,
+     "down": 180.7525679018263
+    },
+    "20": {
+     "up": 163.22373797556838,
+     "down": 162.62650691040335
+    },
+    "25": {
+     "up": 174.6265728656308,
+     "down": 174.02934180046577
+    },
+    "30": {
+     "up": 174.6265728656308,
+     "down": 174.02934180046577
+    },
+    "40": {
+     "up": 181.34979896699133,
+     "down": 180.7525679018263
+    }
+   },
+   "kind": "traversata",
+   "comune": "Livigno",
+   "province": "IT-SO",
+   "start": [
+    46.4416969,
+    10.0553857
+   ]
+  },
+  {
+   "id": 14454547,
+   "tags": {
+    "cai_scale": "E",
+    "from": "La Colma",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:151:black",
+    "ref": "151",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Alpe Campaccio",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 7.537078670307317,
+   "startEle": 1954.2021768430272,
+   "endEle": 2463.9458084356756,
+   "maxEle": 2799.4850230519983,
+   "climbs": {
+    "0": {
+     "up": 875.1512841944459,
+     "down": 365.4076526017975
+    },
+    "5": {
+     "up": 853.1876994463241,
+     "down": 343.44406785367573
+    },
+    "10": {
+     "up": 857.4576990452551,
+     "down": 347.71406745260674
+    },
+    "15": {
+     "up": 845.282846208971,
+     "down": 335.5392146163226
+    },
+    "20": {
+     "up": 845.282846208971,
+     "down": 335.5392146163226
+    },
+    "25": {
+     "up": 821.017805088326,
+     "down": 311.2741734956776
+    },
+    "30": {
+     "up": 835.7442883253589,
+     "down": 326.00065673271047
+    },
+    "40": {
+     "up": 845.282846208971,
+     "down": 335.5392146163226
+    }
+   },
+   "kind": "salita",
+   "comune": "Livigno",
+   "province": "IT-SO",
+   "start": [
+    46.478988,
+    10.0970507
+   ]
+  },
+  {
+   "id": 14455097,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Alpe Federia",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:169:black",
+    "ref": "169",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "170",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 2.5319898388613726,
+   "startEle": 2212.5388695370702,
+   "endEle": 2550.9790864732227,
+   "maxEle": 2569.9499017463777,
+   "climbs": {
+    "0": {
+     "up": 373.2011953135434,
+     "down": 34.760978377390984
+    },
+    "5": {
+     "up": 357.41103220930745,
+     "down": 18.97081527315504
+    },
+    "10": {
+     "up": 357.41103220930745,
+     "down": 18.97081527315504
+    },
+    "15": {
+     "up": 349.9231818019739,
+     "down": 11.482964865821486
+    },
+    "20": {
+     "up": 357.41103220930745,
+     "down": 18.97081527315504
+    },
+    "25": {
+     "up": 349.9231818019739,
+     "down": 11.482964865821486
+    },
+    "30": {
+     "up": 338.4402169361524,
+     "down": 0
+    },
+    "40": {
+     "up": 357.41103220930745,
+     "down": 18.97081527315504
+    }
+   },
+   "kind": "salita",
+   "comune": "Livigno",
+   "province": "IT-SO",
+   "start": [
+    46.5281169,
+    10.0738278
+   ]
+  },
+  {
+   "id": 14456888,
+   "tags": {
+    "cai_scale": "E",
+    "from": "167",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:172:black",
+    "ref": "172",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Passo di Cassana",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 3.3131035580395145,
+   "startEle": 2063.70760571165,
+   "endEle": 2690.167098029977,
+   "maxEle": 2690.8854386317817,
+   "climbs": {
+    "0": {
+     "up": 627.1778329201316,
+     "down": 0.7183406018048117
+    },
+    "5": {
+     "up": 627.1778329201316,
+     "down": 0.7183406018048117
+    },
+    "10": {
+     "up": 626.4594923183267,
+     "down": 0
+    },
+    "15": {
+     "up": 626.4594923183267,
+     "down": 0
+    },
+    "20": {
+     "up": 626.4594923183267,
+     "down": 0
+    },
+    "25": {
+     "up": 626.4594923183267,
+     "down": 0
+    },
+    "30": {
+     "up": 626.4594923183267,
+     "down": 0
+    },
+    "40": {
+     "up": 626.4594923183267,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Livigno",
+   "province": "IT-SO",
+   "start": [
+    46.5467925,
+    10.0868886
+   ]
+  },
+  {
+   "id": 14457152,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Arnoga",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:195:black",
+    "ref": "195",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Strada Militare Fior d'Alpe - Cancano - Itineraio 199",
+    "type": "route"
+   },
+   "ok": false,
+   "reason": "sensi unici"
+  },
+  {
+   "id": 14457759,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Tirano Stazione",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:301:black",
+    "ref": "301",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "to": "Passo Caldenno",
+    "type": "route"
+   },
+   "ok": false,
+   "reason": "interrotto"
+  },
+  {
+   "id": 14457856,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Bivacco Scermendone",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:401:black",
+    "ref": "401",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Passo Caldenno",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 15.59996959347271,
+   "startEle": 2139.5112624055646,
+   "endEle": 2518.4360394073274,
+   "maxEle": 2527.187681011533,
+   "climbs": {
+    "0": {
+     "up": 1332.139079235521,
+     "down": 953.2143022337582
+    },
+    "5": {
+     "up": 1245.4211402402134,
+     "down": 866.4963632384506
+    },
+    "10": {
+     "up": 1123.7144883266394,
+     "down": 744.7897113248766
+    },
+    "15": {
+     "up": 1105.6049950547083,
+     "down": 726.6802180529455
+    },
+    "20": {
+     "up": 1012.6334375146964,
+     "down": 633.7086605129336
+    },
+    "25": {
+     "up": 1002.4896928961407,
+     "down": 623.5649158943779
+    },
+    "30": {
+     "up": 935.0790711332759,
+     "down": 556.1542941315131
+    },
+    "40": {
+     "up": 935.0790711332759,
+     "down": 556.1542941315131
+    }
+   },
+   "kind": "traversata",
+   "comune": "Buglio in Monte",
+   "province": "IT-SO",
+   "start": [
+    46.2176064,
+    9.7008046
+   ]
+  },
+  {
+   "id": 14459255,
+   "tags": {
+    "cai_scale": "E",
+    "from": "207",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:206:black",
+    "ref": "206",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "208 - Monte Zandila",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 2.1616757917673137,
+   "startEle": 1631.6341947704805,
+   "endEle": 2008.4263314715622,
+   "maxEle": 2009.4662137503747,
+   "climbs": {
+    "0": {
+     "up": 377.8320189798942,
+     "down": 1.0398822788124562
+    },
+    "5": {
+     "up": 376.79213670108174,
+     "down": 0
+    },
+    "10": {
+     "up": 376.79213670108174,
+     "down": 0
+    },
+    "15": {
+     "up": 376.79213670108174,
+     "down": 0
+    },
+    "20": {
+     "up": 377.8320189798942,
+     "down": 1.0398822788124562
+    },
+    "25": {
+     "up": 376.79213670108174,
+     "down": 0
+    },
+    "30": {
+     "up": 376.79213670108174,
+     "down": 0
+    },
+    "40": {
+     "up": 376.79213670108174,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Valdisotto",
+   "province": "IT-SO",
+   "start": [
+    46.4045025,
+    10.3353949
+   ]
+  },
+  {
+   "id": 14469858,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Quattro Rui",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:228:black",
+    "ref": "228",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Rifugio Schiazzera",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 5.878006306896125,
+   "startEle": 1056.5442363819757,
+   "endEle": 1906.9863732998451,
+   "maxEle": 1907.984548528637,
+   "climbs": {
+    "0": {
+     "up": 878.071712411471,
+     "down": 27.62957549360158
+    },
+    "5": {
+     "up": 863.0412841646489,
+     "down": 12.599147246779467
+    },
+    "10": {
+     "up": 861.278931883315,
+     "down": 10.836794965445506
+    },
+    "15": {
+     "up": 850.4421369178694,
+     "down": 0
+    },
+    "20": {
+     "up": 850.4421369178694,
+     "down": 0
+    },
+    "25": {
+     "up": 850.4421369178694,
+     "down": 0
+    },
+    "30": {
+     "up": 850.4421369178694,
+     "down": 0
+    },
+    "40": {
+     "up": 850.4421369178694,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Vervio",
+   "province": "IT-SO",
+   "start": [
+    46.2527201,
+    10.22858
+   ]
+  },
+  {
+   "id": 14469896,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Via Papa Giovanni XXIII (Mazzo di Valtellina)",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:235:black",
+    "ref": "235",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "201 - Alpe Salina",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 9.269185424929255,
+   "startEle": 552.5538717647223,
+   "endEle": 2175.7598796069005,
+   "maxEle": 2175.7598796069005,
+   "climbs": {
+    "0": {
+     "up": 1689.9780822730602,
+     "down": 66.77207443088196
+    },
+    "5": {
+     "up": 1669.011544345041,
+     "down": 45.805536502862765
+    },
+    "10": {
+     "up": 1623.2060078421782,
+     "down": 0
+    },
+    "15": {
+     "up": 1623.2060078421782,
+     "down": 0
+    },
+    "20": {
+     "up": 1623.2060078421782,
+     "down": 0
+    },
+    "25": {
+     "up": 1623.2060078421782,
+     "down": 0
+    },
+    "30": {
+     "up": 1623.2060078421782,
+     "down": 0
+    },
+    "40": {
+     "up": 1623.2060078421782,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Mazzo di Valtellina",
+   "province": "IT-SO",
+   "start": [
+    46.2573057,
+    10.2552279
+   ]
+  },
+  {
+   "id": 14469897,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Via delle Industrie (Tovo di Sant'Agata)",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:230:black",
+    "ref": "230",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "201 - Rifugio Schiazzera",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 6.883767668620078,
+   "startEle": 530.8629436086441,
+   "endEle": 2047.2499668438923,
+   "maxEle": 2047.2499668438923,
+   "climbs": {
+    "0": {
+     "up": 1523.0733239330507,
+     "down": 6.686300697802494
+    },
+    "5": {
+     "up": 1516.387023235248,
+     "down": 0
+    },
+    "10": {
+     "up": 1516.3870232352483,
+     "down": 0
+    },
+    "15": {
+     "up": 1516.3870232352483,
+     "down": 0
+    },
+    "20": {
+     "up": 1516.3870232352483,
+     "down": 0
+    },
+    "25": {
+     "up": 1516.387023235248,
+     "down": 0
+    },
+    "30": {
+     "up": 1516.3870232352483,
+     "down": 0
+    },
+    "40": {
+     "up": 1516.3870232352483,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Tovo di Sant'Agata",
+   "province": "IT-SO",
+   "start": [
+    46.2505718,
+    10.2423515
+   ]
+  },
+  {
+   "id": 14472011,
+   "tags": {
+    "cai_scale": "E",
+    "from": "258",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:249:black",
+    "ref": "249",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "to": "Passo Banderuola",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 9.178736752911187,
+   "startEle": 1459.4462084541692,
+   "endEle": 2299.4103456517855,
+   "maxEle": 2676.2695231746998,
+   "climbs": {
+    "0": {
+     "up": 1268.365133456812,
+     "down": 428.4009962591956
+    },
+    "5": {
+     "up": 1249.3485779877283,
+     "down": 409.38444079011197
+    },
+    "10": {
+     "up": 1228.5005523483303,
+     "down": 388.536415150714
+    },
+    "15": {
+     "up": 1228.5005523483303,
+     "down": 388.536415150714
+    },
+    "20": {
+     "up": 1237.6362048126875,
+     "down": 397.6720676150712
+    },
+    "25": {
+     "up": 1228.7653309544874,
+     "down": 388.80119375687104
+    },
+    "30": {
+     "up": 1202.8041142126967,
+     "down": 362.8399770150804
+    },
+    "40": {
+     "up": 1202.8041142126967,
+     "down": 362.8399770150804
+    }
+   },
+   "kind": "salita",
+   "comune": "Grosio",
+   "province": "IT-SO",
+   "start": [
+    46.3272046,
+    10.2012556
+   ]
+  },
+  {
+   "id": 14472077,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Chiesa di San Giacomo (Ravoledo)",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:251:black",
+    "ref": "251",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Monte Storile",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 6.6123504487213,
+   "startEle": 1056.8945075762858,
+   "endEle": 2454.146481267056,
+   "maxEle": 2456.997991983453,
+   "climbs": {
+    "0": {
+     "up": 1443.7401016961064,
+     "down": 46.48812800533619
+    },
+    "5": {
+     "up": 1435.8328211740932,
+     "down": 38.58084748332294
+    },
+    "10": {
+     "up": 1424.8708652008995,
+     "down": 27.618891510129288
+    },
+    "15": {
+     "up": 1400.1034844071673,
+     "down": 2.851510716397115
+    },
+    "20": {
+     "up": 1397.6474562783546,
+     "down": 0.3954825875844108
+    },
+    "25": {
+     "up": 1397.2519736907702,
+     "down": 0
+    },
+    "30": {
+     "up": 1397.2519736907702,
+     "down": 0
+    },
+    "40": {
+     "up": 1397.6474562783546,
+     "down": 0.3954825875844108
+    }
+   },
+   "kind": "salita",
+   "comune": "Grosio",
+   "province": "IT-SO",
+   "start": [
+    46.3028919,
+    10.2545459
+   ]
+  },
+  {
+   "id": 14472120,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Campo Pedruna",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:252:black",
+    "ref": "252",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Passo di Pedruna",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 4.3538393130963575,
+   "startEle": 1724.9193202647825,
+   "endEle": 2563.4846711132323,
+   "maxEle": 2563.4846711132323,
+   "climbs": {
+    "0": {
+     "up": 842.7195762978404,
+     "down": 4.154225449390651
+    },
+    "5": {
+     "up": 838.5653508484497,
+     "down": 0
+    },
+    "10": {
+     "up": 838.5653508484497,
+     "down": 0
+    },
+    "15": {
+     "up": 838.5653508484497,
+     "down": 0
+    },
+    "20": {
+     "up": 838.5653508484497,
+     "down": 0
+    },
+    "25": {
+     "up": 838.5653508484497,
+     "down": 0
+    },
+    "30": {
+     "up": 838.5653508484497,
+     "down": 0
+    },
+    "40": {
+     "up": 838.5653508484497,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Grosio",
+   "province": "IT-SO",
+   "start": [
+    46.3333238,
+    10.1480149
+   ]
+  },
+  {
+   "id": 14472393,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Rifugio Malghera",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:253:black",
+    "ref": "253",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "to": "Passo di Malghera",
+    "type": "route"
+   },
+   "ok": false,
+   "reason": "interrotto"
+  },
+  {
+   "id": 14472449,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Casera di Sacco",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:255:black",
+    "ref": "255",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Passo di Sacco",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 7.46384051389461,
+   "startEle": 2007.1276526566287,
+   "endEle": 2047.2511007973949,
+   "maxEle": 2737.817324775612,
+   "climbs": {
+    "0": {
+     "up": 745.3688659963975,
+     "down": 705.2454178556313
+    },
+    "5": {
+     "up": 740.190082279403,
+     "down": 700.0666341386368
+    },
+    "10": {
+     "up": 734.208970009335,
+     "down": 694.0855218685688
+    },
+    "15": {
+     "up": 719.0973602289725,
+     "down": 678.9739120882064
+    },
+    "20": {
+     "up": 719.0973602289725,
+     "down": 678.9739120882064
+    },
+    "25": {
+     "up": 730.6896721189835,
+     "down": 690.5662239782173
+    },
+    "30": {
+     "up": 719.0973602289725,
+     "down": 678.9739120882064
+    },
+    "40": {
+     "up": 734.208970009335,
+     "down": 694.0855218685688
+    }
+   },
+   "kind": "traversata",
+   "comune": "Grosio",
+   "province": "IT-SO",
+   "start": [
+    46.3485221,
+    10.1403597
+   ]
+  },
+  {
+   "id": 14472488,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Campo Pedruna",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:257:black",
+    "ref": "257",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Passo di Guinzana",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 7.327219400068398,
+   "startEle": 1630.394159085105,
+   "endEle": 2627.179910124609,
+   "maxEle": 2629.432655057457,
+   "climbs": {
+    "0": {
+     "up": 1051.3272541236208,
+     "down": 54.54150308411704
+    },
+    "5": {
+     "up": 1022.8307782708102,
+     "down": 26.04502723130645
+    },
+    "10": {
+     "up": 996.7857510395038,
+     "down": 0
+    },
+    "15": {
+     "up": 996.7857510395038,
+     "down": 0
+    },
+    "20": {
+     "up": 996.7857510395038,
+     "down": 0
+    },
+    "25": {
+     "up": 996.7857510395038,
+     "down": 0
+    },
+    "30": {
+     "up": 996.7857510395038,
+     "down": 0
+    },
+    "40": {
+     "up": 999.0384959723519,
+     "down": 2.2527449328481453
+    }
+   },
+   "kind": "salita",
+   "comune": "Grosio",
+   "province": "IT-SO",
+   "start": [
+    46.3318737,
+    10.1743305
+   ]
+  },
+  {
+   "id": 14474577,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Rifugio Eita",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:264:black",
+    "ref": "264",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Monte Storile",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 7.029989559284458,
+   "startEle": 1673.340381671674,
+   "endEle": 2454.211047297428,
+   "maxEle": 2457.3752899319065,
+   "climbs": {
+    "0": {
+     "up": 846.8103458435396,
+     "down": 65.93968021778551
+    },
+    "5": {
+     "up": 823.4785121648665,
+     "down": 42.607846539112415
+    },
+    "10": {
+     "up": 805.9619241826738,
+     "down": 25.091258556919684
+    },
+    "15": {
+     "up": 784.0349082602324,
+     "down": 3.1642426344783416
+    },
+    "20": {
+     "up": 784.0349082602324,
+     "down": 3.1642426344783416
+    },
+    "25": {
+     "up": 780.8706656257541,
+     "down": 0
+    },
+    "30": {
+     "up": 780.8706656257541,
+     "down": 0
+    },
+    "40": {
+     "up": 780.8706656257541,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Grosio",
+   "province": "IT-SO",
+   "start": [
+    46.373564,
+    10.2534633
+   ]
+  },
+  {
+   "id": 14481202,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Via donatori di Sangue (Sondalo)",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:268:black",
+    "ref": "268",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Passo della Forcola",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 7.278288281012972,
+   "startEle": 885.7770142936477,
+   "endEle": 2206.8602538822724,
+   "maxEle": 2206.8602538822724,
+   "climbs": {
+    "0": {
+     "up": 1363.3301716835301,
+     "down": 42.246932094905446
+    },
+    "5": {
+     "up": 1342.8127540263195,
+     "down": 21.72951443769466
+    },
+    "10": {
+     "up": 1321.0832395886248,
+     "down": 0
+    },
+    "15": {
+     "up": 1321.0832395886248,
+     "down": 0
+    },
+    "20": {
+     "up": 1321.0832395886248,
+     "down": 0
+    },
+    "25": {
+     "up": 1321.0832395886248,
+     "down": 0
+    },
+    "30": {
+     "up": 1321.0832395886248,
+     "down": 0
+    },
+    "40": {
+     "up": 1321.0832395886248,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Sondalo",
+   "province": "IT-SO",
+   "start": [
+    46.3300939,
+    10.3265535
+   ]
+  },
+  {
+   "id": 14481363,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Via Roma (Cepina)",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:273:black",
+    "ref": "273",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Lago Campaccio",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 9.27781647106079,
+   "startEle": 1145.1517814028791,
+   "endEle": 2308.4653518772,
+   "maxEle": 2308.4653518772,
+   "climbs": {
+    "0": {
+     "up": 1267.4072338116491,
+     "down": 104.09366333732805
+    },
+    "5": {
+     "up": 1226.0116235737923,
+     "down": 62.69805309947128
+    },
+    "10": {
+     "up": 1197.2451424313583,
+     "down": 33.93157195703725
+    },
+    "15": {
+     "up": 1194.4495728751158,
+     "down": 31.136002400794723
+    },
+    "20": {
+     "up": 1185.2819131031133,
+     "down": 21.968342628792243
+    },
+    "25": {
+     "up": 1163.313570474321,
+     "down": 0
+    },
+    "30": {
+     "up": 1163.313570474321,
+     "down": 0
+    },
+    "40": {
+     "up": 1163.313570474321,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Valdisotto",
+   "province": "IT-SO",
+   "start": [
+    46.4284069,
+    10.3559632
+   ]
+  },
+  {
+   "id": 14522809,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Via Nazionale (Isolaccia)",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:286:black",
+    "ref": "286",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Bivacco Monte Cantoni",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 8.024733631655735,
+   "startEle": 1348.7971223590796,
+   "endEle": 2131.417256038817,
+   "maxEle": 2131.417256038817,
+   "climbs": {
+    "0": {
+     "up": 876.551276032957,
+     "down": 93.93114235321968
+    },
+    "5": {
+     "up": 830.810130452119,
+     "down": 48.18999677238162
+    },
+    "10": {
+     "up": 808.4557262691762,
+     "down": 25.835592589438875
+    },
+    "15": {
+     "up": 799.7447022352526,
+     "down": 17.124568555515225
+    },
+    "20": {
+     "up": 782.6201336797374,
+     "down": 0
+    },
+    "25": {
+     "up": 782.6201336797374,
+     "down": 0
+    },
+    "30": {
+     "up": 782.6201336797374,
+     "down": 0
+    },
+    "40": {
+     "up": 782.6201336797374,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Valdidentro",
+   "province": "IT-SO",
+   "start": [
+    46.4889695,
+    10.2957839
+   ]
+  },
+  {
+   "id": 14522887,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Arnoga",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:290:black",
+    "ref": "290",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Passo della Val Viola",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 9.813155538549832,
+   "startEle": 1899.6524555368783,
+   "endEle": 2476.857720493295,
+   "maxEle": 2476.857720493295,
+   "climbs": {
+    "0": {
+     "up": 667.2037093265235,
+     "down": 89.99844437010688
+    },
+    "5": {
+     "up": 612.0129172465381,
+     "down": 34.807652290121496
+    },
+    "10": {
+     "up": 593.8896829933237,
+     "down": 16.684418036907118
+    },
+    "15": {
+     "up": 593.8896829933237,
+     "down": 16.684418036907118
+    },
+    "20": {
+     "up": 577.2052649564166,
+     "down": 0
+    },
+    "25": {
+     "up": 577.2052649564166,
+     "down": 0
+    },
+    "30": {
+     "up": 577.2052649564166,
+     "down": 0
+    },
+    "40": {
+     "up": 577.2052649564166,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Valdidentro",
+   "province": "IT-SO",
+   "start": [
+    46.4579802,
+    10.2400508
+   ]
+  },
+  {
+   "id": 14535960,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Torre di Santa Maria",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:313:black",
+    "ref": "313",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Rifugio Bosio Galli all'Alpe Airale",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 10.113429318131416,
+   "startEle": 793.9614513043098,
+   "endEle": 2074.5104263329517,
+   "maxEle": 2074.5104263329517,
+   "climbs": {
+    "0": {
+     "up": 1390.8506237490978,
+     "down": 110.30164872045589
+    },
+    "5": {
+     "up": 1351.125613339019,
+     "down": 70.57663831037712
+    },
+    "10": {
+     "up": 1333.3129952623522,
+     "down": 52.7640202337102
+    },
+    "15": {
+     "up": 1280.548975028642,
+     "down": 0
+    },
+    "20": {
+     "up": 1280.548975028642,
+     "down": 0
+    },
+    "25": {
+     "up": 1280.548975028642,
+     "down": 0
+    },
+    "30": {
+     "up": 1280.548975028642,
+     "down": 0
+    },
+    "40": {
+     "up": 1280.548975028642,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Torre di Santa Maria",
+   "province": "IT-SO",
+   "start": [
+    46.2334232,
+    9.8518798
+   ]
+  },
+  {
+   "id": 14535996,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Forcola",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:314:black",
+    "ref": "314",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Rifugio Bosio - Galli",
+    "type": "route"
+   },
+   "ok": false,
+   "reason": "interrotto"
+  },
+  {
+   "id": 14542056,
+   "tags": {
+    "cai_scale": "T",
+    "from": "Via Ezio Vanoni (Chiesa in Val Malenco)",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:315:black",
+    "ref": "315",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "to": "Alpe Lago",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 5.620787227061183,
+   "startEle": 1003.7625719868461,
+   "endEle": 1598.3388181476334,
+   "maxEle": 1603.0150673331614,
+   "climbs": {
+    "0": {
+     "up": 634.3447468145059,
+     "down": 39.76850065371855
+    },
+    "5": {
+     "up": 605.181821775453,
+     "down": 10.605575614665668
+    },
+    "10": {
+     "up": 594.5762461607874,
+     "down": 0
+    },
+    "15": {
+     "up": 594.5762461607874,
+     "down": 0
+    },
+    "20": {
+     "up": 599.2524953463153,
+     "down": 4.676249185527922
+    },
+    "25": {
+     "up": 594.5762461607874,
+     "down": 0
+    },
+    "30": {
+     "up": 599.2524953463153,
+     "down": 4.676249185527922
+    },
+    "40": {
+     "up": 594.5762461607874,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Chiesa in Valmalenco",
+   "province": "IT-SO",
+   "start": [
+    46.2624439,
+    9.8448625
+   ]
+  },
+  {
+   "id": 14542785,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Ciaz",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:329:black",
+    "ref": "329",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Rifugio Lago Palù",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 4.825079561665406,
+   "startEle": 1692.8078845104164,
+   "endEle": 1935.6500913842897,
+   "maxEle": 1941.9529697055466,
+   "climbs": {
+    "0": {
+     "up": 424.5531027062116,
+     "down": 181.71089583233834
+    },
+    "5": {
+     "up": 405.66941377359876,
+     "down": 162.82720689972552
+    },
+    "10": {
+     "up": 392.577443434835,
+     "down": 149.73523656096177
+    },
+    "15": {
+     "up": 369.38741632845176,
+     "down": 126.54520945457853
+    },
+    "20": {
+     "up": 382.57165462621674,
+     "down": 139.7294477523435
+    },
+    "25": {
+     "up": 351.38671331815385,
+     "down": 108.54450644428061
+    },
+    "30": {
+     "up": 338.6353784259936,
+     "down": 95.79317155212038
+    },
+    "40": {
+     "up": 331.90793969860715,
+     "down": 89.06573282473391
+    }
+   },
+   "kind": "salita",
+   "comune": "Chiesa in Valmalenco",
+   "province": "IT-SO",
+   "start": [
+    46.3167373,
+    9.8209401
+   ]
+  },
+  {
+   "id": 14563048,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Cava Franscia",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:339:black",
+    "ref": "339",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Rifugio Motta",
+    "type": "route"
+   },
+   "ok": false,
+   "reason": "interrotto"
+  },
+  {
+   "id": 14563177,
+   "tags": {
+    "cai_scale": "E",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:344:black",
+    "ref": "344",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Bocchetta della Forbici",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 2.279199698460442,
+   "startEle": 2315.8357176466457,
+   "endEle": 2660.0261853489756,
+   "maxEle": 2660.0261853489756,
+   "climbs": {
+    "0": {
+     "up": 392.8413429217867,
+     "down": 48.65087521945679
+    },
+    "5": {
+     "up": 386.4398531553866,
+     "down": 42.249385453056675
+    },
+    "10": {
+     "up": 381.26530975146443,
+     "down": 37.07484204913453
+    },
+    "15": {
+     "up": 381.26530975146443,
+     "down": 37.07484204913453
+    },
+    "20": {
+     "up": 365.3641737757416,
+     "down": 21.173706073411722
+    },
+    "25": {
+     "up": 371.0328947699386,
+     "down": 26.842427067608696
+    },
+    "30": {
+     "up": 381.26530975146443,
+     "down": 37.07484204913453
+    },
+    "40": {
+     "up": 344.1904677023299,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Lanzada",
+   "province": "IT-SO",
+   "start": [
+    46.3406778,
+    9.8878822
+   ]
+  },
+  {
+   "id": 14637387,
+   "tags": {
+    "cai_scale": "EE",
+    "from": "Fordeccia",
+    "name": "Alta Via del Lario (Fordeccia - Bivacco Petazzi al lago Ledù)",
+    "network": "lwn",
+    "route": "hiking",
+    "source": "survey:CAI;REL",
+    "to": "Bivacco Petazzi",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 10.472759012766593,
+   "startEle": 1099.0321562939084,
+   "endEle": 2244.570557909069,
+   "maxEle": 2399.626871602971,
+   "climbs": {
+    "0": {
+     "up": 1608.8201188145429,
+     "down": 463.28171719938223
+    },
+    "5": {
+     "up": 1557.9296824626063,
+     "down": 412.3912808474456
+    },
+    "10": {
+     "up": 1551.9247915128735,
+     "down": 406.3863898977129
+    },
+    "15": {
+     "up": 1518.0384160531135,
+     "down": 372.5000144379528
+    },
+    "20": {
+     "up": 1505.425834577164,
+     "down": 359.88743296200346
+    },
+    "25": {
+     "up": 1460.4423024549424,
+     "down": 314.9039008397817
+    },
+    "30": {
+     "up": 1495.479487870305,
+     "down": 349.94108625514446
+    },
+    "40": {
+     "up": 1431.9957800070292,
+     "down": 286.4573783918686
+    }
+   },
+   "kind": "salita",
+   "comune": "Sorico",
+   "province": "IT-CO",
+   "start": [
+    46.1913604,
+    9.3918338
+   ]
+  },
+  {
+   "id": 14670319,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Via San Pietro (Fusine)",
+    "network": "lwn",
+    "old_ref": "S211",
+    "osmc:symbol": "red:red:white_stripe:211:black",
+    "ref": "211",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Passo Dordona",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 14.272432866602703,
+   "startEle": 272.1367725705235,
+   "endEle": 2059.126958736929,
+   "maxEle": 2059.126958736929,
+   "climbs": {
+    "0": {
+     "up": 1970.6614337795866,
+     "down": 183.6712476131811
+    },
+    "5": {
+     "up": 1913.0340177819405,
+     "down": 126.04383161553505
+    },
+    "10": {
+     "up": 1867.4302696199613,
+     "down": 80.44008345355599
+    },
+    "15": {
+     "up": 1858.458701560068,
+     "down": 71.46851539366264
+    },
+    "20": {
+     "up": 1808.5143892038507,
+     "down": 21.52420303744543
+    },
+    "25": {
+     "up": 1812.197185367602,
+     "down": 25.206999201196822
+    },
+    "30": {
+     "up": 1786.9901861664052,
+     "down": 0
+    },
+    "40": {
+     "up": 1786.9901861664052,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Fusine",
+   "province": "IT-SO",
+   "start": [
+    46.1577141,
+    9.7415043
+   ]
+  },
+  {
+   "id": 14670378,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Strada Provinciale Orobica SP 16 (Cedrasco)",
+    "network": "lwn",
+    "old_ref": "S214",
+    "osmc:symbol": "red:red:white_stripe:214:black",
+    "ref": "214",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Passo di Valcervia",
+    "type": "route"
+   },
+   "ok": false,
+   "reason": "interrotto"
+  },
+  {
+   "id": 14737260,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Via Stelvio (Mondadizza)",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:496:black",
+    "ref": "496",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Passo di Dombastone",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 6.680677082914319,
+   "startEle": 897.9959707004684,
+   "endEle": 2526.4650521091044,
+   "maxEle": 2526.4650521091044,
+   "climbs": {
+    "0": {
+     "up": 1653.1490039918626,
+     "down": 24.6799225832267
+    },
+    "5": {
+     "up": 1642.9029616935593,
+     "down": 14.433880284923362
+    },
+    "10": {
+     "up": 1628.469081408636,
+     "down": 0
+    },
+    "15": {
+     "up": 1628.469081408636,
+     "down": 0
+    },
+    "20": {
+     "up": 1628.469081408636,
+     "down": 0
+    },
+    "25": {
+     "up": 1628.469081408636,
+     "down": 0
+    },
+    "30": {
+     "up": 1628.469081408636,
+     "down": 0
+    },
+    "40": {
+     "up": 1628.469081408636,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Sondalo",
+   "province": "IT-SO",
+   "start": [
+    46.3291707,
+    10.3433518
+   ]
+  },
+  {
+   "id": 14740649,
+   "tags": {
+    "cai_scale": "E",
+    "from": "SS300 - Statale del Passo Gavia",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:508:black",
+    "ref": "508",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "SS300 - Statale del Passo Gavia",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 2.083915913376689,
+   "startEle": 1798.191835631878,
+   "endEle": 2063.1570952587667,
+   "maxEle": 2063.1570952587667,
+   "climbs": {
+    "0": {
+     "up": 268.334072327116,
+     "down": 3.3688127002271813
+    },
+    "5": {
+     "up": 264.96525962688884,
+     "down": 0
+    },
+    "10": {
+     "up": 264.96525962688884,
+     "down": 0
+    },
+    "15": {
+     "up": 264.96525962688884,
+     "down": 0
+    },
+    "20": {
+     "up": 264.96525962688884,
+     "down": 0
+    },
+    "25": {
+     "up": 264.96525962688884,
+     "down": 0
+    },
+    "30": {
+     "up": 264.96525962688884,
+     "down": 0
+    },
+    "40": {
+     "up": 264.96525962688884,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Valfurva",
+   "province": "IT-SO",
+   "start": [
+    46.4098859,
+    10.4937633
+   ]
+  },
+  {
+   "id": 14744897,
+   "tags": {
+    "cai_scale": "E",
+    "from": "SP27 (La Prese)",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:519:black",
+    "ref": "519",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "SS330 (Malga dell'Alpe)",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 19.082982347289917,
+   "startEle": 947.8415463862432,
+   "endEle": 2295.997359220947,
+   "maxEle": 2468.134731714,
+   "climbs": {
+    "0": {
+     "up": 1713.0811600718837,
+     "down": 364.92534723717984
+    },
+    "5": {
+     "up": 1626.017424748782,
+     "down": 277.86161191407814
+    },
+    "10": {
+     "up": 1568.8215712657075,
+     "down": 220.6657584310035
+    },
+    "15": {
+     "up": 1532.529663244492,
+     "down": 184.37385040978802
+    },
+    "20": {
+     "up": 1500.7947351732903,
+     "down": 152.63892233858633
+    },
+    "25": {
+     "up": 1529.4021301699065,
+     "down": 181.24631733520255
+    },
+    "30": {
+     "up": 1550.2671299496392,
+     "down": 202.11131711493522
+    },
+    "40": {
+     "up": 1504.45971405161,
+     "down": 156.30390121690607
+    }
+   },
+   "kind": "salita",
+   "comune": "Sondalo",
+   "province": "IT-SO",
+   "start": [
+    46.3499685,
+    10.3548611
+   ]
+  },
+  {
+   "id": 14978886,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Rifugio Alpe Ponte",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:338A:black",
+    "ref": "338A",
+    "reg_ref": "338.1",
+    "route": "hiking",
+    "source": "survey:CAI",
+    "to": "Curlo",
+    "type": "route"
+   },
+   "ok": false,
+   "reason": "interrotto"
+  },
+  {
+   "id": 15003431,
+   "tags": {
+    "cai_scale": "EE",
+    "distance": "3.155",
+    "from": "Passo di Gavia",
+    "name": "Monte Gavia",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:158B:black",
+    "ref": "158B",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "to": "Monte Gavia",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 3.506160957414486,
+   "startEle": 2617.3215990877734,
+   "endEle": 3157.631036113391,
+   "maxEle": 3157.631036113391,
+   "climbs": {
+    "0": {
+     "up": 566.8698616747542,
+     "down": 26.56042464913662
+    },
+    "5": {
+     "up": 560.1368567930017,
+     "down": 19.82741976738407
+    },
+    "10": {
+     "up": 551.1553924026075,
+     "down": 10.845955376989878
+    },
+    "15": {
+     "up": 540.3094370256176,
+     "down": 0
+    },
+    "20": {
+     "up": 540.3094370256176,
+     "down": 0
+    },
+    "25": {
+     "up": 540.3094370256176,
+     "down": 0
+    },
+    "30": {
+     "up": 540.3094370256176,
+     "down": 0
+    },
+    "40": {
+     "up": 540.3094370256176,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Valfurva",
+   "province": "IT-SO",
+   "start": [
+    46.3432422,
+    10.4878286
+   ]
+  },
+  {
+   "id": 15773188,
+   "tags": {
+    "cai_scale": "EE",
+    "from": "Fontanedo",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:603:black",
+    "ref": "603",
+    "route": "hiking",
+    "source": "survey:CAI;REL;survey:CAIOSM",
+    "state": "proposed",
+    "to": "Alpe Scoggione",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 2.8216877362088333,
+   "startEle": 616.2839997138417,
+   "endEle": 1594.9494868947475,
+   "maxEle": 1594.9494868947475,
+   "climbs": {
+    "0": {
+     "up": 980.439983781234,
+     "down": 1.7744966003282343
+    },
+    "5": {
+     "up": 978.6654871809058,
+     "down": 0
+    },
+    "10": {
+     "up": 978.6654871809058,
+     "down": 0
+    },
+    "15": {
+     "up": 978.6654871809058,
+     "down": 0
+    },
+    "20": {
+     "up": 978.6654871809058,
+     "down": 0
+    },
+    "25": {
+     "up": 978.6654871809058,
+     "down": 0
+    },
+    "30": {
+     "up": 978.6654871809058,
+     "down": 0
+    },
+    "40": {
+     "up": 978.6654871809058,
+     "down": 0
+    }
+   },
+   "kind": "salita",
+   "comune": "Colico",
+   "province": "IT-LC",
+   "start": [
+    46.1208181,
+    9.4014965
+   ]
+  },
+  {
+   "id": 19528451,
+   "tags": {
+    "cai_scale": "EE",
+    "from": "Passo Niemet",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:N593:black",
+    "ref": "N593",
+    "roundtrip": "no",
+    "route": "hiking",
+    "to": "Passo di Suretta",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 4.319885311934575,
+   "startEle": 2222.528340093073,
+   "endEle": 2509.436687561542,
+   "maxEle": 2707.5954312453723,
+   "climbs": {
+    "0": {
+     "up": 594.1217932046097,
+     "down": 307.2134457361408
+    },
+    "5": {
+     "up": 579.569951709921,
+     "down": 292.6616042414521
+    },
+    "10": {
+     "up": 544.8319237408864,
+     "down": 257.92357627241745
+    },
+    "15": {
+     "up": 529.3924401526397,
+     "down": 242.48409268417072
+    },
+    "20": {
+     "up": 514.4715973584816,
+     "down": 227.56324989001268
+    },
+    "25": {
+     "up": 505.79514616521374,
+     "down": 218.8867986967448
+    },
+    "30": {
+     "up": 503.9906552540069,
+     "down": 217.08230778553798
+    },
+    "40": {
+     "up": 514.4715973584816,
+     "down": 227.56324989001268
+    }
+   },
+   "kind": "traversata",
+   "comune": "Madesimo",
+   "province": "IT-SO",
+   "start": [
+    46.4721137,
+    9.3874691
+   ]
+  },
+  {
+   "id": 19532067,
+   "tags": {
+    "cai_scale": "E",
+    "from": "Fraciscio",
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_stripe:N581:black",
+    "ref": "N581",
+    "roundtrip": "no",
+    "route": "hiking",
+    "to": "Alpe Motta",
+    "type": "route"
+   },
+   "ok": true,
+   "km": 3.780300247508635,
+   "startEle": 1367.3984271829092,
+   "endEle": 1727.1630412867198,
+   "maxEle": 1763.594732144091,
+   "climbs": {
+    "0": {
+     "up": 408.7403990450216,
+     "down": 48.97578494121103
+    },
+    "5": {
+     "up": 395.5506195118128,
+     "down": 35.78600540800221
+    },
+    "10": {
+     "up": 395.5506195118128,
+     "down": 35.78600540800221
+    },
+    "15": {
+     "up": 381.6700955009021,
+     "down": 21.905481397091535
+    },
+    "20": {
+     "up": 381.71572806977224,
+     "down": 21.951113965961667
+    },
+    "25": {
+     "up": 396.1963049611818,
+     "down": 36.43169085737122
+    },
+    "30": {
+     "up": 381.6700955009021,
+     "down": 21.905481397091535
+    },
+    "40": {
+     "up": 395.5506195118128,
+     "down": 35.78600540800221
+    }
+   },
+   "kind": "salita",
+   "comune": "Campodolcino",
+   "province": "IT-SO",
+   "start": [
+    46.4051746,
+    9.3675371
+   ]
+  }
+ ]
+}
