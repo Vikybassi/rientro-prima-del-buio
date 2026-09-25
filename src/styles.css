@@ -137,11 +137,20 @@ button, input, select { font: inherit; color: inherit; }
 }
 .field-hint { font-size: 13px; color: var(--ink-2); }
 
-.settings { margin-top: 10px; font-size: 14px; color: var(--ink-3); }
-.settings summary { cursor: pointer; list-style: none; padding: 6px 0; }
-.settings summary::-webkit-details-marker { display: none; }
-.settings-change { color: var(--forest); text-decoration: underline; text-underline-offset: 3px; }
-.settings[open] .when-fields { margin-top: 6px; }
+.choices { display: flex; flex-wrap: wrap; gap: 14px 28px; margin-top: 16px; }
+.choice { border: 0; padding: 0; margin: 0; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.choice legend { padding: 0; margin-bottom: 4px; font-size: 13px; color: var(--ink-3); }
+.segmented { display: flex; border: 1px solid var(--forest); border-radius: var(--radius); overflow: hidden; }
+.segmented label { flex: 1 1 auto; display: flex; }
+.segmented label + label { border-left: 1px solid var(--forest); }
+.segmented input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.segmented span {
+  flex: 1; display: flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 12px;
+  background: var(--panel); color: var(--ink); font-size: 15px; font-weight: 600; white-space: nowrap; cursor: pointer;
+}
+.segmented input:checked + span { background: var(--forest); color: var(--paper); }
+.segmented input:focus-visible + span { outline: 3px solid var(--contour); outline-offset: -3px; }
+@media (max-width: 639px) { .choice { flex: 1 1 100%; } .segmented span { padding: 0 8px; } }
 
 .verdict { border-radius: var(--radius); padding: 14px 16px; margin-bottom: 22px; }
 .verdict h3 { margin: 0; font-size: 22px; line-height: 1.25; }

@@ -79,25 +79,33 @@ export function PlanView({ trail, plan, track, weather, hazards, params, onChang
             <input type="time" value={params.start} step={300} required onChange={(e) => e.target.value && onChange({ start: e.target.value })} />
           </label>
         </div>
-        <details className="settings">
-          <summary>
-            {t.settings(params.pace, params.stop)} · <span className="settings-change">{t.change}</span>
-          </summary>
-          <div className="when-fields">
-            <label className="field">
-              {t.pace}
-              <select value={params.pace} onChange={(e) => onChange({ pace: e.target.value as Params['pace'] })}>
-                {PACES.map((p) => <option key={p} value={p}>{t.paces[p]}</option>)}
-              </select>
-            </label>
-            <label className="field">
-              {t.stop}
-              <select value={params.stop} onChange={(e) => onChange({ stop: Number(e.target.value) })}>
-                {STOPS.map((s) => <option key={s} value={s}>{t.minutes(s)}</option>)}
-              </select>
-            </label>
-          </div>
-        </details>
+        {/* passo e sosta cambiano molto la risposta: sempre in vista, un tocco per cambiarli */}
+        <div className="choices">
+          <fieldset className="choice">
+            <legend>{t.pace}</legend>
+            <div className="segmented">
+              {PACES.map((p) => (
+                <label key={p}>
+                  <input type="radio" name="pace" value={p} checked={params.pace === p} onChange={() => onChange({ pace: p })} />
+                  <span>{t.paces[p]}</span>
+                </label>
+              ))}
+            </div>
+            <span className="field-hint">{t.paceHint}</span>
+          </fieldset>
+          <fieldset className="choice">
+            <legend>{t.stop}</legend>
+            <div className="segmented">
+              {STOPS.map((s) => (
+                <label key={s}>
+                  <input type="radio" name="stop" value={s} checked={params.stop === s} onChange={() => onChange({ stop: s })} />
+                  <span>{t.stopOption(s)}</span>
+                </label>
+              ))}
+            </div>
+            <span className="field-hint">{t.stopHint}</span>
+          </fieldset>
+        </div>
       </fieldset>
 
       {plan && (

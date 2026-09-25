@@ -58,13 +58,12 @@ const it = {
   answerStep: '3 · Rientri prima del buio?',
   date: 'Giorno',
   start: 'Ora',
-  settings: (pace: Pace, stop: number) =>
-    `${{ slow: 'Cammini più piano dei tempi dei cartelli', average: 'Cammini come i tempi dei cartelli', fast: 'Cammini più veloce dei tempi dei cartelli' }[pace]}, ${stop ? `sosta di ${stop} min in cima` : 'senza sosta in cima'}`,
-  change: 'cambia',
   pace: 'Il tuo passo',
-  paces: { slow: 'più piano dei cartelli', average: 'come i cartelli', fast: 'più veloce dei cartelli' } satisfies Record<Pace, string>,
+  paces: { slow: 'più lento', average: 'come i cartelli', fast: 'più veloce' } satisfies Record<Pace, string>,
+  paceHint: 'rispetto ai tempi dei cartelli CAI',
   stop: 'Sosta in cima',
-  minutes: (n: number) => (n ? `${n} min` : 'nessuna'),
+  stopOption: (n: number) => (n === 0 ? 'no' : n < 60 ? `${n} min` : n === 60 ? '1 h' : `1 h ${n - 60}`),
+  stopHint: 'i tempi dei cartelli non comprendono le soste',
 
   answer: {
     ok: 'Sì, rientri con la luce',
@@ -186,13 +185,12 @@ const en: Strings = {
   answerStep: '3 · Back before dark?',
   date: 'Day',
   start: 'Time',
-  settings: (pace, stop) =>
-    `${{ slow: 'You walk slower than the signpost times', average: 'You walk like the signpost times', fast: 'You walk faster than the signpost times' }[pace]}, ${stop ? `${stop} min break at the top` : 'no break at the top'}`,
-  change: 'change',
   pace: 'Your pace',
-  paces: { slow: 'slower than signposts', average: 'like the signposts', fast: 'faster than signposts' },
+  paces: { slow: 'slower', average: 'like signposts', fast: 'faster' },
+  paceHint: 'compared with CAI signpost times',
   stop: 'Break at the top',
-  minutes: (n) => (n ? `${n} min` : 'none'),
+  stopOption: (n) => (n === 0 ? 'none' : n < 60 ? `${n} min` : n === 60 ? '1 h' : `1 h ${n - 60}`),
+  stopHint: 'signpost times don\'t include breaks',
 
   answer: {
     ok: 'Yes, you\'re back in daylight',
