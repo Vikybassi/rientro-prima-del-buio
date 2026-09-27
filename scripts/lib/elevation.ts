@@ -66,6 +66,30 @@ export async function sampleElevations(points: LatLon[]): Promise<number[]> {
 }
 
 /**
+ * Quota letta in modo sincrono, per chi ne chiede milioni (l'orizzonte di scripts/add-horizon.ts): carica prima
+ * tutte le tessere presenti in data-cache/dem/. Fuori dalle tessere restituisce NaN.
+ */
+export async function loadSampler(): Promise<(lat: number, lon: number) => number> {
+  const { readdir } = await import('node:fs/promises');
+  const names = (await readdir('data-cache/dem')).filter((f) => f.endsWith('.tif')).map((f) => f.slice(0, -4));
+  const loaded = new Map<string, Tile>();
+  for (const name of names) loaded.set(name, await tileFor(...latLonOf(name)));
+  return (lat, lon) => {
+    const t = loaded.get(tileName(lat, lon));
+    return t ? sample(t, lat, lon) : NaN;
+  };
+}
+
+/** Un punto dentro la tessera col nome dato (il suo angolo sud-ovest, spostato un poco verso l'interno). */
+function latLonOf(name: string): [number, number] {
+  const m = /_([NS])(\d{2})_00_([EW])(\d{3})_00_/.exec(name);
+  if (!m) throw new Error(`Nome di tessera inatteso: ${name}`);
+  const lat = Number(m[2]) * (m[1] === 'N' ? 1 : -1);
+  const lon = Number(m[4]) * (m[3] === 'E' ? 1 : -1);
+  return [lat + 0.5, lon + 0.5];
+}
+
+/**
  * Dislivello positivo e negativo, ignorando le oscillazioni più piccole di `threshold` metri (isteresi).
  *
  * Il modello del terreno ha un rumore di qualche metro: sommando ogni saliscendi il dislivello si gonfia

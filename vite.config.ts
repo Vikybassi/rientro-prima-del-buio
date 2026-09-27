@@ -41,7 +41,8 @@ export default defineConfig({
       },
       workbox: {
         // app e mappa d'insieme sempre disponibili; le tracce dei giri no, sono troppe: si salvano quando si aprono
-        globPatterns: ['**/*.{js,css,html,svg,png,ico}', 'overview.json'],
+        // dei caratteri basta l'alfabeto latino (gli altri si scaricano solo se servono): l'app resta leggibile offline
+        globPatterns: ['**/*.{js,css,html,svg,png,ico}', '**/*-latin-*.woff2', 'overview.json'],
         navigateFallback: `${BASE}index.html`,
         runtimeCaching: [
           {

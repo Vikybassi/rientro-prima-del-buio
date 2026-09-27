@@ -54,5 +54,19 @@ export type TrailSummary = {
 /** Un punto della traccia ricampionata: [lat, lon, distanza dalla partenza in m, quota in m]. */
 export type TrailPoint = [number, number, number, number];
 
+/** Che cosa si incontra lungo il giro (scripts/add-stops.ts). */
+export type StopKind = 'hut' | 'bivouac' | 'lake' | 'pass' | 'peak' | 'alp' | 'water' | 'viewpoint';
+
+/** Una tappa lungo il percorso: nome (null per una fontana senza nome), tipo, distanza dalla partenza e quota. */
+export type Stop = { name: string | null; kind: StopKind; d: number; ele: number };
+
 /** Traccia completa, caricata solo quando si apre il sentiero (public/trails/<id>.json). */
-export type TrailTrack = { id: string; points: TrailPoint[] };
+/**
+ * L'orizzonte verso ovest visto dalla partenza e dalla meta: per ogni direzione della bussola da HORIZON_AZ0 gradi
+ * (sud) in avanti, un grado alla volta, quanto sono alte le montagne sopra l'orizzonte, in decimi di grado.
+ * Serve a sapere quando il sole sparisce dietro le montagne (engine/sun.ts `shadeAt`).
+ */
+export type Horizon = { start: number[]; end: number[] };
+export const HORIZON_AZ0 = 180;
+
+export type TrailTrack = { id: string; points: TrailPoint[]; stops?: Stop[]; horizon?: Horizon };

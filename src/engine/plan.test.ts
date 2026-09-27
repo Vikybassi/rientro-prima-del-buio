@@ -11,7 +11,7 @@ import type { Hazard } from './weather.ts';
 const trail = (trails as TrailSummary[]).find((t) => t.osm === 7328079)!;
 const base: PlanInput = {
   trail,
-  track: (track331 as TrailTrack).points,
+  track: (track331 as unknown as TrailTrack).points,
   date: '2026-10-03',
   start: '08:00',
   pace: 'average',
@@ -63,7 +63,7 @@ describe('makePlan: il 331 a inizio ottobre', () => {
     // N581 Fraciscio → Alpe Motta: su OSM non ha tempi ufficiali
     const motta = (trails as TrailSummary[]).find((t) => t.osm === 19532067)!;
     expect(motta.caiUpMin).toBeNull();
-    const plan = makePlan({ ...base, trail: motta, track: (trackMotta as TrailTrack).points });
+    const plan = makePlan({ ...base, trail: motta, track: (trackMotta as unknown as TrailTrack).points });
     expect(plan.timeSource).toBe('formula');
   });
 
@@ -143,5 +143,29 @@ describe('trailTimes', () => {
     const times = trailTimes(trail, 'average');
     expect(times.upMin).toEqual(plan.upMin);
     expect(times.downMin).toEqual(plan.downMin);
+  });
+});
+
+describe('pernotto: si dorme alla meta (il 331 arriva al Rifugio Longoni)', () => {
+  it('conta l\'arrivo alla meta, non il rientro: partendo alle 15 si arriva al rifugio con la luce', () => {
+    const roundTrip = makePlan({ ...base, start: '15:00' });
+    const stay = makePlan({ ...base, start: '15:00', overnight: true });
+    expect(roundTrip.lightStatus).toBe('dark');
+    expect(stay.lightStatus).toBe('ok');
+    expect(stay.endAt.estimate.getTime()).toBe(stay.summitAt.estimate.getTime());
+  });
+
+  it("l'ultima partenza è il margine di luce meno la sola salita (niente sosta, niente discesa)", () => {
+    const stay = makePlan({ ...base, overnight: true });
+    expect(minutesBetween(stay.latestStart, stay.deadline)).toBeCloseTo(stay.upMin.prudent, 5);
+    expect(stay.stopMin).toBe(0);
+  });
+
+  it('il meteo e il profilo guardano solo la salita; il giorno dopo ha la sua luce e la sua discesa', () => {
+    const stay = makePlan({ ...base, overnight: true });
+    expect(stay.moments.every((m) => m.leg === 'up')).toBe(true);
+    expect(stay.nextDay).not.toBeNull();
+    expect(stay.nextDay!.light.dawn > stay.light.dusk).toBe(true);
+    expect(stay.nextDay!.downMin).toEqual(stay.downMin);
   });
 });

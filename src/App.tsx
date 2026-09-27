@@ -53,10 +53,14 @@ export default function App() {
     return () => controller.abort();
   }, [params.trail]);
 
+  // dormire alla meta ha senso solo se la meta è un rifugio o un bivacco (un link vecchio può chiederlo per una cima)
+  const stayPlace = trail && (trail.destination === 'hut' || trail.destination === 'bivouac') ? trail.destination : null;
+  const overnight = params.overnight && stayPlace !== null;
+
   const plan = useMemo(() => {
     if (!trail || !track || track.id !== trail.id) return null;
-    return makePlan({ trail, track: track.points, date: params.date, start: params.start, pace: params.pace, stopMin: params.stop });
-  }, [trail, track, params.date, params.start, params.pace, params.stop]);
+    return makePlan({ trail, track: track.points, date: params.date, start: params.start, pace: params.pace, stopMin: params.stop, overnight, horizon: track.horizon });
+  }, [trail, track, params.date, params.start, params.pace, params.stop, overnight]);
 
   const weather = useForecast(trail, params.date, localDate(new Date()));
   // gli avvisi meteo contano solo nelle ore e alle quote in cui si è sul sentiero (i "momenti" del piano)
@@ -111,7 +115,7 @@ export default function App() {
           lang={params.lang}
         />
         {trail && (
-          <PlanView trail={trail} plan={plan} track={track && track.id === trail.id ? track.points : null} weather={weather} hazards={hazards} params={params} onChange={update} onBack={() => update({ trail: null })} t={t} lang={params.lang} />
+          <PlanView trail={trail} plan={plan} track={track && track.id === trail.id ? track : null} stayPlace={stayPlace} weather={weather} hazards={hazards} params={params} onChange={update} onBack={() => update({ trail: null })} t={t} lang={params.lang} />
         )}
         {showOverview && (
           <div className="overview-column">

@@ -3,7 +3,7 @@ import type { Pace } from './engine/time.ts';
 import type { Lang } from './i18n.ts';
 
 /**
- * Lo stato della pagina vive nell'indirizzo (?t=7328079&d=2026-10-03&h=08:00&p=average&s=30&lang=it):
+ * Lo stato della pagina vive nell'indirizzo (?t=7328079&d=2026-10-03&h=08:00&p=average&s=30&n=1&lang=it):
  * copiando il link, chi lo apre vede lo stesso piano. Tutto quello che arriva dal link viene controllato,
  * perché può essere vecchio o modificato a mano: un valore non valido torna al suo default.
  */
@@ -14,6 +14,8 @@ export type Params = {
   start: string;
   pace: Pace;
   stop: number;
+  /** si dorme alla meta (vale solo se la meta è un rifugio o un bivacco) */
+  overnight: boolean;
   lang: Lang;
 };
 
@@ -29,6 +31,7 @@ export function defaults(now: Date, browserLang: string): Params {
     start: '08:00',
     pace: 'average',
     stop: 30,
+    overnight: false,
     lang: browserLang.toLowerCase().startsWith('it') ? 'it' : 'en',
   };
 }
@@ -50,6 +53,7 @@ export function readParams(search: string, fallback: Params, knownTrails: Readon
     start: TIME.test(h) ? h : fallback.start,
     pace: p && PACES.includes(p) ? p : fallback.pace,
     stop: q.has('s') && STOPS.includes(s) ? s : fallback.stop,
+    overnight: q.get('n') === '1',
     lang: lang === 'it' || lang === 'en' ? lang : fallback.lang,
   };
 }
@@ -68,6 +72,7 @@ export function writeParams(p: Params, base: Params): string {
     q.set('h', p.start);
     if (p.pace !== base.pace) q.set('p', p.pace);
     if (p.stop !== base.stop) q.set('s', String(p.stop));
+    if (p.overnight) q.set('n', '1');
   }
   if (p.lang !== base.lang) q.set('lang', p.lang);
   const search = q.toString();

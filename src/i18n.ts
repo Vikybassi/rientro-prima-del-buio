@@ -1,4 +1,4 @@
-import type { Destination, Difficulty, Zone } from './data/types.ts';
+import type { Destination, Difficulty, StopKind, Zone } from './data/types.ts';
 import type { Answer } from './engine/plan.ts';
 import type { Pace } from './engine/time.ts';
 
@@ -65,6 +65,61 @@ const it = {
   stopOption: (n: number) => (n === 0 ? 'no' : n < 60 ? `${n} min` : n === 60 ? '1 h' : `1 h ${n - 60}`),
   stopHint: 'i tempi dei cartelli non comprendono le soste',
 
+  mode: {
+    label: 'Che giro fai?',
+    roundTrip: 'Andata e ritorno',
+    stay: { hut: 'Dormo al rifugio', bivouac: 'Dormo al bivacco' },
+    hint: 'dormendo alla meta conta l\'arrivo, non il rientro',
+  },
+  answerStepStay: '3 · Arrivi prima del buio?',
+  /** "rifugio" o "bivacco", per le frasi del pernotto */
+  place: { hut: 'rifugio', bivouac: 'bivacco' },
+  stayAnswer: {
+    ok: (p: string) => `Sì, arrivi al ${p} con la luce`,
+    'ok-weather': () => 'Sì, ma occhio al meteo',
+    'weather-no': () => 'Meglio di no: brutto tempo in quota',
+    tight: (p: string) => `Al limite: arrivi al ${p} al tramonto`,
+    dark: (p: string) => `No, arrivi al ${p} col buio`,
+  } satisfies Record<Answer, (p: string) => string>,
+  stayLatest: {
+    ok: (t: string) => `Potresti partire anche fino alle ${t}.`,
+    tight: (t: string) => `Se ci metti di più arrivi senza margine di luce. Per averlo parti entro le ${t}.`,
+    dark: (t: string) => `Per arrivare con la luce parti entro le ${t}.`,
+  },
+  nextDay: (dawn: string, down: string) => `Il giorno dopo fa giorno alle ${dawn}: per tornare alla macchina ti servono circa ${down}.`,
+  facts: {
+    car: 'Alla macchina',
+    at: (p: string) => `Al ${p}`,
+    sunset: 'Tramonto',
+    spare: 'Luce che ti avanza',
+    short: 'Luce che ti manca',
+    ifLonger: (t: string) => `o ${t} se ci metti di più`,
+    shade: (t: string) => `in ombra dalle ${t}`,
+    shadeAll: 'in ombra dal pomeriggio',
+  },
+  shade: {
+    /** where: "Alla partenza" o "Al rifugio" */
+    at: (where: string, t: string) =>
+      `${where} il sole va dietro le montagne verso le ${t}: da lì sei in ombra e fa più freddo, ma la luce dura fino al tramonto.`,
+    all: (where: string) => `${where} il sole è dietro le montagne già dal primo pomeriggio: c'è luce, ma sei in ombra.`,
+    start: 'Alla partenza',
+  },
+  stops: {
+    title: 'Le tappe',
+    start: 'Partenza',
+    top: 'Meta',
+    car: 'Alla macchina',
+    by: (t: string) => `entro le ${t}`,
+    late: (t: string) => `troppo tardi: entro le ${t}`,
+    kinds: { hut: 'Rifugio', bivouac: 'Bivacco', lake: 'Lago', pass: 'Passo', peak: 'Cima', alp: 'Alpeggio', water: 'Acqua', viewpoint: 'Panorama' } satisfies Record<StopKind, string>,
+    unnamed: { water: 'Fontana', viewpoint: 'Punto panoramico' } as Partial<Record<StopKind, string>>,
+    breakAtTop: (m: string) => `sosta ${m}`,
+    hint: 'Accanto a ogni tappa: entro che ora esserci per tornare alla macchina con la luce anche se ci metti di più. Se arrivi più tardi, da lì torna indietro.',
+    stayHint: 'Orari di arrivo col tuo passo.',
+    none: 'Lungo questo giro OpenStreetMap non segna rifugi, alpeggi, laghi o fontane: le tappe sono solo partenza e meta.',
+    furthest: (name: string, ele: number, at: string) =>
+      `Con la luce arrivi fino a ${name} (${ele} m) verso le ${at}: da lì torna indietro e rientri con margine.`,
+  },
   answer: {
     ok: 'Sì, rientri con la luce',
     'ok-weather': 'Sì, ma occhio al meteo',
@@ -86,16 +141,20 @@ const it = {
   dayBar: 'La tua giornata',
   dayBarLabel: (start: string, back: string, late: string, sunset: string, dusk: string) =>
     `Parti alle ${start}, rientri verso le ${back} (al massimo alle ${late}). Il sole tramonta alle ${sunset}, fa buio alle ${dusk}.`,
+  dayBarLabelStay: (start: string, arrive: string, late: string, sunset: string, dusk: string) =>
+    `Parti alle ${start}, arrivi verso le ${arrive} (al massimo alle ${late}). Il sole tramonta alle ${sunset}, fa buio alle ${dusk}.`,
   bar: {
     latest: (t: string) => `ultima partenza ${t}`,
     start: (t: string) => `parti ${t}`,
     back: (a: string, b: string) => `rientro ${a}–${b}`,
+    arrive: (a: string, b: string) => `arrivo ${a}–${b}`,
     dark: (t: string) => `buio ${t}`,
   },
 
   hike: 'Il giro',
   upLine: (d: string, at: string) => `Salita ${d} · in cima alle ${at}`,
   downLine: (d: string, at: string) => `Ritorno ${d} · alla macchina alle ${at}`,
+  downNextDay: (d: string) => `Discesa il giorno dopo · ${d}`,
   source: {
     cai: (t: string) => `Tempi dal cartello CAI di questo sentiero (${t} in salita), adattati al tuo passo.`,
     formula: 'Questo sentiero non ha un tempo CAI: tempi stimati con la formula dei club alpini, tarata sui cartelli della Valtellina.',
@@ -192,6 +251,57 @@ const en: Strings = {
   stopOption: (n) => (n === 0 ? 'none' : n < 60 ? `${n} min` : n === 60 ? '1 h' : `1 h ${n - 60}`),
   stopHint: 'signpost times don\'t include breaks',
 
+  mode: {
+    label: 'What kind of trip?',
+    roundTrip: 'Round trip',
+    stay: { hut: 'I sleep at the hut', bivouac: 'I sleep at the bivouac' },
+    hint: 'sleeping there, what counts is arriving, not getting back',
+  },
+  answerStepStay: '3 · Do you arrive before dark?',
+  place: { hut: 'hut', bivouac: 'bivouac' },
+  stayAnswer: {
+    ok: (p) => `Yes, you reach the ${p} in daylight`,
+    'ok-weather': () => 'Yes, but watch the weather',
+    'weather-no': () => 'Better not: bad weather up high',
+    tight: (p) => `Cutting it close: you reach the ${p} at sunset`,
+    dark: (p) => `No, you'd reach the ${p} after dark`,
+  },
+  stayLatest: {
+    ok: (t) => `You could start as late as ${t}.`,
+    tight: (t) => `If it takes longer you'll arrive with no daylight to spare. To keep a margin, start by ${t}.`,
+    dark: (t) => `To arrive in daylight, start by ${t}.`,
+  },
+  nextDay: (dawn, down) => `The next day it gets light at ${dawn}: going back to the car takes about ${down}.`,
+  facts: {
+    car: 'Back at the car',
+    at: (p) => `At the ${p}`,
+    sunset: 'Sunset',
+    spare: 'Daylight to spare',
+    short: 'Daylight missing',
+    ifLonger: (t) => `or ${t} if it takes longer`,
+    shade: (t) => `in shade from ${t}`,
+    shadeAll: 'in shade all afternoon',
+  },
+  shade: {
+    at: (where, t) => `${where} the sun goes behind the mountains around ${t}: from then on you're in the shade and it gets colder, but the daylight lasts until sunset.`,
+    all: (where) => `${where} the sun is behind the mountains from early afternoon: there's daylight, but you're in the shade.`,
+    start: 'At the start',
+  },
+  stops: {
+    title: 'Along the way',
+    start: 'Start',
+    top: 'Destination',
+    car: 'Back at the car',
+    by: (t) => `by ${t}`,
+    late: (t) => `too late: by ${t}`,
+    kinds: { hut: 'Hut', bivouac: 'Bivouac', lake: 'Lake', pass: 'Pass', peak: 'Peak', alp: 'Alpine pasture', water: 'Water', viewpoint: 'Viewpoint' },
+    unnamed: { water: 'Fountain', viewpoint: 'Viewpoint' },
+    breakAtTop: (m) => `${m} break`,
+    hint: 'Next to each stop: the time to be there by to get back to the car in daylight even if it takes longer. If you arrive later, turn back from there.',
+    stayHint: 'Arrival times at your pace.',
+    none: 'OpenStreetMap shows no huts, pastures, lakes or fountains along this route: the only stops are the start and the destination.',
+    furthest: (name, ele, at) => `In daylight you can get as far as ${name} (${ele} m) around ${at}: turn back from there and you're back with time to spare.`,
+  },
   answer: {
     ok: 'Yes, you\'re back in daylight',
     'ok-weather': 'Yes, but watch the weather',
@@ -212,16 +322,20 @@ const en: Strings = {
   dayBar: 'Your day',
   dayBarLabel: (start, back, late, sunset, dusk) =>
     `You start at ${start} and are back around ${back} (${late} at the latest). Sunset at ${sunset}, dark at ${dusk}.`,
+  dayBarLabelStay: (start, arrive, late, sunset, dusk) =>
+    `You start at ${start} and arrive around ${arrive} (${late} at the latest). Sunset at ${sunset}, dark at ${dusk}.`,
   bar: {
     latest: (t) => `latest start ${t}`,
     start: (t) => `start ${t}`,
     back: (a, b) => `back ${a}–${b}`,
+    arrive: (a, b) => `arrive ${a}–${b}`,
     dark: (t) => `dark ${t}`,
   },
 
   hike: 'The hike',
   upLine: (d, at) => `Ascent ${d} · at the top at ${at}`,
   downLine: (d, at) => `Return ${d} · back at the car at ${at}`,
+  downNextDay: (d) => `Descent the next day · ${d}`,
   source: {
     cai: (t) => `Times from this trail's CAI signpost (${t} up), adjusted to your pace.`,
     formula: 'This trail has no CAI time: estimated with the alpine clubs\' formula, calibrated on Valtellina signposts.',

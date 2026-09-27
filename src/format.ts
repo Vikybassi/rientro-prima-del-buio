@@ -1,5 +1,6 @@
 import { localTime, localToInstant, TIME_ZONE } from './engine/clock.ts';
-import { LOCALE, type Lang } from './i18n.ts';
+import type { Stop } from './data/types.ts';
+import { LOCALE, type Lang, type Strings } from './i18n.ts';
 
 const STEP_MIN = 5;
 const STEP_MS = STEP_MIN * 60_000;
@@ -30,3 +31,6 @@ export function dayLabel(date: string, lang: Lang): string {
 
 export const km = (meters: number, lang: Lang) =>
   `${new Intl.NumberFormat(LOCALE[lang], { maximumFractionDigits: 1, minimumFractionDigits: 1 }).format(meters / 1000)} km`;
+
+/** Il nome di una tappa: quello di OpenStreetMap, oppure "Fontana" / "Punto panoramico", oppure il tipo. */
+export const stopName = (s: Stop, t: Strings) => s.name ?? t.stops.unnamed[s.kind] ?? t.stops.kinds[s.kind];

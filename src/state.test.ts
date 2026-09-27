@@ -17,7 +17,7 @@ describe('defaults', () => {
 });
 
 describe('link del piano', () => {
-  const plan: Params = { trail: '7328079', date: '2026-10-03', start: '07:30', pace: 'slow', stop: 60, lang: 'en' };
+  const plan: Params = { trail: '7328079', date: '2026-10-03', start: '07:30', pace: 'slow', stop: 60, overnight: false, lang: 'en' };
 
   it('scrivere e rileggere il link dà lo stesso piano', () => {
     expect(readParams(writeParams(plan, fallback), fallback, known)).toEqual(plan);
@@ -45,6 +45,12 @@ describe('link del piano', () => {
 
   it('un link senza parametri dà i default', () => {
     expect(readParams('', fallback, known)).toEqual(fallback);
+  });
+
+  it('il pernotto va nel link solo se scelto', () => {
+    const stay = { ...plan, overnight: true };
+    expect(writeParams(stay, fallback)).toContain('&n=1');
+    expect(readParams(writeParams(stay, fallback), fallback, known)).toEqual(stay);
   });
 
   it('accetta una sosta di zero minuti (e non la confonde con un valore mancante)', () => {
