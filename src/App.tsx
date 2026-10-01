@@ -140,7 +140,7 @@ export default function App() {
       <footer className="footer">
         <p>{t.disclaimer}</p>
         <p>
-          {t.credits} <a href="https://vittoriabassi.netlify.app">Vittoria Bassi</a>
+          {t.credits} <a href="https://vikybassi.github.io/">Vittoria Bassi</a>
         </p>
       </footer>
     </div>
